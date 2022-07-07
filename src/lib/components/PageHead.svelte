@@ -1,9 +1,9 @@
 <script>
-	export let title;
-	export let description;
+	export let title
+	export let description
 
-	const siteTitle = 'Site Title';
-	const formattedTitle = title ? `${title} | ${siteTitle}` : siteTitle;
+	const siteTitle = 'Site Title'
+	const formattedTitle = title ? `${title} | ${siteTitle}` : siteTitle
 </script>
 
 <svelte:head>

@@ -1,8 +1,8 @@
 <script>
-	export let author;
-	export let date;
+	export let author
+	export let date
 
-	const formattedDate = new Date(date).toDateString();
+	const formattedDate = new Date(date).toDateString()
 </script>
 
 <p>
@@ -11,13 +11,13 @@
 </p>
 
 <style>
-  p {
-    margin: 0;
-    margin-bottom: calc(var(--spacing-unit) * 4);
-  }
+	p {
+		margin: 0;
+		margin-bottom: calc(var(--spacing-unit) * 4);
+	}
 
 	.author {
-    font-weight: bold;
+		font-weight: bold;
 		margin-right: calc(var(--spacing-unit) * 2);
 	}
 

@@ -1,13 +1,13 @@
 <script>
-	export let slug = '';
-	export let title;
+	export let slug = ''
+	export let title
 
 	const id = title
 		.toLowerCase()
 		.replace(/[^a-zA-Z ]/g, '')
-		.replace(/\s/g, '-');
+		.replace(/\s/g, '-')
 
-	const href = slug ? `/posts/${slug}` : '#' + id;
+	const href = slug ? `/posts/${slug}` : '#' + id
 </script>
 
 {#if slug}

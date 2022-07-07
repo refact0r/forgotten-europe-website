@@ -1,8 +1,8 @@
 <script>
-	export let description;
-	export let slug = '';
+	export let description
+	export let slug = ''
 
-	const href = slug && `/posts/${slug}`;
+	const href = slug && `/posts/${slug}`
 </script>
 
 <p>
