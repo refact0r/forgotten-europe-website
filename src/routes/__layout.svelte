@@ -4,13 +4,11 @@
 </script>
 
 <header>
-	<a href="/"><h1 class:small={$page.url.pathname !== '/'}>Nonprofit Website</h1></a>
+	<a href="/"><h1>Nonprofit Website</h1></a>
 </header>
-
 <main>
 	<slot />
 </main>
-
 <footer>
 	<p>
 		Copyright &#169; Someone, {new Date().getFullYear()}
@@ -18,11 +16,11 @@
 </footer>
 
 <style>
-	.small {
-		font-size: 1.6rem;
-	}
-
-	footer {
-		margin-top: calc(var(--spacing) * 8);
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: var(--color-bg);
 	}
 </style>

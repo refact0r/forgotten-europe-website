@@ -27,6 +27,8 @@
 
 <PageHead title="Home" description="Description" />
 
+<img src="site_banner.png" />
+
 <p>Description</p>
 
 {#each posts as { slug, title, author, description, date }}
@@ -38,3 +40,10 @@
 {/each}
 
 <slot />
+
+<style>
+	img {
+		width: 100%;
+		height: auto;
+	}
+</style>
