@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto'
+import adapter from '@sveltejs/adapter-netlify'
 import md from 'mdsvex'
 import mdsvexConfig from './mdsvex.config.js'
 
