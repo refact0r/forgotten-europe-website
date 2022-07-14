@@ -14,11 +14,11 @@
 
 	.count {
 		font-size: 2rem;
-		margin-bottom: calc(var(--spacing-unit) * 2);
+		margin-bottom: calc(var(--spacing) * 2);
 	}
 
 	.counter {
-		margin-top: calc(var(--spacing-unit) * 4);
-		margin-bottom: calc(var(--spacing-unit) * 4);
+		margin-top: calc(var(--spacing) * 4);
+		margin-bottom: calc(var(--spacing) * 4);
 	}
 </style>

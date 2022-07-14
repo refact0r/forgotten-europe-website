@@ -1,8 +1,8 @@
 ---
-title: "A second blog post"
-description: "The first blog post wasn't enough; I had to come back and write more about Svelte and SvelteKit."
-author: "Mehdi Vasigh"
-date: "2021-05-03"
+title: "Post 1"
+description: "Description"
+author: "Me"
+date: "2021-04-21"
 published: true
 ---
 
@@ -16,11 +16,11 @@ Here's a random Svelte component thrown into my MDsveX markdown:
 
 <Counter />
 
-### Heading
+## Example heading
 
 In lectus erat, maximus sed pulvinar eu, elementum vehicula mi. Maecenas nec dui urna. Nunc at magna purus. Cras facilisis, purus in dignissim egestas, ante ligula malesuada leo, quis malesuada dolor tortor vitae mauris. Morbi auctor mauris nibh, ut sodales tortor volutpat in. Donec aliquet ex eget ullamcorper semper. Proin vel libero at nulla gravida blandit. Maecenas odio massa, pretium blandit lectus ac, vehicula ultrices justo. Suspendisse libero dolor, tristique quis laoreet vel, placerat vel nisl. Nunc et venenatis nunc, vitae fringilla risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus consectetur pellentesque ipsum, in hendrerit lectus ultricies quis. Morbi ultrices, elit nec lacinia vulputate, dolor nibh commodo justo, quis dictum nisi nulla vel mi.
 
-### Heading
+## Another example heading
 
 Nullam nisl risus, pellentesque at enim id, molestie tristique purus. Aliquam ultricies, sem eu rutrum posuere, augue libero commodo nisi, et aliquam massa mi vitae nunc. In sodales, lorem vitae pellentesque lacinia, est velit condimentum orci, in vestibulum lorem est eget nisi. Quisque varius eget risus mattis rutrum. Sed tellus nisl, egestas a ligula et, finibus sollicitudin mauris. Ut sit amet scelerisque purus, luctus auctor leo. Nullam enim velit, tincidunt sed venenatis non, fringilla ut lacus. Morbi diam nulla, luctus non orci at, maximus rhoncus est.
 
