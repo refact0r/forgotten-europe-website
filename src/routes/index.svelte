@@ -35,9 +35,20 @@
 		</div>
 	</div>
 
+	<h3>Preserving the stories, traditions, and history of Central-Eastern Europe.</h3>
+
 	<br />
 
-	<h3>Preserving the stories, traditions, and history of Central-Eastern Europe.</h3>
+	<h2>Our Mission</h2>
+	<p>
+		In the onset of the 2022 Ukraine conflict, our non-profit discovered the lack of global
+		awareness surrounding Central-Eastern Europe. Our mission is to enlighten the world with the
+		stories, traditions, and history of the region that current adolescent education omits.
+		Through personal interviews and activism directed at secondary school curriculums, we intend
+		to redefine the marginalized role central-eastern Europe holds today. With your help, we can
+		overcome the barriers of Western-Eurocentrism and achieve greater education equality and
+		representation.
+	</p>
 
 	<br />
 	<br />
@@ -89,6 +100,10 @@
 
 	.logo {
 		width: 100%;
+	}
+
+	p {
+		margin: 0 20%;
 	}
 
 	.row {

@@ -51,4 +51,8 @@
 	img {
 		width: 100px;
 	}
+
+	footer {
+		margin-top: 100px;
+	}
 </style>
