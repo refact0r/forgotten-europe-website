@@ -3,6 +3,10 @@
 	import { page } from '$app/stores'
 </script>
 
+<svelte:head>
+	<link rel="icon" href="logo.png" />
+</svelte:head>
+
 <header>
 	<h3>
 		<a href="/">The Forgotten Europe Project</a>

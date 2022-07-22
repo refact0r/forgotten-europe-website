@@ -35,6 +35,10 @@
 	</div>
 </div>
 
+<h1>Our Mission</h1>
+
+<p>TEXT HERE</p>
+
 <!-- {#each posts as { slug, title, author, description, date }}
 	<Article>
 		<ArticleTitle {slug} {title} />
@@ -42,9 +46,6 @@
 		<ArticleDescription {description} {slug} />
 	</Article>
 {/each} -->
-
-<slot />
-
 <style>
 	.banner-box {
 		position: relative;
