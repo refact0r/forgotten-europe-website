@@ -1,12 +1,11 @@
 :root {
-	--spacing: 10px;
-	--color-bg: #191919;
-	--color-text-1: #e5e5e5;
+	--color-bg: #e5e5e5;
+	--color-text-1: #191919;
 	--color-text-2: #5a5a5a;
 }
 
 body {
-	margin: 0 auto;
+	margin: 0;
 	font-family: 'Segoe UI';
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

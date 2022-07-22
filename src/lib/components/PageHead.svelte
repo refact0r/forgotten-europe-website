@@ -2,7 +2,7 @@
 	export let title
 	export let description
 
-	const siteTitle = 'Site Title'
+	const siteTitle = 'The Forgotten Europe Project'
 	const formattedTitle = title ? `${title} | ${siteTitle}` : siteTitle
 </script>
 

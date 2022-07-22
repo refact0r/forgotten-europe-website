@@ -27,23 +27,53 @@
 
 <PageHead title="Home" description="Description" />
 
-<img src="site_banner.png" />
+<div class="banner-box">
+	<img class="banner-hidden" src="site_banner.png" />
+	<img class="banner" src="site_banner.png" />
+	<div class="logo-box">
+		<img class="logo" src="logo.png" />
+	</div>
+</div>
 
-<p>Description</p>
-
-{#each posts as { slug, title, author, description, date }}
+<!-- {#each posts as { slug, title, author, description, date }}
 	<Article>
 		<ArticleTitle {slug} {title} />
 		<ArticleMeta {author} {date} />
 		<ArticleDescription {description} {slug} />
 	</Article>
-{/each}
+{/each} -->
 
 <slot />
 
 <style>
-	img {
+	.banner-box {
+		position: relative;
 		width: 100%;
 		height: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.banner {
+		position: absolute;
+		width: 100%;
+	}
+
+	.banner-hidden {
+		width: 100%;
+		visibility: hidden;
+	}
+
+	.logo-box {
+		position: absolute;
+		width: 17%;
+		margin: auto;
+		background: var(--color-bg);
+		border-radius: 50%;
+	}
+
+	.logo {
+		width: 100%;
 	}
 </style>
