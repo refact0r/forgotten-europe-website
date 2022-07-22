@@ -25,19 +25,34 @@
 	export let posts
 </script>
 
-<PageHead title="Home" description="Description" />
+<div class="content">
+	<PageHead title="Home" description="Description" />
 
-<div class="banner-box">
-	<img class="banner-hidden" src="site_banner.png" />
-	<img class="banner" src="site_banner.png" />
-	<div class="logo-box">
-		<img class="logo" src="logo.png" />
+	<div class="banner-box">
+		<img class="banner" src="site_banner.png" />
+		<div class="logo-box">
+			<img class="logo" src="logo.png" />
+		</div>
+	</div>
+
+	<br />
+
+	<h3>Preserving the stories, traditions, and history of Central-Eastern Europe.</h3>
+
+	<br />
+	<br />
+
+	<div class="row">
+		<div class="column">
+			<h2>Preservation</h2>
+			<p>TEXT HERE</p>
+		</div>
+		<div class="column">
+			<h2>Awareness</h2>
+			<p>TEXT HERE</p>
+		</div>
 	</div>
 </div>
-
-<h1>Our Mission</h1>
-
-<p>TEXT HERE</p>
 
 <!-- {#each posts as { slug, title, author, description, date }}
 	<Article>
@@ -47,34 +62,42 @@
 	</Article>
 {/each} -->
 <style>
+	.content {
+		text-align: center;
+	}
+
 	.banner-box {
 		position: relative;
 		width: 100%;
 		height: auto;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 	}
 
 	.banner {
-		position: absolute;
 		width: 100%;
-	}
-
-	.banner-hidden {
-		width: 100%;
-		visibility: hidden;
 	}
 
 	.logo-box {
 		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		width: 17%;
-		margin: auto;
+		margin: 0 auto;
 		background: var(--color-bg);
 		border-radius: 50%;
 	}
 
 	.logo {
+		width: 100%;
+	}
+
+	.row {
+		display: flex;
+		width: 100%;
+	}
+
+	.column {
+		text-align: center;
 		width: 100%;
 	}
 </style>
