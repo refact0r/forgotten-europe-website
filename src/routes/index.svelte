@@ -30,9 +30,7 @@
 
 	<div class="banner-box">
 		<img class="banner" src="site_banner.png" />
-		<div class="logo-box">
-			<img class="logo" src="logo.png" />
-		</div>
+		<img class="logo" src="logo-filled.png" />
 	</div>
 
 	<h3>Preserving the stories, traditions, and history of Central-Eastern Europe.</h3>
@@ -53,7 +51,7 @@
 	<br />
 	<br />
 
-	<div class="row">
+	<!-- <div class="row">
 		<div class="column">
 			<h2>Preservation</h2>
 			<p>TEXT HERE</p>
@@ -62,7 +60,7 @@
 			<h2>Awareness</h2>
 			<p>TEXT HERE</p>
 		</div>
-	</div>
+	</div> -->
 </div>
 
 <!-- {#each posts as { slug, title, author, description, date }}
@@ -87,19 +85,12 @@
 		width: 100%;
 	}
 
-	.logo-box {
+	.logo {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 17%;
-		margin: 0 auto;
-		background: var(--color-bg);
-		border-radius: 50%;
-	}
-
-	.logo {
-		width: 100%;
+		width: 20%;
 	}
 
 	p {
