@@ -11,6 +11,12 @@
 		<a href="/interviews">Interviews</a>
 	</h4>
 	<h4>
+		<a href="/curriculum">Curriculum</a>
+	</h4>
+	<h4>
+		<a href="/volunteer">Volunteer</a>
+	</h4>
+	<h4>
 		<a href="/about">About</a>
 	</h4>
 </header>
@@ -18,6 +24,11 @@
 	<slot />
 </main>
 <footer>
+	<div>
+		Contact us
+		<br />
+		<a href="mailto:forgotteneuropeproject@gmail.com"> forgotteneuropeproject@gmail.com </a>
+	</div>
 	<!-- <p>
 		Copyright &#169; Someone, {new Date().getFullYear()}
 	</p> -->
@@ -53,6 +64,11 @@
 	}
 
 	footer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 40px 40px;
 		margin-top: 100px;
 	}
 </style>
