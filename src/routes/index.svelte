@@ -51,6 +51,8 @@
 	<br />
 	<br />
 
+	<h2>Highlight of the Month</h2>
+
 	<!-- <div class="row">
 		<div class="column">
 			<h2>Preservation</h2>
