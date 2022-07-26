@@ -16,7 +16,7 @@
 		<div class="column-text">
 			<p>
 				For those comfortable, the forgotten Europe project interviews survivors of 20th
-				century communism, the second world war, and the holocaust. Interviews effectively
+				century communism, the second world war, and the Holocaust. Interviews effectively
 				preserve the individual stories that establish knowledge for posterity. Topics range
 				from personal life, public experiences, service, travel, and more--the interviewee
 				chooses. Interviews may be audio recorded, camera recorded, or both in accordance
