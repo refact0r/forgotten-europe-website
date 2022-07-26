@@ -25,9 +25,9 @@
 	export let posts
 </script>
 
-<div class="content">
-	<PageHead title="Home" description="Description" />
+<PageHead title="Home" description="Description" />
 
+<div class="content">
 	<div class="banner-box">
 		<img class="banner" src="site_banner.png" />
 		<img class="logo" src="logo-filled.png" />
@@ -39,6 +39,16 @@
 
 	<h2>Our Mission</h2>
 	<p>
+		Today, there is a lack of global awareness encompassing the societies and history of
+		Central-Eastern Europe. Even as conflict in Ukraine continues, Western education maintains
+		cold-war curriculum standards that exclude Central-Eastern Europe from studies. Our mission
+		is to enlighten the world with the stories, traditions, and history of the region that
+		current education omits. Through personal interviews and activism directed at secondary
+		school curriculums, we intend to redefine the marginalized role Central-Eastern Europe holds
+		today. With your help, we can overcome the barriers of Western-Eurocentrism and institute
+		education equality and representation.
+	</p>
+	<!-- <p>
 		In the onset of the 2022 Ukraine conflict, our non-profit discovered the lack of global
 		awareness surrounding Central-Eastern Europe. Our mission is to enlighten the world with the
 		stories, traditions, and history of the region that current adolescent education omits.
@@ -46,7 +56,7 @@
 		to redefine the marginalized role central-eastern Europe holds today. With your help, we can
 		overcome the barriers of Western-Eurocentrism and achieve greater education equality and
 		representation.
-	</p>
+	</p> -->
 
 	<br />
 	<br />

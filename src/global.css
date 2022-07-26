@@ -13,6 +13,7 @@ body {
 	background-color: var(--color-bg);
 	color: var(--color-text-1);
 	font-size: 18px;
+	line-height: 200%;
 }
 
 a,
@@ -25,4 +26,18 @@ a:active {
 
 a:hover {
 	text-decoration: underline;
+}
+
+a.button {
+	display: inline-block;
+	font: inherit;
+	font-weight: bold;
+	color: inherit;
+	padding: 10px 20px;
+	border: 2px solid var(--color-text-1);
+}
+a.button:hover {
+	cursor: pointer;
+	background-color: var(--color-text-1);
+	color: var(--color-bg);
 }
