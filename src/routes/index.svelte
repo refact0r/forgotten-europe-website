@@ -85,6 +85,7 @@
 <style>
 	.content {
 		text-align: center;
+		padding-bottom: 40px;
 	}
 
 	.banner-box {

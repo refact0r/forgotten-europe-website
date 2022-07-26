@@ -29,9 +29,8 @@
 		display: flex;
 		gap: 100px;
 		padding: 40px 100px;
-		width: 100%;
 	}
 	.column {
-		width: 100%;
+		flex-grow: 1;
 	}
 </style>

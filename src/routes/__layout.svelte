@@ -63,12 +63,16 @@
 		width: 100px;
 	}
 
+	main {
+		flex-grow: 1;
+	}
+
 	footer {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
 		padding: 40px 40px;
-		margin-top: 100px;
+		margin-top: 40px;
 	}
 </style>

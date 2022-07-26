@@ -4,7 +4,12 @@
 	--color-text-2: #5a5a5a;
 }
 
+html {
+	height: 100%;
+}
+
 body {
+	height: 100%;
 	margin: 0;
 	font-family: 'Segoe UI';
 	-webkit-font-smoothing: antialiased;
@@ -14,6 +19,12 @@ body {
 	color: var(--color-text-1);
 	font-size: 18px;
 	line-height: 200%;
+}
+
+#svelte {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 a,
