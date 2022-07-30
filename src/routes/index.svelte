@@ -1,4 +1,4 @@
-<script context="module">
+<!-- <script context="module">
 	/**
 	 * @type {import('@sveltejs/kit').Load}
 	 */
@@ -13,16 +13,15 @@
 			}
 		}
 	}
-</script>
-
+</script> -->
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
-	import Article from '$lib/components/Article.svelte'
-	import ArticleTitle from '$lib/components/ArticleTitle.svelte'
-	import ArticleMeta from '$lib/components/ArticleMeta.svelte'
-	import ArticleDescription from '$lib/components/ArticleDescription.svelte'
+	// import Article from '$lib/components/Article.svelte'
+	// import ArticleTitle from '$lib/components/ArticleTitle.svelte'
+	// import ArticleMeta from '$lib/components/ArticleMeta.svelte'
+	// import ArticleDescription from '$lib/components/ArticleDescription.svelte'
 
-	export let posts
+	// export let posts
 </script>
 
 <PageHead title="Home" description="Description" />
@@ -63,6 +62,29 @@
 
 	<h2>Highlight of the Month</h2>
 
+	<h3>Lech Wałęsa</h3>
+
+	<img
+		class="highlight-img"
+		src="https://cdn.britannica.com/75/205275-050-5C0A257C/Lech-Walesa-2006.jpg"
+	/>
+
+	<p>
+		Lech Wałęsa, (born September 29, 1943, Popowo, near Włocławek, Poland), labour activist who
+		helped form and led (1980–90) communist Poland’s first independent trade union, Solidarity.
+		The charismatic leader of millions of Polish workers, he went on to become the president of
+		Poland (1990–95). He received the Nobel Prize for Peace in 1983.
+		<br />
+		<a href="https://www.britannica.com/biography/Lech-Walesa">Read more</a>
+	</p>
+
+	<p>
+		When Lech Walesa received the Nobel Peace Prize for his campaign for freedom of organization
+		in Poland, he had just been released from internment. The Communist party had tried in vain
+		to break him, the symbol of the revolt against the party's monopoly on power.
+		<br />
+		<a href="https://www.nobelprize.org/prizes/peace/1983/walesa/facts/">Read more</a>
+	</p>
 	<!-- <div class="row">
 		<div class="column">
 			<h2>Preservation</h2>
@@ -118,5 +140,9 @@
 	.column {
 		text-align: center;
 		width: 100%;
+	}
+
+	.highlight-img {
+		width: 200px;
 	}
 </style>

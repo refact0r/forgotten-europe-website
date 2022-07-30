@@ -10,7 +10,7 @@
 	<div class="section">
 		<div class="column-img">
 			<img class="hussars-img" src="hussars.jpg" />
-			<div class="caption">"Hussars" Polish band in New York</div>
+			<div class="caption">“Hussars” Polish band in New York</div>
 		</div>
 
 		<div class="column-text">
