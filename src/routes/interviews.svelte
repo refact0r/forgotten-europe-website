@@ -43,10 +43,17 @@
 	<section class="interviews">
 		<Collapsible title="Poland" open={true}>
 			<iframe
-				title="Interview with Krystof on Life in Communist Poland"
-				width="768"
-				height="432"
+				title="Life Under Communism: an interview on Poland"
+				width="512"
+				height="288"
 				src="https://www.youtube.com/embed/PHlTTpOLVpA"
+			/>
+			&nbsp; &nbsp;
+			<iframe
+				title="Stories From WWII and Communism"
+				width="512"
+				height="288"
+				src="https://www.youtube.com/embed/SUIV4c_gcNw"
 			/>
 		</Collapsible>
 	</section>
@@ -86,6 +93,6 @@
 		margin: 40px 0 0 0;
 	}
 	iframe {
-		display: block;
+		display: inline-block;
 	}
 </style>
