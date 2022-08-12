@@ -1,36 +1,41 @@
 <script>
-	import { slide } from 'svelte/transition'
+	import { onMount } from 'svelte'
 	export let title
 	export let open
 
 	let details
 
 	function toggle() {
-		if (!details.style.height || details.style.height == '0px') {
-			details.style.height = details.scrollHeight + 'px'
+		if (!open) {
+			details.style.height = details.scrollHeight + 1 + 'px'
 		} else {
 			details.style.height = '0px'
 		}
+		open = !open
 	}
+
+	onMount(async () => {
+		open = !open
+		toggle()
+	})
 </script>
 
 <div class="collapsible">
-	<div class="header">
-		<button on:click={toggle}>
-			<i class={'fa-solid fa-angle-down' + (open ? ' open' : '')} />
-		</button>
-
+	<div class="header" on:click={toggle}>
 		<h2>{title}</h2>
+		<i class={'fa-solid fa-angle-down' + (open ? ' open' : '')} />
 	</div>
 
-	<div class="details" style={open ? 'height: auto;' : 'height: 0;'} bind:this={details}>
+	<div class="details" style={'height: 0;'} bind:this={details}>
 		<slot />
 	</div>
 </div>
 
 <style>
 	.collapsible {
+		margin: auto;
 		margin-bottom: 20px;
+		width: fit-content;
 	}
 
 	.header {
@@ -38,25 +43,26 @@
 		align-items: center;
 		margin-bottom: 20px;
 	}
+	.header:hover {
+		cursor: pointer;
+	}
 
 	h2 {
-		margin: 0 0 0 20px;
+		margin: 0 auto 0 0;
 	}
 
 	i {
 		font-size: 1.5rem;
+		margin-top: 5px;
+		transition: transform ease-in-out 0.3s;
 	}
 
-	button {
-		background: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding-top: 5px;
+	i.open {
+		transform: rotate(180deg);
 	}
 
 	.details {
 		overflow: hidden;
-		transition: height ease-in-out 0.6s;
+		transition: height ease-in-out 0.3s;
 	}
 </style>

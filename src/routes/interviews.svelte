@@ -8,7 +8,7 @@
 <div class="content">
 	<h1>Interviews</h1>
 
-	<section class="columns">
+	<section class="signup">
 		<div class="column-img">
 			<img class="hussars-img" src="hussars.jpg" alt="“Hussars” Polish band in New York" />
 			<div class="caption">“Hussars” Polish band in New York</div>
@@ -27,7 +27,7 @@
 			<br />
 
 			<a class="button" href="https://forms.gle/nePPj6bpz8ZNimKq8">
-				Sign Up for an Interview
+				Sign Up for an Interview &nbsp;<i class="fa-solid fa-arrow-right" />
 			</a>
 
 			<p>
@@ -38,20 +38,14 @@
 		</div>
 	</section>
 
-	<section>
-		<Collapsible title="Poland" open={false}>
+	<h2>Past Interviews</h2>
+
+	<section class="interviews">
+		<Collapsible title="Poland" open={true}>
 			<iframe
 				title="Interview with Krystof on Life in Communist Poland"
-				width="512"
-				height="288"
-				src="https://www.youtube.com/embed/PHlTTpOLVpA"
-			/>
-		</Collapsible>
-		<Collapsible title="Country" open={false}>
-			<iframe
-				title="Interview with Krystof on Life in Communist Poland"
-				width="512"
-				height="288"
+				width="768"
+				height="432"
 				src="https://www.youtube.com/embed/PHlTTpOLVpA"
 			/>
 		</Collapsible>
@@ -59,15 +53,15 @@
 </div>
 
 <style>
-	h1 {
+	h1,
+	h2 {
+		margin-top: 80px;
 		text-align: center;
 	}
-	section {
-		margin: 40px 120px;
-	}
-	.columns {
+	.signup {
 		display: flex;
 		gap: 80px;
+		margin: 40px 180px 120px 180px;
 	}
 	.column-img {
 		width: 30%;
@@ -87,6 +81,9 @@
 	}
 	p:first-of-type {
 		margin-top: 0;
+	}
+	.interviews {
+		margin: 40px 0 0 0;
 	}
 	iframe {
 		display: block;
