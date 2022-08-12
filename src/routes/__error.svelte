@@ -1,23 +1,26 @@
-<h2>
-	<span class="errorCode">404</span>
-	<span class="errorMessage">Page Not Found</span>
-</h2>
+<div>
+	<h1 class="errorCode">404</h1>
+	<h3 class="errorMessage">Page Not Found</h3>
+</div>
 
 <style>
-	h2 {
+	div {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		font-weight: 400;
-		min-height: 400px;
+		height: 100%;
 	}
 
 	.errorCode {
-		font-size: 8rem;
+		text-align: center;
+		font-size: 5rem;
+		line-height: normal;
+		margin: 0;
 	}
 
 	.errorMessage {
-		font-size: 1rem;
+		text-align: center;
+		font-weight: normal;
+		margin: 0;
 	}
 </style>

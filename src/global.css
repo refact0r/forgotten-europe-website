@@ -19,6 +19,7 @@ body {
 	color: var(--color-text-1);
 	font-size: 18px;
 	line-height: 200%;
+	overflow-x: hidden;
 }
 
 #svelte {
@@ -51,4 +52,14 @@ a.button:hover {
 	cursor: pointer;
 	background-color: var(--color-text-1);
 	color: var(--color-bg);
+}
+
+button {
+	color: inherit;
+	font: inherit;
+	border: none;
+	padding: 0;
+}
+button:hover {
+	cursor: pointer;
 }

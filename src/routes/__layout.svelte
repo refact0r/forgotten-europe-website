@@ -1,6 +1,5 @@
 <script>
 	import '../global.css'
-	import { page } from '$app/stores'
 </script>
 
 <header>
@@ -20,9 +19,11 @@
 		<a href="/about">About</a>
 	</h4>
 </header>
+
 <main>
 	<slot />
 </main>
+
 <footer>
 	<div>
 		Contact us
@@ -57,10 +58,6 @@
 
 	h4 {
 		margin-left: 40px;
-	}
-
-	img {
-		width: 100px;
 	}
 
 	main {

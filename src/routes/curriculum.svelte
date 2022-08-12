@@ -19,8 +19,6 @@
 </div>
 
 <style>
-	.content {
-	}
 	h1,
 	h2 {
 		text-align: center;

@@ -1,35 +1,13 @@
-<!-- <script context="module">
-	/**
-	 * @type {import('@sveltejs/kit').Load}
-	 */
-	export async function load({ fetch }) {
-		// Use a `limit` querystring parameter to fetch a limited number of posts
-		// e.g. fetch('posts.json?limit=5') for 5 most recent posts
-		const posts = await fetch('/posts.json').then((res) => res.json())
-
-		return {
-			props: {
-				posts
-			}
-		}
-	}
-</script> -->
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
-	// import Article from '$lib/components/Article.svelte'
-	// import ArticleTitle from '$lib/components/ArticleTitle.svelte'
-	// import ArticleMeta from '$lib/components/ArticleMeta.svelte'
-	// import ArticleDescription from '$lib/components/ArticleDescription.svelte'
-
-	// export let posts
 </script>
 
 <PageHead title="Home" description="Description" />
 
 <div class="content">
 	<div class="banner-box">
-		<img class="banner" src="site_banner.png" />
-		<img class="logo" src="logo-filled.png" />
+		<img class="banner" src="site_banner.png" alt="banner" />
+		<img class="logo" src="logo-filled.png" alt="logo" />
 	</div>
 
 	<h3>Preserving the stories, traditions, and history of Central-Eastern Europe.</h3>
@@ -67,6 +45,7 @@
 	<img
 		class="highlight-img"
 		src="https://cdn.britannica.com/75/205275-050-5C0A257C/Lech-Walesa-2006.jpg"
+		alt="Lech Wałęsa"
 	/>
 
 	<p>
@@ -97,13 +76,6 @@
 	</div> -->
 </div>
 
-<!-- {#each posts as { slug, title, author, description, date }}
-	<Article>
-		<ArticleTitle {slug} {title} />
-		<ArticleMeta {author} {date} />
-		<ArticleDescription {description} {slug} />
-	</Article>
-{/each} -->
 <style>
 	.content {
 		text-align: center;
@@ -132,7 +104,11 @@
 		margin: 0 20%;
 	}
 
-	.row {
+	.highlight-img {
+		width: 200px;
+	}
+
+	/* .row {
 		display: flex;
 		width: 100%;
 	}
@@ -140,9 +116,5 @@
 	.column {
 		text-align: center;
 		width: 100%;
-	}
-
-	.highlight-img {
-		width: 200px;
-	}
+	} */
 </style>

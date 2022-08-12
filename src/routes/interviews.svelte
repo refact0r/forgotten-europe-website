@@ -1,5 +1,6 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
+	import Collapsible from '$lib/components/Collapsible.svelte'
 </script>
 
 <PageHead title="Interviews" description="Description" />
@@ -7,9 +8,9 @@
 <div class="content">
 	<h1>Interviews</h1>
 
-	<div class="section">
+	<section class="columns">
 		<div class="column-img">
-			<img class="hussars-img" src="hussars.jpg" />
+			<img class="hussars-img" src="hussars.jpg" alt="“Hussars” Polish band in New York" />
 			<div class="caption">“Hussars” Polish band in New York</div>
 		</div>
 
@@ -35,22 +36,44 @@
 				</a>
 			</p>
 		</div>
-	</div>
+	</section>
+
+	<section>
+		<Collapsible title="Poland" open={false}>
+			<iframe
+				title="Interview with Krystof on Life in Communist Poland"
+				width="512"
+				height="288"
+				src="https://www.youtube.com/embed/PHlTTpOLVpA"
+			/>
+		</Collapsible>
+		<Collapsible title="Country" open={false}>
+			<iframe
+				title="Interview with Krystof on Life in Communist Poland"
+				width="512"
+				height="288"
+				src="https://www.youtube.com/embed/PHlTTpOLVpA"
+			/>
+		</Collapsible>
+	</section>
 </div>
 
 <style>
-	.content {
-	}
 	h1 {
 		text-align: center;
 	}
-	.section {
+	section {
+		margin: 40px 120px;
+	}
+	.columns {
 		display: flex;
-		gap: 100px;
-		padding: 40px 100px;
+		gap: 80px;
 	}
 	.column-img {
-		width: 40%;
+		width: 30%;
+	}
+	.column-text {
+		width: 70%;
 	}
 	.hussars-img {
 		width: 100%;
@@ -62,10 +85,10 @@
 		font-size: 0.9em;
 		margin-top: 5px;
 	}
-	.column-text {
-		width: 60%;
-	}
 	p:first-of-type {
 		margin-top: 0;
+	}
+	iframe {
+		display: block;
 	}
 </style>
