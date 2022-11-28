@@ -1,9 +1,9 @@
 <script>
-	import PageHead from '$lib/components/PageHead.svelte'
-	import Collapsible from '$lib/components/Collapsible.svelte'
+	import PageHead from '$lib/components/PageHead.svelte';
+	import Collapsible from '$lib/components/Collapsible.svelte';
 </script>
 
-<PageHead title="Interviews" description="Description" />
+<PageHead title="Interviews" description="Information about interviews." />
 
 <div class="content">
 	<h1>Interviews</h1>
@@ -68,16 +68,10 @@
 	.signup {
 		display: flex;
 		gap: 80px;
-		margin: 40px 180px 120px 180px;
-	}
-	.column-img {
-		width: 30%;
-	}
-	.column-text {
-		width: 70%;
+		margin: 40px 200px 100px 200px;
 	}
 	.hussars-img {
-		width: 100%;
+		width: 600px;
 	}
 	.caption {
 		line-height: 100%;

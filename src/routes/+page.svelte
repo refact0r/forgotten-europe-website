@@ -1,8 +1,8 @@
 <script>
-	import PageHead from '$lib/components/PageHead.svelte'
+	import PageHead from '$lib/components/PageHead.svelte';
 </script>
 
-<PageHead title="Home" description="Description" />
+<PageHead title="Home" description="Home page." />
 
 <div class="content">
 	<div class="banner-box">
@@ -38,31 +38,59 @@
 	<br />
 	<br />
 
+	<h2>The Importance of Central-Eastern Europe</h2>
+	<p>
+		From time immemorable, the people, cultures, and states of Central-Eastern Europe have had a
+		monumental impact on the development towards the present world today. With a total
+		population of over 300 million people, the region has monumental influence over regional and
+		global political, economic, and social developments. In the last century alone, the region
+		has experienced some of the most historically significant events in history. The
+		international ramifications of Russia’s war against Ukraine exemplifies a modern relevance
+		to the global community today.
+	</p>
+
+	<br />
+	<br />
+
 	<h2>Highlight of the Month</h2>
 
-	<h3>Lech Wałęsa</h3>
+	<h3>The War in Ukraine</h3>
 
 	<img
 		class="highlight-img"
-		src="https://cdn.britannica.com/75/205275-050-5C0A257C/Lech-Walesa-2006.jpg"
-		alt="Lech Wałęsa"
+		src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ieHm6cwp.OCc/v1/-1x-1.jpg"
+		alt="Ukraine Faces Rolling Blackouts After Russian Attacks on Power Stations"
 	/>
 
-	<p>
-		Lech Wałęsa, (born September 29, 1943, Popowo, near Włocławek, Poland), labour activist who
-		helped form and led (1980–90) communist Poland’s first independent trade union, Solidarity.
-		The charismatic leader of millions of Polish workers, he went on to become the president of
-		Poland (1990–95). He received the Nobel Prize for Peace in 1983.
-		<br />
-		<a href="https://www.britannica.com/biography/Lech-Walesa">Read more</a>
-	</p>
+	<br />
+	<br />
 
 	<p>
-		When Lech Walesa received the Nobel Peace Prize for his campaign for freedom of organization
-		in Poland, he had just been released from internment. The Communist party had tried in vain
-		to break him, the symbol of the revolt against the party's monopoly on power.
+		More than 6m households in Ukraine are still affected by power cuts, two days after targeted
+		Russian strikes on the country’s energy infrastructure, President Volodymyr Zelenskiy said.
+		“As of this evening, blackouts continue in most regions [of Ukraine] and in Kyiv. In total,
+		more than 6 million subscribers,” Zelensky said in his nightly address on Friday. The number
+		of affected households had reduced “by half” since Wednesday. He said about 600,000 people
+		were experiencing power cuts in Kyiv, the capital, with the Odessa, Lviv, Vinnytsia and
+		Dnipropetrovsk regions also among the worst affected as temperatures approach freezing.
+	</p>
+
+	<br />
+
+	<p>
+		The European Union will step up efforts to provide Ukraine with support to restore and
+		maintain power and heating, the head of the European Commission said on Friday. Ursula von
+		der Leyen said in a statement after a phone call with Volodymyr Zelenskiy that the EU
+		executive arm was preparing the delivery to Ukraine large donations from EU countries and
+		from the EC’s reserves.
 		<br />
-		<a href="https://www.nobelprize.org/prizes/peace/1983/walesa/facts/">Read more</a>
+		(Source: The Guardian)
+		<br />
+		<a
+			href="https://www.theguardian.com/world/2022/nov/26/russia-ukraine-war-at-a-glance-what-we-know-on-day-276-of-the-invasion"
+		>
+			Read more
+		</a>
 	</p>
 	<!-- <div class="row">
 		<div class="column">
@@ -105,7 +133,7 @@
 	}
 
 	.highlight-img {
-		width: 200px;
+		width: 500px;
 	}
 
 	/* .row {
