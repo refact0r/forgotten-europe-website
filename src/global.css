@@ -53,6 +53,13 @@ a.button:hover {
 	background-color: var(--color-text-1);
 	color: var(--color-bg);
 }
+a.button.inverted {
+	border-color: var(--color-bg);
+}
+a.button.inverted:hover {
+	background-color: var(--color-bg);
+	color: var(--color-text-1);
+}
 
 button {
 	color: inherit;
@@ -62,4 +69,8 @@ button {
 }
 button:hover {
 	cursor: pointer;
+}
+
+br.half {
+	line-height: 18px;
 }

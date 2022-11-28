@@ -26,7 +26,7 @@
 </main>
 
 <footer>
-	<div>
+	<div class="description">
 		<i>
 			The Forgotten Europe Project is in no way affiliated based on race, ethnicity, religion,
 			gender identity, or sexual orientation. We welcome all individuals to share an interest
@@ -35,14 +35,13 @@
 			The Forgotten Europe Project stands in full solidarity with the people of Ukraine.
 		</i>
 	</div>
-	<br />
-	<div>Contact us</div>
+	<div class="contact">Contact us</div>
 	<a href="mailto:forgotteneuropeproject@gmail.com"> forgotteneuropeproject@gmail.com </a>
 	<div class="buttons">
-		<a class="button" href="https://www.instagram.com/forgotteneuropeproject/">
+		<a class="button inverted" href="https://www.instagram.com/forgotteneuropeproject/">
 			<i class="fa-brands fa-instagram" />
 		</a>
-		<a class="button" href="https://www.youtube.com/@theforgotteneuropeproject5348">
+		<a class="button inverted" href="https://www.youtube.com/@theforgotteneuropeproject5348">
 			<i class="fa-brands fa-youtube" />
 		</a>
 	</div>
@@ -84,7 +83,7 @@
 
 	footer {
 		text-align: center;
-		padding: 40px 40px;
+		padding: 20px 20px;
 		margin-top: 40px;
 		background: var(--color-text-1);
 		color: var(--color-bg);
@@ -92,6 +91,14 @@
 
 	footer a {
 		color: var(--color-bg);
+	}
+
+	.description {
+		font-size: 0.9em;
+	}
+
+	.contact {
+		margin-top: 10px;
 	}
 
 	.buttons {
@@ -110,7 +117,6 @@
 		height: 40px;
 		padding: 0;
 		border-radius: 50%;
-		border-color: var(--color-bg);
 	}
 	a.button i {
 		font-size: 24px;
