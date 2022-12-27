@@ -16,7 +16,7 @@
 
 		<br />
 
-		<a class="button" href=" https://forms.gle/G1dM2FCGaQ52tKBk9">
+		<a class="button" href="https://forms.gle/G1dM2FCGaQ52tKBk9">
 			Sign Up to Volunteer &nbsp;<i class="fa-solid fa-arrow-right" />
 		</a>
 	</section>
