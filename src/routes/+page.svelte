@@ -1,9 +1,9 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte';
 	import site_banner from '$lib/images/site_banner.png?avif';
-	import site_banner_fallback from '$lib/images/site_banner.png';
+	import site_banner_fallback from '$lib/images/site_banner.png?webp';
 	import logo_filled from '$lib/images/logo-filled.png?avif';
-	import logo_filled_fallback from '$lib/images/logo-filled.png';
+	import logo_filled_fallback from '$lib/images/logo-filled.png?webp';
 </script>
 
 <PageHead title="Home" description="Home page." />

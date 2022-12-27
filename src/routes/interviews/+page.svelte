@@ -2,7 +2,7 @@
 	import PageHead from '$lib/components/PageHead.svelte';
 	import Collapsible from '$lib/components/Collapsible.svelte';
 	import hussars from '$lib/images/hussars.jpg?avif';
-	import hussars_fallback from '$lib/images/hussars.jpg';
+	import hussars_fallback from '$lib/images/hussars.jpg?webp';
 </script>
 
 <PageHead title="Interviews" description="Information about interviews." />
