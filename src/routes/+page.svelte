@@ -1,13 +1,15 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte';
+	import site_banner from '$lib/images/site_banner.png?avif';
+	import logo_filled from '$lib/images/logo-filled.png?avif';
 </script>
 
 <PageHead title="Home" description="Home page." />
 
 <div class="content">
 	<div class="banner-box">
-		<img class="banner" src="site_banner.png" alt="banner" />
-		<img class="logo" src="logo-filled.png" alt="logo" />
+		<img class="banner" src={site_banner} alt="banner" />
+		<img class="logo" src={logo_filled} alt="logo" />
 	</div>
 
 	<h3>Preserving the stories, traditions, and history of Central-Eastern Europe.</h3>
