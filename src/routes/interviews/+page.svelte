@@ -17,7 +17,7 @@
 				<img
 					class="hussars-img"
 					src={hussars_fallback}
-					type="image/jpg"
+					type="image/webp"
 					alt="“Hussars” Polish band in New York"
 				/>
 			</picture>

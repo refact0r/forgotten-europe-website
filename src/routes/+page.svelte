@@ -12,11 +12,11 @@
 	<div class="banner-box">
 		<picture>
 			<source src={site_banner} type="image/avif" />
-			<img class="banner" src={site_banner_fallback} type="image/png" alt="Site banner" />
+			<img class="banner" src={site_banner_fallback} type="image/webp" alt="Site banner" />
 		</picture>
 		<picture>
 			<source src={logo_filled} type="image/avif" />
-			<img class="logo" src={logo_filled_fallback} type="image/png" alt="Logo" />
+			<img class="logo" src={logo_filled_fallback} type="image/webp" alt="Logo" />
 		</picture>
 	</div>
 
