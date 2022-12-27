@@ -1,6 +1,7 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte';
 	import Collapsible from '$lib/components/Collapsible.svelte';
+	import hussars from '$lib/images/hussars.jpg?avif';
 </script>
 
 <PageHead title="Interviews" description="Information about interviews." />
@@ -10,7 +11,7 @@
 
 	<section class="signup">
 		<div class="column-img">
-			<img class="hussars-img" src="hussars.jpg" alt="“Hussars” Polish band in New York" />
+			<img class="hussars-img" src={hussars} alt="“Hussars” Polish band in New York" />
 			<div class="caption">“Hussars” Polish band in New York</div>
 		</div>
 
