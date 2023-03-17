@@ -11,15 +11,13 @@ html {
 body {
 	height: 100%;
 	margin: 0;
-	font-family: 'Segoe UI';
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
-	background-color: var(--color-bg);
-	color: var(--color-text-1);
+	font-family: 'Figtree';
 	font-size: 18px;
 	line-height: 200%;
 	overflow-x: hidden;
+
+	background-color: var(--color-bg);
+	color: var(--color-text-1);
 }
 
 #svelte {
@@ -45,7 +43,7 @@ a.button {
 	font: inherit;
 	font-weight: bold;
 	color: inherit;
-	padding: 10px 20px;
+	padding: $spacing-small $spacing;
 	border: 2px solid var(--color-text-1);
 }
 a.button:hover {
