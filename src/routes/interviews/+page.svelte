@@ -2,7 +2,7 @@
 	import PageHead from '$lib/components/PageHead.svelte';
 	import Collapsible from '$lib/components/Collapsible.svelte';
 	import hussars from '$lib/images/hussars.jpg?avif';
-	import hussars_fallback from '$lib/images/hussars.jpg?webp';
+	import hussars_fallback from '$lib/images/hussars.jpg';
 </script>
 
 <PageHead title="Interviews" description="Information about interviews." />
@@ -17,7 +17,7 @@
 				<img
 					class="hussars-img"
 					src={hussars_fallback}
-					type="image/webp"
+					type="image/jpg"
 					alt="“Hussars” Polish band in New York"
 				/>
 			</picture>
