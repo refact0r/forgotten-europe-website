@@ -1,8 +1,8 @@
 <script>
-	import PageHead from '$lib/components/PageHead.svelte';
-	import Collapsible from '$lib/components/Collapsible.svelte';
-	import hussars from '$lib/images/hussars.jpg?avif';
-	import hussars_fallback from '$lib/images/hussars.jpg';
+	import PageHead from '$lib/components/PageHead.svelte'
+	import Collapsible from '$lib/components/Collapsible.svelte'
+	import hussars from '$lib/images/hussars.jpg?avif'
+	import hussars_fallback from '$lib/images/hussars.jpg'
 </script>
 
 <PageHead title="Interviews" description="Information about interviews." />
@@ -13,11 +13,11 @@
 	<section class="signup">
 		<div class="column-img">
 			<picture>
-				<source src={hussars} type="image/avif" />
+				<source srcset={hussars} type="image/avif" />
 				<img
 					class="hussars-img"
 					src={hussars_fallback}
-					type="image/jpg"
+					type="image/jpeg"
 					alt="“Hussars” Polish band in New York"
 				/>
 			</picture>

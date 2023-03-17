@@ -3,7 +3,7 @@
 </script>
 
 <header>
-	<h3>The Forgotten Europe Project</h3>
+	<h3><a href="/">The Forgotten Europe Project</a></h3>
 	<h4>
 		<a href="/">Home</a>
 	</h4>
