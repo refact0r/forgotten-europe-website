@@ -1,7 +1,13 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
-	import site_banner from '$lib/images/site_banner.png?avif'
-	import site_banner_fallback from '$lib/images/site_banner.png'
+	import banner1 from '$lib/images/banner1.webp?avif&aspect=3:2&w=1000'
+	import banner1_fallback from '$lib/images/banner1.webp?aspect=3:2&w=1000'
+	import banner2 from '$lib/images/banner2.jpeg?avif&aspect=3:2&w=1000'
+	import banner2_fallback from '$lib/images/banner2.jpeg?aspect=3:2&w=1000'
+	import banner3 from '$lib/images/banner3.jpg?avif&aspect=3:2&w=1000&quality=75'
+	import banner3_fallback from '$lib/images/banner3.jpg?aspect=3:2&w=1000'
+	import banner4 from '$lib/images/banner4.jpg?avif&aspect=3:2&w=1000&quality=75'
+	import banner4_fallback from '$lib/images/banner4.jpg?aspect=3:2&w=1000'
 	import logo from '$lib/images/logo-2x.png?avif'
 	import logo_fallback from '$lib/images/logo-2x.png'
 </script>
@@ -10,17 +16,31 @@
 
 <div class="content">
 	<div class="banner-box">
-		<picture>
-			<source srcset={site_banner} type="image/avif" />
-			<img class="banner" src={site_banner_fallback} type="image/png" alt="Site banner" />
-		</picture>
+		<div class="banner">
+			<picture>
+				<source srcset={banner1} type="image/avif" />
+				<img class="banner" src={banner1_fallback} type="image/webp" alt="Site banner" />
+			</picture>
+			<picture>
+				<source srcset={banner2} type="image/avif" />
+				<img class="banner" src={banner2_fallback} type="image/jpeg" alt="Site banner" />
+			</picture>
+			<picture>
+				<source srcset={banner3} type="image/avif" />
+				<img class="banner" src={banner3_fallback} type="image/jpeg" alt="Site banner" />
+			</picture>
+			<picture>
+				<source srcset={banner4} type="image/avif" />
+				<img class="banner" src={banner4_fallback} type="image/jpeg" alt="Site banner" />
+			</picture>
+		</div>
 		<picture>
 			<source srcset={logo} type="image/avif" />
 			<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
 		</picture>
 	</div>
 
-	<h3>Preserving the stories, traditions, and history of Central-Eastern Europe.</h3>
+	<h2>Preserving the stories, traditions, and history of Central-Eastern Europe.</h2>
 
 	<br />
 
@@ -46,7 +66,6 @@
 	</p> -->
 
 	<br />
-	<br />
 
 	<h2>The Importance of Central-Eastern Europe</h2>
 	<p>
@@ -59,7 +78,6 @@
 		to the global community today.
 	</p>
 
-	<br />
 	<br />
 
 	<h2>Highlight of the Month</h2>
@@ -85,8 +103,6 @@
 		Dnipropetrovsk regions also among the worst affected as temperatures approach freezing.
 	</p>
 
-	<br />
-
 	<p>
 		The European Union will step up efforts to provide Ukraine with support to restore and
 		maintain power and heating, the head of the European Commission said on Friday. Ursula von
@@ -104,7 +120,17 @@
 	</p>
 </div>
 
-<style>
+<style lang="scss">
+	.banner {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		& picture {
+			width: 250%;
+			height: auto;
+		}
+	}
 	.content {
 		text-align: center;
 		padding-bottom: 40px;
