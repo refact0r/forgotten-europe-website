@@ -8,6 +8,8 @@
 	import banner3_fallback from '$lib/images/banner3.jpg?aspect=3:2&w=1000'
 	import banner4 from '$lib/images/banner4.jpg?avif&aspect=3:2&w=1000&quality=75'
 	import banner4_fallback from '$lib/images/banner4.jpg?aspect=3:2&w=1000'
+	import highlight from '$lib/images/highlight.jpg?avif&w=2000'
+	import highlight_fallback from '$lib/images/highlight.jpg?&w=2000'
 	import logo from '$lib/images/logo-2x.png?avif'
 	import logo_fallback from '$lib/images/logo-2x.png'
 </script>
@@ -84,11 +86,15 @@
 
 	<h3>The War in Ukraine</h3>
 
-	<img
-		class="highlight-img"
-		src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ieHm6cwp.OCc/v1/-1x-1.jpg"
-		alt="Ukraine Faces Rolling Blackouts After Russian Attacks on Power Stations"
-	/>
+	<picture>
+		<source srcset={highlight} type="image/avif" />
+		<img
+			class="highlight-img"
+			src={highlight_fallback}
+			type="image/jpeg"
+			alt="Ukraine Faces Rolling Blackouts After Russian Attacks on Power Stations"
+		/>
+	</picture>
 
 	<br />
 	<br />
@@ -159,7 +165,7 @@
 	}
 
 	.highlight-img {
-		width: 500px;
+		width: 800px;
 	}
 
 	/* .row {
