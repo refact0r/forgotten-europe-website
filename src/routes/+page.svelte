@@ -1,9 +1,9 @@
 <script>
-	import PageHead from '$lib/components/PageHead.svelte';
-	import site_banner from '$lib/images/site_banner.png?avif';
-	import site_banner_fallback from '$lib/images/site_banner.png';
-	import logo_filled from '$lib/images/logo-filled.png?avif';
-	import logo_filled_fallback from '$lib/images/logo-filled.png';
+	import PageHead from '$lib/components/PageHead.svelte'
+	import site_banner from '$lib/images/site_banner.png?avif'
+	import site_banner_fallback from '$lib/images/site_banner.png'
+	import logo from '$lib/images/logo-2x.png?avif'
+	import logo_fallback from '$lib/images/logo-2x.png'
 </script>
 
 <PageHead title="Home" description="Home page." />
@@ -15,8 +15,8 @@
 			<img class="banner" src={site_banner_fallback} type="image/png" alt="Site banner" />
 		</picture>
 		<picture>
-			<source srcset={logo_filled} type="image/avif" />
-			<img class="logo" src={logo_filled_fallback} type="image/png" alt="Logo" />
+			<source srcset={logo} type="image/avif" />
+			<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
 		</picture>
 	</div>
 
@@ -102,16 +102,6 @@
 			Read more
 		</a>
 	</p>
-	<!-- <div class="row">
-		<div class="column">
-			<h2>Preservation</h2>
-			<p>TEXT HERE</p>
-		</div>
-		<div class="column">
-			<h2>Awareness</h2>
-			<p>TEXT HERE</p>
-		</div>
-	</div> -->
 </div>
 
 <style>
