@@ -1,23 +1,30 @@
 <script>
 	import '../app.scss'
+	import { page } from '$app/stores'
 </script>
 
 <header>
 	<h3><a href="/">The Forgotten Europe Project</a></h3>
 	<h4>
-		<a href="/">Home</a>
+		<a class="button" class:active={$page.url.pathname === '/'} href="/">Home</a>
 	</h4>
 	<h4>
-		<a href="/interviews">Interviews</a>
+		<a class="button" class:active={$page.url.pathname === '/interviews'} href="/interviews">
+			Interviews
+		</a>
 	</h4>
 	<h4>
-		<a href="/curriculum">Curriculum</a>
+		<a class="button" class:active={$page.url.pathname === '/curriculum'} href="/curriculum">
+			Curriculum
+		</a>
 	</h4>
 	<h4>
-		<a href="/volunteer">Volunteer</a>
+		<a class="button" class:active={$page.url.pathname === '/volunteer'} href="/volunteer">
+			Volunteer
+		</a>
 	</h4>
 	<h4>
-		<a href="/about">About</a>
+		<a class="button" class:active={$page.url.pathname === '/about'} href="/about"> About </a>
 	</h4>
 </header>
 
@@ -50,21 +57,20 @@
 	</div>
 </footer>
 
-<style>
+<style lang="scss">
 	header {
 		position: sticky;
 		z-index: 100;
 		top: 0;
 		left: 0;
-		background: var(--color-text-1);
-		padding: 20px 40px;
 		display: flex;
+		background-color: var(--color-text-1);
+		padding: $space-s $space-m;
 		align-items: center;
-	}
 
-	header h3,
-	header a {
-		color: var(--color-bg);
+		& * {
+			color: var(--color-bg);
+		}
 	}
 
 	h3,
@@ -77,7 +83,22 @@
 	}
 
 	h4 {
-		margin-left: 40px;
+		margin-left: $space-s;
+	}
+
+	header a.button {
+		border-color: transparent;
+		padding: $space-xxs $space-s;
+
+		&:hover {
+			border-color: var(--color-bg);
+			background-color: transparent;
+		}
+
+		&.active {
+			background-color: var(--color-bg);
+			color: var(--color-text-1);
+		}
 	}
 
 	main {
@@ -91,12 +112,12 @@
 	footer {
 		text-align: center;
 		padding: 20px 20px;
-		background: var(--color-text-1);
+		background-color: var(--color-text-1);
 		color: var(--color-bg);
-	}
 
-	footer a {
-		color: var(--color-bg);
+		& a {
+			color: var(--color-bg);
+		}
 	}
 
 	.description {

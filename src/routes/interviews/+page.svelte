@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="column-text">
-			<p>	
+			<p>
 				For those comfortable, the forgotten Europe project interviews survivors of 20th
 				century communism, the second world war, and the Holocaust. Interviews effectively
 				preserve the individual stories that establish knowledge for posterity. Topics range
@@ -69,10 +69,10 @@
 	</section>
 </div>
 
-<style>
+<style lang="scss">
 	h1,
 	h2 {
-		margin-top: 80px;
+		margin-top: $space-l;
 		text-align: center;
 	}
 	.signup {
