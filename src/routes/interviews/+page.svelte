@@ -1,7 +1,7 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
 	import Collapsible from '$lib/components/Collapsible.svelte'
-	import hussars from '$lib/images/hussars.jpg?avif'
+	import hussars from '$lib/images/hussars.jpg?avif&quality=75'
 	import hussars_fallback from '$lib/images/hussars.jpg'
 </script>
 

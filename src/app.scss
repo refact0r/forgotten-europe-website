@@ -21,7 +21,6 @@ body {
 }
 
 #svelte {
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -43,13 +42,14 @@ a.button {
 	color: inherit;
 	font: inherit;
 	font-weight: bold;
-	padding: $padding-small $padding;
+	padding: $space-xs $space-s;
 	border: 2px solid var(--color-text-1);
 
 	&:hover {
 		cursor: pointer;
 		background-color: var(--color-text-1);
 		color: var(--color-bg);
+		text-decoration: none;
 	}
 	&.inverted {
 		border-color: var(--color-bg);

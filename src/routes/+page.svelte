@@ -9,9 +9,9 @@
 	import banner4 from '$lib/images/banner4.jpg?avif&aspect=3:2&w=1000&quality=75'
 	import banner4_fallback from '$lib/images/banner4.jpg?aspect=3:2&w=1000'
 	import highlight from '$lib/images/highlight.jpg?avif&w=2000'
-	import highlight_fallback from '$lib/images/highlight.jpg?&w=2000'
-	import logo from '$lib/images/logo-2x.png?avif'
-	import logo_fallback from '$lib/images/logo-2x.png'
+	import highlight_fallback from '$lib/images/highlight.jpg?w=2000'
+	import logo from '$lib/images/logo-2x.png?avif&w=1000'
+	import logo_fallback from '$lib/images/logo-2x.png?webp&w=1000'
 </script>
 
 <PageHead title="Home" description="Home page." />
@@ -127,19 +127,20 @@
 </div>
 
 <style lang="scss">
+	.content {
+		text-align: center;
+		padding-bottom: 40px;
+	}
+
 	.banner {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 
 		& picture {
-			width: 250%;
+			width: 25%;
 			height: auto;
 		}
-	}
-	.content {
-		text-align: center;
-		padding-bottom: 40px;
 	}
 
 	.banner-box {
@@ -157,7 +158,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 20%;
+		width: 18%;
 	}
 
 	p {
