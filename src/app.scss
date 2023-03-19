@@ -23,16 +23,18 @@ body {
 	min-height: 100vh;
 }
 
-a,
-a:visited,
-a:active {
+a {
+	display: inline-block;
 	text-decoration: none;
 	color: var(--color-text-1);
 	font-weight: 700;
-}
 
-a:hover {
-	text-decoration: underline;
+	&:hover {
+		text-decoration: underline;
+	}
+	&:active {
+		transform: scale(0.95);
+	}
 }
 
 a.button {
