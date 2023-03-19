@@ -38,10 +38,13 @@
 	<div class="contact">Contact us</div>
 	<a href="mailto:forgotteneuropeproject@gmail.com"> forgotteneuropeproject@gmail.com </a>
 	<div class="buttons">
-		<a class="button inverted" href="https://www.instagram.com/forgotteneuropeproject/">
+		<a class="button icon inverted" href="https://www.instagram.com/forgotteneuropeproject/">
 			<i class="fa-brands fa-instagram" />
 		</a>
-		<a class="button inverted" href="https://www.youtube.com/@theforgotteneuropeproject5348">
+		<a
+			class="button icon inverted"
+			href="https://www.youtube.com/@theforgotteneuropeproject5348"
+		>
 			<i class="fa-brands fa-youtube" />
 		</a>
 	</div>
@@ -78,13 +81,16 @@
 	}
 
 	main {
+		height: 100%;
 		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 40px;
 	}
 
 	footer {
 		text-align: center;
 		padding: 20px 20px;
-		margin-top: 40px;
 		background: var(--color-text-1);
 		color: var(--color-bg);
 	}
@@ -106,19 +112,5 @@
 		justify-content: center;
 		gap: 20px;
 		margin-top: 10px;
-	}
-
-	a.button {
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 40px;
-		height: 40px;
-		padding: 0;
-		border-radius: 50%;
-	}
-	a.button i {
-		font-size: 24px;
 	}
 </style>

@@ -1,6 +1,13 @@
+<script>
+	import PageHead from '$lib/components/PageHead.svelte'
+	import { page } from '$app/stores'
+</script>
+
+<PageHead title={$page.error.message} description={$page.status + ' ' + $page.error.message} />
+
 <div>
-	<h1 class="errorCode">404</h1>
-	<h3 class="errorMessage">Page Not Found</h3>
+	<h1 class="errorCode">{$page.status}</h1>
+	<h3 class="errorMessage">{$page.error.message}</h3>
 </div>
 
 <style>
@@ -8,11 +15,11 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: 100%;
+		align-items: center;
+		flex-grow: 1;
 	}
 
 	.errorCode {
-		text-align: center;
 		font-size: 5rem;
 		line-height: normal;
 		margin: 0;

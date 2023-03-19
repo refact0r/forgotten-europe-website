@@ -1,20 +1,20 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
-	import banner1 from '$lib/images/banner1.webp?avif&aspect=3:2&w=1000'
-	import banner1_fallback from '$lib/images/banner1.webp?aspect=3:2&w=1000'
-	import banner2 from '$lib/images/banner2.jpeg?avif&aspect=3:2&w=1000'
-	import banner2_fallback from '$lib/images/banner2.jpeg?aspect=3:2&w=1000'
-	import banner3 from '$lib/images/banner3.jpg?avif&aspect=3:2&w=1000&quality=75'
-	import banner3_fallback from '$lib/images/banner3.jpg?aspect=3:2&w=1000'
-	import banner4 from '$lib/images/banner4.jpg?avif&aspect=3:2&w=1000&quality=75'
-	import banner4_fallback from '$lib/images/banner4.jpg?aspect=3:2&w=1000'
+	import banner1 from '$lib/images/banner1.webp?avif&aspect=4:3&w=1000'
+	import banner1_fallback from '$lib/images/banner1.webp?aspect=4:3&w=1000'
+	import banner2 from '$lib/images/banner2.jpeg?avif&aspect=4:3&w=1000'
+	import banner2_fallback from '$lib/images/banner2.jpeg?aspect=4:3&w=1000'
+	import banner3 from '$lib/images/banner3.jpg?avif&aspect=4:3&w=1000&quality=75'
+	import banner3_fallback from '$lib/images/banner3.jpg?aspect=4:3&w=1000'
+	import banner4 from '$lib/images/banner4.jpg?avif&aspect=4:3&w=1000&quality=75'
+	import banner4_fallback from '$lib/images/banner4.jpg?aspect=4:3&w=1000'
 	import highlight from '$lib/images/highlight.jpg?avif&w=2000'
 	import highlight_fallback from '$lib/images/highlight.jpg?w=2000'
-	import logo from '$lib/images/logo-2x.png?avif&w=1000'
-	import logo_fallback from '$lib/images/logo-2x.png?webp&w=1000'
+	import logo from '$lib/images/logo-2x-cropped.png?avif&w=1000'
+	import logo_fallback from '$lib/images/logo-2x-cropped.png?webp&w=1000'
 </script>
 
-<PageHead title="Home" description="Home page." />
+<PageHead title="" description="Home page of The Forgotten Europe Project website" />
 
 <div class="content">
 	<div class="banner-box">
@@ -149,33 +149,19 @@
 		height: auto;
 	}
 
-	.banner {
-		width: 100%;
-	}
-
 	.logo {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 18%;
-	}
-
-	p {
-		margin: 0 20%;
+		width: 15%;
 	}
 
 	.highlight-img {
 		width: 800px;
 	}
 
-	/* .row {
-		display: flex;
-		width: 100%;
+	p {
+		margin: 0 20%;
 	}
-
-	.column {
-		text-align: center;
-		width: 100%;
-	} */
 </style>
