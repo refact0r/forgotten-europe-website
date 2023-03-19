@@ -4,9 +4,6 @@
 	--color-text-2: #5a5a5a;
 }
 
-html {
-}
-
 body {
 	height: 100%;
 	margin: 0;
@@ -51,6 +48,10 @@ a.button {
 		color: var(--color-bg);
 		background-color: var(--color-text-1);
 		text-decoration: none;
+	}
+
+	&:active {
+		transform: scale(0.95);
 	}
 
 	&.inverted {

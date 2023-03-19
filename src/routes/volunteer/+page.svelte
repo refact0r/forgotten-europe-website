@@ -1,5 +1,5 @@
 <script>
-	import PageHead from '$lib/components/PageHead.svelte';
+	import PageHead from '$lib/components/PageHead.svelte'
 </script>
 
 <PageHead title="Curriculum" description="Description" />
@@ -22,9 +22,9 @@
 	</section>
 </div>
 
-<style>
+<style lang="scss">
 	h1 {
-		margin-top: 80px;
+		margin-top: $space-l;
 		text-align: center;
 	}
 	.signup {
