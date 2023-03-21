@@ -158,7 +158,7 @@
 	}
 
 	.highlight-img {
-		width: 800px;
+		width: 6 * $g;
 	}
 
 	p {

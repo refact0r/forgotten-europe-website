@@ -50,20 +50,23 @@
 	<h2>Past Interviews</h2>
 
 	<section class="interviews">
-		<Collapsible title="Poland" open={true}>
-			<iframe
-				title="Life Under Communism: an interview on Poland"
-				width="512"
-				height="288"
-				src="https://www.youtube.com/embed/PHlTTpOLVpA"
-			/>
-			&nbsp; &nbsp;
-			<iframe
-				title="Stories From WWII and Communism"
-				width="512"
-				height="288"
-				src="https://www.youtube.com/embed/SUIV4c_gcNw"
-			/>
+		<Collapsible open={true}>
+			<div slot="header"><span class="fi fi-pl" />&nbsp; &nbsp;Poland</div>
+			<div slot="details">
+				<iframe
+					title="Life Under Communism: an interview on Poland"
+					width="512"
+					height="288"
+					src="https://www.youtube.com/embed/PHlTTpOLVpA"
+				/>
+				&nbsp; &nbsp;
+				<iframe
+					title="Stories From WWII and Communism"
+					width="512"
+					height="288"
+					src="https://www.youtube.com/embed/SUIV4c_gcNw"
+				/>
+			</div>
 		</Collapsible>
 	</section>
 </div>

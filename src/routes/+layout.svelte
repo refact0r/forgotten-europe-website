@@ -2,12 +2,13 @@
 	import '../app.scss'
 	import '@fontsource/figtree/latin.css'
 	import '@fontsource/figtree/latin-ext.css'
+	import '/node_modules/flag-icons/css/flag-icons.min.css'
 
 	import { page } from '$app/stores'
 </script>
 
 <header>
-	<h3><a href="/">The Forgotten Europe Project</a></h3>
+	<h2><a href="/">The Forgotten Europe Project</a></h2>
 	<h4>
 		<a class="button" class:active={$page.url.pathname === '/'} href="/">Home</a>
 	</h4>
@@ -81,7 +82,7 @@
 			color: var(--color-bg);
 		}
 
-		& h3 {
+		& h2 {
 			margin: 0;
 			margin-right: auto;
 		}

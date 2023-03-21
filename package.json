@@ -30,6 +30,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/figtree": "^4.5.3"
+		"@fontsource/figtree": "^4.5.3",
+		"flag-icons": "^6.6.6"
 	}
 }

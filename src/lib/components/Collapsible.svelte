@@ -22,32 +22,32 @@
 
 <div class="collapsible">
 	<div class="header" on:click={toggle}>
-		<h2>{title}</h2>
+		<h3><slot name="header" /></h3>
 		<i class={'fa-solid fa-angle-down' + (open ? ' open' : '')} />
 	</div>
 
 	<div class="details" style={'height: 0;'} bind:this={details}>
-		<slot />
+		<slot name="details" />
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.collapsible {
 		margin: auto;
-		margin-bottom: 20px;
+		margin-bottom: $m;
 		width: fit-content;
 	}
 
 	.header {
 		display: flex;
 		align-items: center;
-		margin-bottom: 20px;
+		margin-bottom: $m;
 	}
 	.header:hover {
 		cursor: pointer;
 	}
 
-	h2 {
+	h3 {
 		margin: 0 auto 0 0;
 	}
 
