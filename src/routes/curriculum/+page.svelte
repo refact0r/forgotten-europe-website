@@ -1,5 +1,5 @@
 <script>
-	import PageHead from '$lib/components/PageHead.svelte';
+	import PageHead from '$lib/components/PageHead.svelte'
 </script>
 
 <PageHead title="Curriculum" description="Description" />
@@ -7,12 +7,15 @@
 <div class="content">
 	<h1>Curriculum</h1>
 
-	<br />
-	<br />
+	<div>
+		<h2>UNDER DEVELOPMENT</h2>
 
-	<h2>UNDER DEVELOPMENT</h2>
-
-	<h3>Please email us at forgotteneuropeproject@gmail.com for any questions.</h3>
+		<p>
+			Please email us at <a href="mailto:forgotteneuropeproject@gmail.com">
+				forgotteneuropeproject@gmail.com
+			</a> for any questions.
+		</p>
+	</div>
 
 	<!-- <div class="section">
 		<div class="column">
@@ -26,21 +29,11 @@
 </div>
 
 <style>
-	h1 {
-		margin-top: 80px;
-	}
-
-	h1,
-	h2,
-	h3 {
-		text-align: center;
-	}
-	.section {
+	div {
 		display: flex;
-		gap: 100px;
-		padding: 40px 100px;
-	}
-	.column {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		flex-grow: 1;
 	}
 </style>

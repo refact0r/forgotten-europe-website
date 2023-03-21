@@ -128,8 +128,8 @@
 
 <style lang="scss">
 	.content {
-		text-align: center;
 		padding-bottom: 40px;
+		text-align: center;
 	}
 
 	.banner {
@@ -162,6 +162,7 @@
 	}
 
 	p {
-		margin: 0 20%;
+		width: 10 * $g;
+		margin: auto;
 	}
 </style>
