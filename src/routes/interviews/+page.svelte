@@ -72,7 +72,7 @@
 	section {
 		margin: auto;
 		margin-bottom: $h;
-		width: 10 * $g;
+		width: 9 * $g;
 	}
 
 	.signup {
