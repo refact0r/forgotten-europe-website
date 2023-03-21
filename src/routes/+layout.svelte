@@ -33,7 +33,7 @@
 </main>
 
 <footer>
-	<div class="description">
+	<p class="description">
 		<i>
 			The Forgotten Europe Project is in no way affiliated based on race, ethnicity, religion,
 			gender identity, or sexual orientation. We welcome all individuals to share an interest
@@ -41,9 +41,11 @@
 			<br />
 			The Forgotten Europe Project stands in full solidarity with the people of Ukraine.
 		</i>
-	</div>
-	<div class="contact">Contact us</div>
-	<a href="mailto:forgotteneuropeproject@gmail.com"> forgotteneuropeproject@gmail.com </a>
+	</p>
+	<p>
+		Contact us<br />
+		<a href="mailto:forgotteneuropeproject@gmail.com"> forgotteneuropeproject@gmail.com </a>
+	</p>
 	<div class="buttons">
 		<a class="button icon inverted" href="https://www.instagram.com/forgotteneuropeproject/">
 			<i class="fa-brands fa-instagram" />
@@ -65,30 +67,26 @@
 		left: 0;
 		display: flex;
 		background-color: var(--color-text-1);
-		padding: $space-s $space-m;
+		padding: $m $l;
 		align-items: center;
 
 		& * {
 			color: var(--color-bg);
 		}
-	}
 
-	h3,
-	h4 {
-		margin: 0;
-	}
+		& h3 {
+			margin: 0;
+			margin-right: auto;
+		}
 
-	h3 {
-		margin-right: auto;
-	}
-
-	h4 {
-		margin-left: $space-s;
+		& h4 {
+			margin: 0;
+			margin-left: $m;
+		}
 	}
 
 	header a.button {
 		border-color: transparent;
-		padding: $space-xxs $space-s;
 
 		&:hover {
 			border-color: var(--color-bg);
@@ -111,7 +109,7 @@
 
 	footer {
 		text-align: center;
-		padding: 20px 20px;
+		padding: $m $l $l $l;
 		background-color: var(--color-text-1);
 		color: var(--color-bg);
 
@@ -124,14 +122,9 @@
 		font-size: 0.9em;
 	}
 
-	.contact {
-		margin-top: 10px;
-	}
-
 	.buttons {
 		display: flex;
 		justify-content: center;
 		gap: 20px;
-		margin-top: 10px;
 	}
 </style>

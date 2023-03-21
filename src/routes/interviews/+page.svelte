@@ -33,7 +33,6 @@
 				chooses. Interviews may be audio recorded, camera recorded, or both in accordance
 				with interviewee preference.
 			</p>
-
 			<br />
 
 			<a class="button" href="https://forms.gle/nePPj6bpz8ZNimKq8">
@@ -70,33 +69,43 @@
 </div>
 
 <style lang="scss">
-	h1,
-	h2 {
-		margin-top: $space-l;
-		text-align: center;
+	section {
+		margin: auto;
+		margin-bottom: $h;
+		width: 10 * $g;
 	}
+
 	.signup {
 		display: flex;
-		gap: 80px;
-		margin: 40px 200px 100px 200px;
+		gap: $h;
 	}
+
 	.hussars-img {
-		width: 600px;
+		width: 100%;
 	}
+
+	.column-img {
+		width: 50%;
+	}
+
+	.column-text {
+		width: 50%;
+	}
+
 	.caption {
 		line-height: 100%;
 		width: 100%;
 		text-align: center;
 		font-size: 0.9em;
-		margin-top: 5px;
+		margin-top: $s;
 	}
+
 	p:first-of-type {
 		margin-top: 0;
 	}
-	.interviews {
-		margin: 40px 0 0 0;
-	}
+
 	iframe {
 		display: inline-block;
+		border: 2px solid var(--color-text-1);
 	}
 </style>
