@@ -22,7 +22,7 @@ body {
 }
 
 p {
-	line-height: 200%;
+	line-height: 175%;
 
 	&:first-of-type {
 		margin-top: 0;
@@ -30,8 +30,7 @@ p {
 }
 
 h1 {
-	margin-top: $h;
-	margin-bottom: $l + $m;
+	margin: $l + $m 0;
 }
 
 h1,

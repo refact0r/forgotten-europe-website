@@ -162,7 +162,7 @@
 	}
 
 	p {
-		width: 10 * $g;
+		width: 9 * $g;
 		margin: auto;
 	}
 </style>

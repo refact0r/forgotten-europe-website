@@ -45,7 +45,7 @@
 			The Forgotten Europe Project stands in full solidarity with the people of Ukraine.
 		</i>
 	</p>
-	<p>
+	<p class="contact">
 		Contact us<br />
 		<a href="mailto:forgotteneuropeproject@gmail.com"> forgotteneuropeproject@gmail.com </a>
 	</p>
@@ -126,7 +126,11 @@
 	}
 
 	.description {
-		font-size: 0.9em;
+		font-size: 0.8em;
+	}
+
+	.contact {
+		margin: $s 0;
 	}
 
 	.buttons {
