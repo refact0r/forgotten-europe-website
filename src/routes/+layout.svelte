@@ -1,7 +1,7 @@
 <script>
 	import '../app.scss'
-	import '@fontsource/figtree/variable.css'
-	import '@fontsource/figtree/variable-italic.css'
+	import '@fontsource/figtree/latin.css'
+	import '@fontsource/figtree/latin-ext.css'
 
 	import { page } from '$app/stores'
 </script>
