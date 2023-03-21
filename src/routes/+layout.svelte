@@ -1,5 +1,8 @@
 <script>
 	import '../app.scss'
+	import '@fontsource/figtree/variable.css'
+	import '@fontsource/figtree/variable-italic.css'
+
 	import { page } from '$app/stores'
 </script>
 
@@ -60,6 +63,10 @@
 </footer>
 
 <style lang="scss">
+	:global(body) {
+		font-family: 'Figtree', sans-serif;
+	}
+
 	header {
 		position: sticky;
 		z-index: 100;
