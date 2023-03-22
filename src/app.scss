@@ -2,6 +2,11 @@
 	--color-bg: #d9d9d9;
 	--color-text-1: #191919;
 	--color-text-2: #5a5a5a;
+	--font-size: 18px;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 body {
@@ -98,6 +103,7 @@ a.button.icon {
 }
 
 button {
+	background: transparent;
 	color: inherit;
 	font: inherit;
 	border: none;

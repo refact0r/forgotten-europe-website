@@ -5,31 +5,48 @@
 	import '/node_modules/flag-icons/css/flag-icons.min.css'
 
 	import { page } from '$app/stores'
+
+	let menuOpen = false
 </script>
 
-<header>
-	<h2><a href="/">The Forgotten Europe Project</a></h2>
-	<h4>
-		<a class="button" class:active={$page.url.pathname === '/'} href="/">Home</a>
-	</h4>
-	<h4>
-		<a class="button" class:active={$page.url.pathname === '/interviews'} href="/interviews">
-			Interviews
-		</a>
-	</h4>
-	<h4>
-		<a class="button" class:active={$page.url.pathname === '/curriculum'} href="/curriculum">
-			Curriculum
-		</a>
-	</h4>
-	<h4>
-		<a class="button" class:active={$page.url.pathname === '/volunteer'} href="/volunteer">
-			Volunteer
-		</a>
-	</h4>
-	<h4>
-		<a class="button" class:active={$page.url.pathname === '/about'} href="/about"> About </a>
-	</h4>
+<header class:open={menuOpen}>
+	<h1><a href="/">The Forgotten Europe Project</a></h1>
+	<div class="links">
+		<h4>
+			<a class="button" class:active={$page.url.pathname === '/'} href="/">Home</a>
+		</h4>
+		<h4>
+			<a
+				class="button"
+				class:active={$page.url.pathname === '/interviews'}
+				href="/interviews"
+			>
+				Interviews
+			</a>
+		</h4>
+		<h4>
+			<a
+				class="button"
+				class:active={$page.url.pathname === '/curriculum'}
+				href="/curriculum"
+			>
+				Curriculum
+			</a>
+		</h4>
+		<h4>
+			<a class="button" class:active={$page.url.pathname === '/volunteer'} href="/volunteer">
+				Volunteer
+			</a>
+		</h4>
+		<h4>
+			<a class="button" class:active={$page.url.pathname === '/about'} href="/about">
+				About
+			</a>
+		</h4>
+	</div>
+	<button class="menu" on:click={() => (menuOpen = !menuOpen)}>
+		<i class={'fa-solid ' + (menuOpen ? 'fa-xmark' : 'fa-bars')} />
+	</button>
 </header>
 
 <main>
@@ -82,7 +99,8 @@
 			color: var(--color-bg);
 		}
 
-		& h2 {
+		& h1 {
+			font-size: 1.5em;
 			margin: 0;
 			margin-right: auto;
 		}
@@ -91,6 +109,10 @@
 			margin: 0;
 			margin-left: $m;
 		}
+	}
+
+	.links {
+		display: flex;
 	}
 
 	header a.button {
@@ -107,6 +129,13 @@
 		}
 	}
 
+	.menu {
+		display: none;
+		font-size: 1.2em;
+		width: $l + $s;
+		height: $l + $s;
+	}
+
 	main {
 		height: 100%;
 		flex-grow: 1;
@@ -117,7 +146,7 @@
 
 	footer {
 		text-align: center;
-		padding: $m $l $l $l;
+		padding: $m $m $l $m;
 		background-color: var(--color-text-1);
 		color: var(--color-bg);
 
@@ -138,5 +167,80 @@
 		display: flex;
 		justify-content: center;
 		gap: 20px;
+	}
+
+	@media (max-width: 1060px) {
+		header {
+			padding: $m $m;
+			& h1 {
+				font-size: 1.3em;
+			}
+
+			& h4 {
+				margin-left: $s;
+			}
+
+			& a.button {
+				padding: $s + $t $s;
+			}
+		}
+	}
+
+	@media (max-width: 860px) {
+		.links {
+			display: none;
+		}
+
+		header.open .links {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: absolute;
+			top: $l + $s + 2 * $m;
+			left: 0;
+			right: 0;
+			background-color: var(--color-text-1);
+			padding: $s 0 $m 0;
+			gap: $s;
+
+			& h4 {
+				margin: 0;
+			}
+
+			& a.button {
+				padding: $s + $t $m;
+			}
+		}
+
+		.menu {
+			display: block;
+		}
+	}
+
+	@media (max-width: 410px) {
+		header {
+			padding: $s $s $s $m;
+
+			& h1 {
+				font-size: 1em;
+			}
+		}
+
+		header.open .links {
+			top: $l + $s + 2 * $s;
+
+			& a.button {
+				padding: $s $m;
+				font-size: 0.9em;
+			}
+		}
+
+		.menu {
+			font-size: 1em;
+		}
+
+		.contact {
+			font-size: 0.9em;
+		}
 	}
 </style>
