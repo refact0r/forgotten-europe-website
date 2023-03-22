@@ -17,7 +17,7 @@
 <PageHead title="" description="Home page of The Forgotten Europe Project website" />
 
 <div class="content">
-	<div class="banner-box">
+	<!-- <div class="banner-box">
 		<div class="banner">
 			<picture>
 				<source srcset={banner1} type="image/avif" />
@@ -40,9 +40,67 @@
 			<source srcset={logo} type="image/avif" />
 			<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
 		</picture>
-	</div>
+	</div> -->
 
-	<h2>Preserving the stories, traditions, and history of Central-Eastern Europe.</h2>
+	<section>
+		<div class="column-1">
+			<h1>Preserving the stories, traditions, and history of Central-Eastern Europe.</h1>
+
+			<p>
+				Our mission is to enlighten the world with the stories, traditions, and history of
+				the region that current education omits. Through personal interviews and activism
+				directed at secondary school curriculums, we intend to redefine the marginalized
+				role Central-Eastern Europe holds today. With your help, we can overcome the
+				barriers of Western-Eurocentrism and institute education equality and
+				representation.
+			</p>
+		</div>
+
+		<div class="column-2">
+			<div class="banner2">
+				<picture>
+					<source srcset={banner1} type="image/avif" />
+					<img
+						class="banner"
+						src={banner1_fallback}
+						type="image/webp"
+						alt="Site banner"
+					/>
+				</picture>
+				<picture>
+					<source srcset={banner2} type="image/avif" />
+					<img
+						class="banner"
+						src={banner2_fallback}
+						type="image/jpeg"
+						alt="Site banner"
+					/>
+				</picture>
+				<picture>
+					<source srcset={banner3} type="image/avif" />
+					<img
+						class="banner"
+						src={banner3_fallback}
+						type="image/jpeg"
+						alt="Site banner"
+					/>
+				</picture>
+				<picture>
+					<source srcset={banner4} type="image/avif" />
+					<img
+						class="banner"
+						src={banner4_fallback}
+						type="image/jpeg"
+						alt="Site banner"
+					/>
+				</picture>
+			</div>
+			<picture>
+				<source srcset={logo} type="image/avif" />
+				<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
+			</picture>
+		</div>
+	</section>
 
 	<br />
 
@@ -164,5 +222,50 @@
 	p {
 		width: 9 * $g;
 		margin: auto;
+	}
+
+	.logo {
+		width: 2 * $g;
+	}
+
+	h1 {
+		font-size: 2.5em;
+		text-align: left;
+	}
+
+	section {
+		display: flex;
+		align-items: center;
+		gap: $g;
+		padding: $h $g;
+	}
+
+	.column-1 {
+		width: 50%;
+		text-align: left;
+
+		& p {
+			width: auto;
+			font-size: 1.2em;
+		}
+	}
+
+	.column-2 {
+		width: 50%;
+		position: relative;
+	}
+
+	.banner2 {
+		display: grid;
+		gap: $l;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+
+		& img {
+		}
+	}
+
+	img {
+		border-radius: 20px;
 	}
 </style>
