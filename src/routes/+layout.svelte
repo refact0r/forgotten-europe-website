@@ -137,6 +137,7 @@
 	}
 
 	main {
+		background-color: var(--color-bg);
 		height: 100%;
 		flex-grow: 1;
 		display: flex;
