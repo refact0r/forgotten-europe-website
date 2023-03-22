@@ -4,10 +4,19 @@
 	import banner1_fallback from '$lib/images/banner1.webp?aspect=4:3&w=1000'
 	import banner2 from '$lib/images/banner2.jpeg?avif&aspect=4:3&w=1000'
 	import banner2_fallback from '$lib/images/banner2.jpeg?aspect=4:3&w=1000'
+	// import banner3 from '$lib/images/banner3.jpg?avif&aspect=4:3&w=1000&quality=75'
+	// import banner3_fallback from '$lib/images/banner3.jpg?aspect=4:3&w=1000'
+	// import banner4 from '$lib/images/banner4.jpg?avif&aspect=4:3&w=1000&quality=75'
+	// import banner4_fallback from '$lib/images/banner4.jpg?aspect=4:3&w=1000'
+
 	import banner3 from '$lib/images/banner3.jpg?avif&aspect=4:3&w=1000&quality=75'
-	import banner3_fallback from '$lib/images/banner3.jpg?aspect=4:3&w=1000'
+	import banner3_fallback from '$lib/images/banner3.jpg?aspect=3:2&w=1000'
 	import banner4 from '$lib/images/banner4.jpg?avif&aspect=4:3&w=1000&quality=75'
-	import banner4_fallback from '$lib/images/banner4.jpg?aspect=4:3&w=1000'
+	import banner4_fallback from '$lib/images/banner4.jpg?aspect=3:2&w=1000'
+
+	import ukraine from '$lib/images/ukraine-protest.jpg?avif&quality=75'
+	import ukraine_fallback from '$lib/images/ukraine-protest.jpg'
+
 	import highlight from '$lib/images/highlight.jpg?avif&w=2000'
 	import highlight_fallback from '$lib/images/highlight.jpg?w=2000'
 	import logo from '$lib/images/logo-2x-cropped.png?avif&w=1000'
@@ -17,7 +26,7 @@
 <PageHead title="" description="Home page of The Forgotten Europe Project website" />
 
 <div class="content">
-	<div class="banner-box">
+	<!-- <div class="banner-box">
 		<div class="banner">
 			<picture>
 				<source srcset={banner1} type="image/avif" />
@@ -40,13 +49,36 @@
 			<source srcset={logo} type="image/avif" />
 			<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
 		</picture>
-	</div>
+	</div> -->
 
-	<h2>Preserving the stories, traditions, and history of Central-Eastern Europe.</h2>
+	<picture>
+		<source srcset={banner3} type="image/avif" />
+		<img class="image-2" src={ukraine_fallback} type="image/webp" alt="Site banner" />
+	</picture>
+
+	<picture>
+		<source srcset={banner4} type="image/avif" />
+		<img class="image-3" src={ukraine_fallback} type="image/webp" alt="Site banner" />
+	</picture>
+
+	<picture>
+		<source srcset={ukraine} type="image/avif" />
+		<img class="image-1" src={ukraine_fallback} type="image/webp" alt="Site banner" />
+	</picture>
+
+	<picture>
+		<source srcset={logo} type="image/avif" />
+		<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
+	</picture>
 
 	<br />
+	<br />
+	<br />
+	<br />
 
-	<h2>Our Mission</h2>
+	<h1>Preserving the stories, traditions, and history of Central-Eastern Europe.</h1>
+
+	<br />
 	<p>
 		Today, there is a lack of global awareness encompassing the societies and history of
 		Central-Eastern Europe. Even as conflict in Ukraine continues, Western education maintains
@@ -67,6 +99,7 @@
 		representation.
 	</p> -->
 
+	<br />
 	<br />
 
 	<h2>The Importance of Central-Eastern Europe</h2>
@@ -128,34 +161,65 @@
 
 <style lang="scss">
 	.content {
-		padding-bottom: 40px;
+		padding: $h 0;
 		text-align: center;
-	}
-
-	.banner {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-
-		& picture {
-			width: 25%;
-			height: auto;
-		}
-	}
-
-	.banner-box {
 		position: relative;
-		width: 100%;
-		height: auto;
+	}
+
+	.image-1 {
+		width: $g * 6;
+		position: absolute;
+		top: $l;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		border-radius: $l;
+	}
+
+	.image-2 {
+		margin-top: $g * 1.6;
+		width: $g * 3.5;
+		border-radius: $l;
+	}
+
+	.image-3 {
+		margin-top: $g * 1.6;
+		width: $g * 3.5;
+		margin-left: $g * 6.5;
+		border-radius: $l;
 	}
 
 	.logo {
+		width: $g * 2;
 		position: absolute;
-		top: 50%;
+		top: $g * 3.3;
 		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 15%;
+		transform: translate(-50%, 0%);
 	}
+
+	// .banner {
+	// 	width: 100%;
+	// 	display: flex;
+	// 	justify-content: center;
+
+	// 	& picture {
+	// 		width: 25%;
+	// 		height: auto;
+	// 	}
+	// }
+
+	// .banner-box {
+	// 	position: relative;
+	// 	width: 100%;
+	// 	height: auto;
+	// }
+
+	// .logo {
+	// 	position: absolute;
+	// 	top: 50%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -50%);
+	// 	width: 15%;
+	// }
 
 	.highlight-img {
 		width: 6 * $g;

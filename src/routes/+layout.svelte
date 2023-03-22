@@ -92,11 +92,13 @@
 		left: 0;
 		display: flex;
 		background-color: var(--color-text-1);
+		background-color: var(--color-bg);
 		padding: $m $l;
 		align-items: center;
 
 		& * {
 			color: var(--color-bg);
+			color: var(--color-text-1);
 		}
 
 		& h1 {
@@ -125,7 +127,9 @@
 
 		&.active {
 			background-color: var(--color-bg);
+			background-color: var(--color-text-1);
 			color: var(--color-text-1);
+			color: var(--color-bg);
 		}
 	}
 
