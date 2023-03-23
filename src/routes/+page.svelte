@@ -66,12 +66,6 @@
 		<img class="image-1" src={ukraine_fallback} type="image/webp" alt="Site banner" />
 	</picture>
 
-	<picture>
-		<source srcset={logo} type="image/avif" />
-		<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
-	</picture>
-
-	<br />
 	<br />
 	<br />
 	<br />
@@ -176,13 +170,13 @@
 	}
 
 	.image-2 {
-		margin-top: $g * 1.6;
+		margin-top: $g * 0.9;
 		width: $g * 3.5;
 		border-radius: $l;
 	}
 
 	.image-3 {
-		margin-top: $g * 1.6;
+		margin-top: $g * 0.9;
 		width: $g * 3.5;
 		margin-left: $g * 6.5;
 		border-radius: $l;

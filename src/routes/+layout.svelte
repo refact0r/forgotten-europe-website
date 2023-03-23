@@ -4,13 +4,15 @@
 	import '@fontsource/figtree/latin-ext.css'
 	import '/node_modules/flag-icons/css/flag-icons.min.css'
 
+	import logo from '$lib/images/logo-2x-cropped.png?avif&w=1000'
+	import logo_fallback from '$lib/images/logo-2x-cropped.png?webp&w=1000'
+
 	import { page } from '$app/stores'
 
 	let menuOpen = false
 </script>
 
 <header class:open={menuOpen}>
-	<h1><a href="/">The Forgotten Europe Project</a></h1>
 	<div class="links">
 		<h4>
 			<a class="button" class:active={$page.url.pathname === '/'} href="/">Home</a>
@@ -24,6 +26,21 @@
 				Interviews
 			</a>
 		</h4>
+		<h4>
+			<a
+				class="button"
+				class:active={$page.url.pathname === '/curriculum'}
+				href="/curriculum"
+			>
+				Curriculum
+			</a>
+		</h4>
+
+		<picture>
+			<source srcset={logo} type="image/avif" />
+			<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
+		</picture>
+
 		<h4>
 			<a
 				class="button"
@@ -95,6 +112,7 @@
 		background-color: var(--color-bg);
 		padding: $m $l;
 		align-items: center;
+		justify-content: center;
 
 		& * {
 			color: var(--color-bg);
@@ -109,16 +127,25 @@
 
 		& h4 {
 			margin: 0;
-			margin-left: $m;
+		}
+
+		& .logo {
+			height: $g;
+			width: $g;
 		}
 	}
 
 	.links {
 		display: flex;
+		gap: $l;
+		align-items: center;
 	}
 
 	header a.button {
 		border-color: transparent;
+		width: 130px;
+		text-align: center;
+		border-radius: $s + $t;
 
 		&:hover {
 			border-color: var(--color-bg);
