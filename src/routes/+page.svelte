@@ -26,49 +26,22 @@
 <PageHead title="" description="Home page of The Forgotten Europe Project website" />
 
 <div class="content">
-	<!-- <div class="banner-box">
-		<div class="banner">
-			<picture>
-				<source srcset={banner1} type="image/avif" />
-				<img class="banner" src={banner1_fallback} type="image/webp" alt="Site banner" />
-			</picture>
-			<picture>
-				<source srcset={banner2} type="image/avif" />
-				<img class="banner" src={banner2_fallback} type="image/jpeg" alt="Site banner" />
-			</picture>
-			<picture>
-				<source srcset={banner3} type="image/avif" />
-				<img class="banner" src={banner3_fallback} type="image/jpeg" alt="Site banner" />
-			</picture>
-			<picture>
-				<source srcset={banner4} type="image/avif" />
-				<img class="banner" src={banner4_fallback} type="image/jpeg" alt="Site banner" />
-			</picture>
-		</div>
-		<picture>
-			<source srcset={logo} type="image/avif" />
-			<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
+	<div class="images">
+		<picture class="picture-2">
+			<source srcset={banner3} type="image/avif" />
+			<img class="image-2" src={ukraine_fallback} type="image/webp" alt="Site banner" />
 		</picture>
-	</div> -->
 
-	<picture>
-		<source srcset={banner3} type="image/avif" />
-		<img class="image-2" src={ukraine_fallback} type="image/webp" alt="Site banner" />
-	</picture>
+		<picture class="picture-1">
+			<source srcset={ukraine} type="image/avif" />
+			<img class="image-1" src={ukraine_fallback} type="image/webp" alt="Site banner" />
+		</picture>
 
-	<picture>
-		<source srcset={banner4} type="image/avif" />
-		<img class="image-3" src={ukraine_fallback} type="image/webp" alt="Site banner" />
-	</picture>
-
-	<picture>
-		<source srcset={ukraine} type="image/avif" />
-		<img class="image-1" src={ukraine_fallback} type="image/webp" alt="Site banner" />
-	</picture>
-
-	<br />
-	<br />
-	<br />
+		<picture class="picture-3">
+			<source srcset={banner4} type="image/avif" />
+			<img class="image-3" src={ukraine_fallback} type="image/webp" alt="Site banner" />
+		</picture>
+	</div>
 
 	<h1>Preserving the stories, traditions, and history of Central-Eastern Europe.</h1>
 
@@ -83,17 +56,7 @@
 		today. With your help, we can overcome the barriers of Western-Eurocentrism and institute
 		education equality and representation.
 	</p>
-	<!-- <p>
-		In the onset of the 2022 Ukraine conflict, our non-profit discovered the lack of global
-		awareness surrounding Central-Eastern Europe. Our mission is to enlighten the world with the
-		stories, traditions, and history of the region that current adolescent education omits.
-		Through personal interviews and activism directed at secondary school curriculums, we intend
-		to redefine the marginalized role central-eastern Europe holds today. With your help, we can
-		overcome the barriers of Western-Eurocentrism and achieve greater education equality and
-		representation.
-	</p> -->
 
-	<br />
 	<br />
 
 	<h2>The Importance of Central-Eastern Europe</h2>
@@ -160,67 +123,53 @@
 		position: relative;
 	}
 
+	.images {
+		display: flex;
+		justify-content: center;
+		gap: $l;
+	}
+
+	.picture-1 {
+		width: 40%;
+	}
+
 	.image-1 {
-		width: $g * 6;
-		position: absolute;
-		top: $l;
-		left: 50%;
-		transform: translate(-50%, 0%);
+		width: 100%;
 		border-radius: $l;
 	}
 
-	.image-2 {
-		margin-top: $g * 0.9;
-		width: $g * 3.5;
-		border-radius: $l;
+	.picture-2,
+	.picture-3 {
+		width: 25%;
 	}
 
+	.image-2,
 	.image-3 {
-		margin-top: $g * 0.9;
-		width: $g * 3.5;
-		margin-left: $g * 6.5;
+		width: 100%;
 		border-radius: $l;
+		margin-top: 25%;
 	}
 
-	.logo {
-		width: $g * 2;
-		position: absolute;
-		top: $g * 3.3;
-		left: 50%;
-		transform: translate(-50%, 0%);
+	h1 {
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+
+		// &::after {
+		// 	content: '';
+		// 	display: block;
+		// 	margin-top: 2px;
+		// 	height: $t;
+		// 	background-color: var(--color-text-2);
+		// }
 	}
-
-	// .banner {
-	// 	width: 100%;
-	// 	display: flex;
-	// 	justify-content: center;
-
-	// 	& picture {
-	// 		width: 25%;
-	// 		height: auto;
-	// 	}
-	// }
-
-	// .banner-box {
-	// 	position: relative;
-	// 	width: 100%;
-	// 	height: auto;
-	// }
-
-	// .logo {
-	// 	position: absolute;
-	// 	top: 50%;
-	// 	left: 50%;
-	// 	transform: translate(-50%, -50%);
-	// 	width: 15%;
-	// }
 
 	.highlight-img {
 		width: 6 * $g;
 	}
 
 	p {
-		width: 9 * $g;
+		width: 8 * $g;
 		margin: auto;
 	}
 </style>
