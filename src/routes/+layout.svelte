@@ -13,57 +13,34 @@
 </script>
 
 <header class:open={menuOpen}>
-	<div class="links">
-		<h4>
-			<a class="button" class:active={$page.url.pathname === '/'} href="/">Home</a>
-		</h4>
-		<h4>
-			<a
-				class="button"
-				class:active={$page.url.pathname === '/interviews'}
-				href="/interviews"
-			>
-				Interviews
-			</a>
-		</h4>
-		<h4>
-			<a
-				class="button"
-				class:active={$page.url.pathname === '/curriculum'}
-				href="/curriculum"
-			>
-				Curriculum
-			</a>
-		</h4>
+	<div class="links left">
+		<a class="button" class:active={$page.url.pathname === '/'} href="/">Home</a>
+		<a class="button" class:active={$page.url.pathname === '/interviews'} href="/interviews">
+			Interviews
+		</a>
+		<a class="button" class:active={$page.url.pathname === '/curriculum'} href="/curriculum">
+			Curriculum
+		</a>
+	</div>
 
+	<a class="logo-link" href="/">
 		<picture>
 			<source srcset={logo} type="image/avif" />
 			<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
 		</picture>
-
-		<h4>
-			<a
-				class="button"
-				class:active={$page.url.pathname === '/curriculum'}
-				href="/curriculum"
-			>
-				Curriculum
-			</a>
-		</h4>
-		<h4>
-			<a class="button" class:active={$page.url.pathname === '/volunteer'} href="/volunteer">
-				Volunteer
-			</a>
-		</h4>
-		<h4>
-			<a class="button" class:active={$page.url.pathname === '/about'} href="/about">
-				About
-			</a>
-		</h4>
+	</a>
+	<div class="links right">
+		<a class="button" class:active={$page.url.pathname === '/updates'} href="/updates">
+			Updates
+		</a>
+		<a class="button" class:active={$page.url.pathname === '/volunteer'} href="/volunteer">
+			Volunteer
+		</a>
+		<a class="button" class:active={$page.url.pathname === '/about'} href="/about">About</a>
 	</div>
-	<button class="menu" on:click={() => (menuOpen = !menuOpen)}>
+	<!-- <button class="menu" on:click={() => (menuOpen = !menuOpen)}>
 		<i class={'fa-solid ' + (menuOpen ? 'fa-xmark' : 'fa-bars')} />
-	</button>
+	</button> -->
 </header>
 
 <main>
@@ -108,56 +85,57 @@
 		top: 0;
 		left: 0;
 		display: flex;
-		background-color: var(--color-text-1);
-		background-color: var(--color-bg);
-		padding: $m $l;
 		align-items: center;
 		justify-content: center;
+		gap: $l;
+		padding: $m $l;
+		background-color: var(--color-text-1);
 
-		& * {
+		a.button {
+			font-size: 1.1em;
+			text-align: center;
 			color: var(--color-bg);
-			color: var(--color-text-1);
-		}
+			border-color: transparent;
+			border-radius: $s + $t;
 
-		& h1 {
-			font-size: 1.5em;
-			margin: 0;
-			margin-right: auto;
-		}
+			&:hover {
+				border-color: var(--color-bg);
+				background-color: transparent;
+			}
 
-		& h4 {
-			margin: 0;
+			&.active {
+				background-color: var(--color-bg);
+				color: var(--color-text-1);
+			}
 		}
+	}
 
-		& .logo {
-			height: $g;
-			width: $g;
+	.links {
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		&.left {
+			justify-content: flex-end;
 		}
+		&.right {
+			justify-content: flex-start;
+		}
+	}
+
+	.logo {
+		width: $h + $l;
+		height: $h + $l;
+	}
+
+	.logo-link {
+		border-radius: 50%;
 	}
 
 	.links {
 		display: flex;
 		gap: $l;
 		align-items: center;
-	}
-
-	header a.button {
-		border-color: transparent;
-		width: 130px;
-		text-align: center;
-		border-radius: $s + $t;
-
-		&:hover {
-			border-color: var(--color-bg);
-			background-color: transparent;
-		}
-
-		&.active {
-			background-color: var(--color-bg);
-			background-color: var(--color-text-1);
-			color: var(--color-text-1);
-			color: var(--color-bg);
-		}
 	}
 
 	.menu {
@@ -199,80 +177,5 @@
 		display: flex;
 		justify-content: center;
 		gap: 20px;
-	}
-
-	@media (max-width: 1060px) {
-		header {
-			padding: $m $m;
-			& h1 {
-				font-size: 1.3em;
-			}
-
-			& h4 {
-				margin-left: $s;
-			}
-
-			& a.button {
-				padding: $s + $t $s;
-			}
-		}
-	}
-
-	@media (max-width: 860px) {
-		.links {
-			display: none;
-		}
-
-		header.open .links {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			position: absolute;
-			top: $l + $s + 2 * $m;
-			left: 0;
-			right: 0;
-			background-color: var(--color-text-1);
-			padding: $s 0 $m 0;
-			gap: $s;
-
-			& h4 {
-				margin: 0;
-			}
-
-			& a.button {
-				padding: $s + $t $m;
-			}
-		}
-
-		.menu {
-			display: block;
-		}
-	}
-
-	@media (max-width: 410px) {
-		header {
-			padding: $s $s $s $m;
-
-			& h1 {
-				font-size: 1em;
-			}
-		}
-
-		header.open .links {
-			top: $l + $s + 2 * $s;
-
-			& a.button {
-				padding: $s $m;
-				font-size: 0.9em;
-			}
-		}
-
-		.menu {
-			font-size: 1em;
-		}
-
-		.contact {
-			font-size: 0.9em;
-		}
 	}
 </style>
