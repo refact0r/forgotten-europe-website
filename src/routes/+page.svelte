@@ -130,7 +130,7 @@
 	}
 
 	.picture-1 {
-		width: 40%;
+		width: 38%;
 	}
 
 	.image-1 {
@@ -140,14 +140,14 @@
 
 	.picture-2,
 	.picture-3 {
-		width: 25%;
+		width: 23%;
 	}
 
 	.image-2,
 	.image-3 {
 		width: 100%;
 		border-radius: $l;
-		margin-top: 25%;
+		margin-top: 27%;
 	}
 
 	h1 {
