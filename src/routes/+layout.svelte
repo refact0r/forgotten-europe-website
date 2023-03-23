@@ -10,7 +10,6 @@
 </script>
 
 <header class:open={menuOpen}>
-	<h1><a href="/">The Forgotten Europe Project</a></h1>
 	<div class="links">
 		<h4>
 			<a class="button" class:active={$page.url.pathname === '/'} href="/">Home</a>
@@ -24,6 +23,16 @@
 				Interviews
 			</a>
 		</h4>
+		<h4>
+			<a
+				class="button"
+				class:active={$page.url.pathname === '/curriculum'}
+				href="/curriculum"
+			>
+				Curriculum
+			</a>
+		</h4>
+		<h1><a href="/">The Forgotten Europe Project</a></h1>
 		<h4>
 			<a
 				class="button"
@@ -95,6 +104,7 @@
 		background-color: var(--color-bg);
 		padding: $m $l;
 		align-items: center;
+		justify-content: center;
 
 		& * {
 			color: var(--color-bg);
@@ -104,17 +114,19 @@
 		& h1 {
 			font-size: 1.5em;
 			margin: 0;
-			margin-right: auto;
+			margin-right: $l;
+			margin-left: $l;
 		}
 
 		& h4 {
 			margin: 0;
-			margin-left: $m;
 		}
 	}
 
 	.links {
 		display: flex;
+		align-items: center;
+		gap: $l;
 	}
 
 	header a.button {
