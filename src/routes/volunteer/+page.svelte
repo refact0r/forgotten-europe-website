@@ -9,7 +9,7 @@
 
 	<section>
 		<p>
-			We are always looking for High School students willing to contribute to the Project’s
+			We are always looking for High School students willing to contribute to the Project's
 			mission statement and goals. If interested in volunteer involvement, please complete the
 			sign-up form below.
 		</p>
