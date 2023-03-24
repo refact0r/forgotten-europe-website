@@ -1,7 +1,8 @@
 :root {
-	--color-bg: #d9d9d9;
-	--color-text-1: #191919;
-	--color-text-2: #5a5a5a;
+	--light: #d9d9d9;
+	--mid-light: #b9b9b9;
+	--mid-dark: #393939;
+	--dark: #191919;
 	--font-size: 18px;
 }
 
@@ -14,7 +15,7 @@ body {
 	margin: 0;
 	font-size: 18px;
 	overflow-x: hidden;
-	color: var(--color-text-1);
+	color: var(--dark);
 }
 
 #svelte {
@@ -42,10 +43,14 @@ h3 {
 	text-align: center;
 }
 
+picture {
+	line-height: 0;
+}
+
 a {
 	display: inline-block;
 	text-decoration: none;
-	color: var(--color-text-1);
+	color: var(--dark);
 	font-weight: 700;
 
 	&:hover {
@@ -58,30 +63,38 @@ a {
 
 a.button {
 	display: inline-block;
+	padding: $s + $t $m;
 	font: inherit;
 	font-weight: bold;
-	color: var(--color-text-1);
-	padding: $s + $t $m;
-	border: 2px solid var(--color-text-1);
+	background-color: var(--mid-light);
+	color: var(--dark);
+	border-radius: $s;
 
 	&:hover {
 		cursor: pointer;
-		color: var(--color-bg);
-		background-color: var(--color-text-1);
+		background-color: var(--mid-dark);
+		color: var(--light);
 		text-decoration: none;
 	}
 
 	&:active {
-		transform: scale(0.95);
+		background-color: var(--dark);
+		color: var(--light);
+		transform: none;
 	}
 
 	&.inverted {
-		color: var(--color-bg);
-		border-color: var(--color-bg);
+		background-color: var(--mid-dark);
+		color: var(--light);
 
 		&:hover {
-			color: var(--color-text-1);
-			background-color: var(--color-bg);
+			background-color: var(--mid-light);
+			color: var(--dark);
+		}
+
+		&:active {
+			background-color: var(--light);
+			color: var(--dark);
 		}
 	}
 }
