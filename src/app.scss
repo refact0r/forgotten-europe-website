@@ -1,7 +1,7 @@
 :root {
-	--color-bg: #d9d9d9;
-	--color-text-1: #191919;
-	--color-text-2: #5a5a5a;
+	--light: #d9d9d9;
+	--dark: #191919;
+	--mid: #5a5a5a;
 	--font-size: 18px;
 }
 
@@ -14,7 +14,7 @@ body {
 	margin: 0;
 	font-size: 18px;
 	overflow-x: hidden;
-	color: var(--color-text-1);
+	color: var(--dark);
 }
 
 #svelte {
@@ -42,10 +42,14 @@ h3 {
 	text-align: center;
 }
 
+picture {
+	line-height: 0;
+}
+
 a {
 	display: inline-block;
 	text-decoration: none;
-	color: var(--color-text-1);
+	color: var(--dark);
 	font-weight: 700;
 
 	&:hover {
@@ -60,14 +64,14 @@ a.button {
 	display: inline-block;
 	font: inherit;
 	font-weight: bold;
-	color: var(--color-text-1);
+	color: var(--dark);
 	padding: $s + $t $m;
-	border: 2px solid var(--color-text-1);
+	border: 2px solid var(--dark);
 
 	&:hover {
 		cursor: pointer;
-		color: var(--color-bg);
-		background-color: var(--color-text-1);
+		color: var(--light);
+		background-color: var(--dark);
 		text-decoration: none;
 	}
 
@@ -76,12 +80,12 @@ a.button {
 	}
 
 	&.inverted {
-		color: var(--color-bg);
-		border-color: var(--color-bg);
+		color: var(--light);
+		border-color: var(--light);
 
 		&:hover {
-			color: var(--color-text-1);
-			background-color: var(--color-bg);
+			color: var(--dark);
+			background-color: var(--light);
 		}
 	}
 }

@@ -109,6 +109,6 @@
 
 	iframe {
 		display: inline-block;
-		border: 2px solid var(--color-text-1);
+		border: 2px solid var(--dark);
 	}
 </style>
