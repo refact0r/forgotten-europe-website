@@ -35,15 +35,15 @@
 			<img class="image-3" src={ukraine_fallback} type="image/webp" alt="Site banner" />
 		</picture>
 	</div>
+	<br />
+	<br />
 
-	<h1>Preserving the stories, traditions, and history of Central-Eastern Europe.</h1>
 	<picture>
 		<source srcset={flagstrip} type="image/avif" />
 		<img class="flagstrip" src={flagstrip_fallback} type="image/png" alt="flags" />
 	</picture>
-	<br />
-	<br />
-	<br />
+
+	<h1>Preserving the stories, traditions, and history of Central-Eastern Europe.</h1>
 
 	<p>
 		Today, there is a lack of global awareness encompassing the societies and history of
@@ -146,7 +146,7 @@
 	.image-3 {
 		width: 100%;
 		border-radius: $l;
-		margin-top: 30%;
+		margin-top: 32%;
 	}
 
 	h1 {
@@ -163,7 +163,7 @@
 	}
 
 	.flagstrip {
-		width: 10 * $g;
+		width: 6 * $g;
 		max-width: 85%;
 		border-radius: $s + $t;
 	}
