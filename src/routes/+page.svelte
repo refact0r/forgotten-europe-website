@@ -5,15 +5,13 @@
 	import banner4 from '$lib/images/banner4.jpg?avif&aspect=4:3&w=1000&quality=75'
 	import banner4_fallback from '$lib/images/banner4.jpg?aspect=4:3&w=1000'
 
-	import ukraine from '$lib/images/ukraine-protest.jpg?avif&quality=75'
+	import ukraine from '$lib/images/ukraine-protest.jpg?avif&w=1500&quality=75'
 	import ukraine_fallback from '$lib/images/ukraine-protest.jpg'
 	import flagstrip from '$lib/images/flagstrip-2x.png?avif'
 	import flagstrip_fallback from '$lib/images/flagstrip-2x.png?webp'
 
 	import highlight from '$lib/images/highlight.jpg?avif&w=2000'
 	import highlight_fallback from '$lib/images/highlight.jpg?w=2000'
-	import logo from '$lib/images/logo-2x-cropped.png?avif&w=1000'
-	import logo_fallback from '$lib/images/logo-2x-cropped.png?webp&w=1000'
 </script>
 
 <PageHead title="" description="Home page of The Forgotten Europe Project website" />
@@ -22,13 +20,13 @@
 	<div class="images">
 		<picture class="picture-2">
 			<source srcset={banner3} type="image/avif" />
-			<img class="image-2" src={ukraine_fallback} type="image/webp" alt="Site banner" />
+			<img class="image-2" src={banner3_fallback} type="image/jpeg" alt="Site banner" />
 		</picture>
 
 		<div class="images-middle">
 			<picture class="picture-1">
 				<source srcset={ukraine} type="image/avif" />
-				<img class="image-1" src={ukraine_fallback} type="image/webp" alt="Site banner" />
+				<img class="image-1" src={ukraine_fallback} type="image/jpeg" alt="Site banner" />
 			</picture>
 
 			<picture>
@@ -39,7 +37,7 @@
 
 		<picture class="picture-3">
 			<source srcset={banner4} type="image/avif" />
-			<img class="image-3" src={ukraine_fallback} type="image/webp" alt="Site banner" />
+			<img class="image-3" src={banner4_fallback} type="image/jpeg" alt="Site banner" />
 		</picture>
 	</div>
 	<h1>Preserving the stories, traditions, and history of Central-Eastern Europe.</h1>
