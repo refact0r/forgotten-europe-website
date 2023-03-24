@@ -4,49 +4,53 @@
 	import '@fontsource/figtree/latin-ext.css'
 	import '/node_modules/flag-icons/css/flag-icons.min.css'
 
+	import logo from '$lib/images/logo-2x-cropped.png?avif&w=1000'
+	import logo_fallback from '$lib/images/logo-2x-cropped.png?webp&w=1000'
+
 	import { page } from '$app/stores'
 
 	let menuOpen = false
 </script>
 
 <header class:open={menuOpen}>
-	<h1><a href="/">The Forgotten Europe Project</a></h1>
-	<div class="links">
-		<h4>
-			<a class="button" class:active={$page.url.pathname === '/'} href="/">Home</a>
-		</h4>
-		<h4>
-			<a
-				class="button"
-				class:active={$page.url.pathname === '/interviews'}
-				href="/interviews"
-			>
-				Interviews
-			</a>
-		</h4>
-		<h4>
-			<a
-				class="button"
-				class:active={$page.url.pathname === '/curriculum'}
-				href="/curriculum"
-			>
-				Curriculum
-			</a>
-		</h4>
-		<h4>
-			<a class="button" class:active={$page.url.pathname === '/volunteer'} href="/volunteer">
-				Volunteer
-			</a>
-		</h4>
-		<h4>
-			<a class="button" class:active={$page.url.pathname === '/about'} href="/about">
-				About
-			</a>
-		</h4>
+	<div class="links left">
+		<a class="button inverted" class:active={$page.url.pathname === '/'} href="/">Home</a>
+		<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news"
+			>News</a
+		>
+		<a
+			class="button inverted"
+			class:active={$page.url.pathname === '/interviews'}
+			href="/interviews"
+		>
+			Interviews
+		</a>
 	</div>
-	<button class="menu" on:click={() => (menuOpen = !menuOpen)}>
-		<i class={'fa-solid ' + (menuOpen ? 'fa-xmark' : 'fa-bars')} />
-	</button>
+	<a class="logo-link" href="/">
+		<picture>
+			<source srcset={logo} type="image/avif" />
+			<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
+		</picture>
+	</a>
+	<div class="links right">
+		<a
+			class="button inverted"
+			class:active={$page.url.pathname === '/curriculum'}
+			href="/curriculum"
+		>
+			Curriculum
+		</a>
+		<a
+			class="button inverted"
+			class:active={$page.url.pathname === '/volunteer'}
+			href="/volunteer"
+		>
+			Volunteer
+		</a>
+		<a class="button inverted" class:active={$page.url.pathname === '/about'} href="/about"
+			>About</a
+		>
+	</div>
 </header>
 
 <main>
@@ -86,58 +90,67 @@
 	}
 
 	header {
-		position: sticky;
-		z-index: 100;
-		top: 0;
-		left: 0;
 		display: flex;
-		background-color: var(--color-text-1);
-		padding: $m $l;
 		align-items: center;
+		justify-content: center;
+		gap: $l;
+		padding: $s $l $s $l;
+		background-color: var(--dark);
 
-		& * {
-			color: var(--color-bg);
-		}
+		a.button {
+			font-size: 1.1em;
+			text-align: center;
+			border-radius: $s;
+			background-color: var(--dark);
+			color: var(--light);
 
-		& h1 {
-			font-size: 1.5em;
-			margin: 0;
-			margin-right: auto;
-		}
+			&:hover {
+				background-color: var(--mid-dark);
+				color: var(--light);
+			}
 
-		& h4 {
-			margin: 0;
-			margin-left: $m;
+			&:active {
+				background-color: var(--mid-dark);
+				color: var(--light);
+			}
+
+			&.active {
+				background-color: var(--light);
+				color: var(--dark);
+			}
 		}
 	}
 
 	.links {
 		display: flex;
-	}
+		align-items: center;
+		width: 100%;
 
-	header a.button {
-		border-color: transparent;
-
-		&:hover {
-			border-color: var(--color-bg);
-			background-color: transparent;
+		&.left {
+			justify-content: flex-end;
 		}
-
-		&.active {
-			background-color: var(--color-bg);
-			color: var(--color-text-1);
+		&.right {
+			justify-content: flex-start;
 		}
 	}
 
-	.menu {
-		display: none;
-		font-size: 1.2em;
-		width: $l + $s;
-		height: $l + $s;
+	.logo {
+		width: $h + $m;
+		height: $h + $m;
+	}
+
+	.logo-link {
+		border-radius: 50%;
+	}
+
+	.links {
+		display: flex;
+		gap: $l;
+		align-items: center;
 	}
 
 	main {
-		background-color: var(--color-bg);
+		background-color: var(--light);
 		height: 100%;
 		flex-grow: 1;
 		display: flex;
@@ -148,11 +161,11 @@
 	footer {
 		text-align: center;
 		padding: $m $m $l $m;
-		background-color: var(--color-text-1);
-		color: var(--color-bg);
+		background-color: var(--dark);
+		color: var(--light);
 
 		& a {
-			color: var(--color-bg);
+			color: var(--light);
 		}
 	}
 
@@ -168,80 +181,5 @@
 		display: flex;
 		justify-content: center;
 		gap: 20px;
-	}
-
-	@media (max-width: 1060px) {
-		header {
-			padding: $m $m;
-			& h1 {
-				font-size: 1.3em;
-			}
-
-			& h4 {
-				margin-left: $s;
-			}
-
-			& a.button {
-				padding: $s + $t $s;
-			}
-		}
-	}
-
-	@media (max-width: 860px) {
-		.links {
-			display: none;
-		}
-
-		header.open .links {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			position: absolute;
-			top: $l + $s + 2 * $m;
-			left: 0;
-			right: 0;
-			background-color: var(--color-text-1);
-			padding: $s 0 $m 0;
-			gap: $s;
-
-			& h4 {
-				margin: 0;
-			}
-
-			& a.button {
-				padding: $s + $t $m;
-			}
-		}
-
-		.menu {
-			display: block;
-		}
-	}
-
-	@media (max-width: 410px) {
-		header {
-			padding: $s $s $s $m;
-
-			& h1 {
-				font-size: 1em;
-			}
-		}
-
-		header.open .links {
-			top: $l + $s + 2 * $s;
-
-			& a.button {
-				padding: $s $m;
-				font-size: 0.9em;
-			}
-		}
-
-		.menu {
-			font-size: 1em;
-		}
-
-		.contact {
-			font-size: 0.9em;
-		}
 	}
 </style>
