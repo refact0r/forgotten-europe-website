@@ -15,11 +15,9 @@
 <header class:open={menuOpen}>
 	<div class="links left">
 		<a class="button" class:active={$page.url.pathname === '/'} href="/">Home</a>
+		<a class="button" class:active={$page.url.pathname === '/news'} href="/news">News</a>
 		<a class="button" class:active={$page.url.pathname === '/interviews'} href="/interviews">
 			Interviews
-		</a>
-		<a class="button" class:active={$page.url.pathname === '/curriculum'} href="/curriculum">
-			Curriculum
 		</a>
 	</div>
 	<a class="logo-link" href="/">
@@ -29,7 +27,9 @@
 		</picture>
 	</a>
 	<div class="links right">
-		<a class="button" class:active={$page.url.pathname === '/news'} href="/news">News</a>
+		<a class="button" class:active={$page.url.pathname === '/curriculum'} href="/curriculum">
+			Curriculum
+		</a>
 		<a class="button" class:active={$page.url.pathname === '/volunteer'} href="/volunteer">
 			Volunteer
 		</a>
