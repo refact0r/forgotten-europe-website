@@ -1,7 +1,7 @@
 :root {
 	--light: #d9d9d9;
 	--mid-light: #b9b9b9;
-	--mid-dark: #292929;
+	--mid-dark: #393939;
 	--dark: #191919;
 	--font-size: 18px;
 }
@@ -63,30 +63,38 @@ a {
 
 a.button {
 	display: inline-block;
+	padding: $s + $t $m;
 	font: inherit;
 	font-weight: bold;
+	background-color: var(--mid-light);
 	color: var(--dark);
-	padding: $s + $t $m;
-	border: 2px solid var(--dark);
+	border-radius: $s;
 
 	&:hover {
 		cursor: pointer;
+		background-color: var(--mid-dark);
 		color: var(--light);
-		background-color: var(--dark);
 		text-decoration: none;
 	}
 
 	&:active {
-		transform: scale(0.95);
+		background-color: var(--dark);
+		color: var(--light);
+		transform: none;
 	}
 
 	&.inverted {
+		background-color: var(--mid-dark);
 		color: var(--light);
-		border-color: var(--light);
 
 		&:hover {
+			background-color: var(--mid-light);
 			color: var(--dark);
+		}
+
+		&:active {
 			background-color: var(--light);
+			color: var(--dark);
 		}
 	}
 }

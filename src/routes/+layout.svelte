@@ -14,9 +14,15 @@
 
 <header class:open={menuOpen}>
 	<div class="links left">
-		<a class="button" class:active={$page.url.pathname === '/'} href="/">Home</a>
-		<a class="button" class:active={$page.url.pathname === '/news'} href="/news">News</a>
-		<a class="button" class:active={$page.url.pathname === '/interviews'} href="/interviews">
+		<a class="button inverted" class:active={$page.url.pathname === '/'} href="/">Home</a>
+		<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news"
+			>News</a
+		>
+		<a
+			class="button inverted"
+			class:active={$page.url.pathname === '/interviews'}
+			href="/interviews"
+		>
 			Interviews
 		</a>
 	</div>
@@ -27,13 +33,23 @@
 		</picture>
 	</a>
 	<div class="links right">
-		<a class="button" class:active={$page.url.pathname === '/curriculum'} href="/curriculum">
+		<a
+			class="button inverted"
+			class:active={$page.url.pathname === '/curriculum'}
+			href="/curriculum"
+		>
 			Curriculum
 		</a>
-		<a class="button" class:active={$page.url.pathname === '/volunteer'} href="/volunteer">
+		<a
+			class="button inverted"
+			class:active={$page.url.pathname === '/volunteer'}
+			href="/volunteer"
+		>
 			Volunteer
 		</a>
-		<a class="button" class:active={$page.url.pathname === '/about'} href="/about">About</a>
+		<a class="button inverted" class:active={$page.url.pathname === '/about'} href="/about"
+			>About</a
+		>
 	</div>
 </header>
 
@@ -84,13 +100,18 @@
 		a.button {
 			font-size: 1.1em;
 			text-align: center;
-			color: var(--light);
-			border-color: transparent;
 			border-radius: $s;
+			background-color: var(--dark);
+			color: var(--light);
 
 			&:hover {
-				border-color: var(--light);
-				background-color: transparent;
+				background-color: var(--mid-dark);
+				color: var(--light);
+			}
+
+			&:active {
+				background-color: var(--mid-dark);
+				color: var(--light);
 			}
 
 			&.active {

@@ -85,6 +85,7 @@
 
 	.hussars-img {
 		width: 100%;
+		border-radius: $m;
 	}
 
 	.column-img {
@@ -109,6 +110,7 @@
 
 	iframe {
 		display: inline-block;
-		border: 2px solid var(--dark);
+		border-radius: $m;
+		border: none;
 	}
 </style>
