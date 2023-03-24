@@ -1,21 +1,14 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
-	import banner1 from '$lib/images/banner1.webp?avif&aspect=4:3&w=1000'
-	import banner1_fallback from '$lib/images/banner1.webp?aspect=4:3&w=1000'
-	import banner2 from '$lib/images/banner2.jpeg?avif&aspect=4:3&w=1000'
-	import banner2_fallback from '$lib/images/banner2.jpeg?aspect=4:3&w=1000'
-	// import banner3 from '$lib/images/banner3.jpg?avif&aspect=4:3&w=1000&quality=75'
-	// import banner3_fallback from '$lib/images/banner3.jpg?aspect=4:3&w=1000'
-	// import banner4 from '$lib/images/banner4.jpg?avif&aspect=4:3&w=1000&quality=75'
-	// import banner4_fallback from '$lib/images/banner4.jpg?aspect=4:3&w=1000'
-
 	import banner3 from '$lib/images/banner3.jpg?avif&aspect=4:3&w=1000&quality=75'
-	import banner3_fallback from '$lib/images/banner3.jpg?aspect=3:2&w=1000'
+	import banner3_fallback from '$lib/images/banner3.jpg?aspect=4:3&w=1000'
 	import banner4 from '$lib/images/banner4.jpg?avif&aspect=4:3&w=1000&quality=75'
-	import banner4_fallback from '$lib/images/banner4.jpg?aspect=3:2&w=1000'
+	import banner4_fallback from '$lib/images/banner4.jpg?aspect=4:3&w=1000'
 
 	import ukraine from '$lib/images/ukraine-protest.jpg?avif&quality=75'
 	import ukraine_fallback from '$lib/images/ukraine-protest.jpg'
+	import flagstrip from '$lib/images/flagstrip-2x.png?avif'
+	import flagstrip_fallback from '$lib/images/flagstrip-2x.png?webp'
 
 	import highlight from '$lib/images/highlight.jpg?avif&w=2000'
 	import highlight_fallback from '$lib/images/highlight.jpg?w=2000'
@@ -44,19 +37,25 @@
 	</div>
 
 	<h1>Preserving the stories, traditions, and history of Central-Eastern Europe.</h1>
-
+	<picture>
+		<source srcset={flagstrip} type="image/avif" />
+		<img class="flagstrip" src={flagstrip_fallback} type="image/png" alt="flags" />
+	</picture>
 	<br />
+	<br />
+	<br />
+
 	<p>
 		Today, there is a lack of global awareness encompassing the societies and history of
-		Central-Eastern Europe. Even as conflict in Ukraine continues, Western education maintains
-		cold-war curriculum standards that exclude Central-Eastern Europe from studies. Our mission
-		is to enlighten the world with the stories, traditions, and history of the region that
-		current education omits. Through personal interviews and activism directed at secondary
-		school curriculums, we intend to redefine the marginalized role Central-Eastern Europe holds
-		today. With your help, we can overcome the barriers of Western-Eurocentrism and institute
-		education equality and representation.
+		Central-Eastern Europe. Our mission is to enlighten the world with the stories, traditions,
+		and history of the region that current education omits. Through personal interviews and
+		activism directed at secondary school curriculums, we intend to redefine the marginalized
+		role Central-Eastern Europe holds today. With your help, we can overcome the barriers of
+		Western-Eurocentrism and institute education equality and representation.
 	</p>
 
+	<br />
+	<br />
 	<br />
 
 	<h2>The Importance of Central-Eastern Europe</h2>
@@ -66,7 +65,7 @@
 		population of over 300 million people, the region has monumental influence over regional and
 		global political, economic, and social developments. In the last century alone, the region
 		has experienced some of the most historically significant events in history. The
-		international ramifications of Russia’s war against Ukraine exemplifies a modern relevance
+		international ramifications of Russia's war against Ukraine exemplifies a modern relevance
 		to the global community today.
 	</p>
 
@@ -91,7 +90,7 @@
 
 	<p>
 		More than 6m households in Ukraine are still affected by power cuts, two days after targeted
-		Russian strikes on the country’s energy infrastructure, President Volodymyr Zelenskiy said.
+		Russian strikes on the country's energy infrastructure, President Volodymyr Zelenskiy said.
 		“As of this evening, blackouts continue in most regions [of Ukraine] and in Kyiv. In total,
 		more than 6 million subscribers,” Zelensky said in his nightly address on Friday. The number
 		of affected households had reduced “by half” since Wednesday. He said about 600,000 people
@@ -104,7 +103,7 @@
 		maintain power and heating, the head of the European Commission said on Friday. Ursula von
 		der Leyen said in a statement after a phone call with Volodymyr Zelenskiy that the EU
 		executive arm was preparing the delivery to Ukraine large donations from EU countries and
-		from the EC’s reserves.
+		from the EC's reserves.
 		<br />
 		(Source: The Guardian)
 		<br />
@@ -140,21 +139,20 @@
 
 	.picture-2,
 	.picture-3 {
-		width: 23%;
+		width: 22%;
 	}
 
 	.image-2,
 	.image-3 {
 		width: 100%;
 		border-radius: $l;
-		margin-top: 27%;
+		margin-top: 30%;
 	}
 
 	h1 {
 		width: fit-content;
 		margin-left: auto;
 		margin-right: auto;
-
 		// &::after {
 		// 	content: '';
 		// 	display: block;
@@ -164,8 +162,15 @@
 		// }
 	}
 
+	.flagstrip {
+		width: 10 * $g;
+		max-width: 85%;
+		border-radius: $s + $t;
+	}
+
 	.highlight-img {
 		width: 6 * $g;
+		border-radius: $l;
 	}
 
 	p {

@@ -22,7 +22,6 @@
 			Curriculum
 		</a>
 	</div>
-
 	<a class="logo-link" href="/">
 		<picture>
 			<source srcset={logo} type="image/avif" />
@@ -30,17 +29,12 @@
 		</picture>
 	</a>
 	<div class="links right">
-		<a class="button" class:active={$page.url.pathname === '/updates'} href="/updates">
-			Updates
-		</a>
+		<a class="button" class:active={$page.url.pathname === '/news'} href="/news">News</a>
 		<a class="button" class:active={$page.url.pathname === '/volunteer'} href="/volunteer">
 			Volunteer
 		</a>
 		<a class="button" class:active={$page.url.pathname === '/about'} href="/about">About</a>
 	</div>
-	<!-- <button class="menu" on:click={() => (menuOpen = !menuOpen)}>
-		<i class={'fa-solid ' + (menuOpen ? 'fa-xmark' : 'fa-bars')} />
-	</button> -->
 </header>
 
 <main>
@@ -80,15 +74,11 @@
 	}
 
 	header {
-		position: sticky;
-		z-index: 100;
-		top: 0;
-		left: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: $l;
-		padding: $m $l;
+		padding: $s $l $s $l;
 		background-color: var(--color-text-1);
 
 		a.button {
@@ -124,8 +114,8 @@
 	}
 
 	.logo {
-		width: $h + $l;
-		height: $h + $l;
+		width: $h + $m;
+		height: $h + $m;
 	}
 
 	.logo-link {
@@ -136,13 +126,6 @@
 		display: flex;
 		gap: $l;
 		align-items: center;
-	}
-
-	.menu {
-		display: none;
-		font-size: 1.2em;
-		width: $l + $s;
-		height: $l + $s;
 	}
 
 	main {
