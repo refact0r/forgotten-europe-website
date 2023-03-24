@@ -25,24 +25,23 @@
 			<img class="image-2" src={ukraine_fallback} type="image/webp" alt="Site banner" />
 		</picture>
 
-		<picture class="picture-1">
-			<source srcset={ukraine} type="image/avif" />
-			<img class="image-1" src={ukraine_fallback} type="image/webp" alt="Site banner" />
-		</picture>
+		<div class="images-middle">
+			<picture class="picture-1">
+				<source srcset={ukraine} type="image/avif" />
+				<img class="image-1" src={ukraine_fallback} type="image/webp" alt="Site banner" />
+			</picture>
+
+			<picture>
+				<source srcset={flagstrip} type="image/avif" />
+				<img class="flagstrip" src={flagstrip_fallback} type="image/png" alt="flags" />
+			</picture>
+		</div>
 
 		<picture class="picture-3">
 			<source srcset={banner4} type="image/avif" />
 			<img class="image-3" src={ukraine_fallback} type="image/webp" alt="Site banner" />
 		</picture>
 	</div>
-	<br />
-	<br />
-
-	<picture>
-		<source srcset={flagstrip} type="image/avif" />
-		<img class="flagstrip" src={flagstrip_fallback} type="image/png" alt="flags" />
-	</picture>
-
 	<h1>Preserving the stories, traditions, and history of Central-Eastern Europe.</h1>
 
 	<p>
@@ -54,6 +53,7 @@
 		Western-Eurocentrism and institute education equality and representation.
 	</p>
 
+	<br />
 	<br />
 	<br />
 	<br />
@@ -128,25 +128,35 @@
 		gap: $l;
 	}
 
-	.picture-1 {
-		width: 38%;
+	.images-middle {
+		display: flex;
+		flex-direction: column;
+		width: 5.5 * $g;
+		max-width: 40%;
 	}
 
 	.image-1 {
 		width: 100%;
-		border-radius: $l;
+		border-radius: $m;
+	}
+
+	.flagstrip {
+		width: 100%;
+		border-radius: $s;
+		margin-top: $l + $m;
 	}
 
 	.picture-2,
 	.picture-3 {
-		width: 22%;
+		width: 3.5 * $g;
+		max-width: 25.5%;
 	}
 
 	.image-2,
 	.image-3 {
 		width: 100%;
-		border-radius: $l;
-		margin-top: 32%;
+		border-radius: $m;
+		margin-top: 24%;
 	}
 
 	h1 {
@@ -158,19 +168,13 @@
 		// 	display: block;
 		// 	margin-top: 2px;
 		// 	height: $t;
-		// 	background-color: var(--color-text-2);
+		// 	background-color: var(--mid);
 		// }
-	}
-
-	.flagstrip {
-		width: 6 * $g;
-		max-width: 85%;
-		border-radius: $s + $t;
 	}
 
 	.highlight-img {
 		width: 6 * $g;
-		border-radius: $l;
+		border-radius: $m;
 	}
 
 	p {

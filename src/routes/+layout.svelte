@@ -79,23 +79,23 @@
 		justify-content: center;
 		gap: $l;
 		padding: $s $l $s $l;
-		background-color: var(--color-text-1);
+		background-color: var(--dark);
 
 		a.button {
 			font-size: 1.1em;
 			text-align: center;
-			color: var(--color-bg);
+			color: var(--light);
 			border-color: transparent;
-			border-radius: $s + $t;
+			border-radius: $s;
 
 			&:hover {
-				border-color: var(--color-bg);
+				border-color: var(--light);
 				background-color: transparent;
 			}
 
 			&.active {
-				background-color: var(--color-bg);
-				color: var(--color-text-1);
+				background-color: var(--light);
+				color: var(--dark);
 			}
 		}
 	}
@@ -129,7 +129,7 @@
 	}
 
 	main {
-		background-color: var(--color-bg);
+		background-color: var(--light);
 		height: 100%;
 		flex-grow: 1;
 		display: flex;
@@ -140,11 +140,11 @@
 	footer {
 		text-align: center;
 		padding: $m $m $l $m;
-		background-color: var(--color-text-1);
-		color: var(--color-bg);
+		background-color: var(--dark);
+		color: var(--light);
 
 		& a {
-			color: var(--color-bg);
+			color: var(--light);
 		}
 	}
 
