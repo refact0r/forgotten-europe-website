@@ -130,7 +130,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 5.5 * $g;
-		max-width: 40%;
+		max-width: 38%;
 	}
 
 	.image-1 {
@@ -141,13 +141,13 @@
 	.flagstrip {
 		width: 100%;
 		border-radius: $s;
-		margin-top: $l + $m;
+		margin-top: $l;
 	}
 
 	.picture-2,
 	.picture-3 {
 		width: 3.5 * $g;
-		max-width: 25.5%;
+		max-width: 24.2%;
 	}
 
 	.image-2,
