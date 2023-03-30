@@ -8,11 +8,9 @@
 	import logo_fallback from '$lib/images/logo-2x-cropped.png?webp&w=1000'
 
 	import { page } from '$app/stores'
-
-	let menuOpen = false
 </script>
 
-<header class:open={menuOpen}>
+<header>
 	<div class="links left">
 		<a class="button inverted" class:active={$page.url.pathname === '/'} href="/">Home</a>
 		<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news"
@@ -95,28 +93,28 @@
 		justify-content: center;
 		gap: $l;
 		padding: $s $l $s $l;
-		background-color: var(--dark);
+		background-color: var(--light);
 
 		a.button {
 			font-size: 1.1em;
 			text-align: center;
 			border-radius: $s;
-			background-color: var(--dark);
-			color: var(--light);
+			background-color: var(--light);
+			color: var(--dark);
 
 			&:hover {
-				background-color: var(--mid-dark);
-				color: var(--light);
+				background-color: var(--mid-light);
+				color: var(--dark);
 			}
 
 			&:active {
-				background-color: var(--mid-dark);
-				color: var(--light);
+				background-color: var(--mid-light);
+				color: var(--dark);
 			}
 
 			&.active {
-				background-color: var(--light);
-				color: var(--dark);
+				background-color: var(--dark);
+				color: var(--light);
 			}
 		}
 	}
