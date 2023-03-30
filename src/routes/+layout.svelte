@@ -12,10 +12,10 @@
 
 <header>
 	<div class="links left">
-		<a class="button inverted" class:active={$page.url.pathname === '/'} href="/">Home</a>
-		<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news"
-			>News</a
-		>
+		<a class="button inverted" class:active={$page.url.pathname === '/'} href="/"> Home </a>
+		<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news">
+			News
+		</a>
 		<a
 			class="button inverted"
 			class:active={$page.url.pathname === '/interviews'}
@@ -70,11 +70,16 @@
 		<a href="mailto:forgotteneuropeproject@gmail.com"> forgotteneuropeproject@gmail.com </a>
 	</p>
 	<div class="buttons">
-		<a class="button icon inverted" href="https://www.instagram.com/forgotteneuropeproject/">
+		<a
+			class="button icon inverted"
+			aria-label="Instagram"
+			href="https://www.instagram.com/forgotteneuropeproject/"
+		>
 			<i class="fa-brands fa-instagram" />
 		</a>
 		<a
 			class="button icon inverted"
+			aria-label="Youtube"
 			href="https://www.youtube.com/@theforgotteneuropeproject5348"
 		>
 			<i class="fa-brands fa-youtube" />
@@ -139,6 +144,8 @@
 
 	.logo-link {
 		border-radius: 50%;
+		width: $h + $m;
+		height: $h + $m;
 	}
 
 	.links {
