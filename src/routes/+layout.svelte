@@ -98,28 +98,28 @@
 		justify-content: center;
 		gap: $l;
 		padding: $s $l $s $l;
-		background-color: var(--light);
+		background-color: var(--dark);
 
 		a.button {
 			font-size: 1.1em;
 			text-align: center;
 			border-radius: $s;
-			background-color: var(--light);
-			color: var(--dark);
+			background-color: var(--dark);
+			color: var(--light);
 
 			&:hover {
-				background-color: var(--mid-light);
-				color: var(--dark);
+				background-color: var(--mid-dark);
+				color: var(--light);
 			}
 
 			&:active {
-				background-color: var(--mid-light);
-				color: var(--dark);
+				background-color: var(--mid-dark);
+				color: var(--light);
 			}
 
 			&.active {
-				background-color: var(--dark);
-				color: var(--light);
+				background-color: var(--light);
+				color: var(--dark);
 			}
 		}
 	}
