@@ -43,30 +43,29 @@
 	<h1>Preserving the stories, traditions, and history of Central-Eastern Europe.</h1>
 
 	<p>
-		Today, there is a lack of global awareness encompassing the societies and history of
-		Central-Eastern Europe. Our mission is to enlighten the world with the stories, traditions,
-		and history of the region that current education omits. Through personal interviews and
-		activism directed at secondary school curriculums, we intend to redefine the marginalized
-		role Central-Eastern Europe holds today. With your help, we can overcome the barriers of
-		Western-Eurocentrism and institute education equality and representation.
+		Our mission is to enlighten the world with the stories, traditions, and history of
+		Central-Eastern Europe which are omitted from mainstream education. Through personal
+		interviews and activism for secondary school curriculums, we intend to redefine the
+		marginalized role the region holds in today's global awareness. With your help, we can
+		overcome the barriers of Western-centrism and bring equal representation in learning and
+		discussion.
 	</p>
 
-	<br />
 	<br />
 	<br />
 	<br />
 
 	<h2>The Importance of Central-Eastern Europe</h2>
 	<p>
-		From time immemorable, the people, cultures, and states of Central-Eastern Europe have had a
-		monumental impact on the development towards the present world today. With a total
-		population of over 300 million people, the region has monumental influence over regional and
-		global political, economic, and social developments. In the last century alone, the region
-		has experienced some of the most historically significant events in history. The
-		international ramifications of Russia's war against Ukraine exemplifies a modern relevance
-		to the global community today.
+		From time immemorial, the people, cultures, and societies of Central-Eastern Europe have had
+		a monumental impact on the course of human history. In the last century alone, the region
+		has overcome two world wars, Soviet subjugation, and countless internal conflicts. Yet it is
+		often overlooked in mainstream curricula despite its current strength of over 300 million.
+		The international ramifications of Russia's recent invasion in Ukraine makes it only more
+		crucial to recognize and recount Central-Eastern Europe's often forgotten stories.
 	</p>
 
+	<br />
 	<br />
 
 	<h2>Highlight of the Month</h2>
@@ -115,7 +114,7 @@
 
 <style lang="scss">
 	.content {
-		padding: $h 0;
+		padding: $h $l;
 		text-align: center;
 		position: relative;
 	}
@@ -161,6 +160,7 @@
 		width: fit-content;
 		margin-left: auto;
 		margin-right: auto;
+		font-size: 2em;
 		// &::after {
 		// 	content: '';
 		// 	display: block;
@@ -171,12 +171,13 @@
 	}
 
 	.highlight-img {
-		width: 6 * $g;
+		width: auto;
+		max-width: 6 * $g;
 		border-radius: $m;
 	}
 
 	p {
-		width: 8 * $g;
+		max-width: 8 * $g;
 		margin: auto;
 	}
 </style>
