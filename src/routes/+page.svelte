@@ -12,6 +12,12 @@
 
 	import highlight from '$lib/images/highlight.jpg?avif&w=2000'
 	import highlight_fallback from '$lib/images/highlight.jpg?w=2000'
+
+	import { onMount } from 'svelte'
+
+	onMount(() => {
+		instgrm.Embeds.process()
+	})
 </script>
 
 <svelte:head>
