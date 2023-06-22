@@ -3,7 +3,6 @@
 	--mid-light: #b9b9b9;
 	--mid-dark: #393939;
 	--dark: #191919;
-	--font-size: 18px;
 }
 
 * {
@@ -17,6 +16,12 @@ body {
 	overflow-x: hidden;
 	color: var(--dark);
 	background-color: var(--dark);
+}
+
+@media (max-width: 1000px) {
+	body {
+		font-size: 16px;
+	}
 }
 
 #svelte {
