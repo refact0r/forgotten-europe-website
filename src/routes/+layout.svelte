@@ -99,6 +99,9 @@
 		gap: $l;
 		padding: $s $l $s $l;
 		background-color: var(--dark);
+		top: 0;
+		position: sticky;
+		z-index: 1;
 
 		a.button {
 			font-size: 1.1em;
