@@ -256,18 +256,9 @@
 
 	.insta-top {
 		height: 136px;
-		padding: 24px;
-		display: flex;
-	}
-	.insta-pfp {
-		width: 88px;
-		height: 88px;
-		border-radius: 50%;
-		background-color: #efefef;
 	}
 	.insta-middle {
 		aspect-ratio: 3/2;
-		background-color: #efefef;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -279,13 +270,13 @@
 	}
 	.insta-bottom {
 		height: 64px;
-		padding: 16px;
 	}
-	.insta-button {
-		width: 100%;
-		height: 100%;
-		background-color: var(--mid-dark);
-		background-color: #efefef;
-		border-radius: 8px;
+	@media (max-width: 545px) {
+		.insta-top {
+			height: 106px;
+		}
+		.insta-bottom {
+			height: 48px;
+		}
 	}
 </style>
