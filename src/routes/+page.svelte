@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<script async src="//www.instagram.com/embed.js"></script>
+	<script src="//www.instagram.com/embed.js"></script>
 </svelte:head>
 
 <PageHead title="" description="Home page of The Forgotten Europe Project website" />
