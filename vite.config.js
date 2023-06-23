@@ -1,10 +1,12 @@
 import { sveltekit } from '@sveltejs/kit/vite'
+import { defineConfig } from 'vitest/config'
 import { imagetools } from 'vite-imagetools'
 
-/** @type {import('vite').UserConfig} */
-const config = {
+export default defineConfig({
 	plugins: [imagetools(), sveltekit()],
-
+	test: {
+		include: ['src/**/*.{test,spec}.{js,ts}']
+	},
 	css: {
 		preprocessorOptions: {
 			scss: {
@@ -12,6 +14,4 @@ const config = {
 			}
 		}
 	}
-}
-
-export default config
+})

@@ -182,14 +182,14 @@
 	.images {
 		display: flex;
 		justify-content: center;
-		gap: $l;
+		gap: 2%;
 	}
 
 	.images-middle {
 		display: flex;
 		flex-direction: column;
-		width: 5.5 * $g;
-		max-width: 38%;
+		max-width: 5.5 * $g;
+		width: 40%;
 	}
 
 	.image-1 {
@@ -200,20 +200,20 @@
 	.flagstrip {
 		width: 100%;
 		border-radius: $s;
-		margin-top: $l;
+		margin-top: 5%;
 	}
 
 	.picture-2,
 	.picture-3 {
-		width: 3.5 * $g;
-		max-width: 24.2%;
+		max-width: 3.5 * $g;
+		width: 26%;
 	}
 
 	.image-2,
 	.image-3 {
 		width: 100%;
 		border-radius: $m;
-		margin-top: 24%;
+		margin-top: 22%;
 	}
 
 	h1 {

@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte'
-	export let title
 	export let open
 
 	let details
