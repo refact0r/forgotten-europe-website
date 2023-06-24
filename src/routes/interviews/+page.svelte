@@ -51,7 +51,10 @@
 
 	<section class="interviews">
 		<Collapsible open={true}>
-			<div slot="header"><span class="fi fi-pl" />&nbsp; &nbsp;Poland</div>
+			<div slot="header">
+				<span class="fi fi-pl" />
+				<span class="collapsible-name">Poland</span>
+			</div>
 			<div slot="details">
 				<iframe
 					title="Life Under Communism: an interview on Poland"
@@ -72,20 +75,24 @@
 </div>
 
 <style lang="scss">
+	.content {
+		padding: 0 1rem;
+	}
+
 	section {
 		margin: auto;
-		margin-bottom: $h;
-		width: 9 * $g;
+		margin-bottom: 3rem;
+		max-width: 64rem;
 	}
 
 	.signup {
 		display: flex;
-		gap: $h;
+		gap: 3rem;
 	}
 
 	.hussars-img {
 		width: 100%;
-		border-radius: $m;
+		border-radius: 1rem;
 	}
 
 	.column-img {
@@ -100,8 +107,8 @@
 		line-height: 100%;
 		width: 100%;
 		text-align: center;
-		font-size: 0.9em;
-		margin-top: $s;
+		font-size: 0.9rem;
+		margin-top: 0.5rem;
 	}
 
 	p:first-of-type {
@@ -110,7 +117,11 @@
 
 	iframe {
 		display: inline-block;
-		border-radius: $m;
+		border-radius: 1rem;
 		border: none;
+	}
+
+	.collapsible-name {
+		margin-left: 1rem;
 	}
 </style>

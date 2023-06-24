@@ -21,9 +21,14 @@
 </div>
 
 <style lang="scss">
+	.content {
+		padding: 0 1rem;
+		text-align: center;
+	}
+
 	section {
-		width: 10 * $g;
-		margin: auto;
+		display: inline-block;
+		max-width: 56rem;
 		text-align: center;
 	}
 </style>

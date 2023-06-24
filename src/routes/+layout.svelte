@@ -96,15 +96,15 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: $l;
-		padding: $s $l $s $l;
+		gap: 2rem;
+		padding: 0.5rem 0;
 		background-color: var(--dark);
 		top: 0;
 		position: sticky;
 		z-index: 1;
 
 		a.button {
-			font-size: 1.1em;
+			font-size: 1.1rem;
 			text-align: center;
 			border-radius: $s;
 			background-color: var(--dark);
@@ -131,6 +131,7 @@
 		display: flex;
 		align-items: center;
 		width: 100%;
+		gap: 1.5rem;
 
 		&.left {
 			justify-content: flex-end;
@@ -141,20 +142,14 @@
 	}
 
 	.logo {
-		width: $h + $m;
-		height: $h + $m;
+		width: 4rem;
+		height: 4rem;
 	}
 
 	.logo-link {
 		border-radius: 50%;
-		width: $h + $m;
-		height: $h + $m;
-	}
-
-	.links {
-		display: flex;
-		gap: $l;
-		align-items: center;
+		width: 4rem;
+		height: 4rem;
 	}
 
 	main {
@@ -163,12 +158,11 @@
 		flex-grow: 1;
 		display: flex;
 		flex-direction: column;
-		padding-bottom: 40px;
 	}
 
 	footer {
 		text-align: center;
-		padding: $m $m $l $m;
+		padding: 1rem;
 		background-color: var(--dark);
 		color: var(--light);
 
@@ -178,7 +172,7 @@
 	}
 
 	.description {
-		font-size: 0.8em;
+		font-size: 0.8rem;
 	}
 
 	.contact {
@@ -188,6 +182,6 @@
 	.buttons {
 		display: flex;
 		justify-content: center;
-		gap: 20px;
+		gap: 1rem;
 	}
 </style>
