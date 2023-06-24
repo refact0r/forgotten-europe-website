@@ -8,10 +8,70 @@
 	import logo_fallback from '$lib/images/logo-2x-cropped.png?webp&w=1000'
 
 	import { page } from '$app/stores'
+
+	$: title =
+		$page.url.pathname === '/'
+			? 'The Forgotten <span class="nowrap">Europe Project</span>'
+			: $page.url.pathname.charAt(1).toUpperCase() + $page.url.pathname.slice(2)
+
+	let menuOpen = false
+
+	function toggleMenu() {
+		menuOpen = !menuOpen
+	}
 </script>
 
 <header>
-	<div class="links left">
+	<div class="header-inner">
+		<div class="links left">
+			<a class="button inverted" class:active={$page.url.pathname === '/'} href="/"> Home </a>
+			<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news">
+				News
+			</a>
+			<a
+				class="button inverted"
+				class:active={$page.url.pathname === '/interviews'}
+				href="/interviews"
+			>
+				Interviews
+			</a>
+		</div>
+		<a class="logo-link" href="/">
+			<picture>
+				<source srcset={logo} type="image/avif" />
+				<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
+			</picture>
+		</a>
+		<div class="links right">
+			<a
+				class="button inverted"
+				class:active={$page.url.pathname === '/curriculum'}
+				href="/curriculum"
+			>
+				Curriculum
+			</a>
+			<a
+				class="button inverted"
+				class:active={$page.url.pathname === '/volunteer'}
+				href="/volunteer"
+			>
+				Volunteer
+			</a>
+			<a class="button inverted" class:active={$page.url.pathname === '/about'} href="/about">
+				About
+			</a>
+		</div>
+		<h3>The Forgotten <span class="nowrap">Europe Project</span></h3>
+		<button class="hamburger" on:click={toggleMenu}>
+			{#if menuOpen}
+				<i class="fas fa-times" />
+			{:else}
+				<i class="fas fa-bars" />
+			{/if}
+		</button>
+	</div>
+
+	<div class="menu" class:open={menuOpen}>
 		<a class="button inverted" class:active={$page.url.pathname === '/'} href="/"> Home </a>
 		<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news">
 			News
@@ -23,14 +83,6 @@
 		>
 			Interviews
 		</a>
-	</div>
-	<a class="logo-link" href="/">
-		<picture>
-			<source srcset={logo} type="image/avif" />
-			<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
-		</picture>
-	</a>
-	<div class="links right">
 		<a
 			class="button inverted"
 			class:active={$page.url.pathname === '/curriculum'}
@@ -45,9 +97,9 @@
 		>
 			Volunteer
 		</a>
-		<a class="button inverted" class:active={$page.url.pathname === '/about'} href="/about"
-			>About</a
-		>
+		<a class="button inverted" class:active={$page.url.pathname === '/about'} href="/about">
+			About
+		</a>
 	</div>
 </header>
 
@@ -94,14 +146,11 @@
 
 	header {
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 2rem;
-		padding: 0.5rem 0;
-		background-color: var(--dark);
+		flex-direction: column;
 		top: 0;
 		position: sticky;
 		z-index: 1;
+		background-color: var(--dark);
 
 		a.button {
 			font-size: 1.1rem;
@@ -127,6 +176,14 @@
 		}
 	}
 
+	.header-inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		padding: 0.5rem 0;
+	}
+
 	.links {
 		display: flex;
 		align-items: center;
@@ -150,6 +207,45 @@
 		border-radius: 50%;
 		width: 4rem;
 		height: 4rem;
+	}
+
+	h3 {
+		display: none;
+		font-size: 1rem;
+		color: var(--light);
+		margin: 0;
+	}
+
+	.hamburger {
+		display: none;
+		align-items: center;
+		justify-content: center;
+		width: 2.5rem;
+		height: 2.5rem;
+		color: var(--light);
+
+		i {
+			font-size: 1.3rem;
+		}
+		&:hover {
+			color: var(--mid-light);
+		}
+		&:active {
+			color: var(--mid-dark);
+		}
+	}
+
+	.menu {
+		display: none;
+		position: sticky;
+		z-index: 1;
+		padding: 1rem;
+		gap: 1rem;
+
+		&.open {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	main {
@@ -183,5 +279,35 @@
 		display: flex;
 		justify-content: center;
 		gap: 1rem;
+	}
+
+	@media (max-width: 900px) {
+		.header-inner {
+			justify-content: space-between;
+			padding: 0.5rem;
+			gap: 0.5rem;
+		}
+
+		.logo {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+
+		.logo-link {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+
+		.links {
+			display: none;
+		}
+
+		h3 {
+			display: block;
+		}
+
+		.hamburger {
+			display: flex;
+		}
 	}
 </style>

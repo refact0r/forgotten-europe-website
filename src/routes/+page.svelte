@@ -218,13 +218,6 @@
 		margin-right: auto;
 		font-size: 2em;
 		margin: 3rem auto;
-		// &::after {
-		// 	content: '';
-		// 	display: block;
-		// 	margin-top: 2px;
-		// 	height: $t;
-		// 	background-color: var(--mid);
-		// }
 	}
 
 	.highlight-img {
