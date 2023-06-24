@@ -6,7 +6,7 @@
 	font-size: 112.5%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 	:root {
 		font-size: 100%;
 	}
@@ -127,4 +127,8 @@ button {
 	&:hover {
 		cursor: pointer;
 	}
+}
+
+.nowrap {
+	white-space: nowrap;
 }
