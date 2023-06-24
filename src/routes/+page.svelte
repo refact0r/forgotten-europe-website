@@ -20,10 +20,6 @@
 	})
 </script>
 
-<svelte:head>
-	<script src="//www.instagram.com/embed.js"></script>
-</svelte:head>
-
 <PageHead title="" description="Home page of The Forgotten Europe Project website" />
 
 <div class="content">
@@ -174,46 +170,46 @@
 
 <style lang="scss">
 	.content {
-		padding: $h $l;
+		padding: 3rem 1rem;
 		text-align: center;
-		position: relative;
 	}
 
 	.images {
-		display: flex;
+		display: inline-flex;
 		justify-content: center;
 		gap: 2%;
+		max-width: 96rem;
 	}
 
 	.images-middle {
 		display: flex;
 		flex-direction: column;
-		max-width: 5.5 * $g;
-		width: 40%;
+		// max-width: 5.5 * $g;
+		width: 42%;
 	}
 
 	.image-1 {
 		width: 100%;
-		border-radius: $m;
+		border-radius: 1rem;
 	}
 
 	.flagstrip {
 		width: 100%;
-		border-radius: $s;
+		border-radius: 0.5rem;
 		margin-top: 5%;
 	}
 
 	.picture-2,
 	.picture-3 {
-		max-width: 3.5 * $g;
+		// max-width: 3.5 * $g;
 		width: 26%;
 	}
 
 	.image-2,
 	.image-3 {
 		width: 100%;
-		border-radius: $m;
-		margin-top: 22%;
+		border-radius: 1rem;
+		margin-top: 23%;
 	}
 
 	h1 {
@@ -221,6 +217,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		font-size: 2em;
+		margin: 3rem auto;
 		// &::after {
 		// 	content: '';
 		// 	display: block;
@@ -232,17 +229,17 @@
 
 	.highlight-img {
 		width: auto;
-		max-width: 6 * $g;
-		border-radius: $m;
+		max-width: 56rem;
+		border-radius: 1rem;
 	}
 
 	p {
-		max-width: 8 * $g;
+		max-width: 56rem;
 		margin: auto;
 	}
 
 	.instagram {
-		max-width: 8 * $g;
+		max-width: 56rem;
 		margin: auto;
 	}
 

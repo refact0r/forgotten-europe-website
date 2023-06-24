@@ -33,14 +33,14 @@
 <style lang="scss">
 	.collapsible {
 		margin: auto;
-		margin-bottom: $m;
+		margin-bottom: 1rem;
 		width: fit-content;
 	}
 
 	.header {
 		display: flex;
 		align-items: center;
-		margin-bottom: $m;
+		margin-bottom: 1rem;
 	}
 	.header:hover {
 		cursor: pointer;
@@ -52,7 +52,6 @@
 
 	i {
 		font-size: 1.5rem;
-		margin-top: 5px;
 		transition: transform ease-in-out 0.3s;
 	}
 

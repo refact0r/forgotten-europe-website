@@ -7,7 +7,7 @@
 <div class="content">
 	<h1>Curriculum</h1>
 
-	<div>
+	<div class="middle">
 		<h2>UNDER DEVELOPMENT</h2>
 
 		<p>
@@ -29,7 +29,13 @@
 </div>
 
 <style>
-	div {
+	.content {
+		padding: 0 1rem;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+	.middle {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
