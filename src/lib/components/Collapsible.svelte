@@ -34,7 +34,7 @@
 	.collapsible {
 		margin: auto;
 		margin-bottom: 1rem;
-		width: fit-content;
+		width: 100%	;
 	}
 
 	.header {
