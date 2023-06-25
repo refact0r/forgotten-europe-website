@@ -47,6 +47,17 @@ h3 {
 	text-align: center;
 }
 
+@media (max-width: 600px) {
+	h1 {
+		font-size: 1.5rem;
+		margin: 2rem auto;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+}
+
 picture {
 	line-height: 0;
 }

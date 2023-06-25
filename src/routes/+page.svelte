@@ -221,7 +221,7 @@
 	}
 
 	.highlight-img {
-		width: auto;
+		width: 100%;
 		max-width: 56rem;
 		border-radius: 1rem;
 	}
@@ -261,12 +261,35 @@
 	.insta-bottom {
 		height: 64px;
 	}
+
 	@media (max-width: 545px) {
 		.insta-top {
 			height: 106px;
 		}
 		.insta-bottom {
 			height: 48px;
+		}
+	}
+
+	@media (max-width: 700px) {
+		.images-middle {
+			width: 95%;
+		}
+
+		.picture-2,
+		.picture-3 {
+			display: none;
+		}
+	}
+
+	@media (max-width: 600px) {
+		h1 {
+			font-size: 1.5rem;
+			margin: 2rem auto;
+		}
+
+		h2 {
+			font-size: 1.2rem;
 		}
 	}
 </style>

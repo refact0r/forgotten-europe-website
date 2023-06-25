@@ -16,6 +16,8 @@
 
 	let menuOpen = false
 
+	$: $page.url && (menuOpen = false)
+
 	function toggleMenu() {
 		menuOpen = !menuOpen
 	}
@@ -182,6 +184,7 @@
 		justify-content: center;
 		gap: 2rem;
 		padding: 0.5rem 0;
+		z-index: 2;
 	}
 
 	.links {
@@ -236,15 +239,21 @@
 	}
 
 	.menu {
-		display: none;
-		position: sticky;
+		display: flex;
+		flex-direction: column;
+		transform: translateX(100%);
+		transition: transform 0.2s ease-in-out;
+		background-color: var(--dark);
+		position: fixed;
+		top: 2rem;
+		height: 100%;
+		right: 0;
 		z-index: 1;
-		padding: 1rem;
+		padding: 2rem;
 		gap: 1rem;
 
 		&.open {
-			display: flex;
-			flex-direction: column;
+			transform: translateX(0);
 		}
 	}
 

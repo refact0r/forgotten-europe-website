@@ -55,18 +55,13 @@
 				<span class="fi fi-pl" />
 				<span class="collapsible-name">Poland</span>
 			</div>
-			<div slot="details">
+			<div slot="details" class="details">
 				<iframe
 					title="Life Under Communism: an interview on Poland"
-					width="512"
-					height="288"
 					src="https://www.youtube.com/embed/PHlTTpOLVpA"
 				/>
-				&nbsp; &nbsp;
 				<iframe
 					title="Stories From WWII and Communism"
-					width="512"
-					height="288"
 					src="https://www.youtube.com/embed/SUIV4c_gcNw"
 				/>
 			</div>
@@ -119,9 +114,35 @@
 		display: inline-block;
 		border-radius: 1rem;
 		border: none;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+	}
+
+	.details {
+		display: flex;
+		gap: 1rem;
 	}
 
 	.collapsible-name {
 		margin-left: 1rem;
+	}
+
+	@media (max-width: 700px) {
+		.signup {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.column-img {
+			width: 100%;
+		}
+
+		.column-text {
+			width: 100%;
+		}
+
+		.details {
+			flex-direction: column;
+		}
 	}
 </style>
