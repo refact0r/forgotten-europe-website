@@ -59,10 +59,23 @@
 				<iframe
 					title="Life Under Communism: an interview on Poland"
 					src="https://www.youtube.com/embed/PHlTTpOLVpA"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
 				/>
 				<iframe
 					title="Stories From WWII and Communism"
 					src="https://www.youtube.com/embed/SUIV4c_gcNw"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
+				/>
+				<iframe
+					title="Surviving the Gulag and Deportation to Siberia: Interview with Mikołaj Makowski"
+					src="https://www.youtube.com/embed/yzkM9zh9jp8"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen
 				/>
 			</div>
 		</Collapsible>
@@ -114,13 +127,15 @@
 		display: inline-block;
 		border-radius: 1rem;
 		border: none;
-		width: 100%;
 		aspect-ratio: 16 / 9;
+		width: 100%;
 	}
 
 	.details {
-		display: flex;
+		display: grid;
 		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		grid-auto-rows: auto;
 	}
 
 	.collapsible-name {
