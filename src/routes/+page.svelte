@@ -158,12 +158,6 @@
 		border-radius: 1rem;
 	}
 
-	.flagstrip {
-		width: 100%;
-		border-radius: 0.5rem;
-		margin-top: 5%;
-	}
-
 	.picture-2,
 	.picture-3 {
 		// max-width: 3.5 * $g;
@@ -183,12 +177,6 @@
 		margin-left: auto;
 		margin-right: auto;
 		font-size: 2em;
-	}
-
-	.highlight-img {
-		width: 100%;
-		max-width: 56rem;
-		border-radius: 1rem;
 	}
 
 	p {

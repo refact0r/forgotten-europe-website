@@ -26,6 +26,12 @@
 	}
 </script>
 
+<svelte:head>
+		<script src="//www.instagram.com/embed.js"></script>
+	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-MV1YZX8G6K"></script>
+	<script defer src="/js/google-analytics.js"></script>
+</svelte:head>
+
 <header>
 	<div class="header-inner">
 		<a class="logo-link" href="/">
@@ -165,6 +171,8 @@
 <style lang="scss">
 	:global(body) {
 		font-family: 'Figtree', sans-serif;
+		font-style: normal;
+		font-weight: 400;
 	}
 
 	header {
