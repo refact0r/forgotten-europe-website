@@ -35,10 +35,10 @@
 				<img class="image-1" src={ukraine_fallback} type="image/jpeg" alt="Site banner" />
 			</picture>
 
-			<picture>
+			<!-- <picture>
 				<source srcset={flagstrip} type="image/avif" />
 				<img class="flagstrip" src={flagstrip_fallback} type="image/png" alt="flags" />
-			</picture>
+			</picture> -->
 		</div>
 
 		<picture class="picture-3">
@@ -59,7 +59,6 @@
 
 	<br />
 	<br />
-	<br />
 
 	<h2>The Importance of Central-Eastern Europe</h2>
 	<p>
@@ -71,51 +70,6 @@
 		crucial to recognize and recount Central-Eastern Europe's often forgotten stories.
 	</p>
 
-	<br />
-	<br />
-
-	<h2>Highlight of the Month</h2>
-
-	<h3>The War in Ukraine</h3>
-
-	<picture>
-		<source srcset={highlight} type="image/avif" />
-		<img
-			class="highlight-img"
-			src={highlight_fallback}
-			type="image/jpeg"
-			alt="Ukraine Faces Rolling Blackouts After Russian Attacks on Power Stations"
-		/>
-	</picture>
-
-	<br />
-	<br />
-
-	<p>
-		More than 6m households in Ukraine are still affected by power cuts, two days after targeted
-		Russian strikes on the country's energy infrastructure, President Volodymyr Zelenskiy said.
-		“As of this evening, blackouts continue in most regions [of Ukraine] and in Kyiv. In total,
-		more than 6 million subscribers,” Zelensky said in his nightly address on Friday. The number
-		of affected households had reduced “by half” since Wednesday. He said about 600,000 people
-		were experiencing power cuts in Kyiv, the capital, with the Odessa, Lviv, Vinnytsia and
-		Dnipropetrovsk regions also among the worst affected as temperatures approach freezing.
-	</p>
-
-	<p>
-		The European Union will step up efforts to provide Ukraine with support to restore and
-		maintain power and heating, the head of the European Commission said on Friday. Ursula von
-		der Leyen said in a statement after a phone call with Volodymyr Zelenskiy that the EU
-		executive arm was preparing the delivery to Ukraine large donations from EU countries and
-		from the EC's reserves.
-		<br />
-		<a
-			href="https://www.theguardian.com/world/2022/nov/26/russia-ukraine-war-at-a-glance-what-we-know-on-day-276-of-the-invasion"
-		>
-			(Source: The Guardian)
-		</a>
-	</p>
-
-	<br />
 	<br />
 	<br />
 
@@ -170,7 +124,7 @@
 
 <style lang="scss">
 	.content {
-		padding: 3rem 1rem;
+		padding: 2rem 1rem;
 		text-align: center;
 	}
 
@@ -217,7 +171,6 @@
 		margin-left: auto;
 		margin-right: auto;
 		font-size: 2em;
-		margin: 3rem auto;
 	}
 
 	.highlight-img {
