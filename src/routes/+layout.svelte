@@ -25,10 +25,20 @@
 
 <header>
 	<div class="header-inner">
-		<div class="links left">
+		<a class="logo-link" href="/">
+			<picture>
+				<source srcset={logo} type="image/avif" />
+				<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
+			</picture>
+			<h1>The Forgotten Europe Project</h1>
+		</a>
+		<div class="links">
 			<a class="button inverted" class:active={$page.url.pathname === '/'} href="/"> Home </a>
 			<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news">
 				News
+			</a>
+			<a class="button inverted" class:active={$page.url.pathname === '/blog'} href="/blog">
+				Blog
 			</a>
 			<a
 				class="button inverted"
@@ -37,14 +47,6 @@
 			>
 				Interviews
 			</a>
-		</div>
-		<a class="logo-link" href="/">
-			<picture>
-				<source srcset={logo} type="image/avif" />
-				<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
-			</picture>
-		</a>
-		<div class="links right">
 			<a
 				class="button inverted"
 				class:active={$page.url.pathname === '/curriculum'}
@@ -63,7 +65,6 @@
 				About
 			</a>
 		</div>
-		<h3>The Forgotten <span class="nowrap">Europe Project</span></h3>
 		<button class="hamburger" on:click={toggleMenu}>
 			{#if menuOpen}
 				<i class="fas fa-times" />
@@ -152,14 +153,27 @@
 		top: 0;
 		position: sticky;
 		z-index: 1;
+		color: var(--light);
 		background-color: var(--dark);
+	}
+
+	.header-inner {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 0.5rem 1rem;
+		z-index: 2;
+	}
+
+	.links {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-left: auto;
 
 		a.button {
 			font-size: 1.1rem;
-			text-align: center;
-			border-radius: $s;
 			background-color: var(--dark);
-			color: var(--light);
 
 			&:hover {
 				background-color: var(--mid-dark);
@@ -178,44 +192,25 @@
 		}
 	}
 
-	.header-inner {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 2rem;
-		padding: 0.5rem 0;
-		z-index: 2;
-	}
-
-	.links {
-		display: flex;
-		align-items: center;
-		width: 100%;
-		gap: 1.5rem;
-
-		&.left {
-			justify-content: flex-end;
-		}
-		&.right {
-			justify-content: flex-start;
-		}
-	}
-
 	.logo {
-		width: 4rem;
-		height: 4rem;
+		width: 3rem;
+		height: 3rem;
 	}
 
 	.logo-link {
-		border-radius: 50%;
-		width: 4rem;
-		height: 4rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		color: inherit;
+		text-decoration: none;
+
+		&:hover h1 {
+			color: var(--mid-light);
+		}
 	}
 
-	h3 {
-		display: none;
-		font-size: 1rem;
-		color: var(--light);
+	h1 {
+		font-size: 1.3rem;
 		margin: 0;
 	}
 
@@ -311,7 +306,7 @@
 			display: none;
 		}
 
-		h3 {
+		h1 {
 			display: block;
 		}
 
