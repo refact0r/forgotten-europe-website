@@ -3,6 +3,9 @@
 	import '@fontsource/figtree/latin.css'
 	import '@fontsource/figtree/latin-ext.css'
 	import '/node_modules/flag-icons/css/flag-icons.min.css'
+	import '$lib/fontawesome/css/fontawesome.min.css'
+	import '$lib/fontawesome/css/brands.min.css'
+	import '$lib/fontawesome/css/solid.min.css'
 
 	import logo from '$lib/images/logo-2x-cropped.png?format=avif&w=100'
 	import logo_fallback from '$lib/images/logo-2x-cropped.png?w=100'
@@ -28,7 +31,14 @@
 		<a class="logo-link" href="/">
 			<picture>
 				<source srcset={logo} type="image/avif" />
-				<img class="logo" src={logo_fallback} type="image/png" alt="Logo" />
+				<img
+					class="logo"
+					src={logo_fallback}
+					width="48"
+					height="48"
+					type="image/png"
+					alt="Logo"
+				/>
 			</picture>
 			<h1>The Forgotten Europe Project</h1>
 		</a>

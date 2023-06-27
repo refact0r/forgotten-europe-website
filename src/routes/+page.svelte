@@ -20,19 +20,40 @@
 	<div class="images">
 		<picture class="picture-2">
 			<source srcset={banner3} type="image/avif" />
-			<img class="image-2" src={banner3_fallback} type="image/jpeg" alt="Site banner" />
+			<img
+				class="image-2"
+				src={banner3_fallback}
+				width="400"
+				height="300"
+				type="image/jpeg"
+				alt="Site banner"
+			/>
 		</picture>
 
 		<div class="images-middle">
 			<picture class="picture-1">
 				<source srcset={ukraine} type="image/avif" />
-				<img class="image-1" src={ukraine_fallback} type="image/jpeg" alt="Site banner" />
+				<img
+					class="image-1"
+					src={ukraine_fallback}
+					width="644"
+					height="483"
+					type="image/jpeg"
+					alt="Site banner"
+				/>
 			</picture>
 		</div>
 
 		<picture class="picture-3">
 			<source srcset={banner4} type="image/avif" />
-			<img class="image-3" src={banner4_fallback} type="image/jpeg" alt="Site banner" />
+			<img
+				class="image-3"
+				src={banner4_fallback}
+				width="400"
+				height="300"
+				type="image/jpeg"
+				alt="Site banner"
+			/>
 		</picture>
 	</div>
 	<h1>Preserving the stories, traditions, and history of Central-Eastern Europe.</h1>
@@ -133,6 +154,7 @@
 
 	.image-1 {
 		width: 100%;
+		height: auto;
 		border-radius: 1rem;
 	}
 
@@ -151,6 +173,7 @@
 	.image-2,
 	.image-3 {
 		width: 100%;
+		height: auto;
 		border-radius: 1rem;
 		margin-top: 23%;
 	}
