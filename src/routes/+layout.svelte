@@ -27,7 +27,7 @@
 </script>
 
 <svelte:head>
-	<script src="//www.instagram.com/embed.js"></script>
+	<script defer src="//www.instagram.com/embed.js"></script>
 	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-MV1YZX8G6K"></script>
 	<script defer src="/js/google-analytics.js"></script>
 </svelte:head>
@@ -81,7 +81,7 @@
 				About
 			</a>
 		</div>
-		<button class="hamburger" on:click={toggleMenu}>
+		<button class="hamburger" on:click={toggleMenu} aria-label="Open Menu">
 			{#if menuOpen}
 				<i class="fas fa-times" />
 			{:else}
