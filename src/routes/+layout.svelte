@@ -27,7 +27,7 @@
 </script>
 
 <svelte:head>
-		<script src="//www.instagram.com/embed.js"></script>
+	<script src="//www.instagram.com/embed.js"></script>
 	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-MV1YZX8G6K"></script>
 	<script defer src="/js/google-analytics.js"></script>
 </svelte:head>
