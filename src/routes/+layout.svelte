@@ -79,6 +79,9 @@
 		<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news">
 			News
 		</a>
+		<a class="button inverted" class:active={$page.url.pathname === '/blog'} href="/blog">
+			Blog
+		</a>
 		<a
 			class="button inverted"
 			class:active={$page.url.pathname === '/interviews'}
@@ -155,24 +158,8 @@
 		z-index: 1;
 		color: var(--light);
 		background-color: var(--dark);
-	}
-
-	.header-inner {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-		padding: 0.5rem 1rem;
-		z-index: 2;
-	}
-
-	.links {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-		margin-left: auto;
 
 		a.button {
-			font-size: 1.1rem;
 			background-color: var(--dark);
 
 			&:hover {
@@ -190,6 +177,21 @@
 				color: var(--dark);
 			}
 		}
+	}
+
+	.header-inner {
+		display: flex;
+		align-items: center;
+		padding: 0.5rem 1rem;
+		z-index: 2;
+	}
+
+	.links {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+		margin-left: auto;
+		font-size: 1.2rem;
 	}
 
 	.logo {
@@ -210,7 +212,7 @@
 	}
 
 	h1 {
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 		margin: 0;
 	}
 
@@ -218,12 +220,13 @@
 		display: none;
 		align-items: center;
 		justify-content: center;
-		width: 2.5rem;
-		height: 2.5rem;
+		width: 3rem;
+		height: 3rem;
 		color: var(--light);
+		margin-left: auto;
 
 		i {
-			font-size: 1.3rem;
+			font-size: 1.2rem;
 		}
 		&:hover {
 			color: var(--mid-light);
@@ -240,11 +243,11 @@
 		transition: transform 0.2s ease-in-out;
 		background-color: var(--dark);
 		position: fixed;
-		top: 2rem;
-		height: 100%;
+		top: 0;
 		right: 0;
+		height: 100%;
 		z-index: 1;
-		padding: 2rem;
+		padding: 3.5rem 1rem 1rem 1rem;
 		gap: 1rem;
 
 		&.open {
@@ -285,29 +288,48 @@
 		gap: 1rem;
 	}
 
-	@media (max-width: 900px) {
-		.header-inner {
-			justify-content: space-between;
-			padding: 0.5rem;
-			gap: 0.5rem;
-		}
-
+	@media (max-width: 1250px) {
 		.logo {
 			width: 2.5rem;
 			height: 2.5rem;
 		}
 
-		.logo-link {
-			width: 2.5rem;
-			height: 2.5rem;
+		h1 {
+			font-size: 1.2rem;
+		}
+		.links {
+			gap: 0.5rem;
+			font-size: 1rem;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		h1 {
+			display: none;
+		}
+	}
+
+	@media (max-width: 750px) {
+		.header-inner {
+			padding: 0;
 		}
 
-		.links {
-			display: none;
+		.logo {
+			width: 2rem;
+			height: 2rem;
+		}
+
+		.logo-link {
+			padding: 0.5rem;
 		}
 
 		h1 {
 			display: block;
+			font-size: 1rem;
+		}
+
+		.links {
+			display: none;
 		}
 
 		.hamburger {
