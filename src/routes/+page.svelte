@@ -1,17 +1,11 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
-	import banner3 from '$lib/images/banner3.jpg?avif&aspect=4:3&w=1000&quality=75'
+	import banner3 from '$lib/images/banner3.jpg?format=avif&aspect=4:3&w=1000&quality=75'
 	import banner3_fallback from '$lib/images/banner3.jpg?aspect=4:3&w=1000'
-	import banner4 from '$lib/images/banner4.jpg?avif&aspect=4:3&w=1000&quality=75'
+	import banner4 from '$lib/images/banner4.jpg?format=avif&aspect=4:3&w=1000&quality=75'
 	import banner4_fallback from '$lib/images/banner4.jpg?aspect=4:3&w=1000'
-
-	import ukraine from '$lib/images/ukraine-protest.jpg?avif&w=1500&quality=75'
+	import ukraine from '$lib/images/ukraine-protest.jpg?format=avif&w=1500&quality=75'
 	import ukraine_fallback from '$lib/images/ukraine-protest.jpg'
-	import flagstrip from '$lib/images/flagstrip-2x.png?avif'
-	import flagstrip_fallback from '$lib/images/flagstrip-2x.png?webp'
-
-	import highlight from '$lib/images/highlight.jpg?avif&w=2000'
-	import highlight_fallback from '$lib/images/highlight.jpg?w=2000'
 
 	import { onMount } from 'svelte'
 
@@ -34,11 +28,6 @@
 				<source srcset={ukraine} type="image/avif" />
 				<img class="image-1" src={ukraine_fallback} type="image/jpeg" alt="Site banner" />
 			</picture>
-
-			<!-- <picture>
-				<source srcset={flagstrip} type="image/avif" />
-				<img class="flagstrip" src={flagstrip_fallback} type="image/png" alt="flags" />
-			</picture> -->
 		</div>
 
 		<picture class="picture-3">
@@ -124,7 +113,7 @@
 
 <style lang="scss">
 	.content {
-		padding: 2rem 1rem;
+		padding: 3rem 1rem;
 		text-align: center;
 	}
 

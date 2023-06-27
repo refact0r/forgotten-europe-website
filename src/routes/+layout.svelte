@@ -4,8 +4,8 @@
 	import '@fontsource/figtree/latin-ext.css'
 	import '/node_modules/flag-icons/css/flag-icons.min.css'
 
-	import logo from '$lib/images/logo-2x-cropped.png?avif&w=1000'
-	import logo_fallback from '$lib/images/logo-2x-cropped.png?webp&w=1000'
+	import logo from '$lib/images/logo-2x-cropped.png?format=avif&w=100'
+	import logo_fallback from '$lib/images/logo-2x-cropped.png?w=100'
 
 	import { page } from '$app/stores'
 
@@ -134,6 +134,13 @@
 			href="https://www.instagram.com/forgotteneuropeproject/"
 		>
 			<i class="fa-brands fa-instagram" />
+		</a>
+		<a
+			class="button icon inverted"
+			aria-label="Tiktok"
+			href="https://www.tiktok.com/@forgotten.europe"
+		>
+			<i class="fa-brands fa-tiktok" />
 		</a>
 		<a
 			class="button icon inverted"

@@ -2,10 +2,10 @@
 	import PageHead from '$lib/components/PageHead.svelte'
 </script>
 
-<PageHead title="News" description="Description" />
+<PageHead title="Blog" description="Description" />
 
 <div class="content">
-	<h1>News</h1>
+	<h1>Blog</h1>
 
 	<div class="middle">
 		<h2>UNDER DEVELOPMENT</h2>
