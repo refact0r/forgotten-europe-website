@@ -85,6 +85,7 @@
 
 	<div class="instagram">
 		<blockquote
+			title="Instagram Profile"
 			class="instagram-media"
 			data-instgrm-permalink="https://www.instagram.com/forgotteneuropeproject/?utm_source=ig_embed&amp;utm_campaign=loading"
 			data-instgrm-version="14"
