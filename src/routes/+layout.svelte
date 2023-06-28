@@ -147,6 +147,7 @@
 		<a
 			class="button icon inverted"
 			aria-label="Instagram"
+			title="Instagram"
 			href="https://www.instagram.com/forgotteneuropeproject/"
 		>
 			<i class="fa-brands fa-instagram" />
@@ -154,6 +155,7 @@
 		<a
 			class="button icon inverted"
 			aria-label="Tiktok"
+			title="Tiktok"
 			href="https://www.tiktok.com/@forgotten.europe"
 		>
 			<i class="fa-brands fa-tiktok" />
@@ -161,9 +163,18 @@
 		<a
 			class="button icon inverted"
 			aria-label="Youtube"
+			title="Youtube"
 			href="https://www.youtube.com/@theforgotteneuropeproject5348"
 		>
 			<i class="fa-brands fa-youtube" />
+		</a>
+		<a
+			class="button icon inverted"
+			aria-label="LinkedIn"
+			title="LinkedIn"
+			href="https://www.linkedin.com/company/the-forgotten-europe-project/"
+		>
+			<i class="fa-brands fa-linkedin" />
 		</a>
 	</div>
 </footer>
