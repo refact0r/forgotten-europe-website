@@ -67,7 +67,7 @@
 				</picture>
 			</div>
 			<div class="caption">
-				Liam Krol volunteering at the Kraków train station reception for Ukrainian refugees
+				Liam Krol volunteering at the Kraków train station reception center for Ukrainian refugees
 			</div>
 		</div>
 	</section> -->
@@ -109,7 +109,7 @@
 			</picture>
 		</div>
 		<div class="caption">
-			Liam Krol volunteering at the Kraków train station reception for Ukrainian refugees
+			Liam Krol volunteering at the Kraków train station reception center for Ukrainian refugees
 		</div>
 		<br />
 		<div class="columns">
