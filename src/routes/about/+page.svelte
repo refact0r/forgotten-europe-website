@@ -183,6 +183,7 @@
 	.volunteer-img,
 	.placeholder {
 		margin-bottom: 0.5rem;
+		height: 0; // temporary no placeholders
 	}
 
 	.name {
