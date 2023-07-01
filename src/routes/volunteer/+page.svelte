@@ -109,7 +109,8 @@
 			</picture>
 		</div>
 		<div class="caption">
-			Liam Krol volunteering at the Kraków train station reception center for Ukrainian refugees
+			Liam Krol volunteering at the Kraków train station reception center for Ukrainian
+			refugees
 		</div>
 		<br />
 		<div class="columns">
@@ -126,7 +127,7 @@
 
 	<h2>Volunteer Positions</h2>
 
-	<section class="columns">
+	<section class="positions">
 		<div class="column">
 			<h3>Outreach</h3>
 			<p>
@@ -167,7 +168,7 @@
 
 	.columns {
 		display: flex;
-		gap: 3rem;
+		gap: 2rem;
 	}
 
 	.column {
@@ -208,5 +209,31 @@
 		font-style: italic;
 		margin-top: 0.5rem;
 		font-size: 0.9rem;
+	}
+
+	.button {
+		min-width: 7.5rem;
+		height: min-content;
+	}
+
+	@media (max-width: 600px) {
+		.volunteer2-pic,
+		.volunteer4-pic {
+			display: none;
+		}
+
+		.columns {
+			flex-direction: column;
+			gap: 0;
+		}
+
+		.button {
+			width: fit-content;
+			margin: 1rem auto 0 auto;
+		}
+
+		.column {
+			width: 100%;
+		}
 	}
 </style>
