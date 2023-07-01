@@ -10,75 +10,26 @@
 <div class="content">
 	<h1>Interviews</h1>
 
-	<section class="signup">
-		<div class="column-img">
-			<picture>
-				<source srcset={hussars} type="image/avif" />
-				<img
-					class="hussars-img"
-					src={hussars_fallback}
-					type="image/jpeg"
-					alt="“Hussars” Polish band in New York"
-				/>
-			</picture>
-			<div class="caption">“Hussars” Polish band in New York</div>
-		</div>
-
-		<div class="column-text">
-			<p>
-				For those comfortable, the forgotten Europe project interviews survivors of 20th
-				century communism, the second world war, and the Holocaust. Interviews effectively
-				preserve the individual stories that establish knowledge for posterity. Topics range
-				from personal life, public experiences, service, travel, and more--the interviewee
-				chooses. Interviews may be audio recorded, camera recorded, or both in accordance
-				with interviewee preference.
-			</p>
-			<br />
-
+	<section class="grid">
+		<!-- <div>
+			Year round, founder Liam Krol locates and interviews those who survived Central-Eastern
+			Europe's past tragedies.
 			<a class="button" href="https://forms.gle/nePPj6bpz8ZNimKq8">
 				Sign Up for an Interview &nbsp;<i class="fa-solid fa-arrow-right" />
 			</a>
-
-			<p>
-				Or contact <a href="mailto:forgotteneuropeproject@gmail.com">
-					forgotteneuropeproject@gmail.com
-				</a>
-			</p>
-		</div>
-	</section>
-
-	<h2>Past Interviews</h2>
-
-	<section class="interviews">
-		<Collapsible open={true}>
-			<div slot="header">
+		</div> -->
+		<a class="interview button" href="/interviews">
+			<div class="label">
+				"Interesting quote here interesting quote here interesting quote here"
+			</div>
+			<div class="image-container">
 				<span class="fi fi-pl" />
-				<span class="collapsible-name">Poland</span>
+				<picture>
+					<source srcset={hussars} type="image/avif" />
+					<img class="image" src={hussars_fallback} type="image/jpeg" />
+				</picture>
 			</div>
-			<div slot="details" class="details">
-				<iframe
-					title="Life Under Communism: an interview on Poland"
-					src="https://www.youtube.com/embed/PHlTTpOLVpA"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen
-				/>
-				<iframe
-					title="Stories From WWII and Communism"
-					src="https://www.youtube.com/embed/SUIV4c_gcNw"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen
-				/>
-				<iframe
-					title="Surviving the Gulag and Deportation to Siberia: Interview with Mikołaj Makowski"
-					src="https://www.youtube.com/embed/yzkM9zh9jp8"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen
-				/>
-			</div>
-		</Collapsible>
+		</a>
 	</section>
 </div>
 
@@ -87,77 +38,36 @@
 		padding: 0 1rem;
 	}
 
-	section {
-		margin: auto;
-		margin-bottom: 3rem;
-		max-width: 64rem;
+	.grid {
 	}
 
-	.signup {
+	.interview {
 		display: flex;
-		gap: 3rem;
-	}
-
-	.hussars-img {
-		width: 100%;
+		flex-direction: column;
+		gap: 0.5rem;
+		background-color: var(--mid-light);
+		padding: 1rem;
 		border-radius: 1rem;
+		text-decoration: none;
+		font-weight: 400;
+		font-size: 1.2rem;
+		max-width: 25rem;
 	}
 
-	.column-img {
-		width: 50%;
+	.image-container {
+		position: relative;
 	}
 
-	.column-text {
-		width: 50%;
+	span {
+		font-size: 2rem;
+		position: absolute;
+		bottom: 1rem;
+		right: 1rem;
 	}
 
-	.caption {
-		line-height: 100%;
+	.image {
 		width: 100%;
-		text-align: center;
-		font-size: 0.9rem;
-		margin-top: 0.5rem;
-	}
-
-	p:first-of-type {
-		margin-top: 0;
-	}
-
-	iframe {
-		display: inline-block;
+		height: 100%;
 		border-radius: 1rem;
-		border: none;
-		aspect-ratio: 16 / 9;
-		width: 100%;
-	}
-
-	.details {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-		grid-auto-rows: auto;
-	}
-
-	.collapsible-name {
-		margin-left: 1rem;
-	}
-
-	@media (max-width: 700px) {
-		.signup {
-			flex-direction: column;
-			text-align: center;
-		}
-
-		.column-img {
-			width: 100%;
-		}
-
-		.column-text {
-			width: 100%;
-		}
-
-		.details {
-			flex-direction: column;
-		}
 	}
 </style>
