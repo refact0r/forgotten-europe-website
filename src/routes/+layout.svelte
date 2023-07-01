@@ -62,7 +62,7 @@
 				</a>
 				<a
 					class="button inverted"
-					class:active={$page.url.pathname === '/blog'}
+					class:active={$page.url.pathname.slice(0, 5) === '/blog'}
 					href="/blog"
 				>
 					Blog
