@@ -127,7 +127,7 @@
 
 	<h2>Volunteer Positions</h2>
 
-	<section class="positions">
+	<section class="columns">
 		<div class="column">
 			<h3>Outreach</h3>
 			<p>
