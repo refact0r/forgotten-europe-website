@@ -3,8 +3,6 @@
 
 	export let data
 
-	console.log(data)
-
 	const options = {
 		year: 'numeric',
 		month: 'long',
@@ -20,22 +18,22 @@
 	<h1>Blog</h1>
 
 	<section>
-		{#each data.posts as { slug, title, thumbnail, description, date }}
+		{#each data.posts as { slug, title, featured, description, date }}
 			<a class="clickable post" href={`blog/${slug}`}>
 				<div class="left">
 					<h2>{title}</h2>
 					<p>{new Date(date).toLocaleString('en-us', options)}</p>
 					<p>{description}</p>
 				</div>
-				{#if thumbnail}
-					<img class="thumbnail" src={thumbnail} alt={title} />
+				{#if featured}
+					<img class="thumbnail" src={featured} alt={title} />
 				{/if}
 			</a>
 		{/each}
 	</section>
 </div>
 
-<style>
+<style lang="scss">
 	.content {
 		padding: 0 1rem;
 	}
