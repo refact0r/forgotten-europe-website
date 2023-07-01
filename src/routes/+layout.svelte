@@ -27,28 +27,89 @@
 </script>
 
 <svelte:head>
+	<script
+		type="text/javascript"
+		src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+	></script>
 	<script defer src="//www.instagram.com/embed.js"></script>
 	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-MV1YZX8G6K"></script>
 	<script defer src="/js/google-analytics.js"></script>
 </svelte:head>
 
-<header>
-	<div class="header-inner">
-		<a class="logo-link" href="/">
-			<picture>
-				<source srcset={logo} type="image/avif" />
-				<img
-					class="logo"
-					src={logo_fallback}
-					width="48"
-					height="48"
-					type="image/png"
-					alt="Logo"
-				/>
-			</picture>
-			<h1>The Forgotten Europe Project</h1>
-		</a>
-		<div class="links">
+{#if $page.url.pathname !== '/admin'}
+	<header>
+		<div class="header-inner">
+			<a class="logo-link" href="/">
+				<picture>
+					<source srcset={logo} type="image/avif" />
+					<img
+						class="logo"
+						src={logo_fallback}
+						width="48"
+						height="48"
+						type="image/png"
+						alt="Logo"
+					/>
+				</picture>
+				<h1>The Forgotten Europe Project</h1>
+			</a>
+			<div class="links">
+				<a class="button inverted" class:active={$page.url.pathname === '/'} href="/">
+					Home
+				</a>
+				<a
+					class="button inverted"
+					class:active={$page.url.pathname === '/news'}
+					href="/news"
+				>
+					News
+				</a>
+				<a
+					class="button inverted"
+					class:active={$page.url.pathname === '/blog'}
+					href="/blog"
+				>
+					Blog
+				</a>
+				<a
+					class="button inverted"
+					class:active={$page.url.pathname === '/interviews'}
+					href="/interviews"
+				>
+					Interviews
+				</a>
+				<a
+					class="button inverted"
+					class:active={$page.url.pathname === '/curriculum'}
+					href="/curriculum"
+				>
+					Curriculum
+				</a>
+				<a
+					class="button inverted"
+					class:active={$page.url.pathname === '/volunteer'}
+					href="/volunteer"
+				>
+					Volunteer
+				</a>
+				<a
+					class="button inverted"
+					class:active={$page.url.pathname === '/about'}
+					href="/about"
+				>
+					About
+				</a>
+			</div>
+			<button class="hamburger" on:click={toggleMenu} aria-label="Open Menu">
+				{#if menuOpen}
+					<i class="fas fa-times" />
+				{:else}
+					<i class="fas fa-bars" />
+				{/if}
+			</button>
+		</div>
+
+		<div class="menu" class:open={menuOpen}>
 			<a class="button inverted" class:active={$page.url.pathname === '/'} href="/"> Home </a>
 			<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news">
 				News
@@ -81,103 +142,64 @@
 				About
 			</a>
 		</div>
-		<button class="hamburger" on:click={toggleMenu} aria-label="Open Menu">
-			{#if menuOpen}
-				<i class="fas fa-times" />
-			{:else}
-				<i class="fas fa-bars" />
-			{/if}
-		</button>
-	</div>
-
-	<div class="menu" class:open={menuOpen}>
-		<a class="button inverted" class:active={$page.url.pathname === '/'} href="/"> Home </a>
-		<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news">
-			News
-		</a>
-		<a class="button inverted" class:active={$page.url.pathname === '/blog'} href="/blog">
-			Blog
-		</a>
-		<a
-			class="button inverted"
-			class:active={$page.url.pathname === '/interviews'}
-			href="/interviews"
-		>
-			Interviews
-		</a>
-		<a
-			class="button inverted"
-			class:active={$page.url.pathname === '/curriculum'}
-			href="/curriculum"
-		>
-			Curriculum
-		</a>
-		<a
-			class="button inverted"
-			class:active={$page.url.pathname === '/volunteer'}
-			href="/volunteer"
-		>
-			Volunteer
-		</a>
-		<a class="button inverted" class:active={$page.url.pathname === '/about'} href="/about">
-			About
-		</a>
-	</div>
-</header>
+	</header>
+{/if}
 
 <main>
 	<slot />
 </main>
 
-<footer>
-	<p class="description">
-		<i>
-			The Forgotten Europe Project is in no way affiliated based on race, ethnicity, religion,
-			gender identity, or sexual orientation. We welcome all individuals to share an interest
-			in Central-Eastern European culture and history.
-			<br />
-			The Forgotten Europe Project stands in full solidarity with the people of Ukraine.
-		</i>
-	</p>
-	<p class="contact">
-		Contact us<br />
-		<a href="mailto:forgotteneuropeproject@gmail.com"> forgotteneuropeproject@gmail.com </a>
-	</p>
-	<div class="buttons">
-		<a
-			class="button icon inverted"
-			aria-label="Instagram"
-			title="Instagram"
-			href="https://www.instagram.com/forgotteneuropeproject/"
-		>
-			<i class="fa-brands fa-instagram" />
-		</a>
-		<a
-			class="button icon inverted"
-			aria-label="Tiktok"
-			title="Tiktok"
-			href="https://www.tiktok.com/@forgotten.europe"
-		>
-			<i class="fa-brands fa-tiktok" />
-		</a>
-		<a
-			class="button icon inverted"
-			aria-label="Youtube"
-			title="Youtube"
-			href="https://www.youtube.com/@theforgotteneuropeproject5348"
-		>
-			<i class="fa-brands fa-youtube" />
-		</a>
-		<a
-			class="button icon inverted"
-			aria-label="LinkedIn"
-			title="LinkedIn"
-			href="https://www.linkedin.com/company/the-forgotten-europe-project/"
-		>
-			<i class="fa-brands fa-linkedin" />
-		</a>
-	</div>
-</footer>
+{#if $page.url.pathname !== '/admin'}
+	<footer>
+		<p class="description">
+			<i>
+				The Forgotten Europe Project is in no way affiliated based on race, ethnicity,
+				religion, gender identity, or sexual orientation. We welcome all individuals to
+				share an interest in Central-Eastern European culture and history.
+				<br />
+				The Forgotten Europe Project stands in full solidarity with the people of Ukraine.
+			</i>
+		</p>
+		<p class="contact">
+			Contact us<br />
+			<a href="mailto:forgotteneuropeproject@gmail.com"> forgotteneuropeproject@gmail.com </a>
+		</p>
+		<div class="buttons">
+			<a
+				class="button icon inverted"
+				aria-label="Instagram"
+				title="Instagram"
+				href="https://www.instagram.com/forgotteneuropeproject/"
+			>
+				<i class="fa-brands fa-instagram" />
+			</a>
+			<a
+				class="button icon inverted"
+				aria-label="Tiktok"
+				title="Tiktok"
+				href="https://www.tiktok.com/@forgotten.europe"
+			>
+				<i class="fa-brands fa-tiktok" />
+			</a>
+			<a
+				class="button icon inverted"
+				aria-label="Youtube"
+				title="Youtube"
+				href="https://www.youtube.com/@theforgotteneuropeproject5348"
+			>
+				<i class="fa-brands fa-youtube" />
+			</a>
+			<a
+				class="button icon inverted"
+				aria-label="LinkedIn"
+				title="LinkedIn"
+				href="https://www.linkedin.com/company/the-forgotten-europe-project/"
+			>
+				<i class="fa-brands fa-linkedin" />
+			</a>
+		</div>
+	</footer>
+{/if}
 
 <style lang="scss">
 	:global(body) {
