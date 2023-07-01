@@ -1,6 +1,7 @@
 :root {
 	--light: #d9d9d9;
-	--mid-light: #b9b9b9;
+	--semi-light: #c1c1c1;
+	--mid-light: #a9a9a9;
 	--mid-dark: #393939;
 	--dark: #191919;
 }
@@ -118,6 +119,21 @@ a.button.icon {
 
 	& i {
 		font-size: 1.4rem;
+	}
+}
+
+a.clickable {
+	padding: 1rem;
+	font: inherit;
+	background-color: var(--semi-light);
+	border-radius: 1rem;
+
+	&:hover {
+		background-color: var(--mid-light);
+	}
+	&:active {
+		background-color: var(--mid-dark);
+		color: var(--light);
 	}
 }
 

@@ -27,10 +27,6 @@
 </script>
 
 <svelte:head>
-	<script
-		type="text/javascript"
-		src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-	></script>
 	<script defer src="//www.instagram.com/embed.js"></script>
 	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-MV1YZX8G6K"></script>
 	<script defer src="/js/google-analytics.js"></script>
