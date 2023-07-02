@@ -1,7 +1,9 @@
 <script>
+	import Caption from '$lib/components/Caption.svelte'
+
 	export let data
 
-	let { slug, title, featured, description, date } = data.frontmatter
+	let { slug, title, date, description, featured, caption } = data.frontmatter
 
 	const options = {
 		year: 'numeric',
@@ -17,7 +19,12 @@
 		<p class="date">{new Date(date).toLocaleString('en-us', options)}</p>
 		<h1>{title}</h1>
 		{#if featured}
-			<img class="featured" src={featured} alt={title} />
+			<div class="img-container">
+				<img class="featured" src={featured} alt={title} />
+				{#if caption}
+					<Caption {caption} />
+				{/if}
+			</div>
 		{/if}
 
 		<svelte:component this={data.component} />
@@ -38,7 +45,7 @@
 
 	section {
 		max-width: 50rem;
-		margin: 4rem auto;
+		margin: 3rem auto 4rem auto;
 	}
 
 	.date {
@@ -47,8 +54,11 @@
 
 	.featured {
 		display: block;
-		width: auto;
-		max-height: 20rem;
+		width: 100%;
+	}
+
+	.img-container {
 		margin: 2rem 0;
+		width: fit-content;
 	}
 </style>
