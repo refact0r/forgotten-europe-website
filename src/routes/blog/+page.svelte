@@ -61,6 +61,7 @@
 		padding: 0.3rem 0.5rem;
 		max-height: 7rem;
 		min-width: 0;
+		width: 100%;
 	}
 
 	p {
