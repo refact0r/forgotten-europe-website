@@ -1,6 +1,6 @@
 ---
 layout: blog
-published: false
+published: true
 title: test blog
 date: 2023-07-02T17:55:00.000Z
 thumbnail: ""
