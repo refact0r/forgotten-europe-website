@@ -2,7 +2,7 @@
 layout: blog
 published: true
 title: "The War in Ukraine: The American Teenage Perspective"
-date: 2023-07-02T06:24:00.000Z
+date: 2023-07-02T17:14:00.000Z
 description: An account of volunteering at a Ukrainian refugee reception center in Southern Poland
 featured: /images/uploads/20220822_160700.jpg
 caption: Playing badminton with a young refugee from Ukraine
