@@ -1,8 +1,8 @@
 ---
-layout: blog
 published: false
-title: formatting examples
+title: "formatting examples"
 date: 2023-07-02T18:11:00.000Z
+author: Yifan
 description: yes
 featured: ""
 caption: ""
@@ -19,6 +19,7 @@ important stuff
 
 1. list
 2. list
+
 - list
 - list
 

@@ -12,10 +12,10 @@ collections:
       create: true # Allow users to create new documents in this collection
       slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
       fields: # The fields for each document, usually in front matter
-          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
           - { label: 'Published', name: 'published', widget: 'boolean', default: false }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Author', name: 'author', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'text' }
           - { label: 'Featured Image', name: 'featured', widget: 'image', required: false }
           - { label: 'Caption', name: 'caption', widget: 'string', required: false }
@@ -27,11 +27,23 @@ collections:
       create: true # Allow users to create new documents in this collection
       slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
       fields: # The fields for each document, usually in front matter
-          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'news' }
           - { label: 'Published', name: 'published', widget: 'boolean', default: false }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
           - { label: 'Description', name: 'description', widget: 'text' }
           - { label: 'Featured Image', name: 'featured', widget: 'image', required: false }
           - { label: 'Caption', name: 'caption', widget: 'string', required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+
+    - name: 'interviews' # Used in routes, e.g., /admin/collections/blog
+      label: 'Interviews' # Used in the UI
+      folder: 'src/content/interviews' # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+          - { label: 'Published', name: 'published', widget: 'boolean', default: false }
+          - { label: 'Quote', name: 'quote', widget: 'string' }
+          - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Embed Link', name: 'link', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
