@@ -18,7 +18,7 @@
 	<h1>Blog</h1>
 
 	<section>
-		{#each data.posts as { slug, title, featured, description, date }}
+		{#each data.posts as { slug, title, date, description, featured, caption }}
 			<a class="clickable post" href={`blog/${slug}`}>
 				<div class="left">
 					<h2>{title}</h2>
@@ -45,21 +45,28 @@
 
 	.post {
 		display: flex;
+		gap: 0.5rem;
 		margin: 1rem 0;
 		padding: 1rem;
+		height: 9rem;
 		border-radius: 1rem;
 		text-decoration: none;
 		font-weight: normal;
 	}
 
 	.left {
-		flex: 1;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		padding: 0.3rem 0.5rem;
 		max-height: 7rem;
-		height: 7rem;
+		min-width: 0;
+	}
+
+	p {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	h2,
@@ -75,5 +82,6 @@
 		object-fit: cover;
 		border-radius: 1rem;
 		max-width: 7rem;
+		flex-shrink: 0;
 	}
 </style>
