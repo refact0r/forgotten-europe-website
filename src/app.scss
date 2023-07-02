@@ -52,8 +52,10 @@ h3 {
 	}
 }
 
-picture {
+picture,
+source {
 	line-height: 0;
+	display: block;
 }
 
 a {
