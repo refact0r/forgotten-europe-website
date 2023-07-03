@@ -1,4 +1,4 @@
-import { slugFromPath } from '$lib/js/slugFromPath'
+import { slugFromPath } from '$lib/js/utils.js'
 
 // const MAX_POSTS = 10
 
