@@ -1,4 +1,4 @@
-import { slugFromPath } from '$lib/js/slugFromPath'
+import { slugFromPath } from '$lib/js/utils.js'
 import { error } from '@sveltejs/kit'
 
 export async function load({ params }) {
