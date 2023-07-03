@@ -20,14 +20,17 @@
 <div class="content">
 	<h1>Interviews</h1>
 
-	<section class="grid">
-		<!-- <div>
+	<section>
+		<p>
 			Year round, founder Liam Krol locates and interviews those who survived Central-Eastern
 			Europe's past tragedies.
-			<a class="button" href="https://forms.gle/nePPj6bpz8ZNimKq8">
-				Sign Up for an Interview &nbsp;<i class="fa-solid fa-arrow-right" />
-			</a>
-		</div> -->
+		</p>
+		<a class="button" href="https://forms.gle/nePPj6bpz8ZNimKq8">
+			Sign Up for an Interview &nbsp;<i class="fa-solid fa-arrow-right" />
+		</a>
+	</section>
+
+	<section class="grid">
 		{#each data.posts as { slug, quote, thumbnail }}
 			<a class="interview clickable" href={`interviews/${slug}`}>
 				<div class="label">{quote}</div>
@@ -117,15 +120,19 @@
 
 <style lang="scss">
 	.content {
-		padding: 0 1rem;
+		padding: 0 1rem 4rem 1rem;
+	}
+
+	section {
+		max-width: 77rem;
+		margin: 2rem auto;
+		text-align: center;
 	}
 
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 		gap: 1rem;
-		margin: 0 auto;
-		max-width: 77rem;
 	}
 
 	.interview {
@@ -155,5 +162,6 @@
 		width: 100%;
 		height: auto;
 		border-radius: 0.5rem;
+		display: block;
 	}
 </style>
