@@ -1,18 +1,15 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
-	// import Collapsible from '$lib/components/Collapsible.svelte'
-	// import interview1 from '$lib/images/life-under-communism.png?format=avif&quality=75'
-	// import interview1_fallback from '$lib/images/life-under-communism.png?quality=75'
-	// import interview2 from '$lib/images/stories-from-ww2.png?format=avif&quality=75'
-	// import interview2_fallback from '$lib/images/stories-from-ww2.png?quality=75'
-	// import interview3 from '$lib/images/surviving-volhynian-massacre.png?format=avif&quality=75'
-	// import interview3_fallback from '$lib/images/surviving-volhynian-massacre.png?quality=75'
-	// import interview4 from '$lib/images/surviving-gulag-deportation.png?format=avif&quality=75'
-	// import interview4_fallback from '$lib/images/surviving-gulag-deportation.png?quality=75'
-	// import interview5 from '$lib/images/surviving-german-occupation.png?format=avif&quality=75'
-	// import interview5_fallback from '$lib/images/surviving-german-occupation.png?quality=75'
+	import PictureSources from '$lib/components/PictureSources.svelte'
+	import { nameFromPath } from '$lib/js/utils.js'
 
 	export let data
+
+	async function getImage(path) {
+		const name = nameFromPath(path)
+		const ext = path.split('.').pop()
+		return [await import(`../../lib/images/uploads/${name}.${ext}`), ext]
+	}
 </script>
 
 <PageHead title="Interviews" description="Information about interviews." />
@@ -36,85 +33,22 @@
 				<div class="label">{quote}</div>
 				<div class="image-container">
 					<span class="fi fi-pl" />
-					<img class="image" src={thumbnail} type="image/png" alt={quote} />
+					{#await getImage(thumbnail) then [image, ext]}
+						<picture>
+							<PictureSources src={image} />
+							<img
+								class="image"
+								src={image.img.src}
+								width="352"
+								height="198"
+								type={`image/${ext}`}
+								alt={quote}
+							/>
+						</picture>
+					{/await}
 				</div>
 			</a>
 		{/each}
-		<!-- <a class="interview clickable" href="/interviews">
-			<div class="label">Surviving communism</div>
-			<div class="image-container">
-				<span class="fi fi-pl" />
-				<picture>
-					<source srcset={interview1} type="image/avif" />
-					<img
-						class="image"
-						src={interview1_fallback}
-						type="image/png"
-						alt="Surviving communism"
-					/>
-				</picture>
-			</div>
-		</a>
-		<a class="interview clickable" href="/interviews">
-			<div class="label">"Somehow everybody lived"</div>
-			<div class="image-container">
-				<span class="fi fi-pl" />
-				<picture>
-					<source srcset={interview2} type="image/avif" />
-					<img
-						class="image"
-						src={interview2_fallback}
-						type="image/png"
-						alt="Somehow everybody lived"
-					/>
-				</picture>
-			</div>
-		</a>
-		<a class="interview clickable" href="/interviews">
-			<div class="label">Surviving the Volhynian massacre</div>
-			<div class="image-container">
-				<span class="fi fi-pl" />
-				<picture>
-					<source srcset={interview3} type="image/avif" />
-					<img
-						class="image"
-						src={interview3_fallback}
-						type="image/png"
-						alt="Surviving the Volhynian massacre"
-					/>
-				</picture>
-			</div>
-		</a>
-		<a class="interview clickable" href="/interviews">
-			<div class="label">"We were deported to Siberia"</div>
-			<div class="image-container">
-				<span class="fi fi-pl" />
-				<picture>
-					<source srcset={interview4} type="image/avif" />
-					<img
-						class="image"
-						src={interview4_fallback}
-						type="image/png"
-						alt="We were deported to Siberia"
-					/>
-				</picture>
-			</div>
-		</a>
-		<a class="interview clickable" href="/interviews">
-			<div class="label">"We were hiding by the river"</div>
-			<div class="image-container">
-				<span class="fi fi-pl" />
-				<picture>
-					<source srcset={interview5} type="image/avif" />
-					<img
-						class="image"
-						src={interview5_fallback}
-						type="image/png"
-						alt="We were hiding by the river"
-					/>
-				</picture>
-			</div>
-		</a> -->
 	</section>
 </div>
 
@@ -124,14 +58,14 @@
 	}
 
 	section {
-		max-width: 77rem;
+		max-width: 74rem;
 		margin: 2rem auto;
 		text-align: center;
 	}
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
 		gap: 1rem;
 	}
 
@@ -163,5 +97,7 @@
 		height: auto;
 		border-radius: 0.5rem;
 		display: block;
+		object-fit: cover;
+		aspect-ratio: 16/9;
 	}
 </style>

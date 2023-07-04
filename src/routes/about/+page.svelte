@@ -1,11 +1,7 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
+	import PictureSources from '../../lib/components/PictureSources.svelte'
 	import liam from '$lib/images/liam.jpg?format=avif&w=1000'
-	import liam_fallback from '$lib/images/liam.jpg?w=1000'
-	// import michael from '$lib/images/michael.jpg?format=avif&w=1000'
-	// import michael_fallback from '$lib/images/michael.jpg?w=1000'
-	// import youyi from '$lib/images/youyi.jpg?format=avif&w=800'
-	// import youyi_fallback from '$lib/images/youyi.jpg?w=800'
 </script>
 
 <PageHead title="About" description="Description" />
@@ -40,10 +36,10 @@
 	<section class="columns">
 		<div class="column1">
 			<picture class="liam-pic">
-				<source srcset={liam} type="image/avif" />
+				<PictureSources src={liam} />
 				<img
 					class="liam-img"
-					src={liam_fallback}
+					src={liam.img.src}
 					width="400"
 					height="400"
 					type="image/jpeg"
@@ -83,10 +79,6 @@
 			<div class="role">Curriculum Lead</div>
 		</div>
 		<div class="volunteer">
-			<!-- <picture class="volunteer-pic">
-				<source srcset={youyi} type="image/avif" />
-				<img class="volunteer-img" src={youyi_fallback} type="image/jpeg" alt="" />
-			</picture> -->
 			<div class="placeholder">
 				<div class="head" />
 				<div class="body" />
@@ -119,10 +111,6 @@
 			<div class="role">Curriculum</div>
 		</div>
 		<div class="volunteer">
-			<!-- <picture class="volunteer-pic">
-				<source srcset={michael} type="image/avif" />
-				<img class="volunteer-img" src={michael_fallback} type="image/jpeg" alt="" />
-			</picture> -->
 			<div class="placeholder">
 				<div class="head" />
 				<div class="body" />

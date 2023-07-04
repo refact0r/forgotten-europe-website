@@ -24,7 +24,7 @@
 			src={link}
 			title="YouTube video player"
 			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
 			allowfullscreen
 		/>
 	</section>

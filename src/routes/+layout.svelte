@@ -7,8 +7,8 @@
 	import '$lib/fontawesome/css/brands.min.css'
 	import '$lib/fontawesome/css/solid.min.css'
 
-	import logo from '$lib/images/logo-2x-cropped.png?format=avif&w=100'
-	import logo_fallback from '$lib/images/logo-2x-cropped.png?w=100'
+	import PictureSources from '$lib/components/PictureSources.svelte'
+	import logo from '$lib/images/logo-2x-cropped.png?w=200'
 
 	import { page } from '$app/stores'
 
@@ -37,10 +37,10 @@
 		<div class="header-inner">
 			<a class="logo-link" href="/">
 				<picture>
-					<source srcset={logo} type="image/avif" />
+					<PictureSources src={logo} />
 					<img
 						class="logo"
-						src={logo_fallback}
+						src={logo.img.src}
 						width="48"
 						height="48"
 						type="image/png"

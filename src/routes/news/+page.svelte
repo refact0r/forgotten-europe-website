@@ -4,7 +4,11 @@
 	import { onMount } from 'svelte'
 
 	onMount(() => {
-		instgrm.Embeds.process()
+		try {
+			instgrm.Embeds.process()
+		} catch (e) {
+			console.log(e)
+		}
 	})
 </script>
 

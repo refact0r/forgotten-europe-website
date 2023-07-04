@@ -1,5 +1,8 @@
 <script>
 	import Caption from '$lib/components/Caption.svelte'
+	import PageHead from '$lib/components/PageHead.svelte'
+	import PictureSources from '$lib/components/PictureSources.svelte'
+	import { nameFromPath } from '$lib/js/utils.js'
 
 	export let data
 
@@ -12,6 +15,12 @@
 		hour: 'numeric',
 		minute: 'numeric'
 	}
+
+	async function getImage(path) {
+		const name = nameFromPath(path)
+		const ext = path.split('.').pop()
+		return [await import(`../../../lib/images/uploads/${name}.${ext}`), ext]
+	}
 </script>
 
 <div class="content">
@@ -19,8 +28,18 @@
 		<p class="date">{new Date(date).toLocaleString('en-us', options)}</p>
 		<h1>{title}</h1>
 		{#if featured}
-			<div class="img-container">
-				<img class="featured" src={featured} alt={title} />
+			<div class="image-container">
+				{#await getImage(featured) then [image, ext]}
+					<picture class="pic">
+						<PictureSources src={image} />
+						<img
+							class="image"
+							src={image.img.src}
+							type={`image/${ext}`}
+							alt={caption ? caption : title}
+						/>
+					</picture>
+				{/await}
 				{#if caption}
 					<Caption {caption} />
 				{/if}
@@ -39,7 +58,7 @@
 	h1 {
 		text-align: left;
 		max-width: 50rem;
-		margin: 1rem auto 1rem auto;
+		margin: 1rem auto;
 		font-size: 2rem;
 	}
 
@@ -57,8 +76,11 @@
 		width: 100%;
 	}
 
-	.img-container {
-		margin: 2rem 0;
-		width: fit-content;
+	.image {
+		width: 100%;
+	}
+
+	.image-container {
+		margin: 1.5rem 0;
 	}
 </style>

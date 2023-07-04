@@ -1,4 +1,4 @@
-import { slugFromPath } from '$lib/js/utils.js'
+import { nameFromPath } from '$lib/js/utils.js'
 import { error } from '@sveltejs/kit'
 
 export async function load({ params }) {
@@ -7,7 +7,7 @@ export async function load({ params }) {
 	let match = {}
 
 	for (const [path, resolver] of Object.entries(modules)) {
-		if (slugFromPath(path) === params.slug) {
+		if (nameFromPath(path) === params.slug) {
 			match = { path, resolver: resolver }
 			break
 		}
