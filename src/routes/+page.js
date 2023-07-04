@@ -1,11 +1,11 @@
-import { slugFromPath } from '$lib/js/utils.js'
+import { nameFromPath } from '$lib/js/utils.js'
 
 export async function load() {
 	const modules = import.meta.glob(`/src/content/blog/*.{md,svx,svelte.md}`)
 
 	const postPromises = Object.entries(modules).map(([path, resolver]) =>
 		resolver().then((post) => ({
-			slug: slugFromPath(path),
+			slug: nameFromPath(path),
 			...post.metadata
 		}))
 	)

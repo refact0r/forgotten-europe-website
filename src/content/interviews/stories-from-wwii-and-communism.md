@@ -1,7 +1,7 @@
 ---
 published: true
 quote: '"Somehow everybody lived"'
-thumbnail: /images/uploads/stories-from-ww2.png
+thumbnail: stories-from-ww2.png
 title: Stories From WWII and Communism
 date: 2023-07-02T23:22:00.000Z
 link: https://www.youtube.com/embed/SUIV4c_gcNw

@@ -1,110 +1,48 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
-	import volunteer1 from '$lib/images/volunteer1.jpg?format=avif&w=1000'
-	import volunteer1_fallback from '$lib/images/volunteer1.jpg?w=1000'
-	import volunteer2 from '$lib/images/volunteer2.jpg?format=avif&w=1000'
-	import volunteer2_fallback from '$lib/images/volunteer2.jpg?w=1000'
-	import volunteer3 from '$lib/images/volunteer3.jpg?format=avif&w=1000'
-	import volunteer3_fallback from '$lib/images/volunteer3.jpg?w=1000'
-	import volunteer4 from '$lib/images/volunteer4.jpg?format=avif&w=1000'
-	import volunteer4_fallback from '$lib/images/volunteer4.jpg?w=1000'
+	import PictureSources from '$lib/components/PictureSources.svelte'
+	import volunteer1 from '$lib/images/volunteer1.jpg?w=1000;500'
+	import volunteer2 from '$lib/images/volunteer2.jpg?w=1000;500'
+	import volunteer4 from '$lib/images/volunteer4.jpg?w=1000;500'
 </script>
 
 <PageHead title="Curriculum" description="Description" />
 
 <div class="content">
 	<h1>Volunteer</h1>
-
-	<!-- <section class="columns">
-		<div class="column1">
-			<p class="description">
-				We are always looking for volunteers willing to contribute to the Project's mission
-				statement and goals. If interested in volunteer involvement, please complete the
-				sign-up form.
-			</p>
-			<br />
-			<a class="button" href="https://forms.gle/G1dM2FCGaQ52tKBk9">
-				Sign Up to Volunteer &nbsp;<i class="fa-solid fa-arrow-right" />
-			</a>
-		</div>
-		<div class="column2">
-			<div class="grid">
-				<picture class="volunteer1-pic">
-					<source srcset={volunteer1} type="image/avif" />
-					<img
-						class="volunteer1-img"
-						src={volunteer1_fallback}
-						type="image/jpeg"
-						alt="Liam Krol"
-					/>
-				</picture>
-				<picture class="volunteer2-pic">
-					<source srcset={volunteer2} type="image/avif" />
-					<img
-						class="volunteer2-img"
-						src={volunteer2_fallback}
-						type="image/jpeg"
-						alt="Liam Krol"
-					/>
-				</picture>
-				<picture class="volunteer3-pic">
-					<source srcset={volunteer3} type="image/avif" />
-					<img
-						class="volunteer3-img"
-						src={volunteer3_fallback}
-						type="image/jpeg"
-						alt="Liam Krol"
-					/>
-				</picture>
-				<picture class="volunteer4-pic">
-					<source srcset={volunteer4} type="image/avif" />
-					<img
-						class="volunteer4-img"
-						src={volunteer4_fallback}
-						type="image/jpeg"
-						alt="Liam Krol"
-					/>
-				</picture>
-			</div>
-			<div class="caption">
-				Liam Krol volunteering at the Kraków train station reception center for Ukrainian refugees
-			</div>
-		</div>
-	</section> -->
-
 	<section>
 		<div class="images">
 			<picture class="volunteer1-pic">
-				<source srcset={volunteer1} type="image/avif" />
+				<PictureSources src={volunteer1} />
 				<img
 					class="volunteer1-img"
-					src={volunteer1_fallback}
+					src={volunteer1.img.src}
 					width="336"
 					height="252"
 					type="image/jpeg"
-					alt="Liam Krol"
+					alt="Liam Krol volunteering at the Kraków train station reception center for Ukrainian refugees"
 				/>
 			</picture>
 			<picture class="volunteer2-pic">
-				<source srcset={volunteer2} type="image/avif" />
+				<PictureSources src={volunteer2} />
 				<img
 					class="volunteer2-img"
-					src={volunteer2_fallback}
+					src={volunteer2.img.src}
 					width="336"
 					height="252"
 					type="image/jpeg"
-					alt="Liam Krol"
+					alt="Liam Krol volunteering at the Kraków train station reception center for Ukrainian refugees"
 				/>
 			</picture>
 			<picture class="volunteer4-pic">
-				<source srcset={volunteer4} type="image/avif" />
+				<PictureSources src={volunteer4} />
 				<img
 					class="volunteer4-img"
-					src={volunteer4_fallback}
+					src={volunteer4.img.src}
 					width="336"
 					height="252"
 					type="image/jpeg"
-					alt="Liam Krol"
+					alt="Liam Krol volunteering at the Kraków train station reception center for Ukrainian refugees"
 				/>
 			</picture>
 		</div>
@@ -174,19 +112,6 @@
 	.column {
 		width: 33.33%;
 	}
-
-	// .column1 {
-	// 	width: 30%;
-	// }
-	// .column2 {
-	// 	width: 70%;
-	// }
-
-	// .grid {
-	// 	display: grid;
-	// 	grid-template-columns: 1fr 1fr;
-	// 	gap: 0.5rem;
-	// }
 
 	.images {
 		display: flex;

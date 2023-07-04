@@ -16,16 +16,6 @@
 			</a> for any questions.
 		</p>
 	</div>
-
-	<!-- <div class="section">
-		<div class="column">
-			<h2>For Teachers</h2>
-		</div>
-
-		<div class="column">
-			<h2>For Students</h2>
-		</div>
-	</div> -->
 </div>
 
 <style>

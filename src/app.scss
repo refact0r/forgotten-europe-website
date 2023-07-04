@@ -68,7 +68,7 @@ a {
 		text-decoration: underline;
 	}
 	&:active {
-		transform: translateY(1px);
+		transform: scale(0.99);
 	}
 }
 

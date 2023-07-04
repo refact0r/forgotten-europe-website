@@ -8,4 +8,6 @@ export function formatDate(date) {
 	})
 }
 
-export const slugFromPath = (path) => path.match(/([\w-]+)\.(svelte\.md|md|svx)/i)?.[1] ?? null
+export function nameFromPath(path) {
+	return path.split('/').slice(-1)[0].split('.')[0]
+}
