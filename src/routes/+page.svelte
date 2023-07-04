@@ -1,20 +1,11 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
 	import PictureSources from '$lib/components/PictureSources.svelte'
-	import banner from '$lib/images/banner3.jpg'
+	import PostPreview from '../lib/components/PostPreview.svelte'
+	import banner from '$lib/images/banner3.jpg?w=2000;1500;1000;500'
 	import flagstrip from '$lib/images/flagstrip-2x.png'
 
-	import { formatDate } from '$lib/js/utils.js'
-	import { nameFromPath } from '$lib/js/utils.js'
-	import PostPreview from '../lib/components/PostPreview.svelte'
-
 	export let data
-
-	async function getImage(path) {
-		const name = nameFromPath(path)
-		const ext = path.split('.').pop()
-		return [await import(`../lib/images/uploads/${name}.${ext}`), ext]
-	}
 </script>
 
 <PageHead title="" description="Home page of The Forgotten Europe Project website" />
