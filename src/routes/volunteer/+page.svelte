@@ -1,9 +1,9 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
 	import PictureSources from '$lib/components/PictureSources.svelte'
-	import volunteer1 from '$lib/images/volunteer1.jpg?w=1000;500'
-	import volunteer2 from '$lib/images/volunteer2.jpg?w=1000;500'
-	import volunteer4 from '$lib/images/volunteer4.jpg?w=1000;500'
+	import volunteer1 from '$lib/images/volunteer1.jpg?w=800;400'
+	import volunteer2 from '$lib/images/volunteer2.jpg?w=800;400'
+	import volunteer4 from '$lib/images/volunteer4.jpg?w=800;400'
 </script>
 
 <PageHead title="Curriculum" description="Description" />

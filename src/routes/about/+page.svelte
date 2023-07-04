@@ -1,7 +1,7 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
 	import PictureSources from '../../lib/components/PictureSources.svelte'
-	import liam from '$lib/images/liam.jpg?format=avif&w=1000'
+	import liam from '$lib/images/liam.jpg?w=800;400'
 </script>
 
 <PageHead title="About" description="Description" />
