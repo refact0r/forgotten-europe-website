@@ -11,7 +11,7 @@ export default defineConfig({
 				if (['jpg', 'jpeg', 'png'].includes(extension)) {
 					return new URLSearchParams({
 						format: `avif;jpg`,
-						w: '1500;1000;500',
+						w: '1200;800;400',
 						as: 'picture'
 					})
 				}
