@@ -126,12 +126,28 @@
 			<div class="name">Tuck Ellis</div>
 			<div class="role">Marketing</div>
 		</div>
+		<div class="volunteer">
+			<div class="placeholder">
+				<div class="head" />
+				<div class="body" />
+			</div>
+			<div class="name">Yifan</div>
+			<div class="role">Technology</div>
+		</div>
+	</section>
+
+	<section class="website">
+		<h3>Website by Yifan</h3>
+		<a href="https://github.com/refact0r/forgotten-europe-website">
+			View the source code on Github&nbsp;
+			<i class="fa-solid fa-arrow-right" />
+		</a>
 	</section>
 </div>
 
 <style lang="scss">
 	.content {
-		padding: 0 1rem;
+		padding: 0 1rem 2rem 1rem;
 	}
 
 	section {
@@ -218,5 +234,9 @@
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	.website {
+		text-align: center;
 	}
 </style>
