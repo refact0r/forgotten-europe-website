@@ -16,7 +16,7 @@ export async function load({ params }) {
 	const post = await match?.resolver?.()
 
 	if (!post || !post.metadata.published) {
-		throw error(404)
+		throw error(404, 'Post not found')
 	}
 
 	return {

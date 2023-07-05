@@ -8,7 +8,7 @@ export async function load({ params }) {
 
 	for (const [path, resolver] of Object.entries(modules)) {
 		if (nameFromPath(path) === params.slug) {
-			match = { path, resolver: resolver }
+			match = { path, resolver }
 			break
 		}
 	}
@@ -16,7 +16,7 @@ export async function load({ params }) {
 	const post = await match?.resolver?.()
 
 	if (!post || !post.metadata.published) {
-		throw error(404)
+		throw error(404, 'Interview not found')
 	}
 
 	return {

@@ -71,13 +71,9 @@
 		font-size: 1.2rem;
 	}
 
-	.featured {
-		display: block;
-		width: 100%;
-	}
-
 	.image {
 		width: 100%;
+		border-radius: 1rem;
 	}
 
 	.image-container {

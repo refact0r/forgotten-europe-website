@@ -1,19 +1,11 @@
-import { nameFromPath } from '$lib/js/utils.js'
+import getPosts from '$lib/js/posts'
 
 export async function load() {
-	const modules = import.meta.glob(`/src/content/blog/*.{md,svx,svelte.md}`)
+	let modules = import.meta.glob(`/src/content/blog/*.{md,svx,svelte.md}`)
+	const blogs = await getPosts(modules)
 
-	const postPromises = Object.entries(modules).map(([path, resolver]) =>
-		resolver().then((post) => ({
-			slug: nameFromPath(path),
-			...post.metadata
-		}))
-	)
+	modules = import.meta.glob(`/src/content/interviews/*.{md,svx,svelte.md}`)
+	const interviews = await getPosts(modules)
 
-	const posts = await Promise.all(postPromises)
-	const publishedPosts = posts.filter((post) => post.published)
-
-	publishedPosts.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1))
-
-	return { post: publishedPosts[0] }
+	return { blog: blogs[0], interview: interviews[0] }
 }

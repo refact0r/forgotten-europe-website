@@ -2,6 +2,7 @@
 	import PageHead from '$lib/components/PageHead.svelte'
 	import PictureSources from '$lib/components/PictureSources.svelte'
 	import PostPreview from '../lib/components/PostPreview.svelte'
+	import InterviewPreview from '../lib/components/InterviewPreview.svelte'
 	import banner from '$lib/images/banner3.jpg?w=2000;1500;1000;500'
 	import flagstrip from '$lib/images/flagstrip-2x.png'
 
@@ -48,9 +49,26 @@
 			overcome the barriers of Western-centrism and bring equal representation in learning and
 			discussion.
 		</p>
+	</section>
 
-		<br />
+	<section>
+		<h2>
+			<a href="/interviews">
+				Interviews
+				<i class="fa-solid fa-arrow-right" />
+			</a>
+		</h2>
+		<!-- <p>
+			Year round, founder Liam Krol locates and interviews those who survived Central-Eastern
+			Europe's past tragedies.
+		</p>
+		<h3>Latest Interview</h3> -->
+		<div class="interview">
+			<InterviewPreview post={data.interview} />
+		</div>
+	</section>
 
+	<section>
 		<h2>
 			<a href="/blog">
 				Project Blog
@@ -58,13 +76,13 @@
 			</a>
 		</h2>
 
-		<PostPreview post={data.post} />
+		<PostPreview post={data.blog} />
 	</section>
 </div>
 
 <style lang="scss">
 	.content {
-		padding: 1rem 1rem 4rem 1rem;
+		padding: 0rem 1rem 4rem 1rem;
 		text-align: center;
 	}
 
@@ -129,6 +147,11 @@
 
 	section {
 		max-width: 55rem;
+		margin: 2rem auto;
+	}
+
+	.interview {
+		max-width: 30rem;
 		margin: 0 auto;
 	}
 </style>
