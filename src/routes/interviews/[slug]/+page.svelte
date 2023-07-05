@@ -55,5 +55,6 @@
 		width: 100%;
 		height: auto;
 		aspect-ratio: 16 / 9;
+		border-radius: 1rem;
 	}
 </style>
