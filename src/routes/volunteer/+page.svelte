@@ -104,6 +104,11 @@
 		margin-bottom: 3rem;
 	}
 
+	h1,
+	h2 {
+		text-align: center;
+	}
+
 	.columns {
 		display: flex;
 		gap: 2rem;

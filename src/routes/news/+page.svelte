@@ -26,4 +26,8 @@
 		max-width: 65rem;
 		margin: 0 auto;
 	}
+
+	h1 {
+		text-align: center;
+	}
 </style>

@@ -46,4 +46,8 @@
 		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
 		gap: 1rem;
 	}
+
+	h1 {
+		text-align: center;
+	}
 </style>
