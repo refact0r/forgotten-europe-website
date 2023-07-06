@@ -1,6 +1,6 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
-	import PictureSources from '../../lib/components/PictureSources.svelte'
+	import PictureSources from '$lib/components/PictureSources.svelte'
 	import liam from '$lib/images/liam.jpg?w=800;400'
 </script>
 

@@ -1,6 +1,6 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
-	import PostPreview from '$lib/components/PostPreview.svelte'
+	import BlogPreview from '$lib/components/BlogPreview.svelte'
 
 	export let data
 </script>
@@ -12,7 +12,7 @@
 
 	<section>
 		{#each data.posts as post}
-			<PostPreview {post} />
+			<BlogPreview {post} />
 		{/each}
 	</section>
 </div>

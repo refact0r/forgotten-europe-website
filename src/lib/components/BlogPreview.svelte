@@ -17,7 +17,7 @@
 	async function getImage(path) {
 		const name = nameFromPath(path)
 		const ext = path.split('.').pop()
-		return [await import(`../../lib/images/uploads/${name}.${ext}`), ext]
+		return [await import(`../../../static/images/uploads/${name}.${ext}`), ext]
 	}
 </script>
 
