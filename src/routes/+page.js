@@ -7,5 +7,8 @@ export async function load() {
 	modules = import.meta.glob(`/src/content/interviews/*.{md,svx,svelte.md}`)
 	const interviews = await getPosts(modules)
 
-	return { blog: blogs[0], interview: interviews[0] }
+	modules = import.meta.glob(`/src/content/news/*.{md,svx,svelte.md}`)
+	const news = await getPosts(modules)
+
+	return { blog: blogs[0], interview: interviews[0], news: news[0] }
 }

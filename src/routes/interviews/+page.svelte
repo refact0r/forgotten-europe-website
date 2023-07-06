@@ -4,12 +4,6 @@
 	import { nameFromPath } from '$lib/js/utils.js'
 
 	export let data
-
-	async function getImage(path) {
-		const name = nameFromPath(path)
-		const ext = path.split('.').pop()
-		return [await import(`../../lib/images/uploads/${name}.${ext}`), ext]
-	}
 </script>
 
 <PageHead title="Interviews" description="Information about interviews." />
@@ -20,7 +14,9 @@
 	<section>
 		<p>
 			Year round, founder Liam Krol locates and interviews those who survived Central-Eastern
-			Europe's past tragedies.
+			Europe's past tragedies. Interviews effectively preserve individual stories and
+			establish knowledge for posterity. They may be audio recorded, camera recorded, or both
+			in accordance with interviewee preference.
 		</p>
 		<a class="button" href="https://forms.gle/nePPj6bpz8ZNimKq8">
 			Sign Up for an Interview &nbsp;<i class="fa-solid fa-arrow-right" />

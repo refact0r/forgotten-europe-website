@@ -1,8 +1,9 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
 	import PictureSources from '$lib/components/PictureSources.svelte'
-	import PostPreview from '../lib/components/PostPreview.svelte'
-	import InterviewPreview from '../lib/components/InterviewPreview.svelte'
+	import BlogPreview from '$lib/components/BlogPreview.svelte'
+	import NewsPreview from '$lib/components/NewsPreview.svelte'
+	import InterviewPreview from '$lib/components/InterviewPreview.svelte'
 	import banner from '$lib/images/banner3.jpg?w=2000;1500;1000;500'
 	import flagstrip from '$lib/images/flagstrip-2x.png'
 
@@ -54,15 +55,16 @@
 	<section>
 		<h2>
 			<a href="/interviews">
+				<i class="fa-solid fa-arrow-right spacer" />
 				Interviews
 				<i class="fa-solid fa-arrow-right" />
 			</a>
 		</h2>
-		<!-- <p>
+		<p>
 			Year round, founder Liam Krol locates and interviews those who survived Central-Eastern
 			Europe's past tragedies.
 		</p>
-		<h3>Latest Interview</h3> -->
+		<h3>Latest Interview</h3>
 		<div class="interview">
 			<InterviewPreview post={data.interview} />
 		</div>
@@ -70,13 +72,40 @@
 
 	<section>
 		<h2>
+			<a href="/news">
+				<i class="fa-solid fa-arrow-right spacer" />
+				News
+				<i class="fa-solid fa-arrow-right" />
+			</a>
+		</h2>
+
+		<NewsPreview post={data.news} />
+	</section>
+
+	<section>
+		<h2>
 			<a href="/blog">
+				<i class="fa-solid fa-arrow-right spacer" />
 				Project Blog
 				<i class="fa-solid fa-arrow-right" />
 			</a>
 		</h2>
 
-		<PostPreview post={data.blog} />
+		<BlogPreview post={data.blog} />
+	</section>
+
+	<section>
+		<h2>
+			<a href="/blog">
+				<i class="fa-solid fa-arrow-right spacer" />
+				Volunteers
+				<i class="fa-solid fa-arrow-right" />
+			</a>
+		</h2>
+		<p>
+			We are consistently looking for the help of volunteers, whether it be through outreach,
+			social media, or writing.
+		</p>
 	</section>
 </div>
 
@@ -136,6 +165,11 @@
 		font-size: 2em;
 	}
 
+	h2,
+	h3 {
+		margin: 1rem 0;
+	}
+
 	h2 i {
 		font-size: 1.25rem;
 		margin-left: 0.5rem;
@@ -147,11 +181,17 @@
 
 	section {
 		max-width: 55rem;
-		margin: 2rem auto;
+		margin: 2rem auto 3rem auto;
 	}
 
 	.interview {
 		max-width: 30rem;
 		margin: 0 auto;
+	}
+
+	.spacer {
+		visibility: hidden;
+		margin-right: 0.5rem;
+		margin-left: 0;
 	}
 </style>
