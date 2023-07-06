@@ -32,4 +32,8 @@
 		align-items: center;
 		flex-grow: 1;
 	}
+
+	h1 {
+		text-align: center;
+	}
 </style>
