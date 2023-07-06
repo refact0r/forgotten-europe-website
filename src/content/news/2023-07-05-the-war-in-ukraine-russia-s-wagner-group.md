@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "The War in Ukraine: Russia's Wagner Group"
 date: 2023-07-05T12:33:00.000Z
 description: Understanding the role that the Wagner private military group has played since Russia's illegal invasion of Ukraine.
