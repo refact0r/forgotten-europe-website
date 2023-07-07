@@ -8,6 +8,7 @@
 <div>
 	<h1 class="errorCode">{$page.status}</h1>
 	<h3 class="errorMessage">{$page.error.message}</h3>
+	<a class="button" href="/">Return to Homepage</a>
 </div>
 
 <style>
@@ -29,5 +30,9 @@
 		text-align: center;
 		font-weight: normal;
 		margin: 0;
+	}
+
+	a {
+		margin-top: 1rem;
 	}
 </style>

@@ -10,7 +10,10 @@
 	export let data
 </script>
 
-<PageHead title="" description="Home page of The Forgotten Europe Project website" />
+<PageHead
+	title=""
+	description="The Forgotten Europe Project is dedicated to enlightening the world with the forgotten stories, traditions, and history of Central-Eastern Europe."
+/>
 
 <div class="banner">
 	<picture class="banner-pic">

@@ -2,7 +2,7 @@
 	import PageHead from '$lib/components/PageHead.svelte'
 </script>
 
-<PageHead title="Curriculum" description="Description" />
+<PageHead title="Curriculum" description="" />
 
 <div class="content">
 	<h1>Curriculum</h1>

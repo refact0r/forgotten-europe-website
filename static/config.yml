@@ -47,5 +47,6 @@ collections:
           - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Date', name: 'date', widget: 'datetime' }
+          - { label: 'Description (for search engine)', name: 'description', widget: 'text' }
           - { label: 'Embed Link', name: 'link', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }

@@ -22,6 +22,8 @@
 	}
 </script>
 
+<PageHead {title} {description} />
+
 <div class="content">
 	<section>
 		<h1>{title}</h1>

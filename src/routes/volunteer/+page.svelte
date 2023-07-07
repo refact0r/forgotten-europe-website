@@ -6,7 +6,10 @@
 	import volunteer4 from '$lib/images/volunteer4.jpg?w=800;400'
 </script>
 
-<PageHead title="Curriculum" description="Description" />
+<PageHead
+	title="Volunteer"
+	description="The Forgotten Europe Project is always looking for the help of volunteers, whether it be through outreach, social media, or writing."
+/>
 
 <div class="content">
 	<h1>Volunteer</h1>
@@ -31,7 +34,7 @@
 					width="336"
 					height="252"
 					type="image/jpeg"
-					alt="Liam Krol volunteering at the Kraków train station reception center for Ukrainian refugees"
+					alt="Liam Krol playing badminton with a young refugee from Ukraine."
 				/>
 			</picture>
 			<picture class="volunteer4-pic">

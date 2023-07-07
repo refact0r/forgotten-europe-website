@@ -5,7 +5,10 @@
 	export let data
 </script>
 
-<PageHead title="Blog" description="Description" />
+<PageHead
+	title="Blog"
+	description="Learn about what the Forgotten Europe Project is doing and how you can help."
+/>
 
 <div class="content">
 	<h1>Blog</h1>

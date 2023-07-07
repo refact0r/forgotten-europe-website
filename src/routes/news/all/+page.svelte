@@ -5,7 +5,10 @@
 	export let data
 </script>
 
-<PageHead title="News" description="Description" />
+<PageHead
+	title="All News"
+	description="A list of all past news articles written by the Forgotten Europe Project about Central-Eastern Europe."
+/>
 
 <div class="content">
 	<h1>All News</h1>

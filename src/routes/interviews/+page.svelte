@@ -6,7 +6,10 @@
 	export let data
 </script>
 
-<PageHead title="Interviews" description="Information about interviews." />
+<PageHead
+	title="Interviews"
+	description="The Forgotten Europe Project interviews survivors of the many historical tragedies that Central-Eastern Europe has endured to preserve their stories."
+/>
 
 <div class="content">
 	<h1>Interviews</h1>
