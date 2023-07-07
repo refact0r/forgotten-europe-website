@@ -31,7 +31,7 @@
 
 	<section>
 		<h2>The War in Ukraine</h2>
-		<ins data-wrapper="minusrus-widget" data-width="896" data-lang="en" />
+		<ins data-wrapper="minusrus-widget" data-width="1008" data-lang="en" />
 		<div class="caption">Estimates from Ukraine's Ministry of Defense. May be inaccurate.</div>
 	</section>
 
@@ -88,7 +88,7 @@
 
 <style lang="scss">
 	.content {
-		padding: 0 1rem;
+		padding: 0rem 1.5rem 2rem 1.5rem;
 	}
 
 	section {
@@ -146,6 +146,15 @@
 		}
 		.insta-bottom {
 			height: 48px;
+		}
+	}
+
+	@media (max-width: 700px) {
+		h1 {
+			font-size: 1.6rem;
+		}
+		h2 {
+			font-size: 1.3rem;
 		}
 	}
 </style>

@@ -150,7 +150,7 @@
 
 <style lang="scss">
 	.content {
-		padding: 0 1rem 2rem 1rem;
+		padding: 0rem 2rem 2rem 2rem;
 	}
 
 	section {
@@ -211,7 +211,7 @@
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-		gap: 2rem;
+		gap: 1rem;
 	}
 
 	.placeholder {
@@ -246,5 +246,36 @@
 
 	.website {
 		text-align: center;
+	}
+
+	@media (max-width: 900px) {
+		.liam-pic {
+			text-align: center;
+		}
+		.liam-img {
+			width: 100%;
+			max-width: 25rem;
+		}
+		.columns {
+			flex-direction: column;
+			gap: 1rem;
+
+			.name,
+			.role {
+				text-align: center;
+			}
+		}
+	}
+
+	@media (max-width: 700px) {
+		h1 {
+			font-size: 1.6rem;
+		}
+		h2 {
+			font-size: 1.3rem;
+		}
+		.name {
+			font-size: 1rem;
+		}
 	}
 </style>

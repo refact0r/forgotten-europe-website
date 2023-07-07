@@ -243,14 +243,15 @@
 	.links {
 		display: flex;
 		align-items: center;
-		gap: 1.5rem;
+		gap: 1rem;
 		margin-left: auto;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
+		line-height: 1.1em;
 	}
 
 	.logo {
-		width: 3rem;
-		height: 3rem;
+		width: 2.5rem;
+		height: 2.5rem;
 	}
 
 	.logo-link {
@@ -266,7 +267,7 @@
 	}
 
 	h1 {
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 		margin: 0;
 	}
 
@@ -342,14 +343,16 @@
 		gap: 1rem;
 	}
 
-	@media (max-width: 1250px) {
-		.logo {
-			width: 2.5rem;
-			height: 2.5rem;
+	@media (max-width: 1100px) {
+		header a.button {
+			padding: 0.5rem 0.6rem;
 		}
-
+		.logo {
+			width: 2.25rem;
+			height: 2.25rem;
+		}
 		h1 {
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 		}
 		.links {
 			gap: 0.5rem;
@@ -357,35 +360,33 @@
 		}
 	}
 
-	@media (max-width: 1000px) {
+	@media (max-width: 925px) {
 		h1 {
 			display: none;
 		}
 	}
 
-	@media (max-width: 750px) {
+	@media (max-width: 700px) {
+		header a.button {
+			padding: 0.6rem 1rem;
+		}
 		.header-inner {
 			padding: 0;
 		}
-
 		.logo {
 			width: 2rem;
 			height: 2rem;
 		}
-
 		.logo-link {
 			padding: 0.5rem;
 		}
-
 		h1 {
 			display: block;
-			font-size: 1rem;
+			font-size: 1.1rem;
 		}
-
 		.links {
 			display: none;
 		}
-
 		.hamburger {
 			display: flex;
 		}

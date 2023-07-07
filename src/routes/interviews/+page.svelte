@@ -35,7 +35,7 @@
 
 <style lang="scss">
 	.content {
-		padding: 0 1rem 4rem 1rem;
+		padding: 0rem 1.5rem 2rem 1.5rem;
 	}
 
 	section {
@@ -46,11 +46,17 @@
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 		gap: 1rem;
 	}
 
 	h1 {
 		text-align: center;
+	}
+
+	@media (max-width: 700px) {
+		h1 {
+			font-size: 1.6rem;
+		}
 	}
 </style>

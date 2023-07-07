@@ -18,8 +18,8 @@
 
 <div class="content">
 	<section>
-		<p class="date">{new Date(date).toLocaleString('en-us', options)}</p>
 		<h1>{title}</h1>
+		<p class="author">{new Date(date).toLocaleString('en-us', options)}</p>
 		<svelte:component this={data.component} />
 		<br />
 		<iframe
@@ -36,13 +36,13 @@
 
 <style lang="scss">
 	.content {
-		padding: 0 1rem;
+		padding: 0 1.5rem;
 	}
 
 	h1 {
 		text-align: left;
 		max-width: 50rem;
-		margin: 1rem auto 1rem auto;
+		margin: 1rem auto;
 		font-size: 2rem;
 	}
 
@@ -51,8 +51,19 @@
 		margin: 3rem auto 4rem auto;
 	}
 
-	.date {
+	.author {
 		font-size: 1.2rem;
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+	}
+
+	@media (max-width: 700px) {
+		h1 {
+			font-size: 1.6rem;
+		}
+		.author {
+			font-size: 1rem;
+		}
 	}
 
 	iframe {

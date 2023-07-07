@@ -116,67 +116,64 @@
 
 <style lang="scss">
 	.content {
-		padding: 0rem 1rem 4rem 1rem;
+		padding: 0rem 1.5rem 2rem 1.5rem;
 		text-align: center;
 	}
 
 	.banner {
 		position: relative;
 		width: 100%;
-		height: 20rem;
+		height: fit-content;
+		min-height: 20rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		gap: 1rem;
-
-		h1 {
-			position: relative;
-			font-size: 2.5em;
-			color: #fff;
-		}
+		padding: 1.5rem;
+		color: #fff;
+		text-align: center;
+		overflow: hidden;
 
 		h2 {
 			position: relative;
-			font-size: 1.5em;
-			color: #fff;
 		}
+	}
+
+	h1 {
+		position: relative;
+		font-size: 2.5rem;
+		margin: 1rem 0 1.5rem 0;
 	}
 
 	.flagstrip {
 		position: relative;
-		width: 40rem;
+		max-width: 40rem;
+		width: 100%;
 		height: auto;
 	}
 
 	.banner-pic {
 		position: absolute;
 		width: 100%;
+		height: 100%;
 	}
 
 	.banner-img {
 		width: 100%;
-		height: 20rem;
+		height: 100%;
 		object-fit: cover;
 		object-position: center 30%;
 		filter: brightness(0.4);
 		z-index: 0;
 	}
 
-	h1 {
-		width: fit-content;
-		margin-left: auto;
-		margin-right: auto;
-		font-size: 2em;
-	}
-
-	h2,
-	h3 {
+	h2 {
 		margin: 1rem 0;
 	}
 
 	h2 i {
-		font-size: 1.25rem;
+		font-size: 0.9em;
 		margin-left: 0.5rem;
 	}
 
@@ -199,5 +196,21 @@
 		visibility: hidden;
 		margin-right: 0.5rem;
 		margin-left: 0;
+	}
+
+	@media (max-width: 850px) {
+		.banner {
+			min-height: 15rem;
+			gap: 0.5rem;
+		}
+		.flagstrip {
+			max-width: 35rem;
+		}
+		h1 {
+			font-size: 2.2rem;
+		}
+		h2 {
+			font-size: 1.3rem;
+		}
 	}
 </style>
