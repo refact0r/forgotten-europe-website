@@ -1,19 +1,19 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
-	import BlogPreview from '$lib/components/BlogPreview.svelte'
+	import NewsPreview from '$lib/components/NewsPreview.svelte'
 
 	export let data
 </script>
 
-<PageHead title="Blog" description="Description" />
+<PageHead title="News" description="Description" />
 
 <div class="content">
-	<h1>Blog</h1>
+	<h1>All News</h1>
 
 	<section>
 		<div class="previews">
 			{#each data.posts as post}
-				<BlogPreview {post} />
+				<NewsPreview {post} />
 			{/each}
 		</div>
 	</section>
@@ -26,7 +26,7 @@
 
 	section {
 		max-width: 65rem;
-		margin: 0 auto;
+		margin: 0 auto 3rem auto;
 	}
 
 	.previews {

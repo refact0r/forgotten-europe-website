@@ -58,7 +58,7 @@
 				sign-up form.
 			</p>
 			<a class="button" href="https://forms.gle/G1dM2FCGaQ52tKBk9">
-				Sign Up to Volunteer &nbsp;<i class="fa-solid fa-arrow-right" />
+				Sign Up to Volunteer &nbsp;<i class="fa-solid fa-arrow-up-right-from-square" />
 			</a>
 		</div>
 	</section>
@@ -105,7 +105,8 @@
 	}
 
 	h1,
-	h2 {
+	h2,
+	h3 {
 		text-align: center;
 	}
 
@@ -144,6 +145,8 @@
 	.button {
 		min-width: 7.5rem;
 		height: min-content;
+		display: flex;
+		align-items: center;
 	}
 
 	@media (max-width: 600px) {
