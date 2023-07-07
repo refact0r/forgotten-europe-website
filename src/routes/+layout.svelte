@@ -44,7 +44,7 @@
 						width="48"
 						height="48"
 						type="image/png"
-						alt="Logo"
+						alt="The Forgotten Europe Project Logo"
 					/>
 				</picture>
 				<h1>The Forgotten Europe Project</h1>

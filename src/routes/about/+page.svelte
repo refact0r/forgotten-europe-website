@@ -4,7 +4,10 @@
 	import liam from '$lib/images/liam.jpg?w=800;400'
 </script>
 
-<PageHead title="About" description="Description" />
+<PageHead
+	title="About"
+	description="Our mission is to enlighten the world with the stories, traditions, and history of Central-Eastern Europe which are omitted from mainstream education."
+/>
 
 <div class="content">
 	<h1>About Us</h1>
@@ -43,7 +46,7 @@
 					width="400"
 					height="400"
 					type="image/jpeg"
-					alt="Liam Krol"
+					alt="Founder and President Liam Krol"
 				/>
 			</picture>
 		</div>

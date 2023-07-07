@@ -1,7 +1,9 @@
 <script>
+	import PageHead from '$lib/components/PageHead.svelte'
+
 	export let data
 
-	let { title, date, link } = data.frontmatter
+	let { title, date, description, link } = data.frontmatter
 
 	const options = {
 		year: 'numeric',
@@ -11,6 +13,8 @@
 		minute: 'numeric'
 	}
 </script>
+
+<PageHead {title} {description} />
 
 <div class="content">
 	<section>

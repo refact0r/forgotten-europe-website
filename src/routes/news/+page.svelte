@@ -5,7 +5,10 @@
 	export let data
 </script>
 
-<PageHead title="News" description="Description" />
+<PageHead
+	title="News"
+	description="Stay updated on current events in Central-Eastern Europe and the War in Ukraine."
+/>
 
 <svelte:head>
 	<script defer src="/js/minusrus.js"></script>
