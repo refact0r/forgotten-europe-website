@@ -1,5 +1,4 @@
 <script>
-	import Caption from '$lib/components/Caption.svelte'
 	import PageHead from '$lib/components/PageHead.svelte'
 	import PictureSources from '$lib/components/PictureSources.svelte'
 	import { nameFromPath } from '$lib/js/utils.js'
@@ -45,7 +44,7 @@
 					</picture>
 				{/await}
 				{#if caption}
-					<Caption {caption} />
+					<div class="caption">{caption}</div>
 				{/if}
 			</div>
 		{/if}
@@ -70,13 +69,10 @@
 		margin: 3rem auto 4rem auto;
 	}
 
-	.date {
-		font-size: 1.2rem;
-	}
-
 	.author {
 		font-size: 1.2rem;
 		font-weight: 500;
+		margin-bottom: 0.5rem;
 	}
 
 	.image {

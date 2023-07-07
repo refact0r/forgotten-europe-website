@@ -7,6 +7,10 @@
 
 <PageHead title="News" description="Description" />
 
+<svelte:head>
+	<script defer src="/js/minusrus.js"></script>
+</svelte:head>
+
 <div class="content">
 	<h1>News</h1>
 
@@ -14,14 +18,18 @@
 		<div class="previews">
 			{#each data.posts as post}
 				<NewsPreview {post} />
-				<NewsPreview {post} />
-				<NewsPreview {post} />
 			{/each}
 			<a class="button" href="/news/all">
 				See All&nbsp;
 				<i class="fa-solid fa-arrow-right" />
 			</a>
 		</div>
+	</section>
+
+	<section>
+		<h2>The War in Ukraine</h2>
+		<ins data-wrapper="minusrus-widget" data-width="896" data-lang="en" />
+		<div class="caption">Estimates from Ukraine's Ministry of Defense. May be inaccurate.</div>
 	</section>
 
 	<section class="instagram">
@@ -81,7 +89,7 @@
 	}
 
 	section {
-		max-width: 65rem;
+		max-width: 56rem;
 		margin: 0 auto 3rem auto;
 	}
 

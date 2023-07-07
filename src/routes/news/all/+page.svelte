@@ -25,7 +25,7 @@
 	}
 
 	section {
-		max-width: 65rem;
+		max-width: 56rem;
 		margin: 0 auto 3rem auto;
 	}
 
