@@ -47,7 +47,7 @@
 <style lang="scss">
 	.post {
 		display: flex;
-		gap: 0.5rem;
+		gap: 1rem;
 		padding: 1rem 1rem 1rem 1.5rem;
 		border-radius: 1rem;
 		text-decoration: none;
@@ -73,5 +73,34 @@
 	p {
 		margin: 0.5rem 0 0 0;
 		text-align: left;
+	}
+
+	@media (max-width: 850px) {
+		h2 {
+			font-size: 1.3rem;
+		}
+
+		p {
+			line-height: 150%;
+		}
+
+		.image {
+			width: 6rem;
+			height: 6rem;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.post {
+			padding: 1rem;
+			flex-direction: column;
+		}
+
+		.image {
+			width: 100%;
+			height: auto;
+			max-height: 10rem;
+			object-fit: cover;
+		}
 	}
 </style>

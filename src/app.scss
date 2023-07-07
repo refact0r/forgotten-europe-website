@@ -4,6 +4,13 @@
 	--mid-light: #a9a9a9;
 	--mid-dark: #393939;
 	--dark: #191919;
+	font-size: 112.5%;
+}
+
+@media (max-width: 1300px) {
+	:root {
+		font-size: 100%;
+	}
 }
 
 * {
@@ -33,17 +40,6 @@ p {
 
 h1 {
 	margin: 2rem 0;
-}
-
-@media (max-width: 600px) {
-	h1 {
-		font-size: 1.5rem;
-		margin: 2rem auto;
-	}
-
-	h2 {
-		font-size: 1.2rem;
-	}
 }
 
 picture,

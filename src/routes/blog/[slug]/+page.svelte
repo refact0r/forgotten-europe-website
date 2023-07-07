@@ -56,7 +56,7 @@
 
 <style lang="scss">
 	.content {
-		padding: 0 1rem;
+		padding: 0 1.5rem;
 	}
 
 	h1 {
@@ -73,7 +73,7 @@
 
 	.author {
 		font-size: 1.2rem;
-		font-weight: 500;
+		font-weight: 600;
 		margin-bottom: 0.5rem;
 	}
 
@@ -84,5 +84,14 @@
 
 	.image-container {
 		margin: 1.5rem 0;
+	}
+
+	@media (max-width: 700px) {
+		h1 {
+			font-size: 1.6rem;
+		}
+		.author {
+			font-size: 1rem;
+		}
 	}
 </style>
