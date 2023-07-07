@@ -55,7 +55,7 @@
 				</a>
 				<a
 					class="button inverted"
-					class:active={$page.url.pathname === '/news'}
+					class:active={$page.url.pathname.slice(0, 5) === '/news'}
 					href="/news"
 				>
 					News
@@ -69,28 +69,28 @@
 				</a>
 				<a
 					class="button inverted"
-					class:active={$page.url.pathname === '/interviews'}
+					class:active={$page.url.pathname.slice(0, 11) === '/interviews'}
 					href="/interviews"
 				>
 					Interviews
 				</a>
 				<a
 					class="button inverted"
-					class:active={$page.url.pathname === '/curriculum'}
+					class:active={$page.url.pathname.slice(0, 11) === '/curriculum'}
 					href="/curriculum"
 				>
 					Curriculum
 				</a>
 				<a
 					class="button inverted"
-					class:active={$page.url.pathname === '/volunteer'}
+					class:active={$page.url.pathname.slice(0, 10) === '/volunteer'}
 					href="/volunteer"
 				>
 					Volunteer
 				</a>
 				<a
 					class="button inverted"
-					class:active={$page.url.pathname === '/about'}
+					class:active={$page.url.pathname.slice(0, 6) === '/about'}
 					href="/about"
 				>
 					About

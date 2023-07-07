@@ -3,7 +3,7 @@ published: true
 title: "The War in Ukraine: The American Teenage Perspective"
 date: 2023-07-02T17:14:00.000Z
 author: Liam Krol
-description: An account of volunteering at a Ukrainian refugee reception center in Southern Poland
+description: An account of volunteering at a Ukrainian refugee reception center in Southern Poland.
 featured: /images/uploads/20220822_160700.jpg
 caption: Playing badminton with a young refugee from Ukraine
 ---

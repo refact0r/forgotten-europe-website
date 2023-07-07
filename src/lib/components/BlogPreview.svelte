@@ -4,7 +4,7 @@
 
 	export let post
 
-	const { slug, title, date, description, featured, caption } = post
+	const { slug, title, date, author, description, featured, caption } = post
 
 	const options = {
 		year: 'numeric',
@@ -24,7 +24,7 @@
 <a class="clickable post" href={`blog/${slug}`}>
 	<div class="left">
 		<h2>{title}</h2>
-		<p>{new Date(date).toLocaleString('en-us', options)}</p>
+		<p>{author} • {new Date(date).toLocaleString('en-us', options)}</p>
 		<p>{description}</p>
 	</div>
 	{#if featured}

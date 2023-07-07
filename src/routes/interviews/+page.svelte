@@ -13,13 +13,13 @@
 
 	<section>
 		<p>
-			Year round, founder Liam Krol locates and interviews those who survived Central-Eastern
-			Europe's past tragedies. Interviews effectively preserve individual stories and
-			establish knowledge for posterity. They may be audio recorded, camera recorded, or both
-			in accordance with interviewee preference.
+			Year-round, founder Liam Krol locates and interviews those who experienced
+			Central-Eastern Europe's past tragedies. Through personal accounts, these interviews
+			preserve the stories and messages of survivors which would otherwise be forgotten.
+			Interviews can be virtual or in-person.
 		</p>
 		<a class="button" href="https://forms.gle/nePPj6bpz8ZNimKq8">
-			Sign Up for an Interview &nbsp;<i class="fa-solid fa-arrow-right" />
+			Sign Up for an Interview &nbsp;<i class="fa-solid fa-arrow-up-right-from-square" />
 		</a>
 	</section>
 

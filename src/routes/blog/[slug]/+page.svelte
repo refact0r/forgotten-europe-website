@@ -6,7 +6,7 @@
 
 	export let data
 
-	let { slug, title, date, description, featured, caption } = data.frontmatter
+	let { slug, title, date, author, description, featured, caption } = data.frontmatter
 
 	const options = {
 		year: 'numeric',
@@ -25,8 +25,12 @@
 
 <div class="content">
 	<section>
-		<p class="date">{new Date(date).toLocaleString('en-us', options)}</p>
 		<h1>{title}</h1>
+		<p class="author">
+			By {author} •
+			{new Date(date).toLocaleString('en-us', options)}
+		</p>
+		<p><i>{description}</i></p>
 		{#if featured}
 			<div class="image-container">
 				{#await getImage(featured) then [image, ext]}
@@ -45,7 +49,6 @@
 				{/if}
 			</div>
 		{/if}
-
 		<svelte:component this={data.component} />
 	</section>
 </div>
@@ -69,6 +72,11 @@
 
 	.date {
 		font-size: 1.2rem;
+	}
+
+	.author {
+		font-size: 1.2rem;
+		font-weight: 500;
 	}
 
 	.image {

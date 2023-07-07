@@ -11,9 +11,11 @@
 	<h1>Blog</h1>
 
 	<section>
-		{#each data.posts as post}
-			<BlogPreview {post} />
-		{/each}
+		<div class="previews">
+			{#each data.posts as post}
+				<BlogPreview {post} />
+			{/each}
+		</div>
 	</section>
 </div>
 
@@ -25,6 +27,12 @@
 	section {
 		max-width: 65rem;
 		margin: 0 auto;
+	}
+
+	.previews {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 	}
 
 	h1 {

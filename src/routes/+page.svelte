@@ -50,6 +50,7 @@
 			overcome the barriers of Western-centrism and bring equal representation in learning and
 			discussion.
 		</p>
+		<a class="button" href="/about"> Learn More</a>
 	</section>
 
 	<section>
@@ -61,10 +62,10 @@
 			</a>
 		</h2>
 		<p>
-			Year round, founder Liam Krol locates and interviews those who survived Central-Eastern
-			Europe's past tragedies.
+			The Forgotten Europe Project interviews and records survivors of the many historical
+			tragedies that Central-Eastern Europe has endured to preserve their stories and messages
+			through personal experiences.
 		</p>
-		<h3>Latest Interview</h3>
 		<div class="interview">
 			<InterviewPreview post={data.interview} />
 		</div>
@@ -78,7 +79,7 @@
 				<i class="fa-solid fa-arrow-right" />
 			</a>
 		</h2>
-
+		<p>Stay updated on current news from Central-Eastern Europe.</p>
 		<NewsPreview post={data.news} />
 	</section>
 
@@ -90,13 +91,13 @@
 				<i class="fa-solid fa-arrow-right" />
 			</a>
 		</h2>
-
+		<p>Learn about what the project is doing and how you can help.</p>
 		<BlogPreview post={data.blog} />
 	</section>
 
 	<section>
 		<h2>
-			<a href="/blog">
+			<a href="/volunteer">
 				<i class="fa-solid fa-arrow-right spacer" />
 				Volunteers
 				<i class="fa-solid fa-arrow-right" />
@@ -106,6 +107,7 @@
 			We are consistently looking for the help of volunteers, whether it be through outreach,
 			social media, or writing.
 		</p>
+		<a class="button" href="/volunteer"> Learn More</a>
 	</section>
 </div>
 
@@ -177,6 +179,7 @@
 
 	p {
 		margin: auto;
+		margin-bottom: 1rem;
 	}
 
 	section {
