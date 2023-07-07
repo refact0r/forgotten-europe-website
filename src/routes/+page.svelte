@@ -183,7 +183,7 @@
 	}
 
 	section {
-		max-width: 55rem;
+		max-width: 56rem;
 		margin: 2rem auto 3rem auto;
 	}
 

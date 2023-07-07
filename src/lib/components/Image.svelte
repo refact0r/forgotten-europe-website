@@ -1,6 +1,4 @@
 <script>
-	import Caption from './Caption.svelte'
-
 	export let image
 	export let caption
 </script>
@@ -8,7 +6,7 @@
 <div class="container">
 	<img class="image" src={image} alt={caption} />
 	{#if caption}
-		<Caption {caption} />
+		<div class="caption">{caption}</div>
 	{/if}
 </div>
 
