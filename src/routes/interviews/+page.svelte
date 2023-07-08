@@ -55,8 +55,6 @@
 	}
 
 	@media (max-width: 700px) {
-		h1 {
-			font-size: 1.6rem;
-		}
+		@include small-headings;
 	}
 </style>

@@ -11,12 +11,10 @@
 	<a class="button" href="/">Return to Homepage</a>
 </div>
 
-<style>
+<style lang="scss">
 	div {
-		display: flex;
+		@include flex-center;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		flex-grow: 1;
 	}
 

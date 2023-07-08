@@ -2,7 +2,8 @@
 	--light: #d9d9d9;
 	--semi-light: #c1c1c1;
 	--mid-light: #a9a9a9;
-	--mid-dark: #393939;
+	--mid-dark: #494949;
+	--semi-dark: #313131;
 	--dark: #191919;
 	font-size: 112.5%;
 }
@@ -34,8 +35,7 @@ body {
 
 p {
 	line-height: 175%;
-	margin-top: 0;
-	margin-bottom: 1rem;
+	margin: 0 0 1rem 0;
 }
 
 h1 {
@@ -49,84 +49,48 @@ source {
 }
 
 a {
+	@include clickable-text;
 	display: inline-block;
 	text-decoration: none;
-	color: var(--dark);
 	font-weight: 700;
 
 	&:hover {
 		text-decoration: underline;
 	}
-	&:active {
-		transform: scale(0.99);
+
+	&.inverted {
+		@include clickable-text-inverted;
 	}
 }
 
 a.button {
+	@include button;
 	display: inline-block;
 	padding: 0.6rem 0.8rem;
-	font: inherit;
-	font-weight: bold;
-	background-color: var(--mid-light);
-	color: var(--dark);
-	border-radius: $s;
-
-	&:hover {
-		cursor: pointer;
-		background-color: var(--mid-dark);
-		color: var(--light);
-		text-decoration: none;
-	}
-
-	&:active {
-		background-color: var(--dark);
-		color: var(--light);
-		transform: none;
-	}
+	font-weight: 700;
+	border-radius: 0.5rem;
 
 	&.inverted {
-		background-color: var(--mid-dark);
-		color: var(--light);
-
-		&:hover {
-			background-color: var(--mid-light);
-			color: var(--dark);
-		}
-
-		&:active {
-			background-color: var(--light);
-			color: var(--dark);
-		}
+		@include clickable-inverted;
 	}
-}
 
-a.button.icon {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 3rem;
-	height: 3rem;
-	padding: 0;
-	border-radius: 50%;
+	&.icon {
+		@include flex-center;
+		width: 3rem;
+		height: 3rem;
+		padding: 0;
+		border-radius: 50%;
 
-	& i {
-		font-size: 1.4rem;
+		& i {
+			font-size: 1.4rem;
+		}
 	}
 }
 
 a.clickable {
+	@include button;
 	padding: 1rem;
-	font: inherit;
-	background-color: var(--semi-light);
 	border-radius: 1rem;
-
-	&:hover {
-		background-color: var(--mid-light);
-	}
-	&:active {
-		background-color: var(--mid-dark);
-		color: var(--light);
-	}
 }
 
 button {

@@ -1,6 +1,94 @@
-$t: 4px;
-$s: 8px;
-$m: 16px;
-$l: 32px;
-$h: 64px;
-$g: 128px;
+@mixin button {
+	@include clickable;
+	font: inherit;
+	text-decoration: none;
+	transform: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin clickable-text {
+	color: var(--dark);
+
+	&:hover {
+		color: var(--mid-dark);
+	}
+	&:active {
+		color: var(--mid-light);
+	}
+}
+
+@mixin clickable-text-inverted {
+	color: var(--light);
+
+	&:hover {
+		color: var(--mid-light);
+	}
+	&:active {
+		color: var(--mid-dark);
+	}
+}
+
+@mixin clickable {
+	color: var(--dark);
+	background-color: var(--semi-light);
+
+	&:hover {
+		color: var(--dark);
+		background-color: var(--mid-light);
+	}
+	&:active {
+		color: var(--light);
+		background-color: var(--dark);
+	}
+}
+
+@mixin clickable-inverted {
+	color: var(--light);
+	background-color: var(--semi-dark);
+
+	&:hover {
+		color: var(--light);
+		background-color: var(--mid-dark);
+	}
+	&:active {
+		color: var(--dark);
+		background-color: var(--light);
+	}
+}
+
+@mixin clickable-header {
+	color: var(--light);
+	background-color: var(--dark);
+
+	&:hover,
+	&:active {
+		color: var(--light);
+		background-color: var(--semi-dark);
+	}
+
+	&.active {
+		background-color: var(--light);
+		color: var(--dark);
+	}
+}
+
+@mixin small-headings {
+	h1 {
+		font-size: 1.6rem;
+	}
+	h2 {
+		font-size: 1.3rem;
+	}
+	h3 {
+		font-size: 1.1rem;
+	}
+}

@@ -18,7 +18,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.content {
 		padding: 0 1rem;
 		display: flex;
@@ -26,10 +26,8 @@
 		flex-grow: 1;
 	}
 	.middle {
-		display: flex;
+		@include flex-center;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		flex-grow: 1;
 	}
 

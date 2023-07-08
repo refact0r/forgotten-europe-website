@@ -153,15 +153,7 @@
 	}
 
 	@media (max-width: 700px) {
-		h1 {
-			font-size: 1.6rem;
-		}
-		h2 {
-			font-size: 1.3rem;
-		}
-		h3 {
-			font-size: 1.1rem;
-		}
+		@include small-headings;
 
 		.volunteer2-pic,
 		.volunteer4-pic {
