@@ -53,7 +53,7 @@
 			overcome the barriers of Western-centrism and bring equal representation in learning and
 			discussion.
 		</p>
-		<a class="button" href="/about"> Learn More</a>
+		<a class="button" href="/about">Learn More About Us</a>
 	</section>
 
 	<section>
@@ -110,7 +110,7 @@
 			We are consistently looking for the help of volunteers, whether it be through outreach,
 			social media, or writing.
 		</p>
-		<a class="button" href="/volunteer"> Learn More</a>
+		<a class="button" href="/volunteer">Learn More About Volunteering</a>
 	</section>
 </div>
 
@@ -121,15 +121,13 @@
 	}
 
 	.banner {
+		@include flex-center;
+		flex-direction: column;
+		gap: 1rem;
 		position: relative;
 		width: 100%;
 		height: fit-content;
 		min-height: 20rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 1rem;
 		padding: 1.5rem;
 		color: #fff;
 		text-align: center;

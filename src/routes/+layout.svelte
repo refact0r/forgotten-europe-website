@@ -35,7 +35,7 @@
 {#if $page.url.pathname !== '/admin'}
 	<header>
 		<div class="header-inner">
-			<a class="logo-link" href="/">
+			<a class="logo-link inverted" href="/">
 				<picture>
 					<PictureSources src={logo} />
 					<img
@@ -158,7 +158,9 @@
 		</p>
 		<p class="contact">
 			Contact us<br />
-			<a href="mailto:forgotteneuropeproject@gmail.com"> forgotteneuropeproject@gmail.com </a>
+			<a class="inverted" href="mailto:forgotteneuropeproject@gmail.com">
+				forgotteneuropeproject@gmail.com
+			</a>
 		</p>
 		<div class="buttons">
 			<a
@@ -214,22 +216,7 @@
 		background-color: var(--dark);
 
 		a.button {
-			background-color: var(--dark);
-
-			&:hover {
-				background-color: var(--mid-dark);
-				color: var(--light);
-			}
-
-			&:active {
-				background-color: var(--mid-dark);
-				color: var(--light);
-			}
-
-			&.active {
-				background-color: var(--light);
-				color: var(--dark);
-			}
+			@include clickable-header;
 		}
 	}
 
@@ -255,15 +242,12 @@
 	}
 
 	.logo-link {
+		@include clickable-text-inverted;
 		display: flex;
 		align-items: center;
 		gap: 1rem;
 		color: inherit;
 		text-decoration: none;
-
-		&:hover h1 {
-			color: var(--mid-light);
-		}
 	}
 
 	h1 {
@@ -272,22 +256,15 @@
 	}
 
 	.hamburger {
+		@include flex-center;
+		@include clickable-text-inverted;
 		display: none;
-		align-items: center;
-		justify-content: center;
 		width: 3rem;
 		height: 3rem;
-		color: var(--light);
 		margin-left: auto;
 
 		i {
 			font-size: 1.2rem;
-		}
-		&:hover {
-			color: var(--mid-light);
-		}
-		&:active {
-			color: var(--mid-dark);
 		}
 	}
 
@@ -302,11 +279,16 @@
 		right: 0;
 		height: 100%;
 		z-index: 1;
-		padding: 3.5rem 1rem 1rem 1rem;
+		padding: 3.5rem 1.5rem 1rem 1.5rem;
 		gap: 1rem;
 
 		&.open {
 			transform: translateX(0);
+		}
+
+		a.button {
+			font-size: 1.1rem;
+			padding: 0.6rem 1rem;
 		}
 	}
 
@@ -323,10 +305,6 @@
 		padding: 1rem;
 		background-color: var(--dark);
 		color: var(--light);
-
-		& a {
-			color: var(--light);
-		}
 	}
 
 	.description {
@@ -334,7 +312,7 @@
 	}
 
 	.contact {
-		margin: $s 0;
+		margin: 0.5rem 0;
 	}
 
 	.buttons {
@@ -367,9 +345,6 @@
 	}
 
 	@media (max-width: 700px) {
-		header a.button {
-			padding: 0.6rem 1rem;
-		}
 		.header-inner {
 			padding: 0;
 		}
