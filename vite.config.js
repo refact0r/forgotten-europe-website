@@ -20,11 +20,6 @@ export default defineConfig({
 		}),
 		sveltekit()
 	],
-	resolve: {
-		alias: {
-			$static: path.resolve(__dirname, './static')
-		}
-	},
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	},

@@ -2,8 +2,8 @@ backend:
     name: github
     repo: refact0r/forgotten-europe-website
 
-media_folder: 'static/images/uploads' # Media files will be stored in the repo under static/images/uploads
-public_folder: '/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
+media_folder: 'src/lib/images/uploads' # Media files will be stored in the repo under static/images/uploads
+public_folder: '/src/lib/images/uploads' # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
     - name: 'blog' # Used in routes, e.g., /admin/collections/blog
