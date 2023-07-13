@@ -8,7 +8,7 @@
 	import '$lib/fontawesome/css/solid.min.css'
 
 	import PictureSources from '$lib/components/PictureSources.svelte'
-	import logo from '$lib/images/logo-2x-cropped.png?w=200'
+	import logo from '$lib/images/logo-2k.png?w=200'
 
 	import { page } from '$app/stores'
 

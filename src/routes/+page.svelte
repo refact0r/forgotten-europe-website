@@ -5,7 +5,7 @@
 	import NewsPreview from '$lib/components/NewsPreview.svelte'
 	import InterviewPreview from '$lib/components/InterviewPreview.svelte'
 	import banner from '$lib/images/banner3.jpg?w=2000;1500;1000;500'
-	import flagstrip from '$lib/images/flagstrip-2x.png'
+	import flagstrip from '$lib/images/flagstrip-8k.png'
 
 	export let data
 </script>
