@@ -65,6 +65,7 @@ a {
 
 a.button {
 	@include button;
+	@include clickable;
 	display: inline-block;
 	padding: 0.6rem 0.8rem;
 	font-weight: 700;
@@ -89,20 +90,17 @@ a.button {
 
 a.clickable {
 	@include button;
+	@include clickable-light;
 	padding: 1rem;
 	border-radius: 1rem;
 }
 
 button {
+	@include button;
 	background: transparent;
 	color: inherit;
-	font: inherit;
 	border: none;
 	padding: 0;
-
-	&:hover {
-		cursor: pointer;
-	}
 }
 
 .caption {

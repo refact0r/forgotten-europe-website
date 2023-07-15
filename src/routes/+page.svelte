@@ -53,16 +53,14 @@
 			overcome the barriers of Western-centrism and bring equal representation in learning and
 			discussion.
 		</p>
-		<a class="button" href="/about">Learn More About Us</a>
+		<a class="button" href="/about">
+			Learn More &nbsp; <i class="fa-solid fa-arrow-right" />
+		</a>
 	</section>
 
 	<section>
 		<h2>
-			<a href="/interviews">
-				<i class="fa-solid fa-arrow-right spacer" />
-				Interviews
-				<i class="fa-solid fa-arrow-right" />
-			</a>
+			<a href="/interviews"> Interviews </a>
 		</h2>
 		<p>
 			The Forgotten Europe Project interviews and records survivors of the many historical
@@ -76,11 +74,7 @@
 
 	<section>
 		<h2>
-			<a href="/news">
-				<i class="fa-solid fa-arrow-right spacer" />
-				News
-				<i class="fa-solid fa-arrow-right" />
-			</a>
+			<a href="/news"> News </a>
 		</h2>
 		<p>Stay updated on current news from Central-Eastern Europe.</p>
 		<NewsPreview post={data.news} />
@@ -88,11 +82,7 @@
 
 	<section>
 		<h2>
-			<a href="/blog">
-				<i class="fa-solid fa-arrow-right spacer" />
-				Project Blog
-				<i class="fa-solid fa-arrow-right" />
-			</a>
+			<a href="/blog"> Project Blog </a>
 		</h2>
 		<p>Learn about what the project is doing and how you can help.</p>
 		<BlogPreview post={data.blog} />
@@ -100,17 +90,15 @@
 
 	<section>
 		<h2>
-			<a href="/volunteer">
-				<i class="fa-solid fa-arrow-right spacer" />
-				Volunteers
-				<i class="fa-solid fa-arrow-right" />
-			</a>
+			<a href="/volunteer"> Volunteers </a>
 		</h2>
 		<p>
 			We are consistently looking for the help of volunteers, whether it be through outreach,
 			social media, or writing.
 		</p>
-		<a class="button" href="/volunteer">Learn More About Volunteering</a>
+		<a class="button" href="/volunteer">
+			Learn More &nbsp; <i class="fa-solid fa-arrow-right" />
+		</a>
 	</section>
 </div>
 
@@ -170,11 +158,6 @@
 		margin: 1rem 0;
 	}
 
-	h2 i {
-		font-size: 0.9em;
-		margin-left: 0.5rem;
-	}
-
 	p {
 		margin: auto;
 		margin-bottom: 1rem;
@@ -188,12 +171,6 @@
 	.interview {
 		max-width: 30rem;
 		margin: 0 auto;
-	}
-
-	.spacer {
-		visibility: hidden;
-		margin-right: 0.5rem;
-		margin-left: 0;
 	}
 
 	@media (max-width: 850px) {

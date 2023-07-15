@@ -50,6 +50,11 @@
 		gap: 1rem;
 	}
 
+	.button {
+		font-size: 1.1rem;
+		padding: 1rem 1.3rem;
+	}
+
 	h1 {
 		text-align: center;
 	}
