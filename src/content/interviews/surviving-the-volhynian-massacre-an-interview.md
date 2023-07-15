@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 quote: Surviving the Volhynian Massacre
 thumbnail: surviving-volhynian-massacre.png
 title: "Surviving the Volhynian Massacre: An Interview"
