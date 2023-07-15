@@ -1,11 +1,14 @@
 @mixin button {
-	@include clickable;
 	font: inherit;
 	text-decoration: none;
 	transform: none;
 
 	&:hover {
 		cursor: pointer;
+	}
+
+	&:active {
+		transform: scale(0.98);
 	}
 }
 
@@ -22,7 +25,7 @@
 		color: var(--mid-dark);
 	}
 	&:active {
-		color: var(--mid-light);
+		transform: scale(0.98);
 	}
 }
 
@@ -33,11 +36,21 @@
 		color: var(--mid-light);
 	}
 	&:active {
-		color: var(--mid-dark);
+		transform: scale(0.98);
 	}
 }
 
 @mixin clickable {
+	color: var(--light);
+	background-color: var(--dark);
+
+	&:hover {
+		color: var(--light);
+		background-color: var(--semi-dark);
+	}
+}
+
+@mixin clickable-light {
 	color: var(--dark);
 	background-color: var(--semi-light);
 
@@ -45,23 +58,15 @@
 		color: var(--dark);
 		background-color: var(--mid-light);
 	}
-	&:active {
-		color: var(--light);
-		background-color: var(--dark);
-	}
 }
 
 @mixin clickable-inverted {
-	color: var(--light);
-	background-color: var(--semi-dark);
+	color: var(--dark);
+	background-color: var(--light);
 
 	&:hover {
-		color: var(--light);
-		background-color: var(--mid-dark);
-	}
-	&:active {
 		color: var(--dark);
-		background-color: var(--light);
+		background-color: var(--mid-light);
 	}
 }
 
@@ -69,8 +74,7 @@
 	color: var(--light);
 	background-color: var(--dark);
 
-	&:hover,
-	&:active {
+	&:hover {
 		color: var(--light);
 		background-color: var(--semi-dark);
 	}

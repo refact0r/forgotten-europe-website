@@ -54,7 +54,7 @@
 			refugees
 		</div>
 		<br />
-		<div class="columns">
+		<div class="middle">
 			<p class="description">
 				We are always looking for volunteers willing to contribute to the Project's mission
 				statement and goals. If interested in volunteer involvement, please complete the
@@ -127,8 +127,14 @@
 		gap: 1rem;
 	}
 
+	.middle {
+		display: flex;
+		gap: 1rem;
+	}
+
 	.description {
 		margin-bottom: 0;
+		flex: 4;
 	}
 
 	img {
@@ -146,10 +152,12 @@
 	}
 
 	.button {
-		min-width: 7.5rem;
-		height: min-content;
 		display: flex;
 		align-items: center;
+		justify-content: center;
+		font-size: 1.1rem;
+		padding: 1rem 1.3rem;
+		flex: 1;
 	}
 
 	@media (max-width: 700px) {
@@ -160,7 +168,8 @@
 			display: none;
 		}
 
-		.columns {
+		.columns,
+		.middle {
 			flex-direction: column;
 			gap: 0;
 		}

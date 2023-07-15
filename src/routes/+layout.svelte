@@ -12,10 +12,10 @@
 
 	import { page } from '$app/stores'
 
-	$: title =
-		$page.url.pathname === '/'
-			? 'The Forgotten <span class="nowrap">Europe Project</span>'
-			: $page.url.pathname.charAt(1).toUpperCase() + $page.url.pathname.slice(2)
+	// $: title =
+	// 	$page.url.pathname === '/'
+	// 		? 'The Forgotten <span class="nowrap">Europe Project</span>'
+	// 		: $page.url.pathname.charAt(1).toUpperCase() + $page.url.pathname.slice(2)
 
 	let menuOpen = false
 
