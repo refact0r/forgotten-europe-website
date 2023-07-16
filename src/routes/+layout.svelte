@@ -55,6 +55,20 @@
 				</a>
 				<a
 					class="button inverted"
+					class:active={$page.url.pathname.slice(0, 11) === '/interviews'}
+					href="/interviews"
+				>
+					Interviews
+				</a>
+				<a
+					class="button inverted"
+					class:active={$page.url.pathname.slice(0, 10) === '/volunteer'}
+					href="/volunteer"
+				>
+					Volunteer
+				</a>
+				<a
+					class="button inverted"
 					class:active={$page.url.pathname.slice(0, 5) === '/news'}
 					href="/news"
 				>
@@ -69,24 +83,10 @@
 				</a>
 				<a
 					class="button inverted"
-					class:active={$page.url.pathname.slice(0, 11) === '/interviews'}
-					href="/interviews"
-				>
-					Interviews
-				</a>
-				<a
-					class="button inverted"
 					class:active={$page.url.pathname.slice(0, 11) === '/curriculum'}
 					href="/curriculum"
 				>
 					Curriculum
-				</a>
-				<a
-					class="button inverted"
-					class:active={$page.url.pathname.slice(0, 10) === '/volunteer'}
-					href="/volunteer"
-				>
-					Volunteer
 				</a>
 				<a
 					class="button inverted"
@@ -107,34 +107,46 @@
 
 		<div class="menu" class:open={menuOpen}>
 			<a class="button inverted" class:active={$page.url.pathname === '/'} href="/"> Home </a>
-			<a class="button inverted" class:active={$page.url.pathname === '/news'} href="/news">
-				News
-			</a>
-			<a class="button inverted" class:active={$page.url.pathname === '/blog'} href="/blog">
-				Blog
-			</a>
 			<a
 				class="button inverted"
-				class:active={$page.url.pathname === '/interviews'}
+				class:active={$page.url.pathname.slice(0, 11) === '/interviews'}
 				href="/interviews"
 			>
 				Interviews
 			</a>
 			<a
 				class="button inverted"
-				class:active={$page.url.pathname === '/curriculum'}
+				class:active={$page.url.pathname.slice(0, 10) === '/volunteer'}
+				href="/volunteer"
+			>
+				Volunteer
+			</a>
+			<a
+				class="button inverted"
+				class:active={$page.url.pathname.slice(0, 5) === '/news'}
+				href="/news"
+			>
+				News
+			</a>
+			<a
+				class="button inverted"
+				class:active={$page.url.pathname.slice(0, 5) === '/blog'}
+				href="/blog"
+			>
+				Blog
+			</a>
+			<a
+				class="button inverted"
+				class:active={$page.url.pathname.slice(0, 11) === '/curriculum'}
 				href="/curriculum"
 			>
 				Curriculum
 			</a>
 			<a
 				class="button inverted"
-				class:active={$page.url.pathname === '/volunteer'}
-				href="/volunteer"
+				class:active={$page.url.pathname.slice(0, 6) === '/about'}
+				href="/about"
 			>
-				Volunteer
-			</a>
-			<a class="button inverted" class:active={$page.url.pathname === '/about'} href="/about">
 				About
 			</a>
 		</div>
@@ -147,15 +159,6 @@
 
 {#if $page.url.pathname !== '/admin'}
 	<footer>
-		<p class="description">
-			<i>
-				The Forgotten Europe Project is in no way affiliated based on race, ethnicity,
-				religion, gender identity, or sexual orientation. We welcome all individuals to
-				share an interest in Central-Eastern European culture and history.
-				<br />
-				The Forgotten Europe Project stands in full solidarity with the people of Ukraine.
-			</i>
-		</p>
 		<p class="contact">
 			Contact us<br />
 			<a class="inverted" href="mailto:forgotteneuropeproject@gmail.com">
@@ -196,6 +199,17 @@
 				<i class="fa-brands fa-linkedin" />
 			</a>
 		</div>
+		<br />
+		<p class="description">
+			The Forgotten Europe Project is in no way affiliated based on race, ethnicity, religion,
+			gender identity, or sexual orientation. We welcome all individuals to share an interest
+			in Central-Eastern European culture and history.
+			<br />
+			<b>
+				The Forgotten Europe Project is a nonprofit organization incorporated with the State
+				of Washington.
+			</b>
+		</p>
 	</footer>
 {/if}
 
@@ -312,7 +326,7 @@
 	}
 
 	.contact {
-		margin: 0.5rem 0;
+		margin-bottom: 0.5rem;
 	}
 
 	.buttons {
