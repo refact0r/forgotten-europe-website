@@ -89,7 +89,7 @@
 			<h3>Writer</h3>
 			<p>
 				As a historical project, we focus on preserving and raising awareness over
-				central-eastem Europe's forgotten history. Responsibilities include creating blogs,
+				Central-Eastern Europe's forgotten history. Responsibilities include creating blogs,
 				writing newsletters, and conducting historical research.
 			</p>
 		</div>
