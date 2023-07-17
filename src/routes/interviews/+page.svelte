@@ -52,7 +52,7 @@
 
 	.button {
 		font-size: 1.1rem;
-		padding: 1rem 1.3rem;
+		padding: 0.8rem 1.1rem;
 	}
 
 	h1 {

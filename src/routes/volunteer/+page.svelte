@@ -130,6 +130,7 @@
 	.middle {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		gap: 1rem;
 	}
 
@@ -153,12 +154,11 @@
 	}
 
 	.button {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		text-align: center;
 		font-size: 1.1rem;
-		padding: 1rem 1.3rem;
+		padding: 0.8rem 1.1rem;
 		flex: 1;
+		width: 50%;
 	}
 
 	@media (max-width: 700px) {
@@ -176,7 +176,7 @@
 		}
 
 		.button {
-			width: fit-content;
+			width: 100%;
 			margin: 1rem auto 0 auto;
 		}
 
