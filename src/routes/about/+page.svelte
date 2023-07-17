@@ -94,7 +94,7 @@
 				<div class="head" />
 				<div class="body" />
 			</div>
-			<div class="name">Anton Chebotaryov</div>
+			<div class="name">Andrew Cun</div>
 			<div class="role">Marketing Lead</div>
 		</div>
 		<div class="volunteer">
@@ -126,7 +126,7 @@
 				<div class="head" />
 				<div class="body" />
 			</div>
-			<div class="name">Tuck Ellis</div>
+			<div class="name">Anton Chebotaryov</div>
 			<div class="role">Marketing</div>
 		</div>
 		<div class="volunteer">
@@ -134,9 +134,17 @@
 				<div class="head" />
 				<div class="body" />
 			</div>
+			<div class="name">Tuck Ellis</div>
+			<div class="role">Marketing</div>
+		</div>
+		<!-- <div class="volunteer">
+			<div class="placeholder">
+				<div class="head" />
+				<div class="body" />
+			</div>
 			<div class="name">Yifan</div>
 			<div class="role">Technology</div>
-		</div>
+		</div> -->
 	</section>
 
 	<section class="website">
@@ -210,7 +218,7 @@
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 		gap: 1rem;
 	}
 
