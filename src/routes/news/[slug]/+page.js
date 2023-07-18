@@ -2,7 +2,7 @@ import { nameFromPath } from '$lib/js/utils.js'
 import { error } from '@sveltejs/kit'
 
 export async function load({ params }) {
-	const modules = import.meta.glob('/src/content/news/*.{md,svx,svelte.md}')
+	const modules = import.meta.glob('/src/content/news/*.md')
 
 	let match = {}
 
