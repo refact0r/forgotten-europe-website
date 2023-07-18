@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte'
+
 	export let open
 
 	let details
@@ -34,7 +35,7 @@
 	.collapsible {
 		margin: auto;
 		margin-bottom: 1rem;
-		width: 100%	;
+		width: 100%;
 	}
 
 	.header {
