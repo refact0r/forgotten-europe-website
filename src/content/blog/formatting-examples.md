@@ -7,7 +7,18 @@ description: yes
 featured: ""
 caption: ""
 ---
-important stuff
+
+<script>
+import Image from '$lib/components/Image.svelte'
+</script>
+
+add this script section to the top of body section in order to use images in the body
+
+image:
+
+<Image path="/images/uploads/stories-from-ww2.png" caption="this is a caption"/>
+
+formatting examples:
 
 *italic*
 
@@ -41,6 +52,3 @@ HIDDEN LINK [Hidden Link](https://duckduckgo.com)
 
 DIRECT LINK
 <https://www.markdownguide.org>
-
-IMAGE
-![Youyi](/images/uploads/youyi.jpg)

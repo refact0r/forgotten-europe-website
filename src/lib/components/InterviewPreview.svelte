@@ -1,5 +1,5 @@
 <script>
-	import PictureSources from './PictureSources.svelte'
+	import PictureSources from '$lib/components/PictureSources.svelte'
 	import { nameFromPath } from '$lib/js/utils.js'
 
 	export let post

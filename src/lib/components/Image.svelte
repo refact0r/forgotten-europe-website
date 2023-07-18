@@ -1,10 +1,31 @@
 <script>
-	export let image
+	import PictureSources from '$lib/components/PictureSources.svelte'
+	import { nameFromPath } from '$lib/js/utils.js'
+
+	export let path
 	export let caption
+
+	async function getImage(path) {
+		const name = nameFromPath(path)
+		const ext = path.split('.').pop()
+		return [await import(`../images/uploads/${name}.${ext}`), ext]
+	}
 </script>
 
 <div class="container">
-	<img class="image" src={image} alt={caption} />
+	{#await getImage(path) then [image, ext]}
+		<picture>
+			<PictureSources src={image} />
+			<img
+				class="image"
+				src={image.img.src}
+				width="352"
+				height="198"
+				type={`image/${ext}`}
+				alt={caption}
+			/>
+		</picture>
+	{/await}
 	{#if caption}
 		<div class="caption">{caption}</div>
 	{/if}
@@ -13,9 +34,10 @@
 <style lang="scss">
 	img {
 		width: 100%;
+		height: auto;
 	}
 
 	.container {
-		margin: 1rem 0;
+		margin: 1.5rem 0;
 	}
 </style>
