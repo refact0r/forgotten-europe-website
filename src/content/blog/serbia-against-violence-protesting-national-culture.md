@@ -7,6 +7,10 @@ description: t
 featured: /src/lib/images/uploads/0_13y4cBaua7IDjY-d.webp
 caption: ""
 ---
+<script>
+import Image from '$lib/components/Image.svelte'
+</script>
+
 An ordinary Wednesday morning scene: the sun rising, employees clocking in, children going to school. By the bright-and-early hour of 9 a.m., eight of these children are shot and killed. Not 36 hours later, another shooting strikes two towns in Belgrade. These last few months have seen mass protest not only in Serbia, but with the Serbian international diaspora as well. It has been one of the nation’s most tense periods in the 21st century.
 
 Huge demonstrations have filled the streets of Belgrade, Serbia’s capital city. They demand the resignation of important politicians, gun control policy reform, and modifications to Serbian media, all of which they believe has fostered a culture of violence.
@@ -29,3 +33,5 @@ Authorities uncovered hit lists and detailed plans of attack. The gun used was K
 Kosta Kecmanović’s justification has been one chilling sentence: “I shot because I am a psychopath.”
 
 In the wake of these findings, protests against the government’s failure to act began to stir. The next day, however, only magnified these demonstrations.
+
+<
