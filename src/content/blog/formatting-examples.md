@@ -16,7 +16,7 @@ add this script section to the top of body section in order to use images in the
 
 image:
 
-<Image path="/images/uploads/stories-from-ww2.png" caption="this is a caption"/>
+<Image path="src/lib/images/uploads/stories-from-ww2.png" caption="this is a caption"/>
 
 formatting examples:
 
