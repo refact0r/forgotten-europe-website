@@ -8,7 +8,7 @@ export default defineConfig({
 		imagetools({
 			defaultDirectives: (url) => {
 				const extension = url.pathname.substring(url.pathname.lastIndexOf('.') + 1)
-				if (['jpg', 'jpeg', 'png'].includes(extension)) {
+				if (['jpg', 'jpeg', 'png', 'webp'].includes(extension)) {
 					return new URLSearchParams({
 						format: `avif;jpg`,
 						w: '1200;800;400',
