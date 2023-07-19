@@ -1,7 +1,7 @@
 ---
 published: true
 quote: '"Somehow everybody lived"'
-thumbnail: stories-from-ww2.png
+thumbnail: /images/uploads/stories-from-ww2.png
 title: Stories From WWII and Communism
 date: 2023-07-02T23:22:00.000Z
 description: Born in 1944, Jerzy (anonymous) describes the adversity and strife in his personal stories from the World War II and subsequent communist regime in Poland.

@@ -4,7 +4,7 @@ title: "“Serbia Against Violence”: Protesting National Culture"
 date: 2023-07-18T21:09:00.000Z
 author: Rittik Bhattacharya
 description: t
-featured: /src/lib/images/uploads/Protest.png
+featured: /images/uploads/Protest.png
 caption: ""
 ---
 <script>
@@ -34,7 +34,7 @@ Kosta Kecmanović’s justification has been one chilling sentence: “I shot be
 
 In the wake of these findings, protests against the government’s failure to act began to stir. The next day, however, only magnified these demonstrations.
 
-<Image path="src/lib/images/uploads/Memorial.png" caption="Memorial for the deceased of the 3 May 2023 school shooting. The sign reads, translated, “Talk to the kids.” Source: Andrija12345678 — Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=131566315
+<Image path="/images/uploads/Memorial.png" caption="Memorial for the deceased of the 3 May 2023 school shooting. The sign reads, translated, “Talk to the kids.” Source: Andrija12345678 — Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=131566315
 "/>
 
 ### The Mladenovac and Smederevo Shootings
