@@ -4,6 +4,7 @@
 
 	export let path
 	export let caption
+	export let source
 
 	async function getImage(path) {
 		const name = nameFromPath(path)
@@ -27,7 +28,12 @@
 		</picture>
 	{/await}
 	{#if caption}
-		<div class="caption">{caption}</div>
+		<div class="caption">
+			{caption}
+			{#if source}
+				<a href={source}>Source</a>
+			{/if}
+		</div>
 	{/if}
 </div>
 
@@ -35,6 +41,7 @@
 	img {
 		width: 100%;
 		height: auto;
+		border-radius: 1rem;
 	}
 
 	.container {
