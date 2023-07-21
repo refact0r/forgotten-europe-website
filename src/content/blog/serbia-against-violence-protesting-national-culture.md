@@ -34,8 +34,7 @@ Kosta Kecmanović’s justification has been one chilling sentence: “I shot be
 
 In the wake of these findings, protests against the government’s failure to act began to stir. The next day, however, only magnified these demonstrations.
 
-<Image path="/images/uploads/Memorial.png" caption="Memorial for the deceased of the 3 May 2023 school shooting. The sign reads, translated, “Talk to the kids.” Source: Andrija12345678 — Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=131566315
-"/>
+<Image path="/images/uploads/Memorial.png" caption="Memorial for the deceased of the 3 May 2023 school shooting. The sign reads, translated, “Talk to the kids.”" source="https://commons.wikimedia.org/w/index.php?curid=131566315"/>
 
 ### The Mladenovac and Smederevo Shootings
 21-year-old Uroš Blažić returned home to his cottage in Šepšin after an argument with his friends at a Mladenovac football stadium. But he did not stay there for long. Taking an assault rifle, three pistols, and four hand grenades, he expressed his rage via a drive-by shooting. His first destination was a village in Smederevo. There, Blažić shot 11, killing five and injuring six. He then continued to a town in Mladenovac, killing another four and injuring a handful of other civilians.
@@ -44,8 +43,7 @@ The subsequent manhunt took the region by storm. The Serbian government engaged 
 
 In the wake of Blažić’s arrest, investigations have uncovered shocking details. He was arrested wearing a shirt printed with the slogan “Generation 88 on Tour,” a [pro-Nazi symbol.](https://www.adl.org/resources/hate-symbol/88) 
 
-<Image path="/images/uploads/Shirt.png" caption="Uroš Blažić after his arrest, wearing a pro-Nazi shirt.
-"/>
+<Image path="/images/uploads/Shirt.png" caption="Uroš Blažić after his arrest, wearing a pro-Nazi shirt."/>
 
 Further examination into his social media accounts garnered that he was an ardent idolater of gangster and convicted criminal Kristijan Golubović, who was most active during the rise of Serbian nationalism in 1989–1997. Golubović exemplified the explosive tendencies of many Serbians during the period’s deep economic and cultural turmoil.
 
@@ -60,8 +58,7 @@ One of the more prominent justifications for this claim particularly lies with B
 
 In this sense, Blažić’s upset over “society’s injustice” is in line with nationalist ideas of securing one’s identity via outbursts of violence. His fanaticism over Golubović follows in those footsteps. Golubović repeats that tendency of using violence to release frustration at humiliation — in his case, the economic and cultural instability of Serbia during his career.
 
-<Image path="/images/uploads/MusicVideo.png" caption="Golubović in a music video.
-"/>
+<Image path="/images/uploads/MusicVideo.png" caption="Golubović in a music video."/>
 
 The above image also underscores that some Serbians idolize violence. In particular, the artist of that song seemed to believe that including a renowned gangster in his video would make it cooler, hinting at the romanticized view of violence to some parts of the culture.
 
@@ -69,8 +66,7 @@ The nationalist obsession with violent reconciliation with past defeat saw its f
 
 Josip Broz Tito established Yugoslavia in 1945 to unite the ethnicities of what is now Bosnia and Herzegovina, Croatia, Macedonia, Montenegro, Serbia, and Slovenia under one national banner. Leaders also carved two smaller autonomous provinces out from Serbia based on their ethno-demographic differences: Vojvodina in the North and Kosovo in the South.
 
-<Image path="/images/uploads/Ethics.png" caption="Map of Yugoslavia and its ethnicities in 1961. From @bosnian_mapper on Instagram. Note that the Bosnian ethnicity was Muslim and a minority in Bosnia.
-"/>
+<Image path="/images/uploads/Ethics.png" caption="Map of Yugoslavia and its ethnicities in 1961. Note that the Bosnian ethnicity was Muslim and a minority in Bosnia." source="https://www.instagram.com/p/CTt8f0aMy1I/"/>
 
 Vojvodina had a uniquely large Hungarian presence, a remnant of its former ownership by the Austro-Hungarian Empire. As for Kosovo, its population was majority Albanian, who were Muslim by virtue of Ottoman conquest centuries before.
 
@@ -80,8 +76,7 @@ Despite Tito’s efforts, some radicals among the ethnicities would never let go
 
 Distrust was not a new sentiment during Tito’s Yugoslavia. It was a remnant of an ideological policy in 1st Yugoslavia, established by Serbia, Croatia, and Slovenia in 1918 after the Ottoman Empire’s dissolution. The policy officially “[considered Muslims as the heir of the Ottoman occupiers in the Balkans.](https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?article=3316&context=etd-project)” 1st Yugoslavia, as a Serbian-led state, thus ingrained Serbian nationalists with a mindset that otherized and demonized Muslims.
 
-<Image path="/images/uploads/Religion.png" caption="Religious map of 1st Yugoslavia. Note the abundance of Muslims around Serbia, the large Orthodox mass on the right-hand side.
-"/>
+<Image path="/images/uploads/Religion.png" caption="Religious map of 1st Yugoslavia. Note the abundance of Muslims around Serbia, the large Orthodox mass on the right-hand side."/>
 
 Paralleling Uroš Blažić, who expressed violence as a recourse for injustices committed against him, Serbian nationalists were brewing violent ideas as recourse for the Ottoman conquest of Serbia. In addition, Serbian nationalists felt unseen by Tito’s anti-nationalist government.
 
@@ -89,15 +84,13 @@ So when Tito died, he left a gaping hole in Yugoslavian ideological policy. The 
 
 The nationalists’ first opportunity for recognition surprised them on 20 April 1987. To calm the stirring ethnic tensions, Serbian President Ivan Stambolić was called to Kosovo. But Stambolić deferred the visit to his right-hand man and the to-be notorious Slobodan Milošević.
 
-<Image path="/images/uploads/Hug.png" caption="Ivan Stambolić (left) and Slobodan Milošević (right), depicting their close friendship.
-"/>
+<Image path="/images/uploads/Hug.png" caption="Ivan Stambolić (left) and Slobodan Milošević (right), depicting their close friendship."/>
 
 Milošević repeatedly condemned the nationalist hatred brewing between ethnicities in Kosovo and stressed the importance of maintaining peace to the union and its progressive Communist goals. But in agreeing to open dialogue with nationalists who expressed upset at his speech, he unknowingly committed to a position antithetical to Tito’s policy of “Brotherhood and Unity.” Where Tito, iron-fisted as he was, would have simply crushed the sentiments, Milošević provided the nationalists with a direct channel to the government through which they could get their ideas.
 
 To Milošević, Kosovo was Serbian territory through-and-through. He perceived it as the center of Serbian history, taken from them in the 14th century when it was conquered by Muslims. Now called the “[Kosovo Myth](http://www.yorku.ca/soi/Vol_3/_HTML/Greenawalt.html),” Milošević and many Serbian nationalists bought into the idea of ancient Serbian heroism in its last stand before defeat by the Ottoman invaders. And though most Serbians were forced out of the region by those invaders, the remaining ones appealed to the motif of injustice and humiliation.
 
-<Image path="/images/uploads/Kosovo.png" caption="Depiction of the “Kosovo Myth,” the icon of the Serbian Orthodox Church
-"/>
+<Image path="/images/uploads/Kosovo.png" caption="Depiction of the “Kosovo Myth,” the icon of the Serbian Orthodox Church"/>
 
 It is from this story and its idolization by state television that Serbia’s small-but-potent warrior “cult” arose. Nationalists’ faith in Serbian heroism spilled over into a past-oriented perception of their ethnicity as martyr-warriors. Therefore, they transformed their defeat as a call to action for those who identify with the semi-mythical Serbian warriors. That loss — its humiliation — they asserted, required violent uprising as recourse. This echoes the logic of Blažić, who fired as an expression of rage against the societal injustices committed against him in his youth. And indeed, it haunted Serbians into the 20th century.
 
@@ -112,8 +105,7 @@ So in Kecmanović’s case, we have to look to the gun ownership issue.
 
 Part of the reason Kecmanović was even able to get his hands on a gun in the first place was because of its proliferation throughout the nation. Serbia’s per-capita civilian gun ownership is the (tied) third-highest of any nation in the world, at 39 per 100 population. It is behind only Yemen, at 58, and the United States, at 121.
 
-<Image path="/images/uploads/Guns.png" caption="Table of global gun ownership by nation. Source: https://www.vox.com/2018/6/21/17488024/gun-ownership-violence-shootings-us
-"/>
+<Image path="/images/uploads/Guns.png" caption="Table of global gun ownership by nation." source="https://www.vox.com/2018/6/21/17488024/gun-ownership-violence-shootings-us"/>
 
 Such a high statistic is intertwined with the Yugoslavian Civil War. When Milošević pledged allegiance to the Serbian nationalists, he became part of a broader set of conflicts in Yugoslavia. The rise of Serbian nationalism was one of the major elements of the Yugoslavian Civil War, which began in 1990.
 
@@ -127,8 +119,7 @@ Still, many of the weapons in ownership were and are hunting rifles. The remaini
 
 But even that reason is couched in nationalist-esque tendencies of the Serbian government, and part of the reason demonstrators protest cultural nationalism. With present-day Serbian President Aleksandar Vučić “[constantly telling people we are on the brink of war with Kosovo,](https://www.nytimes.com/2023/06/02/world/europe/serbia-shootings-gun-control.html)” notions of self-defense may be in part synonymous with securitization.
 
-<Image path="/images/uploads/President.png" caption="Vučić vows to protect Serbian people — an echo of Milošević’s promise that led to the rise of nationalism in Serbia. Source: https://newseu.cgtn.com/news/2022-08-22/Serbia-says-it-will-protect-our-people-in-Kosovo-as-tension-rises-1cHQUuScWcM/index.html
-"/>
+<Image path="/images/uploads/President.png" caption="Vučić vows to protect Serbian people — an echo of Milošević’s promise that led to the rise of nationalism in Serbia." source="https://newseu.cgtn.com/news/2022-08-22/Serbia-says-it-will-protect-our-people-in-Kosovo-as-tension-rises-1cHQUuScWcM/index.html"/>
 
 [Securitization](https://www.e-ir.info/2018/01/14/securitisation-theory-an-introduction/) is a part of the field of international relations. It is the belief that, under the presumption of foreign threats, that the state and people need to increase their own military capabilities to be prepared for the conflict.
 
@@ -160,8 +151,7 @@ A final concession I should make: a lot of the protests use speculation to link 
 ### Protest and Response
 The protests over the shootings have been the largest in Serbia in over 20 years, and they’re outclassed only by the demonstrations that overthrew Milošević in 2000. Serbia Against Violence’s core demands surround the resignation of certain political figures and the closure of violence-propagating media outlets. Aleksandar Vulin, Branko Ružić, and Bratislav Gašić and of course Aleksandar Vučić have been the main targets in the government, and Pink TV and Happy TV the main targets in the media.
 
-<Image path="/images/uploads/Politicians.png" caption="Vučić and Gašić. Source: https://nova.rs/vesti/politika/vucic-ce-pre-da-zrtvuje-vladu-srbije-nego-bratislava-gasica/
-"/>
+<Image path="/images/uploads/Politicians.png" caption="Vučić and Gašić." source="https://nova.rs/vesti/politika/vucic-ce-pre-da-zrtvuje-vladu-srbije-nego-bratislava-gasica/"/>
 
 Vulin, the director of Serbia’s Security Intelligence Agency (BIA), has come under fire for failing to prevent the shootings. Because he commands the nation’s most powerful enforcement agency, protestors hold him accountable for not stopping the shooters. Vulin was also a strong supporter of Milošević during his reign and a noted nationalist. Alone, this does not indicate anything conclusive, but is interesting given that he seems to have enabled these violent outbursts.
 
@@ -171,8 +161,7 @@ Gašić, the Interior Minister, is less controversial, but calls for his resigna
 
 Vučić, the Serbian president and former president of the Progressive Party (SNS), was the most pressured to resign. He has since stepped down from his presidency in the SNS. Vučić is another strong nationalist and populist, and some protestors blame him for fostering a divisive cultural environment that “[indirectly led to the mass shootings.](https://www.npr.org/2023/05/13/1175990505/thousands-march-against-populist-leadership-serbia-mass-shooting)”
 
-<Image path="/images/uploads/BigProtest.png" caption="Another look at the size of demonstrations in Serbia. Source: https://www.rferl.org/a/serbia-belgrade-protest-thousands-mass-shootings/32419552.html
-"/>
+<Image path="/images/uploads/BigProtest.png" caption="Another look at the size of demonstrations in Serbia." source="https://www.rferl.org/a/serbia-belgrade-protest-thousands-mass-shootings/32419552.html"/>
 
 Protestors also call for the confiscation of Pink and Happy TV’s licenses, a change that would come alongside the prohibition of gang-centered reality shows. Many demonstrators believe the drop in media violence would result in a decrease in violent tendencies overall.
 
@@ -180,8 +169,7 @@ But the government response itself has been discouraging. Coupled with pro-gover
 
 The protests and their responses are remarkably forward-thinking despite Vučić’s indifference. Compared to the United States, where mass shootings are common — [more than 330 with nearly 40,000 casualties this year alone so far](https://www.forbes.com/sites/anafaguy/2023/07/03/us-sees-record-number-of-mass-shootings-halfway-through-2023/?sh=193c20d0360f) — public outrage is massive in Serbia. There has been a robust and cohesive effort to reduce violence after two in Serbia, whereas in the States, a similar “culture of violence” is dismissed as necessary for our gun rights. Furthermore, though Vučić strongly opposes the protests, he’s granted Serbia Against Violence their right to assembly without any sort of violence from police. But back in the States, mass protests about violence, like Black Lives Matter, are usually met with [violence as a quelling mechanism](https://www.amnesty.org/en/latest/press-release/2020/08/usa-law-enforcement-violated-black-lives-matter-protesters-human-rights/).
 
-<Image path="/images/uploads/BLM.png" caption="Scale of police activity in Black Lives Matter protests. Source: https://www.brookings.edu/articles/new-data-show-that-police-violence-predicts-black-lives-matter-protests/
-"/>
+<Image path="/images/uploads/BLM.png" caption="Scale of police activity in Black Lives Matter protests." source="https://www.brookings.edu/articles/new-data-show-that-police-violence-predicts-black-lives-matter-protests/"/>
 
 Serbia Against Violence highlights how American politicians rarely acknowledge shootings. Vučić’s response is disheartening, but negative attention is better than none at all. Policy proposals and vows to the public made by American politicians rarely see their fruits. Their statements are typically empty promises of a safe and secure future.
 
