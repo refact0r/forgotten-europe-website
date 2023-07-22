@@ -87,6 +87,10 @@
 		margin: 1.5rem 0;
 	}
 
+	a {
+		display: inline;
+	}
+
 	@media (max-width: 700px) {
 		@include small-headings;
 
