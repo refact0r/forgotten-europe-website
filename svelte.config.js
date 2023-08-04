@@ -20,7 +20,7 @@ const config = {
 	],
 	kit: {
 		adapter: adapter({
-			fallback: '+error.svelte'
+			fallback: '404.html'
 		})
 	}
 }
