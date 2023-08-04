@@ -19,8 +19,6 @@ export async function load({ params }) {
 		throw error(404, 'Interview not found')
 	}
 
-	console.log(post)
-
 	return {
 		component: post.default,
 		frontmatter: post.metadata
