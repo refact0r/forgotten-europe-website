@@ -8,7 +8,7 @@ export async function load({ params }) {
 
 	for (const [path, resolver] of Object.entries(modules)) {
 		if (nameFromPath(path) === params.slug) {
-			match = { path, resolver: resolver }
+			match = { path, resolver }
 			break
 		}
 	}
