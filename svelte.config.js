@@ -20,7 +20,7 @@ const config = {
 	],
 	kit: {
 		adapter: adapter({
-			fallback: 'app.html'
+			fallback: 'index.html'
 		})
 	}
 }
