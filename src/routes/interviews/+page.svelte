@@ -35,7 +35,7 @@
 
 <style lang="scss">
 	.content {
-		padding: 0rem 1.5rem 2rem 1.5rem;
+		padding: 0rem 1.5rem 3rem 1.5rem;
 	}
 
 	section {
