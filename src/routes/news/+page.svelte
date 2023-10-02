@@ -88,12 +88,12 @@
 
 <style lang="scss">
 	.content {
-		padding: 0rem 1.5rem 2rem 1.5rem;
+		padding: 0rem 1.5rem 1rem 1.5rem;
 	}
 
 	section {
 		max-width: 56rem;
-		margin: 0 auto 3rem auto;
+		margin: 0 auto 4rem auto;
 	}
 
 	.previews {

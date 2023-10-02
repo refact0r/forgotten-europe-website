@@ -21,7 +21,9 @@
 			overcome the barriers of Western-centrism and bring equal representation in learning and
 			discussion.
 		</p>
+	</section>
 
+	<section>
 		<h2>The Importance of Central-Eastern Europe</h2>
 		<p>
 			From time immemorial, the people, cultures, and societies of Central-Eastern Europe have
@@ -70,42 +72,42 @@
 		</div>
 	</section>
 
-	<h2>Our Volunteers</h2>
-
-	<section class="grid">
-		<div class="volunteer">
-			<div class="placeholder">
-				<div class="head" />
-				<div class="body" />
+	<section>
+		<h2>Project Leadership</h2>
+		<div class="grid">
+			<div class="volunteer">
+				<div class="placeholder">
+					<div class="head" />
+					<div class="body" />
+				</div>
+				<div class="name">Rittik Bhattacharya</div>
+				<div class="role">Curriculum Lead</div>
 			</div>
-			<div class="name">Rittik Bhattacharya</div>
-			<div class="role">Curriculum Lead</div>
-		</div>
-		<div class="volunteer">
-			<div class="placeholder">
-				<div class="head" />
-				<div class="body" />
+			<div class="volunteer">
+				<div class="placeholder">
+					<div class="head" />
+					<div class="body" />
+				</div>
+				<div class="name">Youyi Li</div>
+				<div class="role">Curriculum Lead</div>
 			</div>
-			<div class="name">Youyi Li</div>
-			<div class="role">Curriculum Lead</div>
-		</div>
-		<div class="volunteer">
-			<div class="placeholder">
-				<div class="head" />
-				<div class="body" />
+			<div class="volunteer">
+				<div class="placeholder">
+					<div class="head" />
+					<div class="body" />
+				</div>
+				<div class="name">Andrew Cun</div>
+				<div class="role">Marketing Lead</div>
 			</div>
-			<div class="name">Andrew Cun</div>
-			<div class="role">Marketing Lead</div>
-		</div>
-		<div class="volunteer">
-			<div class="placeholder">
-				<div class="head" />
-				<div class="body" />
+			<div class="volunteer">
+				<div class="placeholder">
+					<div class="head" />
+					<div class="body" />
+				</div>
+				<div class="name">Saachi Surana</div>
+				<div class="role">Marketing Lead</div>
 			</div>
-			<div class="name">Saachi Surana</div>
-			<div class="role">Marketing Lead</div>
-		</div>
-		<div class="volunteer">
+			<!-- <div class="volunteer">
 			<div class="placeholder">
 				<div class="head" />
 				<div class="body" />
@@ -136,8 +138,8 @@
 			</div>
 			<div class="name">Tuck Ellis</div>
 			<div class="role">Marketing</div>
-		</div>
-		<!-- <div class="volunteer">
+		</div> -->
+			<!-- <div class="volunteer">
 			<div class="placeholder">
 				<div class="head" />
 				<div class="body" />
@@ -145,26 +147,30 @@
 			<div class="name">Yifan</div>
 			<div class="role">Technology</div>
 		</div> -->
+		</div>
 	</section>
 
 	<section class="website">
-		<h3>Website by Yifan</h3>
-		<a href="https://github.com/refact0r/forgotten-europe-website">
-			View the source code on Github&nbsp;
-			<i class="fa-solid fa-arrow-right" />
-		</a>
+		<p>
+			Website by <b>Yifan</b>
+			<br />
+			<a href="https://github.com/refact0r/forgotten-europe-website">
+				View the source code on Github&nbsp;
+				<i class="fa-solid fa-arrow-right" />
+			</a>
+		</p>
 	</section>
 </div>
 
 <style lang="scss">
 	.content {
-		padding: 0rem 2rem 2rem 2rem;
+		padding: 0rem 2rem 1rem 2rem;
 	}
 
 	section {
 		max-width: 65rem;
 		margin: auto;
-		margin-bottom: 3rem;
+		margin-bottom: 4rem;
 	}
 
 	h1,

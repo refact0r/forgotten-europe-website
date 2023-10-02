@@ -98,13 +98,13 @@
 
 <style lang="scss">
 	.content {
-		padding: 0rem 1.5rem 2rem 1.5rem;
+		padding: 0rem 1.5rem 1rem 1.5rem;
 	}
 
 	section {
 		max-width: 65rem;
 		margin: auto;
-		margin-bottom: 3rem;
+		margin-bottom: 4rem;
 	}
 
 	h1,

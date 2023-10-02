@@ -58,6 +58,23 @@
 		</a>
 	</section>
 
+	<div class="stats-back">
+		<div class="stats">
+			<div class="group">
+				<div class="number">31</div>
+				<div class="label">Schools Impacted</div>
+			</div>
+			<div class="group">
+				<div class="number">1</div>
+				<div class="label">District Affected</div>
+			</div>
+			<div class="group">
+				<div class="number">14</div>
+				<div class="label">Volunteers</div>
+			</div>
+		</div>
+	</div>
+
 	<section>
 		<h2>
 			<a href="/interviews"> Interviews </a>
@@ -104,8 +121,8 @@
 
 <style lang="scss">
 	.content {
-		padding: 0rem 1.5rem 2rem 1.5rem;
 		text-align: center;
+		padding: 0rem 0rem 1rem 0rem;
 	}
 
 	.banner {
@@ -165,12 +182,42 @@
 
 	section {
 		max-width: 56rem;
-		margin: 2rem auto 3rem auto;
+		margin: 2rem auto 4rem auto;
+		padding: 0rem 1.5rem;
 	}
 
 	.interview {
 		max-width: 30rem;
 		margin: 0 auto;
+	}
+
+	.stats-back {
+		background-color: var(--semi-light);
+		color: var(--dark);
+		width: 100%;
+		padding: 1.5rem 1.5rem;
+		margin-bottom: 4rem;
+	}
+
+	.stats {
+		display: flex;
+		max-width: 56rem;
+		justify-content: space-between;
+		margin: auto;
+	}
+
+	.group {
+		width: 10rem;
+	}
+
+	.number {
+		font-size: 3rem;
+		font-weight: bold;
+	}
+
+	.label {
+		font-size: 1.2rem;
+		font-weight: 500;
 	}
 
 	@media (max-width: 850px) {
