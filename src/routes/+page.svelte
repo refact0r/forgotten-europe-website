@@ -2,7 +2,7 @@
 	import PageHead from '$lib/components/PageHead.svelte'
 	import PictureSources from '$lib/components/PictureSources.svelte'
 	import BlogPreview from '$lib/components/BlogPreview.svelte'
-	import NewsPreview from '$lib/components/NewsPreview.svelte'
+	// import NewsPreview from '$lib/components/NewsPreview.svelte'
 	import InterviewPreview from '$lib/components/InterviewPreview.svelte'
 	import banner from '$lib/images/banner3.jpg?w=2000;1500;1000;500'
 	import flagstrip from '$lib/images/flagstrip-8k.png'
