@@ -1,7 +1,7 @@
 ---
 published: false
 title: formatting examples
-date: 2023-07-02T18:11:00.000Z
+date: 2023-07-02T18:11
 author: Yifan
 description: yes
 tags: []

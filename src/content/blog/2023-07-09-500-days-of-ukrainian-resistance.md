@@ -1,7 +1,7 @@
 ---
 published: true
 title: 500 Days of Ukrainian Resistance
-date: 2023-07-09T06:09:00.000Z
+date: 2023-07-09T06:09
 author: Youyi Li
 description: Today marks the 500th day of Russia's illegal and brutal invasion of Ukraine.
 tags:
