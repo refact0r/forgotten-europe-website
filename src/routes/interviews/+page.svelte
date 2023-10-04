@@ -39,12 +39,13 @@
 	}
 
 	section {
-		max-width: 74rem;
-		margin: 2rem auto;
+		max-width: 50rem;
+		margin: 2rem auto 4rem auto;
 		text-align: center;
 	}
 
 	.grid {
+		max-width: 74rem;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 		gap: 1rem;

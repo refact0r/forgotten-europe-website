@@ -54,6 +54,7 @@
 			refugees
 		</div>
 		<br />
+		<br />
 		<div class="middle">
 			<p class="description">
 				We are always looking for volunteers willing to contribute to the project's mission
@@ -133,7 +134,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 1rem;
+		gap: 1.5rem;
 	}
 
 	.description {

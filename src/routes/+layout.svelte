@@ -95,6 +95,13 @@
 				>
 					About
 				</a>
+				<a
+					class="button inverted"
+					class:active={$page.url.pathname.slice(0, 8) === '/ukraine'}
+					href="/ukraine"
+				>
+					<span class="ukraine">War in Ukraine</span>
+				</a>
 			</div>
 			<button class="hamburger" on:click={toggleMenu} aria-label="Open Menu">
 				{#if menuOpen}
@@ -148,6 +155,13 @@
 				href="/about"
 			>
 				About
+			</a>
+			<a
+				class="button inverted"
+				class:active={$page.url.pathname.slice(0, 8) === '/ukraine'}
+				href="/ukraine"
+			>
+				War in Ukraine
 			</a>
 		</div>
 	</header>
@@ -335,7 +349,22 @@
 		gap: 1rem;
 	}
 
-	@media (max-width: 1100px) {
+	.button .ukraine {
+		background: linear-gradient(to bottom, hsl(211, 100%, 60%) 50%, hsl(50, 100%, 60%) 50%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-moz-background-clip: text;
+		-moz-text-fill-color: transparent;
+	}
+	.button.active .ukraine {
+		background: none;
+		-webkit-background-clip: inherit;
+		-webkit-text-fill-color: inherit;
+		-moz-background-clip: inherit;
+		-moz-text-fill-color: inherit;
+	}
+
+	@media (max-width: 1175px) {
 		header a.button {
 			padding: 0.5rem 0.6rem;
 		}
@@ -352,13 +381,13 @@
 		}
 	}
 
-	@media (max-width: 925px) {
+	@media (max-width: 975px) {
 		h1 {
 			display: none;
 		}
 	}
 
-	@media (max-width: 700px) {
+	@media (max-width: 725px) {
 		.header-inner {
 			padding: 0;
 		}

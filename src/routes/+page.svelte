@@ -187,7 +187,7 @@
 	}
 
 	section {
-		max-width: 56rem;
+		max-width: 53rem;
 		margin: 2rem auto 5rem auto;
 		padding: 0rem 1.5rem;
 	}
@@ -207,9 +207,10 @@
 
 	.stats {
 		display: flex;
-		max-width: 56rem;
+		max-width: 50rem;
 		justify-content: space-between;
 		margin: auto;
+		gap: 1.5rem;
 	}
 
 	.group {
@@ -239,6 +240,12 @@
 		}
 		h2 {
 			font-size: 1.3rem;
+		}
+		.number {
+			font-size: 2.5rem;
+		}
+		.label {
+			font-size: 1rem;
 		}
 	}
 </style>

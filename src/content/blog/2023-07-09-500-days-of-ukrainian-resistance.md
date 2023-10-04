@@ -4,6 +4,8 @@ title: 500 Days of Ukrainian Resistance
 date: 2023-07-09T06:08:00.000Z
 author: Youyi Li
 description: Today marks the 500th day of Russia's illegal and brutal invasion of Ukraine.
+tags:
+  - ukraine
 featured: /images/uploads/Zelensky-SnakeIsland.jpg
 caption: Zelenskyy places flowers at memorial on Snake Island.
 ---
@@ -13,8 +15,9 @@ On February 24, 2022, Russian president Vladimir Putin launched a full-scale inv
 
 In the video, Zelenskyy declares Snake Island to be a “place of victory”, solidifying its symbolism as progress towards Ukrainian de-occupation. Such efforts see sustained support from the US, which recently defended its controversial cluster munitions package to aid the resistance effort. Additionally, the Russian invasion of Ukraine is expected to be a major subject of discussion at the upcoming NATO summit at Vilnius, Lithuania.
 
-However, these last 500 days of Ukrainian resilience also marks 500 days of Ukrainian suffering. Considering civilians alone, the UN estimates at minimum 9,000 have died since the war began. Russia’s missile and drone attacks have most recently taken eight lives in Lyman, a key railroad hub. These continued humanitarian violations make it only more imperative to stand with Ukraine as they repel Putin’s invasion. 
+However, these last 500 days of Ukrainian resilience also marks 500 days of Ukrainian suffering. Considering civilians alone, the UN estimates at minimum 9,000 have died since the war began. Russia’s missile and drone attacks have most recently taken eight lives in Lyman, a key railroad hub. These continued humanitarian violations make it only more imperative to stand with Ukraine as they repel Putin’s invasion.
 
-### Sources 
+### Sources
+
 - Thomas Mackintosh, [The BBC](https://www.bbc.com/news/world-europe-66141701)
 - [Office of the President of Ukraine](https://www.youtube.com/watch?v=CnoFZmIoPpg&t=17s&ab_channel=%D0%9E%D1%84%D1%96%D1%81%D0%9F%D1%80%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B0%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8)
