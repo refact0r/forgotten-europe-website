@@ -114,20 +114,13 @@
 			>
 				Interviews
 			</a>
-			<a
-				class="button inverted"
-				class:active={$page.url.pathname.slice(0, 10) === '/volunteer'}
-				href="/volunteer"
-			>
-				Volunteer
-			</a>
-			<a
+			<!-- <a
 				class="button inverted"
 				class:active={$page.url.pathname.slice(0, 5) === '/news'}
 				href="/news"
 			>
 				News
-			</a>
+			</a> -->
 			<a
 				class="button inverted"
 				class:active={$page.url.pathname.slice(0, 5) === '/blog'}
@@ -141,6 +134,13 @@
 				href="/curriculum"
 			>
 				Curriculum
+			</a>
+			<a
+				class="button inverted"
+				class:active={$page.url.pathname.slice(0, 10) === '/volunteer'}
+				href="/volunteer"
+			>
+				Volunteer
 			</a>
 			<a
 				class="button inverted"
