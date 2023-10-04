@@ -77,41 +77,47 @@
 
 	<section>
 		<h2>
-			<a href="/interviews"> Interviews </a>
+			<a href="/interviews">Interviews</a>
 		</h2>
 		<p>
 			The Forgotten Europe Project interviews and records survivors of the many historical
 			tragedies that Central-Eastern Europe has endured to preserve their stories and messages
 			through personal experiences.
 		</p>
+		<h3>
+			<a href={`interviews/${data.interview.slug}`}>Latest Interview</a>
+		</h3>
 		<div class="interview">
 			<InterviewPreview post={data.interview} />
 		</div>
 	</section>
 
-	<section>
+	<!-- <section>
 		<h2>
 			<a href="/news"> News </a>
 		</h2>
 		<p>Stay updated on current news from Central-Eastern Europe.</p>
 		<NewsPreview post={data.news} />
-	</section>
+	</section> -->
 
 	<section>
 		<h2>
-			<a href="/blog"> Project Blog </a>
+			<a href="/blog">Project Blog</a>
 		</h2>
-		<p>Learn about what the project is doing and how you can help.</p>
+		<p>Learn about Central-Eastern European current events, history, and culture.</p>
+		<h3>
+			<a href={`blog/${data.blog.slug}`}>Latest Post</a>
+		</h3>
 		<BlogPreview post={data.blog} />
 	</section>
 
 	<section>
 		<h2>
-			<a href="/volunteer"> Volunteers </a>
+			<a href="/volunteer">Volunteers</a>
 		</h2>
 		<p>
 			We are consistently looking for the help of volunteers, whether it be through outreach,
-			social media, or writing.
+			social media, or writing. Volunteers can self log their volunteer hours.
 		</p>
 		<a class="button" href="/volunteer">
 			Learn More &nbsp; <i class="fa-solid fa-arrow-right" />
@@ -182,7 +188,7 @@
 
 	section {
 		max-width: 56rem;
-		margin: 2rem auto 4rem auto;
+		margin: 2rem auto 5rem auto;
 		padding: 0rem 1.5rem;
 	}
 
@@ -196,7 +202,7 @@
 		color: var(--dark);
 		width: 100%;
 		padding: 1.5rem 1.5rem;
-		margin-bottom: 4rem;
+		margin-bottom: 5rem;
 	}
 
 	.stats {
