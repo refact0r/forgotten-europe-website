@@ -5,15 +5,23 @@
 	export let data
 </script>
 
-<PageHead
-	title="Blog"
-	description="Learn about what the Forgotten Europe Project is doing and how you can help."
-/>
+<PageHead title="The War in Ukraine" description="Blog posts about the War in Ukraine." />
+
+<svelte:head>
+	<script defer src="/js/minusrus.js"></script>
+</svelte:head>
 
 <div class="content">
-	<h1>Blog</h1>
+	<h1>The War in Ukraine</h1>
 
 	<section>
+		<!-- <h2>War Stats</h2> -->
+		<ins data-wrapper="minusrus-widget" data-width="1008" data-lang="en" />
+		<div class="caption">Estimates from Ukraine's Ministry of Defense. May be inaccurate.</div>
+	</section>
+
+	<section>
+		<h2>Related Blog Posts</h2>
 		<div class="previews">
 			{#each data.posts as post}
 				<BlogPreview {post} />
@@ -28,7 +36,7 @@
 	}
 
 	section {
-		max-width: 50rem;
+		max-width: 56rem;
 		margin: 0 auto 4rem auto;
 	}
 
@@ -38,7 +46,8 @@
 		gap: 1rem;
 	}
 
-	h1 {
+	h1,
+	h2 {
 		text-align: center;
 	}
 

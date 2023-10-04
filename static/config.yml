@@ -17,6 +17,7 @@ collections:
           - { label: 'Date', name: 'date', widget: 'datetime' }
           - { label: 'Author', name: 'author', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'text' }
+          - { label: 'Tags', name: 'tags', widget: 'list', required: false }
           - { label: 'Featured Image', name: 'featured', widget: 'image', required: false }
           - { label: 'Caption', name: 'caption', widget: 'string', required: false }
           - { label: 'Body', name: 'body', widget: 'markdown' }

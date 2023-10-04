@@ -51,25 +51,22 @@
 					alt="Founder and President Liam Krol"
 				/>
 			</picture>
-		</div>
-		<div class="column2">
-			<p>
-				I started The Forgotten Europe Project over the summer of 2022 at the age of 15, six
-				months after Russia's illegal invasion of Ukraine. As a Polish American, I
-				understood what such a conflict implied for myself and my family, located only a
-				border away from Russian missile strikes and shelling. Yet in erupting thousands of
-				miles away from the United States, we Americans have begun to forget that today,
-				Ukrainian soldiers continue to fight on against oppression and imperialism. This is
-				not the first time that central-eastern Europe was disregarded. Decades of Soviet
-				repression during the Cold War had masked the region under an Iron curtain. Even
-				after this curtain fell, memories of the suffering, brutality, and genocide this
-				region endured was forgotten by the world. I dedicate this project to my ancestors,
-				and the many millions central-eastern Europeans whose stories were forgotten. May
-				your voices now be heard.
-			</p>
 			<div class="name">Liam Krol</div>
 			<div class="role">Founder and President</div>
 		</div>
+		<p>
+			I started The Forgotten Europe Project over the summer of 2022 at the age of 15, six
+			months after Russia's illegal invasion of Ukraine. As a Polish American, I understood
+			what such a conflict implied for myself and my family, located only a border away from
+			Russian missile strikes and shelling. Yet in erupting thousands of miles away from the
+			United States, we Americans have begun to forget that today, Ukrainian soldiers continue
+			to fight on against oppression and imperialism. This is not the first time that
+			central-eastern Europe was disregarded. Decades of Soviet repression during the Cold War
+			had masked the region under an Iron curtain. Even after this curtain fell, memories of
+			the suffering, brutality, and genocide this region endured was forgotten by the world. I
+			dedicate this project to my ancestors, and the many millions central-eastern Europeans
+			whose stories were forgotten. May your voices now be heard.
+		</p>
 	</section>
 
 	<section>
@@ -168,7 +165,7 @@
 	}
 
 	section {
-		max-width: 65rem;
+		max-width: 55rem;
 		margin: auto;
 		margin-bottom: 4rem;
 	}
@@ -182,9 +179,9 @@
 		display: flex;
 		gap: 3rem;
 	}
-	.column2 {
-		width: 100%;
-		text-align: left;
+
+	.column1 {
+		text-align: center;
 	}
 
 	.volunteer {
@@ -203,13 +200,17 @@
 	}
 
 	.liam-img {
-		width: 25rem;
+		width: 20rem;
 	}
 
 	.volunteer-img,
 	.placeholder {
 		margin-bottom: 0.5rem;
 		height: 0; // temporary no placeholders
+	}
+
+	.liam-pic {
+		margin: 0.2rem 0 1rem 0;
 	}
 
 	.name {
@@ -224,7 +225,7 @@
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 		gap: 1rem;
 	}
 

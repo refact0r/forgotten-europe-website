@@ -4,6 +4,7 @@ title: "“Serbia Against Violence”: Protesting National Culture"
 date: 2023-07-18T21:09:00.000Z
 author: Rittik Bhattacharya
 description: History and culture behind the Serbian protests against gun violence and nationalism.
+tags: []
 featured: /images/uploads/Protest.png
 caption: ""
 ---
@@ -22,6 +23,7 @@ So what exactly is behind the growing popular resentment of Serbia’s nationali
 Let’s begin with the stories of each event.
 
 ### The Belgrade School Shooting
+
 On 3 May 2023, at 8:30 a.m., Vladislav Ribnikar Elementary School’s daily routine was disrupted by 13-year-old Kosta Kecmanović opening fire inside of a classroom. One student who was present relates the chilling story through her father, Milan Milošević, who describes that Kecmanović “first shot the teacher and then started shooting randomly.” Another witness recounts seeing “kids running out from the school, screaming.”
 
 “Perhaps the most horrifying experience I have had as a doctor and as a human being.” — Minister of Health Danica Grujičić
@@ -37,11 +39,12 @@ In the wake of these findings, protests against the government’s failure to ac
 <Image path="/images/uploads/Memorial.png" caption="Memorial for the deceased of the 3 May 2023 school shooting. The sign reads, translated, “Talk to the kids.”" source="https://commons.wikimedia.org/w/index.php?curid=131566315"/>
 
 ### The Mladenovac and Smederevo Shootings
+
 21-year-old Uroš Blažić returned home to his cottage in Šepšin after an argument with his friends at a Mladenovac football stadium. But he did not stay there for long. Taking an assault rifle, three pistols, and four hand grenades, he expressed his rage via a drive-by shooting. His first destination was a village in Smederevo. There, Blažić shot 11, killing five and injuring six. He then continued to a town in Mladenovac, killing another four and injuring a handful of other civilians.
 
 The subsequent manhunt took the region by storm. The Serbian government engaged 600 members of the Special Forces, an anti-terrorism unit, a helicopter unit, and Belgrade and Smederevo’s municipal police forces. After several mistaken arrests, authorities finally captured him during the morning of 5 May.
 
-In the wake of Blažić’s arrest, investigations have uncovered shocking details. He was arrested wearing a shirt printed with the slogan “Generation 88 on Tour,” a [pro-Nazi symbol.](https://www.adl.org/resources/hate-symbol/88) 
+In the wake of Blažić’s arrest, investigations have uncovered shocking details. He was arrested wearing a shirt printed with the slogan “Generation 88 on Tour,” a [pro-Nazi symbol.](https://www.adl.org/resources/hate-symbol/88)
 
 <Image path="/images/uploads/Shirt.png" caption="Uroš Blažić after his arrest, wearing a pro-Nazi shirt."/>
 
@@ -52,6 +55,7 @@ Moreover, Blažić’s family had a long history with weapons and military. His 
 During his questioning, Blažić repeatedly yet ambiguously referred to humiliation, disparagement, and being taunted as the impetus for the massacre. It is believed, based on his classification of his actions as “society’s injustice reflected onto me,” that Blažić fired to release pent-up rage about how society treated him.
 
 ### Link to Nationalism
+
 Some protestors fault nationalism fostered by the Serbian government as the cause of these shootings. They target certain features of the shootings, including widespread gun ownership, motivations, and Serbia’s historical culture of violence.
 
 One of the more prominent justifications for this claim particularly lies with Blažić. A common theme of any nationalist sentiment is its obsession with reconciling “humiliation.” Take, for example, the white supremacist notion that the white race has been disparaged by racial integration (“[white genocide](https://jacobin.com/2019/09/white-genocide-great-replacement-theory)”), and that the necessary recourse is to exterminate or otherwise force out those other races.
@@ -98,7 +102,6 @@ In their decisive meeting with Milošević, Serbian nationalists complained of [
 
 Hence, the culture of violence that plagues radicals in Serbia today. It is important to recognize that Serbian nationalism is unpopular today. But the idea of violence still stands. It’s apparent especially in the case of Uroš Blažić, who idolized violent gangsters as “warriors” in a period of stagnation, subscribing to the nationalist idea of violent vengeance for injustices committed against him.
 
-
 Kosta Kecmanović, the school shooter, is a more difficult story. Evidence suggests that he was merely a psychopath, without any concrete evidence that he felt mistreated by the school. He did draw up a detailed hit-list, suggesting that he disliked specific students. But at the time of writing, I cannot be sure that this corresponds to him seeking out violence as revenge.
 
 So in Kecmanović’s case, we have to look to the gun ownership issue.
@@ -136,6 +139,7 @@ Serbian nationalism was also, in part, responsible for the Yugoslavian Civil War
 Additionally, nationalism in 20th century Serbia created mass instability in Serbia, which resulted in a vacuum where gangsters, like Golubović and many others, could consolidate power by means of violence. Mobsters are often idolized in the media. Therefore, it’s a major target of protestors alongside certain government figures.
 
 ### Violence in Media
+
 Reality television, especially those broadcasted on pro-government media, has portrayed the daring tales of gangsters and war criminals. These stories are based on real life paramilitary figures and mobs. They gained their renown during the nationalism-propelled Yugoslavian Civil War, where organized crime and military credibility were the only ways to gain any wealth.
 
 The mobster lifestyle, marked by its participants’ powerful resolve in trying to get a leg up in the tumultuous wartime society, offered a sense of action to relaxed Serbian households after the advent of reality TV.
@@ -149,6 +153,7 @@ So when protestors attribute youth opening fire to violent media, they are at le
 A final concession I should make: a lot of the protests use speculation to link media to certain [instances of violence](https://www.theguardian.com/world/2018/jan/16/oliver-ivanovic-serb-politician-in-kosovo-shot-dead). But it’s also evident that nationalism, in the form of ethnic tensions, plays some role in those events. It is a complicated issue with many factors, so it’s best to refocus on the current protests.
 
 ### Protest and Response
+
 The protests over the shootings have been the largest in Serbia in over 20 years, and they’re outclassed only by the demonstrations that overthrew Milošević in 2000. Serbia Against Violence’s core demands surround the resignation of certain political figures and the closure of violence-propagating media outlets. Aleksandar Vulin, Branko Ružić, and Bratislav Gašić and of course Aleksandar Vučić have been the main targets in the government, and Pink TV and Happy TV the main targets in the media.
 
 <Image path="/images/uploads/Politicians.png" caption="Vučić and Gašić." source="https://nova.rs/vesti/politika/vucic-ce-pre-da-zrtvuje-vladu-srbije-nego-bratislava-gasica/"/>
@@ -180,6 +185,7 @@ It is all a matter of protesting loud enough to be heard, and then some. Despite
 With Serbia in mind, let us look to a future of globally decreased violence.
 
 ### Closing Thoughts
+
 I started this discussion about Serbia because of how often Central and Eastern European countries tend to be left out of mainstream discussions. It turns out they too, along with the rest of the unheard world, have much to offer to solve the problems that more mainstream countries tend to face.
 
 The obvious example above would be gun violence, where mass demonstration can bring beneficial change. If this happens in Serbia, why not in the United States? Or anywhere else where this issue is pervasive?
@@ -196,58 +202,59 @@ Curriculum Team Lead at the Forgotten Europe Project
 <Image path="/images/uploads/logo-4k.png" caption="https://forgotteneurope.org/about"/>
 
 ### References
-Alam, Handay A., Jessie Yeung, Alex Stambaugh, Vladimir Banic, and Josh Pennington. 2023. “Suspect arrested after eight killed in Serbia’s second mass shooting in two days.” CNN. https://www.cnn.com/2023/05/04/europe/serbia-shooting-dubona-intl/index.html.
 
-Amnesty International. 2020. “US law enforcement violated Black Lives Matter protesters’ human rights.” Amnesty International. https://www.amnesty.org/en/latest/press-release/2020/08/usa-law-enforcement-violated-black-lives-matter-protesters-human-rights/.
+Alam, Handay A., Jessie Yeung, Alex Stambaugh, Vladimir Banic, and Josh Pennington. 2023. “Suspect arrested after eight killed in Serbia’s second mass shooting in two days.” CNN. <https://www.cnn.com/2023/05/04/europe/serbia-shooting-dubona-intl/index.html>.
 
-The Associated Press. 2023. “Tens of thousands march against Serbia’s populist leadership following mass shootings.” NPR. https://www.npr.org/2023/05/13/1175990505/thousands-march-against-populist-leadership-serbia-mass-shooting.
+Amnesty International. 2020. “US law enforcement violated Black Lives Matter protesters’ human rights.” Amnesty International. <https://www.amnesty.org/en/latest/press-release/2020/08/usa-law-enforcement-violated-black-lives-matter-protesters-human-rights/>.
 
-B92. 2023. “Boy called the police after the massacre: I’m Kosta Kecmanović, I shot several people.” B92. https://www.b92.net/eng/news/crimes.php?yyyy=2023&mm=05&dd=03&nav_id=115891.
+The Associated Press. 2023. “Tens of thousands march against Serbia’s populist leadership following mass shootings.” NPR. <https://www.npr.org/2023/05/13/1175990505/thousands-march-against-populist-leadership-serbia-mass-shooting>.
 
-CBS Baltimore Staff. 2023. “Teen killed, 6 injured in mass shooting at Salisbury block party.” CBS News. https://www.cbsnews.com/baltimore/news/salisbury-maryland-block-party-mass-shooting-teen-killed/.
+B92. 2023. “Boy called the police after the massacre: I’m Kosta Kecmanović, I shot several people.” B92. <https://www.b92.net/eng/news/crimes.php?yyyy=2023&mm=05&dd=03&nav_id=115891>.
 
-CBS News Staff. 1999. “Milosevic: Serb Strongman And Dictator.” CBS News. https://www.cbsnews.com/news/milosevic-serb-strongman-and-dictator/.
+CBS Baltimore Staff. 2023. “Teen killed, 6 injured in mass shooting at Salisbury block party.” CBS News. <https://www.cbsnews.com/baltimore/news/salisbury-maryland-block-party-mass-shooting-teen-killed/>.
 
-Delauney, Guy. 2023. “Serbians hand in guns and question culture of violence after two shootings.” BBC. https://www.bbc.com/news/world-europe-65597622.
+CBS News Staff. 1999. “Milosevic: Serb Strongman And Dictator.” CBS News. <https://www.cbsnews.com/news/milosevic-serb-strongman-and-dictator/>.
 
-Engelbrecht, Cora. 2023. “What’s Behind Serbia’s Gun Violence.” The New York Times. https://www.nytimes.com/2023/05/05/world/europe/serbia-gun-violence.html.
+Delauney, Guy. 2023. “Serbians hand in guns and question culture of violence after two shootings.” BBC. <https://www.bbc.com/news/world-europe-65597622>.
 
-Eroukhmanoff, Clara. 2018. “Securitisation Theory: An Introduction.” E-International Relations. https://www.e-ir.info/2018/01/14/securitisation-theory-an-introduction/.
+Engelbrecht, Cora. 2023. “What’s Behind Serbia’s Gun Violence.” The New York Times. <https://www.nytimes.com/2023/05/05/world/europe/serbia-gun-violence.html>.
 
-Faguy, Ana. 2023. “U.S. Sees Record Number Of Mass Shootings Halfway Through 2023.” Forbes. https://www.forbes.com/sites/anafaguy/2023/07/03/us-sees-record-number-of-mass-shootings-halfway-through-2023/?sh=193c20d0360f.
+Eroukhmanoff, Clara. 2018. “Securitisation Theory: An Introduction.” E-International Relations. <https://www.e-ir.info/2018/01/14/securitisation-theory-an-introduction/>.
 
-Gec, Jovana. 2023. “Serbians mourn mass shooting victims.” The Arkansas Democrat-Gazette. https://www.arkansasonline.com/news/2023/may/07/serbians-mourn-mass-shooting-victims/.
+Faguy, Ana. 2023. “U.S. Sees Record Number Of Mass Shootings Halfway Through 2023.” Forbes. <https://www.forbes.com/sites/anafaguy/2023/07/03/us-sees-record-number-of-mass-shootings-halfway-through-2023/?sh=193c20d0360f>.
 
-Greenawalt, Alexander. 1999. “Greenawalt: Kosovo Myths.” York University. http://www.yorku.ca/soi/Vol_3/_HTML/Greenawalt.html.
+Gec, Jovana. 2023. “Serbians mourn mass shooting victims.” The Arkansas Democrat-Gazette. <https://www.arkansasonline.com/news/2023/may/07/serbians-mourn-mass-shooting-victims/>.
 
-Higgins, Andrew. 2023. “After Mass Shootings in Serbia, Few Are Ready to Give Up Their Guns.” The New York Times. https://www.nytimes.com/2023/06/02/world/europe/serbia-shootings-gun-control.html.
+Greenawalt, Alexander. 1999. “Greenawalt: Kosovo Myths.” York University. <http://www.yorku.ca/soi/Vol_3/_HTML/Greenawalt.html>.
 
-Jozwiak, Rikard. 2023. “Thousands Protest In Serbia, Accusing Government Of Fostering Violence.” Radio Free Europe. https://www.rferl.org/a/serbia-protest-government-violence/32443274.html.
+Higgins, Andrew. 2023. “After Mass Shootings in Serbia, Few Are Ready to Give Up Their Guns.” The New York Times. <https://www.nytimes.com/2023/06/02/world/europe/serbia-shootings-gun-control.html>.
 
-Keskin, Recep. 2003. “The dispute between Bosnian Muslims and Serbs.” Theses Digitization Project. https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?article=3316&context=etd-project.
+Jozwiak, Rikard. 2023. “Thousands Protest In Serbia, Accusing Government Of Fostering Violence.” Radio Free Europe. <https://www.rferl.org/a/serbia-protest-government-violence/32443274.html>.
+
+Keskin, Recep. 2003. “The dispute between Bosnian Muslims and Serbs.” Theses Digitization Project. <https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?article=3316&context=etd-project>.
 
 Lapping, Brian, and Nicholas Fraser, executive producers. 1995. Yugoslavia: Death of a Nation. BBC, 1995.
 
-Lopez, German. 2018. “America’s love for guns, in one chart.” Vox. https://www.vox.com/2018/6/21/17488024/gun-ownership-violence-shootings-us.
+Lopez, German. 2018. “America’s love for guns, in one chart.” Vox. <https://www.vox.com/2018/6/21/17488024/gun-ownership-violence-shootings-us>.
 
-MacDowall, Andrew. 2018. “Kosovo Serb politician Oliver Ivanović shot dead outside party headquarters.” The Guardian. https://www.theguardian.com/world/2018/jan/16/oliver-ivanovic-serb-politician-in-kosovo-shot-dead.
+MacDowall, Andrew. 2018. “Kosovo Serb politician Oliver Ivanović shot dead outside party headquarters.” The Guardian. <https://www.theguardian.com/world/2018/jan/16/oliver-ivanovic-serb-politician-in-kosovo-shot-dead>.
 
-Milenkovic, Aljosa. 2022. “Serbia’s President Aleksandar Vucic will ‘protect our people’ in Kosovo as tension rises.” Europe. https://newseu.cgtn.com/news/2022-08-22/Serbia-says-it-will-protect-our-people-in-Kosovo-as-tension-rises-1cHQUuScWcM/index.html.
+Milenkovic, Aljosa. 2022. “Serbia’s President Aleksandar Vucic will ‘protect our people’ in Kosovo as tension rises.” Europe. <https://newseu.cgtn.com/news/2022-08-22/Serbia-says-it-will-protect-our-people-in-Kosovo-as-tension-rises-1cHQUuScWcM/index.html>.
 
-“Određen pritvor do 30 dana ocu dečaka koji je ubio devet osoba u beogradskoj školi.” 2023. Radio Slobodna Evropa. https://www.slobodnaevropa.org/a/odre%C4%91en-pritvor-do-30-dana-ocu-de%C4%8Daka-koji-je-pucao-u-%C5%A1koli-na-vra%C4%8Daru/32398798.html.
+“Određen pritvor do 30 dana ocu dečaka koji je ubio devet osoba u beogradskoj školi.” 2023. Radio Slobodna Evropa. <https://www.slobodnaevropa.org/a/odre%C4%91en-pritvor-do-30-dana-ocu-de%C4%8Daka-koji-je-pucao-u-%C5%A1koli-na-vra%C4%8Daru/32398798.html>.
 
-Ozturk, Talha. 2023. “Serbian police arrest suspect in shooting, killing 8 people overnight.” Anadolu Agency. https://www.aa.com.tr/en/europe/serbian-police-arrest-suspect-in-shooting-killing-8-people-overnight/2889777.
+Ozturk, Talha. 2023. “Serbian police arrest suspect in shooting, killing 8 people overnight.” Anadolu Agency. <https://www.aa.com.tr/en/europe/serbian-police-arrest-suspect-in-shooting-killing-8-people-overnight/2889777>.
 
-Pinchler, Robert, Hannes Grandit, and Ruža Fotiadis. 2021. “Kosovo in the 1980s — Yugoslav Perspectives and Interpretations.” Comparative Southeast European Studies 69, no. 2–3 (November): 171–182. https://doi.org/10.1515/soeu-2021-0059.
+Pinchler, Robert, Hannes Grandit, and Ruža Fotiadis. 2021. “Kosovo in the 1980s — Yugoslav Perspectives and Interpretations.” Comparative Southeast European Studies 69, no. 2–3 (November): 171–182. <https://doi.org/10.1515/soeu-2021-0059>.
 
-Politiko. 2023. “”He played violent games with his friends and admitted that he was a psychopath”, shocking details of the 14-year-old who killed students in Serbia.” Politiko.al. https://politiko.al/english/rajoni/luante-lojera-te-dhunshme-me-shoket-dhe-pranoi-se-ishte-psikopat-detaje-t-i481542.
+Politiko. 2023. “”He played violent games with his friends and admitted that he was a psychopath”, shocking details of the 14-year-old who killed students in Serbia.” Politiko.al. <https://politiko.al/english/rajoni/luante-lojera-te-dhunshme-me-shoket-dhe-pranoi-se-ishte-psikopat-detaje-t-i481542>.
 
-Roussi, Antoaneta. 2023. “Thousands protest ‘culture of violence’ in Serbia.” Politico. https://www.politico.eu/article/serbia-culture-of-violence-protests.
+Roussi, Antoaneta. 2023. “Thousands protest ‘culture of violence’ in Serbia.” Politico. <https://www.politico.eu/article/serbia-culture-of-violence-protests>.
 
-Sekularac, Ivana, and Branko Filipovic. 2023. “‘Vucic out’: Serbian protesters keep heat on government.” Reuters. https://www.reuters.com/world/europe/vucic-out-serbian-protesters-keep-heat-government-2023-06-17/.
+Sekularac, Ivana, and Branko Filipovic. 2023. “‘Vucic out’: Serbian protesters keep heat on government.” Reuters. <https://www.reuters.com/world/europe/vucic-out-serbian-protesters-keep-heat-government-2023-06-17/>.
 
-Stojanovic, Dusan, and Jovana Gec. 2023. “8 fatally shot in Serbia town a day after 9 killed at school.” AP News. https://apnews.com/article/serbia-shooting-school-belgrade-guns-523b9bf8fdc0e89778baf0d8859401bf.
+Stojanovic, Dusan, and Jovana Gec. 2023. “8 fatally shot in Serbia town a day after 9 killed at school.” AP News. <https://apnews.com/article/serbia-shooting-school-belgrade-guns-523b9bf8fdc0e89778baf0d8859401bf>.
 
-Vasovic, Aleksandar. 2023. “Serbians rally against violence after two mass shootings.” Reuters. https://www.reuters.com/world/europe/after-two-mass-shootings-serbians-rally-against-violence-2023-05-08/.
+Vasovic, Aleksandar. 2023. “Serbians rally against violence after two mass shootings.” Reuters. <https://www.reuters.com/world/europe/after-two-mass-shootings-serbians-rally-against-violence-2023-05-08/>.
 
-“Violent Serbian reality TV targeted after shootings: ‘I want it banned.’” 2023. South China Morning Post. https://www.scmp.com/news/world/europe/article/3220343/i-want-it-banned-violent-serbian-reality-tv-targeted-after-shootings.
+“Violent Serbian reality TV targeted after shootings: ‘I want it banned.’” 2023. South China Morning Post. <https://www.scmp.com/news/world/europe/article/3220343/i-want-it-banned-violent-serbian-reality-tv-targeted-after-shootings>.
