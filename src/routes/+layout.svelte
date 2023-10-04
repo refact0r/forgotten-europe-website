@@ -350,7 +350,7 @@
 	}
 
 	.button .ukraine {
-		background: linear-gradient(to bottom, hsl(211, 100%, 60%) 50%, hsl(50, 100%, 60%) 50%);
+		background: linear-gradient(to bottom, hsl(211, 100%, 60%) 55%, hsl(50, 100%, 60%) 55%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		-moz-background-clip: text;
