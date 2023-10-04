@@ -56,9 +56,11 @@
 		<br />
 		<div class="middle">
 			<p class="description">
-				We are always looking for volunteers willing to contribute to the Project's mission
-				statement and goals. If interested in volunteer involvement, please complete the
-				sign-up form.
+				We are always looking for volunteers willing to contribute to the project's mission
+				statement and goals. We are a registered 501(c)3 nonprofit in the State of
+				Washington. Our volunteers self log their volunteer hours, which can go towards high
+				school volunteer requirements. If interested in volunteer involvement, please
+				complete the sign-up form.
 			</p>
 			<a class="button" href="https://forms.gle/G1dM2FCGaQ52tKBk9">
 				Sign Up to Volunteer &nbsp;<i class="fa-solid fa-arrow-up-right-from-square" />
@@ -158,7 +160,7 @@
 		font-size: 1.1rem;
 		padding: 0.8rem 1.1rem;
 		flex: 1;
-		width: 50%;
+		// width: 50%;
 	}
 
 	@media (max-width: 700px) {
