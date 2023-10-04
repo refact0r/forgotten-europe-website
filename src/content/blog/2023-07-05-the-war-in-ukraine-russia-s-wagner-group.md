@@ -1,7 +1,7 @@
 ---
 published: true
 title: "The War in Ukraine: Russia's Wagner Group"
-date: 2023-07-05T12:34:00.000Z
+date: 2023-07-06T00:34:00.000Z
 author: Anton Chebotaryov
 description: Understanding the role that the Wagner private military group has played in Russia's illegal invasion of Ukraine.
 tags:
