@@ -77,6 +77,19 @@
 
 	<section>
 		<h2>
+			<a href="/volunteer">Volunteer</a>
+		</h2>
+		<p>
+			We are consistently looking for the help of volunteers, whether it be through outreach,
+			social media, or writing. Volunteers can self log their volunteer hours.
+		</p>
+		<a class="button" href="/volunteer">
+			Learn More &nbsp; <i class="fa-solid fa-arrow-right" />
+		</a>
+	</section>
+
+	<section>
+		<h2>
 			<a href="/interviews">Interviews</a>
 		</h2>
 		<p>
@@ -109,19 +122,6 @@
 			<a href={`blog/${data.blog.slug}`}>Latest Post</a>
 		</h3>
 		<BlogPreview post={data.blog} />
-	</section>
-
-	<section>
-		<h2>
-			<a href="/volunteer">Volunteers</a>
-		</h2>
-		<p>
-			We are consistently looking for the help of volunteers, whether it be through outreach,
-			social media, or writing. Volunteers can self log their volunteer hours.
-		</p>
-		<a class="button" href="/volunteer">
-			Learn More &nbsp; <i class="fa-solid fa-arrow-right" />
-		</a>
 	</section>
 </div>
 
