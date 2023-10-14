@@ -90,6 +90,13 @@
 				</a>
 				<a
 					class="button inverted"
+					class:active={$page.url.pathname.slice(0, 9) === '/petition'}
+					href="/petition"
+				>
+					Petition
+				</a>
+				<a
+					class="button inverted"
 					class:active={$page.url.pathname.slice(0, 6) === '/about'}
 					href="/about"
 				>
@@ -151,6 +158,13 @@
 			</a>
 			<a
 				class="button inverted"
+				class:active={$page.url.pathname.slice(0, 9) === '/petition'}
+				href="/petition"
+			>
+				Petition
+			</a>
+			<a
+				class="button inverted"
 				class:active={$page.url.pathname.slice(0, 6) === '/about'}
 				href="/about"
 			>
@@ -161,7 +175,7 @@
 				class:active={$page.url.pathname.slice(0, 8) === '/ukraine'}
 				href="/ukraine"
 			>
-				War in Ukraine
+				<span class="ukraine">War in Ukraine</span>
 			</a>
 		</div>
 	</header>
@@ -258,7 +272,7 @@
 	.links {
 		display: flex;
 		align-items: center;
-		gap: 1rem;
+		gap: 0.5rem;
 		margin-left: auto;
 		font-size: 1.1rem;
 		line-height: 1.1em;
@@ -364,7 +378,7 @@
 		-moz-text-fill-color: inherit;
 	}
 
-	@media (max-width: 1175px) {
+	@media (max-width: 1225px) {
 		header a.button {
 			padding: 0.5rem 0.6rem;
 		}
@@ -376,18 +390,18 @@
 			font-size: 1.1rem;
 		}
 		.links {
-			gap: 0.5rem;
+			gap: 0.3rem;
 			font-size: 1rem;
 		}
 	}
 
-	@media (max-width: 975px) {
+	@media (max-width: 1050px) {
 		h1 {
 			display: none;
 		}
 	}
 
-	@media (max-width: 725px) {
+	@media (max-width: 800px) {
 		.header-inner {
 			padding: 0;
 		}
