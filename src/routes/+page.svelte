@@ -69,8 +69,12 @@
 				<div class="label">District Affected</div>
 			</div>
 			<div class="group">
+				<div class="number">239</div>
+				<a class="label" href="/petition">Petition Signatures</a>
+			</div>
+			<div class="group">
 				<div class="number">14</div>
-				<div class="label">Volunteers</div>
+				<a class="label" href="/volunteer">Volunteers</a>
 			</div>
 		</div>
 	</div>
@@ -84,6 +88,19 @@
 			social media, or writing. Volunteers can self log their volunteer hours.
 		</p>
 		<a class="button" href="/volunteer">
+			Learn More &nbsp; <i class="fa-solid fa-arrow-right" />
+		</a>
+	</section>
+
+	<section>
+		<h2>
+			<a href="/petition">Petition</a>
+		</h2>
+		<p>
+			Petition to Washington State Schools on the importance of Central-Eastern European
+			studies.
+		</p>
+		<a class="button" href="/petition">
 			Learn More &nbsp; <i class="fa-solid fa-arrow-right" />
 		</a>
 	</section>
@@ -207,14 +224,14 @@
 
 	.stats {
 		display: flex;
-		max-width: 50rem;
+		max-width: 53rem;
 		justify-content: space-between;
 		margin: auto;
-		gap: 1.5rem;
+		gap: 1rem;
 	}
 
 	.group {
-		width: 10rem;
+		width: 8rem;
 	}
 
 	.number {
