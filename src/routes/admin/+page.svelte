@@ -1,4 +1,10 @@
 <svelte:head>
 	<meta name="robots" content="noindex" />
-	<script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
+	<script defer src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </svelte:head>
+
+<style>
+	:global(#svelte) {
+		display: none;
+	}
+</style>
