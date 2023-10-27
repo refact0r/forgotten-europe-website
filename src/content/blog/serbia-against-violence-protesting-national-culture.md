@@ -39,6 +39,8 @@ In the wake of these findings, protests against the government’s failure to ac
 
 <Image path="static/images/uploads/Memorial.png" caption="Memorial for the deceased of the 3 May 2023 school shooting. The sign reads, translated, “Talk to the kids.”" source="https://commons.wikimedia.org/w/index.php?curid=131566315"/>
 
+![alt](/images/uploads/AFP33EG2BZ-1eaabe.jpg "title")
+
 ### The Mladenovac and Smederevo Shootings
 
 21-year-old Uroš Blažić returned home to his cottage in Šepšin after an argument with his friends at a Mladenovac football stadium. But he did not stay there for long. Taking an assault rifle, three pistols, and four hand grenades, he expressed his rage via a drive-by shooting. His first destination was a village in Smederevo. There, Blažić shot 11, killing five and injuring six. He then continued to a town in Mladenovac, killing another four and injuring a handful of other civilians.
