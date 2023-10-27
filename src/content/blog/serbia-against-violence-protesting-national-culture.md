@@ -3,7 +3,8 @@ published: true
 title: "“Serbia Against Violence”: Protesting National Culture"
 date: 2023-07-18T21:10
 author: Rittik Bhattacharya
-description: History and culture behind the Serbian protests against gun violence and nationalism.
+description: History and culture behind the Serbian protests against gun
+  violence and nationalism.
 tags: []
 featured: /images/uploads/Protest.png
 caption: ""
@@ -36,7 +37,9 @@ Kosta Kecmanović’s justification has been one chilling sentence: “I shot be
 
 In the wake of these findings, protests against the government’s failure to act began to stir. The next day, however, only magnified these demonstrations.
 
-<Image path="/images/uploads/Memorial.png" caption="Memorial for the deceased of the 3 May 2023 school shooting. The sign reads, translated, “Talk to the kids.”" source="https://commons.wikimedia.org/w/index.php?curid=131566315"/>
+<Image path="static/images/uploads/Memorial.png" caption="Memorial for the deceased of the 3 May 2023 school shooting. The sign reads, translated, “Talk to the kids.”" source="https://commons.wikimedia.org/w/index.php?curid=131566315"/>
+
+![alt](/images/uploads/AFP33EG2BZ-1eaabe.jpg "title")
 
 ### The Mladenovac and Smederevo Shootings
 
@@ -225,7 +228,7 @@ Faguy, Ana. 2023. “U.S. Sees Record Number Of Mass Shootings Halfway Through 2
 
 Gec, Jovana. 2023. “Serbians mourn mass shooting victims.” The Arkansas Democrat-Gazette. <https://www.arkansasonline.com/news/2023/may/07/serbians-mourn-mass-shooting-victims/>.
 
-Greenawalt, Alexander. 1999. “Greenawalt: Kosovo Myths.” York University. <http://www.yorku.ca/soi/Vol_3/_HTML/Greenawalt.html>.
+Greenawalt, Alexander. 1999. “Greenawalt: Kosovo Myths.” York University. [http://www.yorku.ca/soi/Vol_3/_HTML/Greenawalt.html](http://www.yorku.ca/soi/Vol_3/_HTML/Greenawalt.html).
 
 Higgins, Andrew. 2023. “After Mass Shootings in Serbia, Few Are Ready to Give Up Their Guns.” The New York Times. <https://www.nytimes.com/2023/06/02/world/europe/serbia-shootings-gun-control.html>.
 
