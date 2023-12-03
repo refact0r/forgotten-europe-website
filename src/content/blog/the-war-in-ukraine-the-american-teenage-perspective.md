@@ -3,11 +3,12 @@ published: true
 title: "The War in Ukraine: The American Teenage Perspective"
 date: 2023-07-02T17:15
 author: Liam Krol
-description: An account of volunteering at a Ukrainian refugee reception center in Southern Poland.
+description: An account of volunteering at a Ukrainian refugee reception center
+  in Southern Poland.
 tags:
   - ukraine
 featured: /images/uploads/20220822_160700.jpg
-caption: Playing badminton with a young refugee from Ukraine
+caption: Liam playing badminton with a young refugee from Ukraine.
 ---
 Mothers alone with their children and few belongings, their husbands left to fight on the front. Parents frantically making calls, to host families, shelters, and perhaps more importantly, to family still trapped in Ukraine while children run and play games. This was the scene that greeted me at the city of Krakow’s Ukrainian reception center in Poland. An old train station, with its chandeliers and historic design, had become the host for the suffering and pain that Putin’s war brought to the Ukrainian people.
 
