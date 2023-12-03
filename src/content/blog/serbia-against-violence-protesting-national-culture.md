@@ -3,7 +3,7 @@ published: true
 title: "“Serbia Against Violence”: Protesting National Culture"
 date: 2023-07-18T21:10
 author: Rittik Bhattacharya
-description: History and culture behind the Serbian protests against gun
+description: The history and culture behind the Serbian protests against gun
   violence and nationalism.
 tags: []
 featured: /images/uploads/Protest.png
