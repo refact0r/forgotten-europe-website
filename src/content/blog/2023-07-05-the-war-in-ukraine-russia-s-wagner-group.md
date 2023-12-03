@@ -6,7 +6,7 @@ author: Anton Chebotaryov
 description: Understanding the role of the Wagner Group private military in
   Russia's illegal invasion of Ukraine.
 tags:
-  - Ukraine
+  - ukraine
 featured: /images/uploads/AFP33EG2BZ-1eaabe.jpg
 caption: Wagner Group leader Yevgeny Prigozhin addressing Russian officials
   alongside Wagner soldiers.
