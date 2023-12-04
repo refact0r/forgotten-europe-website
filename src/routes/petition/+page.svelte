@@ -27,14 +27,15 @@
 			war in Ukraine. Each development has had implications and relevant lessons for the
 			global community. Mainstream American curricula in primary through secondary educational
 			institutions frequently overlooks Central-Eastern European history. The memories,
-			stories, and knowledge of this important past have gradually become forgotten.
+			stories, and knowledge of this important past have gradually become forgotten as a
+			result.
 		</p>
 
 		<p>
-			Signees of this petition recognize the important role Central-Eastern European history
-			should play in American educational institutions. Especially since the eruption of war
-			in Ukraine, understanding this region’s history has become important and relevant to
-			global developments. We ask schools to adopt lesson plans on important topics of
+			Signees of this petition recognize the important role of Central-Eastern European
+			history in American educational institutions. Especially since the eruption of war in
+			Ukraine, understanding this region’s history has become important and relevant to global
+			developments. We ask schools to adopt lesson plans on important topics of
 			Central-Eastern European history. With your help, we will redefine the marginalized role
 			the region holds in today’s global awareness.
 		</p>
