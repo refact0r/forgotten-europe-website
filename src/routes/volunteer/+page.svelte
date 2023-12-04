@@ -57,11 +57,11 @@
 		<br />
 		<div class="middle">
 			<p class="description">
-				We are always looking for volunteers willing to contribute to the project's mission
-				statement and goals. We are a registered 501(c)3 nonprofit in the State of
-				Washington. Our volunteers self log their volunteer hours, which can go towards high
-				school volunteer requirements. If interested in volunteer involvement, please
-				complete the sign-up form.
+				We are always looking for volunteers who are willing to contribute to the project's
+				mission statement and goals. We are a registered 501(c)3 nonprofit in the State of
+				Washington. Our volunteers can self-log their volunteer hours, which can go towards
+				high school volunteer requirements. If interested in volunteering, please complete
+				the sign-up form.
 			</p>
 			<a class="button" href="https://forms.gle/G1dM2FCGaQ52tKBk9">
 				Sign Up to Volunteer &nbsp;<i class="fa-solid fa-arrow-up-right-from-square" />
@@ -76,24 +76,23 @@
 			<h3>Outreach</h3>
 			<p>
 				Responsibilities include using project resources and contacts to expand the
-				influence and scope of the project. Includes the planning of events and initiatives
-				coordinated by the project.
+				influence and scope of the project, and planning events and initiatives coordinated
+				by the project.
 			</p>
 		</div>
 		<div class="column">
 			<h3>Social media</h3>
 			<p>
-				Contribution to the project's social media page is essential to our success. Social
-				media volunteers are responsible for creating content and managing our social
+				Responsibilities include creating content for and managing our social media
 				accounts.
 			</p>
 		</div>
 		<div class="column">
 			<h3>Writer</h3>
 			<p>
-				As a historical project, we focus on preserving and raising awareness over
-				Central-Eastern Europe's forgotten history. Responsibilities include creating blogs,
-				writing newsletters, and conducting historical research.
+				Responsibilities include creating blogs, writing newsletters, and conducting
+				historical research to preserve and raise awareness of Central-Eastern Europe's
+				forgotten history."
 			</p>
 		</div>
 	</section>
