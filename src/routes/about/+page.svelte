@@ -61,10 +61,10 @@
 			Russian missile strikes and shelling. Yet in erupting thousands of miles away from the
 			United States, we Americans have begun to forget that today, Ukrainian soldiers continue
 			to fight on against oppression and imperialism. This is not the first time that
-			central-eastern Europe was disregarded. Decades of Soviet repression during the Cold War
-			had masked the region under an Iron curtain. Even after this curtain fell, memories of
-			the suffering, brutality, and genocide this region endured was forgotten by the world. I
-			dedicate this project to my ancestors, and the many millions central-eastern Europeans
+			Central-eastern Europe was disregarded. Decades of Soviet repression during the Cold War
+			was masked by an Iron Curtain. Even after this curtain fell, the memories of the
+			suffering, brutality, and genocide this region endured were forgotten by the world. I
+			dedicate this project to my ancestors, and the many millions Central-Eastern Europeans
 			whose stories were forgotten. May your voices now be heard.
 		</p>
 	</section>

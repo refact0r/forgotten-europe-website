@@ -84,8 +84,8 @@
 			<a href="/volunteer">Volunteer</a>
 		</h2>
 		<p>
-			We are consistently looking for the help of volunteers, whether it be through outreach,
-			social media, or writing. Volunteers can self log their volunteer hours.
+			We are always looking for help from volunteers, through outreach, social media, writing,
+			and more. Volunteers can self log their volunteer hours.
 		</p>
 		<a class="button" href="/volunteer">
 			Learn More &nbsp; <i class="fa-solid fa-arrow-right" />

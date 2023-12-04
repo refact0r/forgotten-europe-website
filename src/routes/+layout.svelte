@@ -234,7 +234,7 @@
 			in Central-Eastern European culture and history.
 			<br />
 			<b>
-				The Forgotten Europe Project is a nonprofit organization incorporated with the State
+				The Forgotten Europe Project is a nonprofit organization incorporated in the State
 				of Washington.
 			</b>
 		</p>
