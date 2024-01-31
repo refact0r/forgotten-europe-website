@@ -6,11 +6,7 @@ import { mdsvex } from 'mdsvex'
 const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [
-		vitePreprocess({
-			scss: {
-				prependData: '@use "src/variables.scss" as *;'
-			}
-		}),
+		vitePreprocess(),
 		mdsvex({
 			extensions: ['.md'],
 			smartypants: {
