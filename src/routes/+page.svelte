@@ -15,6 +15,37 @@
 	description="The Forgotten Europe Project is dedicated to enlightening the world with the forgotten stories, traditions, and history of Central-Eastern Europe."
 />
 
+<svelte:head>
+	<script>
+		!(function (src, cb) {
+			var s = document.createElement('script')
+			s.src = src
+			s.async = true
+			if (s.readyState) {
+				s.onreadystatechange = function () {
+					if (s.readyState == 'loaded' || s.readyState == 'complete') {
+						s.onreadystatechange = null
+						cb()
+					}
+				}
+			} else {
+				s.onload = function () {
+					cb()
+				}
+			}
+			document.head.appendChild(s)
+		})('//player.invintus.com/app.js', function () {
+			Invintus.launch({
+				clientID: '9375922947',
+				eventID: '2024011488',
+				simple: true,
+				startStreamAt: 3762,
+				stopStreamAt: 3902
+			})
+		})
+	</script>
+</svelte:head>
+
 <div class="banner">
 	<picture class="banner-pic">
 		<PictureSources src={banner} />
@@ -78,6 +109,16 @@
 			</div>
 		</div>
 	</div>
+
+	<section>
+		<h2>Recent News</h2>
+		<p>
+			Liam Krol, President of the Forgotten Europe Project, presented a testimony to the
+			Washington House Education Committee regarding HB 2037, a bill focused on incorporating
+			Holocaust and genocide education into public school curriculums.
+		</p>
+		<div class="invintus-player" data-eventid="2024011488"></div>
+	</section>
 
 	<section>
 		<h2>
@@ -242,6 +283,9 @@
 	.label {
 		font-size: 1.2rem;
 		font-weight: 500;
+	}
+
+	.invintus-player {
 	}
 
 	@media (max-width: 850px) {
