@@ -56,7 +56,7 @@
 		margin: auto;
 		margin-bottom: 3rem;
 
-		text-align: center;
+		text-align: left;
 	}
 
 	h1 {

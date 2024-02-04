@@ -16,7 +16,7 @@
 />
 
 <svelte:head>
-	<script>
+	<script type="application/javascript" charset="UTF-8">
 		!(function (src, cb) {
 			var s = document.createElement('script')
 			s.src = src
@@ -120,31 +120,34 @@
 		<div class="invintus-player" data-eventid="2024011488"></div>
 	</section>
 
-	<section>
-		<h2>
-			<a href="/volunteer">Volunteer</a>
-		</h2>
-		<p>
-			We are always looking for help from volunteers, through outreach, social media, writing,
-			and more. Volunteers can self log their volunteer hours.
-		</p>
+	<section class="columns">
+		<div class="column">
+			<h2>
+				<a href="/volunteer">Volunteer</a>
+			</h2>
+			<p>
+				We are always looking for help from volunteers, through outreach, social media,
+				writing, and more. Volunteers can self log their volunteer hours.
+			</p>
+		</div>
+		<div class="column">
+			<h2>
+				<a href="/petition">Petition</a>
+			</h2>
+			<p>
+				Petition to Washington State Schools on the importance of Central-Eastern European
+				studies.
+			</p>
+		</div>
 		<a class="button" href="/volunteer">
 			Learn More &nbsp; <i class="fa-solid fa-arrow-right" />
 		</a>
-	</section>
-
-	<section>
-		<h2>
-			<a href="/petition">Petition</a>
-		</h2>
-		<p>
-			Petition to Washington State Schools on the importance of Central-Eastern European
-			studies.
-		</p>
 		<a class="button" href="/petition">
-			Learn More &nbsp; <i class="fa-solid fa-arrow-right" />
+			Read the Petition &nbsp; <i class="fa-solid fa-arrow-right" />
 		</a>
 	</section>
+
+	<section></section>
 
 	<section>
 		<h2>
@@ -260,7 +263,7 @@
 		color: var(--dark);
 		width: 100%;
 		padding: 1.5rem 1.5rem;
-		margin-bottom: 5rem;
+		margin-bottom: 4rem;
 	}
 
 	.stats {
@@ -285,7 +288,20 @@
 		font-weight: 500;
 	}
 
-	.invintus-player {
+	.columns {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr auto;
+		gap: 0 2rem;
+
+		a.button {
+			width: fit-content;
+			margin: auto;
+		}
+	}
+
+	.column p {
+		text-align: center;
 	}
 
 	@media (max-width: 850px) {
