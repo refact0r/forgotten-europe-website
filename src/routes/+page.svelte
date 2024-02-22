@@ -274,16 +274,16 @@
 	}
 
 	.group {
-		width: 8rem;
+		width: 7rem;
 	}
 
 	.number {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		font-weight: bold;
 	}
 
 	.label {
-		font-size: 1.2rem;
+		font-size: 1rem;
 		font-weight: 500;
 	}
 
