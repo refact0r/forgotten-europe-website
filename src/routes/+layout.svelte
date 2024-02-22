@@ -136,20 +136,61 @@
 			<a class="button inverted" class:active={pagePath === 'interviews'} href="/interviews">
 				Interviews
 			</a>
-			<a class="button inverted" class:active={pagePath === 'blog'} href="/blog"> Blog </a>
 			<a class="button inverted" class:active={pagePath === 'curriculum'} href="/curriculum">
 				Curriculum
 			</a>
-			<a class="button inverted" class:active={pagePath === 'volunteer'} href="/volunteer">
-				Volunteer
-			</a>
-			<a class="button inverted" class:active={pagePath === 'petition'} href="/petition">
-				Petition
-			</a>
-			<a class="button inverted" class:active={pagePath === 'about'} href="/about"> About </a>
-			<a class="button inverted" class:active={pagePath === 'ukraine'} href="/ukraine">
-				<span class="ukraine">War in Ukraine</span>
-			</a>
+			<div class="group">
+				<a
+					class="button inverted"
+					class:active={pagePath === 'legislation'}
+					class:semi-active={['petition'].includes(pagePath)}
+					href="/legislation"
+				>
+					Legislation
+				</a>
+				<div class="group-content">
+					<a
+						class="button inverted"
+						class:active={pagePath === 'petition'}
+						href="/petition"
+					>
+						Petition
+					</a>
+				</div>
+			</div>
+			<div class="group">
+				<a
+					class="button inverted"
+					class:active={pagePath === 'blog'}
+					class:semi-active={['ukraine'].includes(pagePath)}
+					href="/blog"
+				>
+					Blog
+				</a>
+				<div class="group-content">
+					<a
+						class="button inverted"
+						class:active={pagePath === 'ukraine'}
+						href="/ukraine"
+					>
+						<span class="ukraine">War in Ukraine</span>
+					</a>
+				</div>
+			</div>
+			<div class="group">
+				<a class="button inverted" class:active={pagePath === 'about'} href="/about">
+					About
+				</a>
+				<div class="group-content">
+					<a
+						class="button inverted"
+						class:active={pagePath === 'volunteer'}
+						href="/volunteer"
+					>
+						Volunteer
+					</a>
+				</div>
+			</div>
 		</div>
 	</header>
 {/if}
@@ -280,6 +321,16 @@
 		}
 	}
 
+	.group-content {
+		display: flex;
+		margin: 0.5rem 0 0 1.5rem;
+
+		a.button.inverted {
+			font-size: 0.9rem;
+			width: 100%;
+		}
+	}
+
 	.logo {
 		width: 2.5rem;
 		height: 2.5rem;
@@ -323,7 +374,7 @@
 		right: 0;
 		height: 100%;
 		z-index: 1;
-		padding: 3.5rem 1.5rem 1rem 1.5rem;
+		padding: 3.5rem 1rem 1rem 1rem;
 		gap: 1rem;
 
 		&.open {
@@ -331,6 +382,7 @@
 		}
 
 		a.button {
+			width: 100%;
 			font-size: 1.1rem;
 			padding: 0.6rem 1rem;
 		}
@@ -380,7 +432,7 @@
 		-moz-text-fill-color: inherit;
 	}
 
-	@media (max-width: 1225px) {
+	@media (max-width: 1150px) {
 		header a.button {
 			padding: 0.5rem 0.6rem;
 		}
@@ -397,13 +449,7 @@
 		}
 	}
 
-	@media (max-width: 1050px) {
-		h1 {
-			display: none;
-		}
-	}
-
-	@media (max-width: 800px) {
+	@media (max-width: 850px) {
 		.header-inner {
 			padding: 0;
 		}
