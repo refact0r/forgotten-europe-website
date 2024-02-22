@@ -39,7 +39,6 @@
 		flex-direction: column;
 		gap: 1rem;
 		padding: 1rem;
-		border-radius: 1rem;
 		text-decoration: none;
 		font-weight: 400;
 		font-size: 1.1rem;
@@ -60,7 +59,7 @@
 	.image {
 		width: 100%;
 		height: auto;
-		border-radius: 0.5rem;
+		border-radius: 0.25rem;
 		display: block;
 		object-fit: cover;
 		aspect-ratio: 16/9;

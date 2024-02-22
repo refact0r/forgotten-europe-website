@@ -46,33 +46,34 @@
 	</script>
 </svelte:head>
 
-<div class="banner">
-	<picture class="banner-pic">
-		<PictureSources src={banner} />
-		<img
-			class="banner-img"
-			src={banner.img.src}
-			width="2000"
-			height="500"
-			type="image/jpeg"
-			alt="Site banner"
-		/>
-	</picture>
-	<h1>The Forgotten Europe Project</h1>
-	<picture class="flagstrip-pic">
-		<PictureSources src={flagstrip} />
-		<img
-			class="flagstrip"
-			src={flagstrip.img.src}
-			width="640"
-			height="24"
-			type="image/jpeg"
-			alt="Flags of Central-Eastern Europe"
-		/>
-	</picture>
-	<h2>Preserving the stories, traditions, and history of Central-Eastern Europe.</h2>
-</div>
 <div class="content">
+	<div class="banner">
+		<picture class="banner-pic">
+			<PictureSources src={banner} />
+			<img
+				class="banner-img"
+				src={banner.img.src}
+				width="2000"
+				height="500"
+				type="image/jpeg"
+				alt="Site banner"
+			/>
+		</picture>
+		<h1>The Forgotten Europe Project</h1>
+		<picture class="flagstrip-pic">
+			<PictureSources src={flagstrip} />
+			<img
+				class="flagstrip"
+				src={flagstrip.img.src}
+				width="640"
+				height="24"
+				type="image/jpeg"
+				alt="Flags of Central-Eastern Europe"
+			/>
+		</picture>
+		<h2>Preserving the stories, traditions, and history of Central-Eastern Europe.</h2>
+	</div>
+
 	<section>
 		<h2>Our Mission</h2>
 
@@ -84,9 +85,6 @@
 			overcome the barriers of Western-centrism and bring equal representation in learning and
 			discussion.
 		</p>
-		<a class="button" href="/about">
-			Learn More &nbsp; <i class="fa-solid fa-arrow-right" />
-		</a>
 	</section>
 
 	<div class="stats-back">
@@ -200,7 +198,7 @@
 		width: 100%;
 		height: fit-content;
 		min-height: 20rem;
-		padding: 1.5rem;
+		padding: 2rem;
 		color: #fff;
 		text-align: center;
 		overflow: hidden;
@@ -225,8 +223,10 @@
 
 	.banner-pic {
 		position: absolute;
-		width: 100%;
-		height: 100%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
 	}
 
 	.banner-img {
@@ -249,7 +249,7 @@
 
 	section {
 		max-width: 53rem;
-		margin: 2rem auto 5rem auto;
+		margin: 2rem auto 4rem auto;
 		padding: 0rem 1.5rem;
 	}
 
@@ -261,7 +261,6 @@
 	.stats-back {
 		background-color: var(--semi-light);
 		color: var(--dark);
-		width: 100%;
 		padding: 1.5rem 1.5rem;
 		margin-bottom: 4rem;
 	}

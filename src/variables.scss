@@ -83,6 +83,11 @@
 		background-color: var(--light);
 		color: var(--dark);
 	}
+
+	&.semi-active {
+		background-color: var(--semi-dark);
+		color: var(--light);
+	}
 }
 
 @mixin small-headings {
