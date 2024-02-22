@@ -81,6 +81,13 @@
 					<div class="dropdown-content">
 						<a
 							class="button inverted"
+							class:active={pagePath === 'legislation'}
+							href="/legislation"
+						>
+							Legislation
+						</a>
+						<a
+							class="button inverted"
 							class:active={pagePath === 'petition'}
 							href="/petition"
 						>
@@ -98,6 +105,9 @@
 						Blog
 					</a>
 					<div class="dropdown-content">
+						<a class="button inverted" class:active={pagePath === 'blog'} href="/blog">
+							Blog
+						</a>
 						<a
 							class="button inverted"
 							class:active={pagePath === 'ukraine'}
@@ -108,10 +118,22 @@
 					</div>
 				</div>
 				<div class="dropdown">
-					<a class="button inverted" class:active={pagePath === 'about'} href="/about">
+					<a
+						class="button inverted"
+						class:active={pagePath === 'about'}
+						class:semi-active={['volunteer'].includes(pagePath)}
+						href="/about"
+					>
 						About
 					</a>
 					<div class="dropdown-content">
+						<a
+							class="button inverted"
+							class:active={pagePath === 'about'}
+							href="/about"
+						>
+							About Us
+						</a>
 						<a
 							class="button inverted"
 							class:active={pagePath === 'volunteer'}
@@ -375,7 +397,7 @@
 		height: 100%;
 		z-index: 1;
 		padding: 3.5rem 1rem 1rem 1rem;
-		gap: 1rem;
+		gap: 0.5rem;
 
 		&.open {
 			transform: translateX(0);
