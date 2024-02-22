@@ -1,7 +1,7 @@
 ---
 published: true
 quote: '"She had to be hidden"'
-thumbnail: /images/uploads/Zofia-Bublik.jpg
+thumbnail: /images/uploads/whatsapp-image.jpg
 title: "Interview with Zofia Bublik: Righteous Among the Nations Medal Recipient"
 date: 2024-02-05T03:14:35.857Z
 description: |
