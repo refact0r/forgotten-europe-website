@@ -12,7 +12,7 @@
 
 <div class="content">
 	<h1>Blog</h1>
-
+	<p>Learn about Central-Eastern European current events, history, and culture.</p>
 	<section>
 		<div class="previews">
 			{#each data.posts as post}
@@ -29,7 +29,7 @@
 
 	section {
 		max-width: 50rem;
-		margin: 0 auto 4rem auto;
+		margin: 3rem auto 4rem auto;
 	}
 
 	.previews {
@@ -39,6 +39,10 @@
 	}
 
 	h1 {
+		text-align: center;
+	}
+
+	p {
 		text-align: center;
 	}
 

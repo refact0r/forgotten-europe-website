@@ -196,7 +196,7 @@
 		height: auto;
 		aspect-ratio: 1/1;
 		object-fit: cover;
-		border-radius: 1rem;
+		border-radius: 0.5rem;
 	}
 
 	.liam-img {
@@ -233,7 +233,7 @@
 		width: 100%;
 		aspect-ratio: 1/1;
 		background-color: var(--mid-light);
-		border-radius: 1rem;
+		border-radius: 0.5rem;
 		position: relative;
 	}
 
