@@ -41,7 +41,7 @@
 	img {
 		width: 100%;
 		height: auto;
-		border-radius: 1rem;
+		border-radius: 0.5rem;
 	}
 
 	.container {

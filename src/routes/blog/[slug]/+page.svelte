@@ -79,7 +79,7 @@
 
 	.image {
 		width: 100%;
-		border-radius: 1rem;
+		border-radius: 0.5rem;
 	}
 
 	.image-container {

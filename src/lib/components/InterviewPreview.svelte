@@ -16,7 +16,6 @@
 <a class="interview clickable" href={`interviews/${slug}`}>
 	<div class="label">{quote}</div>
 	<div class="image-container">
-		<span class="fi fi-pl" />
 		{#await getImage(thumbnail) then [image, ext]}
 			<picture>
 				<PictureSources src={image} />
@@ -47,13 +46,6 @@
 
 	.image-container {
 		position: relative;
-	}
-
-	span {
-		font-size: 1.5rem;
-		position: absolute;
-		bottom: 1rem;
-		right: 1rem;
 	}
 
 	.image {

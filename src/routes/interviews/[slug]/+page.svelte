@@ -73,6 +73,6 @@
 		width: 100%;
 		height: auto;
 		aspect-ratio: 16 / 9;
-		border-radius: 1rem;
+		border-radius: 0.5rem;
 	}
 </style>
