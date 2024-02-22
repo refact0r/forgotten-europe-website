@@ -49,7 +49,7 @@
 		display: flex;
 		gap: 1rem;
 		padding: 1rem 1rem 1rem 1.5rem;
-		border-radius: 1rem;
+		border-radius: 0.5rem;
 		text-decoration: none;
 		font-weight: normal;
 	}
@@ -62,7 +62,7 @@
 		width: 6.5rem;
 		height: 6.5rem;
 		object-fit: cover;
-		border-radius: 0.5rem;
+		border-radius: 0.25rem;
 	}
 
 	h2 {
@@ -71,7 +71,7 @@
 	}
 
 	p {
-		margin: 0.5rem 0 0 0;
+		margin: 0.3rem 0 0 0;
 		text-align: left;
 	}
 

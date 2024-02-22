@@ -17,6 +17,10 @@
 	// 		? 'The Forgotten <span class="nowrap">Europe Project</span>'
 	// 		: $page.url.pathname.charAt(1).toUpperCase() + $page.url.pathname.slice(2)
 
+	$: pagePath = $page.url.pathname.split('/')[1]
+
+	$: console.log(pagePath)
+
 	let menuOpen = false
 
 	$: $page.url && (menuOpen = false)
@@ -50,65 +54,73 @@
 				<h1>The Forgotten Europe Project</h1>
 			</a>
 			<div class="links">
-				<a class="button inverted" class:active={$page.url.pathname === '/'} href="/">
-					Home
-				</a>
+				<a class="button inverted" class:active={pagePath === ''} href="/"> Home </a>
 				<a
 					class="button inverted"
-					class:active={$page.url.pathname.slice(0, 11) === '/interviews'}
+					class:active={pagePath === 'interviews'}
 					href="/interviews"
 				>
 					Interviews
 				</a>
-				<!-- <a
-					class="button inverted"
-					class:active={$page.url.pathname.slice(0, 5) === '/news'}
-					href="/news"
-				>
-					News
-				</a> -->
 				<a
 					class="button inverted"
-					class:active={$page.url.pathname.slice(0, 5) === '/blog'}
-					href="/blog"
-				>
-					Blog
-				</a>
-				<a
-					class="button inverted"
-					class:active={$page.url.pathname.slice(0, 11) === '/curriculum'}
+					class:active={pagePath === 'curriculum'}
 					href="/curriculum"
 				>
 					Curriculum
 				</a>
-				<a
-					class="button inverted"
-					class:active={$page.url.pathname.slice(0, 10) === '/volunteer'}
-					href="/volunteer"
-				>
-					Volunteer
-				</a>
-				<a
-					class="button inverted"
-					class:active={$page.url.pathname.slice(0, 9) === '/petition'}
-					href="/petition"
-				>
-					Petition
-				</a>
-				<a
-					class="button inverted"
-					class:active={$page.url.pathname.slice(0, 6) === '/about'}
-					href="/about"
-				>
-					About
-				</a>
-				<a
-					class="button inverted"
-					class:active={$page.url.pathname.slice(0, 8) === '/ukraine'}
-					href="/ukraine"
-				>
-					<span class="ukraine">War in Ukraine</span>
-				</a>
+				<div class="dropdown">
+					<a
+						class="button inverted"
+						class:active={pagePath === 'legislation'}
+						class:semi-active={['petition'].includes(pagePath)}
+						href="/legislation"
+					>
+						Legislation
+					</a>
+					<div class="dropdown-content">
+						<a
+							class="button inverted"
+							class:active={pagePath === 'petition'}
+							href="/petition"
+						>
+							Petition
+						</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a
+						class="button inverted"
+						class:active={pagePath === 'blog'}
+						class:semi-active={['ukraine'].includes(pagePath)}
+						href="/blog"
+					>
+						Blog
+					</a>
+					<div class="dropdown-content">
+						<a
+							class="button inverted"
+							class:active={pagePath === 'ukraine'}
+							href="/ukraine"
+						>
+							<span class="ukraine">War in Ukraine</span>
+						</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<a class="button inverted" class:active={pagePath === 'about'} href="/about">
+						About
+					</a>
+					<div class="dropdown-content">
+						<a
+							class="button inverted"
+							class:active={pagePath === 'volunteer'}
+							href="/volunteer"
+						>
+							Volunteer
+						</a>
+					</div>
+				</div>
 			</div>
 			<button class="hamburger" on:click={toggleMenu} aria-label="Open Menu">
 				{#if menuOpen}
@@ -120,61 +132,22 @@
 		</div>
 
 		<div class="menu" class:open={menuOpen}>
-			<a class="button inverted" class:active={$page.url.pathname === '/'} href="/"> Home </a>
-			<a
-				class="button inverted"
-				class:active={$page.url.pathname.slice(0, 11) === '/interviews'}
-				href="/interviews"
-			>
+			<a class="button inverted" class:active={pagePath === ''} href="/"> Home </a>
+			<a class="button inverted" class:active={pagePath === 'interviews'} href="/interviews">
 				Interviews
 			</a>
-			<!-- <a
-				class="button inverted"
-				class:active={$page.url.pathname.slice(0, 5) === '/news'}
-				href="/news"
-			>
-				News
-			</a> -->
-			<a
-				class="button inverted"
-				class:active={$page.url.pathname.slice(0, 5) === '/blog'}
-				href="/blog"
-			>
-				Blog
-			</a>
-			<a
-				class="button inverted"
-				class:active={$page.url.pathname.slice(0, 11) === '/curriculum'}
-				href="/curriculum"
-			>
+			<a class="button inverted" class:active={pagePath === 'blog'} href="/blog"> Blog </a>
+			<a class="button inverted" class:active={pagePath === 'curriculum'} href="/curriculum">
 				Curriculum
 			</a>
-			<a
-				class="button inverted"
-				class:active={$page.url.pathname.slice(0, 10) === '/volunteer'}
-				href="/volunteer"
-			>
+			<a class="button inverted" class:active={pagePath === 'volunteer'} href="/volunteer">
 				Volunteer
 			</a>
-			<a
-				class="button inverted"
-				class:active={$page.url.pathname.slice(0, 9) === '/petition'}
-				href="/petition"
-			>
+			<a class="button inverted" class:active={pagePath === 'petition'} href="/petition">
 				Petition
 			</a>
-			<a
-				class="button inverted"
-				class:active={$page.url.pathname.slice(0, 6) === '/about'}
-				href="/about"
-			>
-				About
-			</a>
-			<a
-				class="button inverted"
-				class:active={$page.url.pathname.slice(0, 8) === '/ukraine'}
-				href="/ukraine"
-			>
+			<a class="button inverted" class:active={pagePath === 'about'} href="/about"> About </a>
+			<a class="button inverted" class:active={pagePath === 'ukraine'} href="/ukraine">
 				<span class="ukraine">War in Ukraine</span>
 			</a>
 		</div>
@@ -243,7 +216,7 @@
 
 <style lang="scss">
 	:global(body) {
-		font-family: 'Figtree', sans-serif;
+		font-family: 'Figtree', serif;
 		font-style: normal;
 		font-weight: 400;
 	}
@@ -276,6 +249,35 @@
 		margin-left: auto;
 		font-size: 1.1rem;
 		line-height: 1.1em;
+	}
+
+	.dropdown {
+		position: relative;
+
+		&:hover {
+			.dropdown-content {
+				display: flex;
+			}
+		}
+	}
+
+	.dropdown-content {
+		display: none;
+		flex-direction: column;
+		gap: 0.5rem;
+		position: absolute;
+		right: -0.5rem;
+		min-width: calc(100% + 1rem);
+		padding: 0.5rem;
+		background-color: var(--dark);
+		box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+		z-index: 1;
+		border-radius: 0.5rem;
+
+		a.button {
+			font-size: 1rem;
+			width: 100%;
+		}
 	}
 
 	.logo {
