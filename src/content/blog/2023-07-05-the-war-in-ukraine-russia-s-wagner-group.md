@@ -7,7 +7,7 @@ description: Understanding the role of the Wagner Group private military in
   Russia's illegal invasion of Ukraine.
 tags:
   - ukraine
-featured: /images/uploads/AFP33EG2BZ-1eaabe.jpg
+featured: /src/content/uploads/AFP33EG2BZ-1eaabe.jpg
 caption: Wagner Group leader Yevgeny Prigozhin addressing Russian officials
   alongside Wagner soldiers.
 ---

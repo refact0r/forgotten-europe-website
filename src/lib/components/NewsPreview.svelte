@@ -1,6 +1,6 @@
 <script>
 	import PictureSources from '$lib/components/PictureSources.svelte'
-	import { nameFromPath } from '$lib/js/utils.js'
+	import importImage from '$lib/js/images.js'
 
 	export let post
 
@@ -13,12 +13,6 @@
 		hour: 'numeric',
 		minute: 'numeric'
 	}
-
-	async function getImage(path) {
-		const name = nameFromPath(path)
-		const ext = path.split('.').pop()
-		return [await import(`../../../static/images/uploads/${name}.${ext}`), ext]
-	}
 </script>
 
 <a class="clickable post" href={`/news/${slug}`}>
@@ -28,7 +22,7 @@
 		<p>{description}</p>
 	</div>
 	{#if featured}
-		{#await getImage(featured) then [image, ext]}
+		{#await importImage(featured) then image}
 			<picture class="pic">
 				<PictureSources src={image} />
 				<img
@@ -36,7 +30,6 @@
 					src={image.img.src}
 					width="104"
 					height="104"
-					type={`image/${ext}`}
 					alt={caption ? caption : title}
 				/>
 			</picture>

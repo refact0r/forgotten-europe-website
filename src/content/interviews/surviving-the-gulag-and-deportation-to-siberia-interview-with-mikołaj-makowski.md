@@ -1,7 +1,7 @@
 ---
 published: true
 quote: '"We were deported to Siberia."'
-thumbnail: /images/uploads/surviving-gulag-deportation.png
+thumbnail: /src/content/uploads/surviving-gulag-deportation.png
 title: "Surviving the Gulag and Deportation to Siberia: Interview with Mikołaj
   Makowski"
 date: 2023-07-02T23:39:00.000Z

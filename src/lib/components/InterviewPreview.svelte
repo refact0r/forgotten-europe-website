@@ -1,32 +1,19 @@
 <script>
 	import PictureSources from '$lib/components/PictureSources.svelte'
-	import { nameFromPath } from '$lib/js/utils.js'
+	import importImage from '$lib/js/images.js'
 
 	export let post
 
 	const { slug, quote, thumbnail } = post
-
-	async function getImage(path) {
-		const name = nameFromPath(path)
-		const ext = path.split('.').pop()
-		return [await import(`../../../static/images/uploads/${name}.${ext}`), ext]
-	}
 </script>
 
 <a class="interview clickable" href={`interviews/${slug}`}>
 	<div class="label">{quote}</div>
 	<div class="image-container">
-		{#await getImage(thumbnail) then [image, ext]}
+		{#await importImage(thumbnail) then image}
 			<picture>
-				<PictureSources src={image} />
-				<img
-					class="image"
-					src={image.img.src}
-					width="352"
-					height="198"
-					type={`image/${ext}`}
-					alt={quote}
-				/>
+				<PictureSources src={image} sizes="30vw" />
+				<img class="image" src={image.img.src} width="352" height="198" alt={quote} />
 			</picture>
 		{/await}
 	</div>
