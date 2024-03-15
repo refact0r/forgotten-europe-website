@@ -12,9 +12,8 @@
 />
 
 <div class="content">
-	<h1>Interviews</h1>
-
 	<section>
+		<h1>Interviews</h1>
 		<p>
 			Year-round, founder Liam Krol locates and interviews those who experienced
 			Central-Eastern Europe's past tragedies. Through personal accounts, these interviews
@@ -39,9 +38,8 @@
 	}
 
 	section {
-		max-width: 50rem;
-		margin: 2rem auto 4rem auto;
-		text-align: center;
+		max-width: 74rem;
+		margin: 2rem auto 3rem auto;
 	}
 
 	.grid {
@@ -52,12 +50,14 @@
 	}
 
 	.button {
-		font-size: 1.1rem;
 		padding: 0.8rem 1.1rem;
 	}
 
 	h1 {
-		text-align: center;
+	}
+
+	p {
+		margin: 1.5rem 0;
 	}
 
 	@media (max-width: 700px) {
