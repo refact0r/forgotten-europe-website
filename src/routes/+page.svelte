@@ -283,7 +283,6 @@
 		h1 {
 			position: relative;
 			font-size: 3rem;
-			letter-spacing: -0.03ch;
 			margin: 1rem 0 1.5rem 0;
 		}
 		.flagstrip-img {

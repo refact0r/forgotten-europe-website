@@ -9,9 +9,7 @@
 	const options = {
 		year: 'numeric',
 		month: 'long',
-		day: 'numeric',
-		hour: 'numeric',
-		minute: 'numeric'
+		day: 'numeric'
 	}
 </script>
 
@@ -61,6 +59,7 @@
 	h2 {
 		margin: 0;
 		text-align: left;
+		font-size: 1.4rem;
 	}
 
 	p {

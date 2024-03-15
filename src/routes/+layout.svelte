@@ -369,6 +369,7 @@
 	h1 {
 		font-size: 1.3rem;
 		margin: 0;
+		letter-spacing: -0.02ch;
 	}
 
 	.hamburger {
