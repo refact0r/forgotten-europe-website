@@ -4,7 +4,7 @@
 </svelte:head>
 
 <style>
-	:global(#svelte) {
+	:global(div#svelte) {
 		display: none;
 	}
 </style>
