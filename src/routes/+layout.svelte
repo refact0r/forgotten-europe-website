@@ -47,7 +47,6 @@
 						src={logo.img.src}
 						width="48"
 						height="48"
-						type="image/png"
 						alt="The Forgotten Europe Project Logo"
 					/>
 				</picture>

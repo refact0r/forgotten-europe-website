@@ -6,7 +6,7 @@ author: Youyi Li
 description: Today marks the 500th day of Russia's illegal and brutal invasion of Ukraine.
 tags:
   - ukraine
-featured: /images/uploads/Zelensky-SnakeIsland.jpg
+featured: /src/content/uploads/Zelensky-SnakeIsland.jpg
 caption: Zelenskyy places flowers at memorial on Snake Island.
 ---
 On February 24, 2022, Russian president Vladimir Putin launched a full-scale invasion of Ukraine. Tens of thousands have died since with many more wounded, including both soldiers and civilians. Although the exact casualty count varies among sources, it is undeniable that Putin’s actions are of serious humanitarian concern. Ukrainian resistance, however, stands strong under the leadership of President Volodymyr Zelenskyy, who recently marked the struggle’s 500th day with a [video](https://www.youtube.com/watch?v=CnoFZmIoPpg&t=17s&ab_channel=%D0%9E%D1%84%D1%96%D1%81%D0%9F%D1%80%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B0%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8) of his visit to Snake Island in Ukraine’s southern waters.

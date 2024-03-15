@@ -1,7 +1,7 @@
 ---
 published: true
 quote: '"We were hiding by the river..."'
-thumbnail: /images/uploads/surviving-german-occupation.png
+thumbnail: /src/content/uploads/surviving-german-occupation.png
 title: "Surviving the German Occupation: An Interview on World War II in Poland"
 date: 2023-07-02T23:40:00.000Z
 description: Maria Karpowicz, born near Łachwa, Poland, describes her experience

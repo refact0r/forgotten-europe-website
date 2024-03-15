@@ -1,7 +1,7 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
 	import PictureSources from '$lib/components/PictureSources.svelte'
-	import { nameFromPath } from '$lib/js/utils.js'
+	import importImage from '$lib/js/images.js'
 
 	export let data
 
@@ -13,12 +13,6 @@
 		day: 'numeric',
 		hour: 'numeric',
 		minute: 'numeric'
-	}
-
-	async function getImage(path) {
-		const name = nameFromPath(path)
-		const ext = path.split('.').pop()
-		return [await import(`../../../../static/images/uploads/${name}.${ext}`), ext]
 	}
 </script>
 
@@ -34,15 +28,10 @@
 		<p><i>{description}</i></p>
 		{#if featured}
 			<div class="image-container">
-				{#await getImage(featured) then [image, ext]}
+				{#await importImage(featured) then image}
 					<picture class="pic">
-						<PictureSources src={image} />
-						<img
-							class="image"
-							src={image.img.src}
-							type={`image/${ext}`}
-							alt={caption ? caption : title}
-						/>
+						<PictureSources src={image} sizes="70vw" />
+						<img class="image" src={image.img.src} alt={caption ? caption : title} />
 					</picture>
 				{/await}
 				{#if caption}

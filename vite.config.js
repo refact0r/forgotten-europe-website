@@ -10,7 +10,7 @@ export default defineConfig({
 				if (['jpg', 'jpeg', 'png', 'webp'].includes(extension)) {
 					return new URLSearchParams({
 						format: `avif;jpg`,
-						w: '1200;800;400',
+						w: '2000;1600;1200;800;400',
 						as: 'picture'
 					})
 				}
@@ -28,5 +28,6 @@ export default defineConfig({
 				additionalData: '@use "src/variables" as *;'
 			}
 		}
-	}
+	},
+	assetsInclude: 'src/content/uploads/*'
 })
