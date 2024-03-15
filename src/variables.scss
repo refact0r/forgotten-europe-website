@@ -12,10 +12,15 @@
 	}
 }
 
-@mixin flex-center {
+@mixin flex($direction: row, $justify: center, $align: center) {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin flex-center {
+	@include flex(row, center, center);
 }
 
 @mixin clickable-text {
