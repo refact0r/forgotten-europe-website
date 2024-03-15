@@ -111,18 +111,6 @@
 		</div>
 	</section>
 
-	<section>
-		<h2>Recent News</h2>
-		<p>
-			Liam Krol, President of the Forgotten Europe Project, presented a testimony to the
-			Washington House Education Committee regarding HB 2037, a bill focused on incorporating
-			Holocaust and genocide education into public school curriculums.
-		</p>
-		<div class="invintus-player" data-eventid="2024011488"></div>
-	</section>
-
-	<br />
-
 	<section class="split-right">
 		<div class="split-inner">
 			<div class="left">
@@ -243,22 +231,17 @@
 		</div>
 	</section>
 
-	<!-- <section>
-		<h2>
-			<a href="/interviews">Interviews</a>
-		</h2>
-		<p>
-			The Forgotten Europe Project interviews and records survivors of the many historical
-			tragedies that Central-Eastern Europe has endured to preserve their stories and messages
-			through personal experiences.
-		</p>
-		<h3>
-			<a href={`interviews/${data.interview.slug}`}>Latest Interview</a>
-		</h3>
-		<div class="interview">
-			<InterviewPreview post={data.interview} />
+	<section class="recent">
+		<div class="recent-inner">
+			<h2>Recent News</h2>
+			<p>
+				Liam Krol, President of the Forgotten Europe Project, presented a testimony to the
+				Washington House Education Committee regarding HB 2037, a bill focused on
+				incorporating Holocaust and genocide education into public school curriculums.
+			</p>
+			<div class="invintus-player" data-eventid="2024011488"></div>
 		</div>
-	</section> -->
+	</section>
 
 	<section>
 		<h2>
@@ -324,8 +307,12 @@
 	}
 
 	section {
-		max-width: 52rem;
+		max-width: 58rem;
 		margin: 2rem auto 3rem auto;
+		padding: 0 3rem;
+		h2 {
+			margin-top: 0;
+		}
 	}
 
 	.stats-container {
@@ -333,23 +320,25 @@
 		background-color: var(--semi-light);
 		color: var(--dark);
 		padding: 1.5rem 0rem;
-		.stats {
-			display: flex;
-			max-width: 52rem;
-			justify-content: space-between;
-			margin: auto;
-			text-align: center;
-			.group {
-				width: 7rem;
-			}
-			.number {
-				font-size: 2.5rem;
-				font-weight: bold;
-			}
-			.label {
-				font-size: 1rem;
-				font-weight: 500;
-			}
+		margin-bottom: 4rem;
+	}
+	.stats {
+		display: flex;
+		max-width: 58rem;
+		justify-content: space-between;
+		padding: 0 3rem;
+		margin: auto;
+		text-align: center;
+		.group {
+			width: 7rem;
+		}
+		.number {
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+		.label {
+			font-size: 1rem;
+			font-weight: 500;
 		}
 	}
 
@@ -363,196 +352,107 @@
 	.split-left {
 		max-width: none;
 		width: 100%;
-		.split-inner {
-			@include flex(row, center, center);
-			gap: 3rem;
-			max-width: 80rem;
-			margin: auto;
-			.left {
-				width: 40%;
-			}
-			.right {
-				width: 60%;
-			}
-			img {
-				aspect-ratio: 4 / 3;
-			}
-			.home2-img,
-			.home4-img {
-				aspect-ratio: 3 / 2;
-			}
-			.home5-img {
-				object-position: center 30%;
-			}
-		}
-	}
-	.split-right {
-		background-color: var(--semi-light);
-		padding: 3rem 0;
-		.split-inner .left {
+		padding: 0 3rem;
+		.left {
 			width: 60%;
 		}
-		.split-inner .right {
+		.right {
 			width: 40%;
 		}
 	}
+	.split-left {
+		background-color: var(--semi-light);
+		padding: 3rem 3rem;
+		.left {
+			width: 40%;
+		}
+		.right {
+			width: 60%;
+		}
+	}
+	.split-inner {
+		@include flex(row, center, center);
+		gap: 3rem;
+		max-width: 80rem;
+		margin: auto;
+		img {
+			aspect-ratio: 4 / 3;
+		}
+		.home2-img,
+		.home4-img {
+			aspect-ratio: 3 / 2;
+		}
+		.home5-img {
+			object-position: center 30%;
+		}
+	}
 
-	// .content {
-	// 	text-align: center;
-	// 	padding: 0rem 0rem 1rem 0rem;
-	// }
+	.recent {
+		max-width: none;
+		width: 100%;
+		background-color: var(--semi-light);
+		padding: 3rem 3rem;
+		h2 {
+			margin-top: 0;
+		}
+		.recent-inner {
+			margin: auto;
+			max-width: 52rem;
+		}
+	}
 
-	// .banner {
-	// 	@include flex-center;
-	// 	flex-direction: column;
-	// 	gap: 1rem;
-	// 	position: relative;
-	// 	width: 100%;
-	// 	height: fit-content;
-	// 	min-height: 20rem;
-	// 	padding: 2rem;
-	// 	color: #fff;
-	// 	text-align: center;
-	// 	overflow: hidden;
+	@media (max-width: 1000px) {
+		.banner {
+			padding: 0 1.5rem;
+			h1 {
+				font-size: 2.5rem;
+			}
+			.flagstrip-img {
+				max-width: 35rem;
+			}
+			h2 {
+				font-size: 1.2rem;
+			}
+		}
+		.split-right,
+		.split-left {
+			.split-inner {
+				flex-direction: column;
+				gap: 2rem;
+				.left,
+				.right {
+					width: 100%;
+				}
+			}
+		}
+		.split-right {
+			.split-inner {
+				flex-direction: column-reverse;
+			}
+		}
+	}
 
-	// 	h2 {
-	// 		position: relative;
-	// 	}
-	// }
-
-	// h1 {
-	// 	position: relative;
-	// 	font-size: 2.5rem;
-	// 	margin: 1rem 0 1.5rem 0;
-	// }
-
-	// .flagstrip {
-	// 	position: relative;
-	// 	max-width: 40rem;
-	// 	width: 100%;
-	// 	height: auto;
-	// }
-
-	// .banner-pic {
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	bottom: 0;
-	// 	right: 0;
-	// }
-
-	// .banner-img {
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	object-fit: cover;
-	// 	object-position: center 30%;
-	// 	filter: brightness(0.4);
-	// 	z-index: 0;
-	// }
-
-	// .home1-img {
-	// 	aspect-ratio: 1 / 1;
-	// }
-
-	// h2 {
-	// 	margin: 1rem 0;
-	// }
-
-	// p {
-	// 	margin: auto;
-	// 	margin-bottom: 1rem;
-	// }
-
-	// section {
-	// 	max-width: 53rem;
-	// 	margin: 2rem auto 3rem auto;
-	// 	padding: 0rem 1.5rem;
-	// }
-
-	// i.fa-arrow-right {
-	// 	margin-left: 0.5rem;
-	// }
-
-	// .side-left,
-	// .side-right {
-	// 	display: flex;
-	// 	align-items: center;
-	// 	gap: 3rem;
-	// 	max-width: 90rem;
-	// 	text-align: left;
-
-	// 	div {
-	// 		display: block;
-	// 	}
-
-	// 	.img {
-	// 		width: 100%;
-	// 		height: auto;
-	// 		border-radius: 0.5rem;
-	// 		object-fit: cover;
-	// 	}
-	// }
-
-	// .side-left {
-	// 	.left {
-	// 		width: 60%;
-	// 	}
-
-	// 	.right {
-	// 		width: 40%;
-	// 	}
-	// }
-
-	// .side-right {
-	// 	.left {
-	// 		width: 40%;
-	// 	}
-
-	// 	.right {
-	// 		width: 60%;
-	// 	}
-	// }
-
-	// .interview {
-	// 	max-width: 30rem;
-	// 	margin: 0 auto;
-	// }
-
-	// .columns {
-	// 	display: grid;
-	// 	grid-template-columns: 1fr 1fr;
-	// 	grid-template-rows: 1fr auto;
-	// 	gap: 0 2rem;
-
-	// 	a.button {
-	// 		width: fit-content;
-	// 		margin: auto;
-	// 	}
-	// }
-
-	// .column p {
-	// 	text-align: center;
-	// }
-
-	// @media (max-width: 850px) {
-	// 	.banner {
-	// 		min-height: 15rem;
-	// 		gap: 0.5rem;
-	// 	}
-	// 	.flagstrip {
-	// 		max-width: 35rem;
-	// 	}
-	// 	h1 {
-	// 		font-size: 2.2rem;
-	// 	}
-	// 	h2 {
-	// 		font-size: 1.3rem;
-	// 	}
-	// 	.number {
-	// 		font-size: 2.5rem;
-	// 	}
-	// 	.label {
-	// 		font-size: 1rem;
-	// 	}
-	// }
+	@media (max-width: 600px) {
+		section {
+			margin: 2rem auto;
+		}
+		.stats-container {
+			margin-bottom: 2rem;
+		}
+		.split-right {
+			margin: 2rem 0;
+		}
+		.split-left,
+		.recent {
+			padding: 2rem 0;
+		}
+		section,
+		.split-left,
+		.split-right,
+		.stats,
+		.recent {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+	}
 </style>
