@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Why "Central-Eastern Europe?"
 date: 2024-07-23T09:23:00.000Z
 author: Liam Krol
