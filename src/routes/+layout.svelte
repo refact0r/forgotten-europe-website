@@ -19,7 +19,7 @@
 
 	$: pagePath = $page.url.pathname.split('/')[1]
 
-	$: console.log(pagePath)
+	// $: console.log(pagePath)
 
 	let menuOpen = false
 
