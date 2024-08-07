@@ -15,6 +15,9 @@ export default async function getPosts(modules, limit = 0, tags = []) {
 		if (tags.length === 0) {
 			return true
 		}
+		if (!post.tags) {
+			return false
+		}
 		return post.tags.some((tag) => tags.includes(tag))
 	})
 
