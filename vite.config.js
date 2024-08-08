@@ -1,9 +1,14 @@
 import { sveltekit } from '@sveltejs/kit/vite'
 import { defineConfig } from 'vitest/config'
 import { imagetools } from 'vite-imagetools'
+import autoImport from 'sveltekit-autoimport'
 
 export default defineConfig({
 	plugins: [
+		autoImport({
+			components: ['./src/lib/components'],
+			include: ['**/*.svelte', 'src/content/**/*.md']
+		}),
 		imagetools({
 			defaultDirectives: (url) => {
 				const extension = url.pathname.substring(url.pathname.lastIndexOf('.') + 1)

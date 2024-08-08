@@ -6,9 +6,6 @@ author: Liam Krol
 description: Why we use the term "Central-Eastern Europe" instead of "Eastern Europe" simply
 ---
 
-<script>
-import Image from '$lib/components/Image.svelte'
-</script>
 
 The term “Eastern Europe” is one that has evolved and adapted over history in the face of changing social and political climates. Categorizing the region that was once under the Soviet sphere of influence has become a contentious subject of many historical and ethical debates. Moreover, “Eastern Europe” as a term imposed a generalizing Eastern identity upon the many unique and diverse nations and people that occupy the region. It is this debate and resulting ambiguity that has left geographers, historians, and diplomats divided on the question: what do we call post-Warsaw Pact states? Since the collapse of puppet-regime communism in the former Eastern Bloc, many states along the Soviet Bloc’s western border like Poland, the Czech Republic, and Slovakia have been committed to redefine their identity, both to their own respective populations and to the international community. These efforts have resulted in the creation of a counter term—Central Europe. Both “Central Europe” and “Eastern Europe” as terms influence and define the mental map that individuals have of European nations, identities, and categorizations. Ultimately, we must ask ourselves: how should we label and describe a region that is diverse in its peoples, histories, geographic features, and political systems? This short article will not only seek to examine why the term “Eastern Europe” is obsolete but will additionally support the popularization “Central-Eastern Europe” as a term to take its place.
 
