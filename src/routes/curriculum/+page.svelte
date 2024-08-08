@@ -5,9 +5,8 @@
 <PageHead title="Curriculum" description="" />
 
 <div class="content">
-	<h1>Curriculum</h1>
-
 	<section>
+		<h1>Curriculum</h1>
 		<p>
 			We use our student advocacy voices to promote education about Central-Eastern European
 			history in education systems. Created entirely by students, guided by teachers, and
@@ -18,28 +17,26 @@
 		</p>
 	</section>
 
-	<div class="middle">
-		<h2>UNDER DEVELOPMENT</h2>
-
-		<p>
-			Please email us at <a href="mailto:forgotteneuropeproject@gmail.com">
-				forgotteneuropeproject@gmail.com
-			</a> for any questions.
-		</p>
-	</div>
+	<section>
+		<div class="iframe-container">
+			<iframe
+				src="https://drive.google.com/file/d/1YnyWOojGZ4zETdlPS7p-XuAOisYLGKPR/preview"
+				allow="autoplay"
+				width="800px"
+				height="1100px"
+			></iframe>
+		</div>
+	</section>
 </div>
 
 <style lang="scss">
 	.content {
-		padding: 0 1rem;
-		display: flex;
-		flex-direction: column;
-		flex-grow: 1;
+		padding: 0rem 1.5rem 3rem 1.5rem;
 	}
 
 	section {
 		max-width: 50rem;
-		margin: auto;
+		margin: 2rem auto 3rem auto;
 	}
 
 	.middle {
@@ -48,11 +45,15 @@
 		flex-grow: 1;
 	}
 
-	p {
-		text-align: center;
+	.iframe-container {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: stretch;
+		align-items: stretch;
 	}
 
-	h1 {
-		text-align: center;
+	iframe {
+		flex-grow: 1;
 	}
 </style>
