@@ -11,8 +11,10 @@
 />
 
 <div class="content">
-	<h1>Blog</h1>
-	<p>Learn about Central-Eastern European current events, history, and culture.</p>
+	<section>
+		<h1>Blog</h1>
+		<p>Learn about Central-Eastern European current events, history, and culture.</p>
+	</section>
 	<section>
 		<div class="previews">
 			{#each data.posts as post}
@@ -24,26 +26,18 @@
 
 <style lang="scss">
 	.content {
-		padding: 0rem 1.5rem 1rem 1.5rem;
+		padding: 0rem 1.5rem 3rem 1.5rem;
 	}
 
 	section {
 		max-width: 50rem;
-		margin: 3rem auto 4rem auto;
+		margin: 2rem auto 3rem auto;
 	}
 
 	.previews {
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-	}
-
-	h1 {
-		text-align: center;
-	}
-
-	p {
-		text-align: center;
 	}
 
 	@media (max-width: 700px) {

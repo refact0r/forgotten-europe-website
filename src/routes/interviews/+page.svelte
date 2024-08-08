@@ -38,12 +38,12 @@
 	}
 
 	section {
-		max-width: 74rem;
+		max-width: 75rem;
 		margin: 2rem auto 3rem auto;
 	}
 
 	.grid {
-		max-width: 74rem;
+		max-width: 75rem;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 		gap: 1rem;
