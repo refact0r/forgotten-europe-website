@@ -10,9 +10,8 @@
 />
 
 <div class="content">
-	<h1>About Us</h1>
-
 	<section>
+		<h1>About Us</h1>
 		<p>
 			Our mission is to enlighten the world with the stories, traditions, and history of
 			Central-Eastern Europe which are omitted from mainstream education. Through personal
@@ -36,37 +35,39 @@
 		</p>
 	</section>
 
-	<h2>Message from the Founder</h2>
-
-	<section class="columns">
-		<div class="column1">
-			<picture class="liam-pic">
-				<PictureSources src={liam} />
-				<img
-					class="liam-img"
-					src={liam.img.src}
-					width="400"
-					height="400"
-					type="image/jpeg"
-					alt="Founder and President Liam Krol"
-				/>
-			</picture>
-			<div class="name">Liam Krol</div>
-			<div class="role">Founder and President</div>
+	<section>
+		<h2>Message from the Founder</h2>
+		<div class="columns">
+			<p>
+				I started The Forgotten Europe Project over the summer of 2022 at the age of 15, six
+				months after Russia's illegal invasion of Ukraine. As a Polish American, I
+				understood what such a conflict implied for myself and my family, located only a
+				border away from Russian missile strikes and shelling. Yet in erupting thousands of
+				miles away from the United States, we Americans have begun to forget that today,
+				Ukrainian soldiers continue to fight on against oppression and imperialism. This is
+				not the first time that Central-eastern Europe was disregarded. Decades of Soviet
+				repression during the Cold War was masked by an Iron Curtain. Even after this
+				curtain fell, the memories of the suffering, brutality, and genocide this region
+				endured were forgotten by the world. I dedicate this project to my ancestors, and
+				the many millions Central-Eastern Europeans whose stories were forgotten. May your
+				voices now be heard.
+			</p>
+			<div class="column1">
+				<picture class="liam-pic">
+					<PictureSources src={liam} />
+					<img
+						class="liam-img"
+						src={liam.img.src}
+						width="400"
+						height="400"
+						type="image/jpeg"
+						alt="Founder and President Liam Krol"
+					/>
+				</picture>
+				<div class="name">Liam Krol</div>
+				<div class="role">Founder and President</div>
+			</div>
 		</div>
-		<p>
-			I started The Forgotten Europe Project over the summer of 2022 at the age of 15, six
-			months after Russia's illegal invasion of Ukraine. As a Polish American, I understood
-			what such a conflict implied for myself and my family, located only a border away from
-			Russian missile strikes and shelling. Yet in erupting thousands of miles away from the
-			United States, we Americans have begun to forget that today, Ukrainian soldiers continue
-			to fight on against oppression and imperialism. This is not the first time that
-			Central-eastern Europe was disregarded. Decades of Soviet repression during the Cold War
-			was masked by an Iron Curtain. Even after this curtain fell, the memories of the
-			suffering, brutality, and genocide this region endured were forgotten by the world. I
-			dedicate this project to my ancestors, and the many millions Central-Eastern Europeans
-			whose stories were forgotten. May your voices now be heard.
-		</p>
 	</section>
 
 	<section>
@@ -170,24 +171,14 @@
 		margin-bottom: 4rem;
 	}
 
-	h1,
-	h2 {
-		text-align: center;
-	}
-
 	.columns {
 		display: flex;
 		gap: 3rem;
 	}
 
-	.column1 {
-		text-align: center;
-	}
-
 	.volunteer {
 		display: flex;
 		flex-direction: column;
-		text-align: center;
 	}
 
 	.liam-img,
@@ -232,7 +223,7 @@
 	.placeholder {
 		width: 100%;
 		aspect-ratio: 1/1;
-		background-color: var(--mid-light);
+		background-color: var(--shade-70);
 		border-radius: 0.5rem;
 		position: relative;
 	}

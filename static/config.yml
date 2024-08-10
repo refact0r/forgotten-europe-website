@@ -63,5 +63,12 @@ collections:
           - { label: 'Date', name: 'date', widget: 'datetime' }
           - { label: 'Author', name: 'author', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'text' }
-          - { label: 'Featured Image', name: 'featured', widget: 'image', required: false }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown', required: false}
+          - { label: 'Google Drive Embed Link', name: 'link', widget: 'string' }
+          - label: 'Tags'
+            name: 'tags'
+            widget: 'list'
+            required: false 
+            fields:
+                - { label: 'Tag', name: 'tag', widget: 'string' }

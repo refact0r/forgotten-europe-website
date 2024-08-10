@@ -24,74 +24,74 @@
 }
 
 @mixin clickable-text {
-	color: var(--dark);
+	color: var(--shade-10);
 
 	&:hover {
-		color: var(--mid-dark);
+		color: var(--shade-30);
 	}
 	&:active {
-		transform: scale(0.98);
+		transform: scale(0.99);
 	}
 }
 
 @mixin clickable-text-inverted {
-	color: var(--light);
+	color: var(--shade-90);
 
 	&:hover {
-		color: var(--mid-light);
+		color: var(--shade-70);
 	}
 	&:active {
-		transform: scale(0.98);
+		transform: scale(0.99);
 	}
 }
 
 @mixin clickable {
-	color: var(--light);
-	background-color: var(--dark);
+	color: var(--shade-90);
+	background-color: var(--shade-10);
 
 	&:hover {
-		color: var(--light);
-		background-color: var(--semi-dark);
+		color: var(--shade-90);
+		background-color: var(--shade-20);
 	}
 }
 
 @mixin clickable-light {
-	color: var(--dark);
-	background-color: var(--semi-light);
+	color: var(--shade-10);
+	background-color: var(--shade-80);
 
 	&:hover {
-		color: var(--dark);
-		background-color: var(--mid-light);
+		color: var(--shade-10);
+		background-color: var(--shade-70);
 	}
 }
 
 @mixin clickable-inverted {
-	color: var(--dark);
-	background-color: var(--light);
+	color: var(--shade-10);
+	background-color: var(--shade-90);
 
 	&:hover {
-		color: var(--dark);
-		background-color: var(--mid-light);
+		color: var(--shade-10);
+		background-color: var(--shade-70);
 	}
 }
 
 @mixin clickable-header {
-	color: var(--light);
-	background-color: var(--dark);
+	color: var(--shade-90);
+	background-color: var(--shade-10);
 
 	&:hover {
-		color: var(--light);
-		background-color: var(--semi-dark);
+		color: var(--shade-90);
+		background-color: var(--shade-20);
 	}
 
 	&.active {
-		background-color: var(--light);
-		color: var(--dark);
+		background-color: var(--shade-90);
+		color: var(--shade-10);
 	}
 
 	&.semi-active {
-		background-color: var(--semi-dark);
-		color: var(--light);
+		background-color: var(--shade-20);
+		color: var(--shade-90);
 	}
 }
 

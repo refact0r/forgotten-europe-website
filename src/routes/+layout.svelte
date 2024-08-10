@@ -289,8 +289,8 @@
 		top: 0;
 		position: sticky;
 		z-index: 1;
-		color: var(--light);
-		background-color: var(--dark);
+		color: var(--shade-90);
+		background-color: var(--shade-10);
 
 		a.button {
 			@include clickable-header;
@@ -331,7 +331,7 @@
 		right: -0.5rem;
 		min-width: calc(100% + 1rem);
 		padding: 0.5rem;
-		background-color: var(--dark);
+		background-color: var(--shade-10);
 		box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 		z-index: 1;
 		border-radius: 0.5rem;
@@ -390,7 +390,7 @@
 		flex-direction: column;
 		transform: translateX(100%);
 		transition: transform 0.2s ease-in-out;
-		background-color: var(--dark);
+		background-color: var(--shade-10);
 		position: fixed;
 		top: 0;
 		right: 0;
@@ -411,7 +411,7 @@
 	}
 
 	main {
-		background-color: var(--light);
+		background-color: var(--shade-90);
 		height: 100%;
 		flex-grow: 1;
 		display: flex;
@@ -421,8 +421,8 @@
 	footer {
 		text-align: center;
 		padding: 1rem;
-		background-color: var(--dark);
-		color: var(--light);
+		background-color: var(--shade-10);
+		color: var(--shade-90);
 	}
 
 	.description {
