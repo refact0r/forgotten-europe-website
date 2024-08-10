@@ -49,7 +49,7 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Date', name: 'date', widget: 'datetime' }
           - { label: 'Description (for search engine)', name: 'description', widget: 'text' }
-          - { label: 'Embed Link', name: 'link', widget: 'string' }
+          - { label: 'Youtube Embed Link', name: 'link', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
     - name: 'curriculum' # Used in routes, e.g., /admin/collections/blog
@@ -65,7 +65,7 @@ collections:
           - { label: 'Description', name: 'description', widget: 'text' }
           - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', required: false }
           - { label: 'Body', name: 'body', widget: 'markdown', required: false}
-          - { label: 'Google Drive Embed Link', name: 'link', widget: 'string' }
+          - { label: 'Google Drive Link', name: 'link', widget: 'string' }
           - label: 'Tags'
             name: 'tags'
             widget: 'list'
