@@ -1,7 +1,6 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
 	import InterviewPreview from '$lib/components/InterviewPreview.svelte'
-	import { nameFromPath } from '$lib/js/utils.js'
 
 	export let data
 </script>

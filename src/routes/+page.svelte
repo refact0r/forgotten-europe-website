@@ -265,7 +265,7 @@
 		width: 100%;
 		position: relative;
 		min-height: 20rem;
-		color: var(--bright);
+		color: var(--shade-100);
 		.banner-pic {
 			position: absolute;
 			top: 0;
@@ -316,8 +316,8 @@
 
 	.stats-container {
 		max-width: none;
-		background-color: var(--semi-light);
-		color: var(--dark);
+		background-color: var(--shade-80);
+		color: var(--shade-10);
 		padding: 1.5rem 0rem;
 		margin-bottom: 4rem;
 	}
@@ -360,7 +360,7 @@
 		}
 	}
 	.split-left {
-		background-color: var(--semi-light);
+		background-color: var(--shade-80);
 		padding: 3rem 3rem;
 		.left {
 			width: 40%;
@@ -389,7 +389,7 @@
 	.recent {
 		max-width: none;
 		width: 100%;
-		background-color: var(--semi-light);
+		background-color: var(--shade-80);
 		padding: 3rem 3rem;
 		h2 {
 			margin-top: 0;

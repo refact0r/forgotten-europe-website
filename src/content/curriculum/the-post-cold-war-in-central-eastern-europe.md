@@ -5,7 +5,6 @@ description: At the end of the Cold War in 1991, various nations in Central and
   afterwards, some realigned geopolitically with the West, while others fell
   under the rising hegemony of the Russian Federation.
 thumbnail: /src/content/uploads/BigProtest.png
-featured: /src/content/uploads/picture1.png
 published: true
 title: The Post-Cold War in Central-Eastern Europe
 date: 2024-08-09T14:26:00.000Z

@@ -8,7 +8,7 @@
 </script>
 
 <a class="interview clickable" href={`interviews/${slug}`}>
-	<div class="label">{quote}</div>
+	<h3>{quote}</h3>
 	<div class="image-container">
 		{#await importImage(thumbnail) then image}
 			<picture>
@@ -27,8 +27,11 @@
 		padding: 1rem;
 		text-decoration: none;
 		font-weight: 400;
+	}
+
+	h3 {
+		margin: 0;
 		font-size: 1.1rem;
-		text-align: center;
 	}
 
 	.image-container {
