@@ -8,7 +8,7 @@ thumbnail: /src/content/uploads/BigProtest.png
 published: true
 title: The Post-Cold War in Central-Eastern Europe
 date: 2024-08-09T14:26:00.000Z
-link: https://drive.google.com/file/d/1YnyWOojGZ4zETdlPS7p-XuAOisYLGKPR/preview
+link: https://drive.google.com/file/d/1YnyWOojGZ4zETdlPS7p-XuAOisYLGKPR/view?usp=sharing
 tags:
   - tag: Grades 9-12
   - tag: 2-3 days

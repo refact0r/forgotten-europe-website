@@ -9,7 +9,7 @@ description: On February 24, 2022, the Russian Federation began a full-scale
   Global stability, international alliances, and the post-Cold War peace are
   continually challenged as the conflict drags on.
 thumbnail: /src/content/uploads/Zelensky-SnakeIsland.jpg
-link: https://drive.google.com/file/d/1WQmicFC9P7ZfIZiRvlLshZ0f578-PBtG/preview
+link: https://drive.google.com/file/d/1WQmicFC9P7ZfIZiRvlLshZ0f578-PBtG/view?usp=sharing
 tags:
   - tag: Grades 9-12
   - tag: 2-3 days
