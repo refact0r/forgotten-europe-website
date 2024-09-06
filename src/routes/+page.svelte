@@ -53,7 +53,7 @@
 
 <div class="content">
 	<div class="announcement">
-		<a href="https://forms.gle/AjdHNztvQefMk6qB7"
+		<a href="https://forms.gle/JXkZc4andMTFQLF79"
 			>RSVP for our Ukraine War Seminar on October 19th here!</a
 		>
 	</div>
