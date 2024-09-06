@@ -52,6 +52,11 @@
 </svelte:head>
 
 <div class="content">
+	<div class="announcement">
+		<a href="https://forms.gle/AjdHNztvQefMk6qB7"
+			>RSVP for our Ukraine War Seminar on October 19th here!</a
+		>
+	</div>
 	<div class="banner">
 		<picture class="banner-pic">
 			<PictureSources src={banner} sizes="100vw" />
@@ -260,6 +265,13 @@
 </div>
 
 <style lang="scss">
+	.announcement {
+		background-color: hsl(60, 70%, 60%);
+		color: var(--shade-10);
+		padding: 1rem;
+		text-align: center;
+	}
+
 	.banner {
 		@include flex(column, center, center);
 		width: 100%;
