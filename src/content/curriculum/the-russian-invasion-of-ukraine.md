@@ -11,8 +11,8 @@ description: On February 24, 2022, the Russian Federation began a full-scale
 thumbnail: /src/content/uploads/h2f64bnf6bog3jwdrdwht3iimi.jpg
 link: https://drive.google.com/file/d/1WQmicFC9P7ZfIZiRvlLshZ0f578-PBtG/view?usp=sharing
 tags:
-  - tag: Grades 9-12
-  - tag: 2-3 days
+  - tag: Grades 9 - 12
+  - tag: 2 - 3 days
   - tag: National Identity and Globalization
 ---
 This three-part lesson plan provides students with an interactive approach to understanding the ongoing war in Ukraine. The first section focuses on Ukraine’s recent history, guiding students through the turbulent collapse of the Soviet Union and later developments which led to Russia’s invasion in 2022. The next two parts are centered around the Russian invasion and international implications. Students will explore key topics such as the Ukrainian refugee crisis, the export of Ukrainian grain and global trade, and the role of the North Atlantic Treaty Organization (NATO). 
