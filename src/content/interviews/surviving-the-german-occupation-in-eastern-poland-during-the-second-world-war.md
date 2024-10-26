@@ -7,6 +7,6 @@ date: 2022-08-18T14:18:00.000Z
 description: An anonymous (by choice) interviewee describes her experiences
   surviving the Second World War in Eastern Poland. The horrors she watched are
   devastating and deserve recognition.
-link: https://youtu.be/whLK4t0NIuc
+link: https://www.youtube.com/embed/whLK4t0NIuc
 ---
 An anonymous (by choice) interviewee describes her experiences surviving the Second World War in Eastern Poland. The horrors she watched are devastating and deserve recognition.
