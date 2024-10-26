@@ -1,13 +1,12 @@
 ---
 published: true
-quote: Adam Lenhardt on 20th century nationalism during WWII in Eastern Poland.
-thumbnail: /src/content/uploads/adam.png
-title: Adam Lenhardt on 20th century nationalism during WWII in Eastern Poland.
-date: 2022-08-16T17:32:00.000Z
-description: "Adam Lenhardt briefly describes his experiences in what used to be
-  Western Ukraine before the war. A full length 2-hour-long interview of Adam's
-  wartime experience is private, at Adam's request, and may be accessed by an
-  email to us. "
-link: https://www.youtube.com/embed/ddpK-1JYozY
+quote: '"The bomb fell right next to us"'
+thumbnail: /src/content/uploads/mastalowa.png
+title: "Helena Mastalowa Recounts her Painful Childhood: Surviving both German
+  and Russian Occupations"
+date: 2022-07-22T19:48:00.000Z
+description: "Helena Mastalowa Recounts her Painful Childhood: Surviving both
+  German and Russian Occupations"
+link: https://www.youtube.com/embed/HWqA2UxzzTc
 ---
-Adam Lenhardt briefly describes his experiences in what used to be Western Ukraine before the war. A full length 2-hour-long interview of Adam's wartime experience is private, at Adam's request, and may be accessed by an email to us.
+Helena Mastalowa, (born November 28th, 1927) describes her memories of the German occupation in Poland, and the following Russian occupation at the end of the war. She endured the unthinkable, and wishes to share her story with the world.
