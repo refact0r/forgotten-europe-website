@@ -4,7 +4,7 @@ quote: '"We were saved, but I lost my parents"'
 thumbnail: /src/content/uploads/teofila.png
 title: "Interview with Sister Teofila Baran: Surviving the deportations to
   Siberia as an orphan."
-date: 2023-08-30T13:06:00.000Z
+date: 2023-07-06T06:06:00.000Z
 description: >
   Interview with Sister Teofila Baran: Surviving the deportations to Siberia as
   an orphan.
