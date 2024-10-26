@@ -16,3 +16,5 @@ tags:
   - tag: National Identity, Crimes Against Humanity, and Globalization
 ---
 This lesson plan is designed to cover the Yugoslavian Civil War and the Bosnian Genocide in two 45-60-minute class period with three modular mini-lessons. The first two mini-lessons focus on contextualization and causation for the Yugoslavian Civil War. The third and final mini-lesson zooms in on the ethnic cleansing and genocide of Bosniaks which occurred during the war. Emphasis is placed on learning about the human impacts of the genocide and its relevance in global history. Teachers may choose to modify any of the three mini-lessons according to class preference.
+
+Students will explore key historical themes such as nationalism and crimes against humanity.
