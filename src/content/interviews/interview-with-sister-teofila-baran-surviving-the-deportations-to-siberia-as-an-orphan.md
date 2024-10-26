@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 quote: '"We were saved, but I lost my parents"'
 thumbnail: /src/content/uploads/teofila.png
 title: "Interview with Sister Teofila Baran: Surviving the deportations to
