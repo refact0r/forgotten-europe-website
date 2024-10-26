@@ -10,7 +10,7 @@ description: At the end of the Cold War in 1991, various nations in Central and
 thumbnail: /src/content/uploads/2000.png
 link: https://drive.google.com/file/d/1YnyWOojGZ4zETdlPS7p-XuAOisYLGKPR/view?usp=sharing
 tags:
-  - tag: Grades 9-12
+  - tag: Grades 9 -12
   - tag: 2-3 days
   - tag: National Identity and Globalization
 ---
