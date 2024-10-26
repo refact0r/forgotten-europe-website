@@ -11,7 +11,7 @@ description: Beginning in 1991, the Socialist Federal Republic of Yugoslavia
 thumbnail: /src/content/uploads/gravestones-srebrenica-potocari-memorial-centre-bosnia-and-herzegovina-2003.webp
 link: https://drive.google.com/file/d/1YBRQeTLIxmcDXGunN0TuhOO4slPep80A/view?usp=sharing
 tags:
-  - tag: Grades 9 -12
+  - tag: Grades 9 - 12
   - tag: 2 Days
   - tag: National Identity, Crimes Against Humanity, and Globalization
 ---
