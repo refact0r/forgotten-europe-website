@@ -9,7 +9,7 @@ description: Beginning in 1991, the Socialist Federal Republic of Yugoslavia
   Serbia, Montenegro, and North Macedonia) was fostered by unscrupulous
   politicians, escalating to mass displacement, ethnic cleansing, and genocide.
 thumbnail: /src/content/uploads/gravestones-srebrenica-potocari-memorial-centre-bosnia-and-herzegovina-2003.webp
-link: https://drive.google.com/file/d/1YBRQeTLIxmcDXGunN0TuhOO4slPep80A/view?usp=drive_link
+link: https://drive.google.com/file/d/1YBRQeTLIxmcDXGunN0TuhOO4slPep80A/view?usp=sharing
 tags:
   - tag: Grades 9 -12
   - tag: 2 Days
