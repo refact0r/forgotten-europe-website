@@ -11,7 +11,7 @@ description: "On February 24, 2022, the Russian Federation began a full-scale
 thumbnail: /src/content/uploads/2022-03-31t164608z_1832066083_rc2odt9hgbv0_rtrmadp_3_ukraine-crisis-border-scaled-e1650466686916.jpg
 link: https://drive.google.com/file/d/19sBkKS5nVH5uuRpGgY5t0lfYtNq3L9uq/view?usp=sharing
 tags:
-  - tag: Grades 3 -5
+  - tag: Grades 3 - 5
   - tag: 2 - 3 Days
   - tag: Human Migration, Identity, and Contemporary Events
 ---
