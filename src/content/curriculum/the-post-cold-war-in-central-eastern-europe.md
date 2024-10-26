@@ -14,3 +14,4 @@ tags:
   - tag: 2-3 days
   - tag: National Identity and Globalization
 ---
+This lesson plan for 2-3 45-60-minute class periods will cover the political, economic, and geopolitical directions which select Soviet satellites/Socialist Republics–specifically the Baltic states of Estonia, Latvia, and Lithuania; Poland; Belarus; and Czechoslovakia–went after the collapse of the Soviet Union. Students will create class presentations in groups based on research on each of the four focus states/groups of states. Then, each group will present on their focus state/group of states, while other class members will take notes on the graphic organizer. The content below provides brief introductions for each focus state/group of states for the teacher to review and recommended resources for students to explore. Students may explore additional resources, although they should stay focused on their assigned state/group of states and the 1989-2009 timeframe.
