@@ -3,7 +3,7 @@ published: true
 quote: Surviving the Volhynian Massacre
 thumbnail: /src/content/uploads/surviving-volhynian-massacre.png
 title: "Surviving the Volhynian Massacre: An Interview"
-date: 2023-07-02T23:37:00.000Z
+date: 2024-09-11T16:37:00.000Z
 description: Marcin Bazyliński describes his survival story of the Volhynian
   genocide and German Occupation. To our understanding, this is the only
   documented survival story of the events in the village of Czerteż, near what
