@@ -52,11 +52,11 @@
 </svelte:head>
 
 <div class="content">
-	<div class="announcement">
+	<!-- <div class="announcement">
 		<a href="https://forms.gle/JXkZc4andMTFQLF79"
 			>RSVP for our Ukraine War Seminar on October 19th here!</a
 		>
-	</div>
+	</div> -->
 	<div class="banner">
 		<picture class="banner-pic">
 			<PictureSources src={banner} sizes="100vw" />
