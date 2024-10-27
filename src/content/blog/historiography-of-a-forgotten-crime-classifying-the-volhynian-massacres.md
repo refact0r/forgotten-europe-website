@@ -6,6 +6,11 @@ author: Liam Krol
 description: An analysis on main historiographical trends in research of the
   1943 - 1945 Volhynian Massacres.
 featured: /src/content/uploads/volhynianmassacre.png
-caption: ""
+caption: "Ethnolinguistic map of Polish Volhynia and Galicia before the Second World War."
 ---
-test
+
+<iframe
+   title="An analysis on main historiographical trends in research of the
+  1943 - 1945 Volhynian Massacres."
+   src="https://drive.google.com/file/d/1lMfQINJSOJWa1yJZIpe3IwTELBxH59Nm/preview"
+  ></iframe>
