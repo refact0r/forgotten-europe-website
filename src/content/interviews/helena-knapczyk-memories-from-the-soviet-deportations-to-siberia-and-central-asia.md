@@ -10,6 +10,6 @@ description: >
   the eastern Soviet Union. After deportation, she watched mass starvation and
   death on her journey through Siberia, Central-Asia, India, and Africa. Though
   losing almost her entire family, she emerged grateful to be alive.
-link: jj
+link: https://www.youtube.com/embed/CRxHflkF6a4
 ---
 Helena Knapczyk recounts the horrors she witnessed in the inhumane lands of the eastern Soviet Union. After deportation, she watched mass starvation and death on her journey through Siberia, Central-Asia, India, and Africa. Though losing almost her entire family, she emerged grateful to be alive.
