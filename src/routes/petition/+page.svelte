@@ -10,9 +10,8 @@
 />
 
 <div class="content">
-	<h1>Petition</h1>
-
 	<section>
+		<h1>Petition</h1>
 		<p>
 			<b>
 				Petition to Washington State Schools on the importance of Central-Eastern European
@@ -39,11 +38,11 @@
 			Central-Eastern European history. With your help, we will redefine the marginalized role
 			the region holds in today’s global awareness.
 		</p>
-	</section>
 
-	<a class="button" href="https://forms.gle/bsQpvj2kDGX6Ahsx6">
-		Sign the Petition &nbsp;<i class="fa-solid fa-arrow-up-right-from-square" />
-	</a>
+		<a class="button" href="https://forms.gle/bsQpvj2kDGX6Ahsx6">
+			Sign the Petition &nbsp;<i class="fa-solid fa-arrow-up-right-from-square" />
+		</a>
+	</section>
 </div>
 
 <style lang="scss">
@@ -59,12 +58,7 @@
 		text-align: left;
 	}
 
-	h1 {
-		text-align: center;
-	}
-
 	.button {
-		margin: auto;
 		display: block;
 		width: fit-content;
 		font-size: 1.1rem;
