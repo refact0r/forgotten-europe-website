@@ -38,7 +38,7 @@
 			Central-Eastern European history. With your help, we will redefine the marginalized role
 			the region holds in today’s global awareness.
 		</p>
-
+		<br />
 		<a class="button" href="https://forms.gle/bsQpvj2kDGX6Ahsx6">
 			Sign the Petition &nbsp;<i class="fa-solid fa-arrow-up-right-from-square" />
 		</a>
@@ -51,7 +51,7 @@
 	}
 
 	section {
-		max-width: 55rem;
+		max-width: 50rem;
 		margin: auto;
 		margin-bottom: 3rem;
 
