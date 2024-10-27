@@ -1,7 +1,7 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
 	import PictureSources from '$lib/components/PictureSources.svelte'
-	import liam from '$lib/images/liam.jpg?w=800;400'
+	import liam from '$lib/images/liam2.jpg?w=800;400'
 </script>
 
 <PageHead
@@ -166,7 +166,7 @@
 	}
 
 	section {
-		max-width: 55rem;
+		max-width: 50rem;
 		margin: auto;
 		margin-bottom: 4rem;
 	}
@@ -185,7 +185,7 @@
 	.volunteer-img {
 		width: 100%;
 		height: auto;
-		aspect-ratio: 1/1;
+		aspect-ratio: 3/4;
 		object-fit: cover;
 		border-radius: 0.5rem;
 	}
@@ -216,7 +216,7 @@
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
 		gap: 1rem;
 	}
 
