@@ -98,15 +98,11 @@
 	<section class="stats-container">
 		<div class="stats">
 			<div class="group">
-				<div class="number">31</div>
+				<div class="number">32</div>
 				<div class="label">Schools Impacted</div>
 			</div>
 			<div class="group">
-				<div class="number">1</div>
-				<div class="label">District Affected</div>
-			</div>
-			<div class="group">
-				<div class="number">239</div>
+				<div class="number">350</div>
 				<a class="label" href="/petition">Petition Signatures</a>
 			</div>
 			<div class="group">
