@@ -8,7 +8,7 @@
 	import flagstrip from '$lib/images/flagstrip-8k.png?w=1440'
 	import home1 from '$lib/images/home1.jpg'
 	import home2 from '$lib/images/home2.png'
-	import home3 from '$lib/images/home3.jpg'
+	import home3 from '$lib/images/IMG_2932.png'
 	import home4 from '$lib/images/home4.jpg'
 	import home5 from '$lib/images/home5.jpg'
 
