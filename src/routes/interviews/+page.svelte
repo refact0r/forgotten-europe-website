@@ -14,9 +14,9 @@
 	<section>
 		<h1>Interviews</h1>
 		<p>
-			Year-round, founder Liam Krol locates and interviews those who experienced
-			Central-Eastern Europe's past tragedies. Through personal accounts, these interviews
-			preserve the stories and messages of survivors which would otherwise be forgotten.
+			Year-round, we interview those who experienced the 20th century in
+			Central-Eastern Europe. Through personal accounts, these interviews
+			preserve the stories and messages of tragedy survivors which would otherwise be forgotten.
 			Interviews can be virtual or in-person.
 		</p>
 		<a class="button" href="https://forms.gle/nePPj6bpz8ZNimKq8">
