@@ -1,74 +1,120 @@
 backend:
-    name: github
-    repo: refact0r/forgotten-europe-website
+  name: github
+  repo: refact0r/forgotten-europe-website
 
-media_folder: '/src/content/uploads' # Media files will be stored in the repo under static/images/uploads
-public_folder: '/src/content/uploads' # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "/src/content/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/src/content/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-    - name: 'blog' # Used in routes, e.g., /admin/collections/blog
-      label: 'Blog' # Used in the UI
-      folder: 'src/content/blog' # The path to the folder where the documents are stored
-      create: true # Allow users to create new documents in this collection
-      slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-      fields: # The fields for each document, usually in front matter
-          - { label: 'Published', name: 'published', widget: 'boolean', default: false }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Date', name: 'date', widget: 'datetime' }
-          - { label: 'Author', name: 'author', widget: 'string' }
-          - { label: 'Description', name: 'description', widget: 'text' }
-          - { label: 'Tags', name: 'tags', widget: 'list', required: false }
-          - { label: 'Featured Image', name: 'featured', widget: 'image', required: false }
-          - { label: 'Caption', name: 'caption', widget: 'string', required: false }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "src/content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {
+          label: "Published",
+          name: "published",
+          widget: "boolean",
+          default: false,
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - {
+          label: "Featured Image",
+          name: "featured",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Caption", name: "caption", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
 
-    # - name: 'news' # Used in routes, e.g., /admin/collections/blog
-    #   label: 'News' # Used in the UI
-    #   folder: 'src/content/news' # The path to the folder where the documents are stored
-    #   create: true # Allow users to create new documents in this collection
-    #   slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    #   fields: # The fields for each document, usually in front matter
-    #       - { label: 'Published', name: 'published', widget: 'boolean', default: false }
-    #       - { label: 'Title', name: 'title', widget: 'string' }
-    #       - { label: 'Date', name: 'date', widget: 'datetime' }
-    #       - { label: 'Author', name: 'author', widget: 'string' }
-    #       - { label: 'Description', name: 'description', widget: 'text' }
-    #       - { label: 'Featured Image', name: 'featured', widget: 'image', required: false }
-    #       - { label: 'Caption', name: 'caption', widget: 'string', required: false }
-    #       - { label: 'Body', name: 'body', widget: 'markdown' }
+  # - name: 'news' # Used in routes, e.g., /admin/collections/blog
+  #   label: 'News' # Used in the UI
+  #   folder: 'src/content/news' # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #       - { label: 'Published', name: 'published', widget: 'boolean', default: false }
+  #       - { label: 'Title', name: 'title', widget: 'string' }
+  #       - { label: 'Date', name: 'date', widget: 'datetime' }
+  #       - { label: 'Author', name: 'author', widget: 'string' }
+  #       - { label: 'Description', name: 'description', widget: 'text' }
+  #       - { label: 'Featured Image', name: 'featured', widget: 'image', required: false }
+  #       - { label: 'Caption', name: 'caption', widget: 'string', required: false }
+  #       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-    - name: 'interviews' # Used in routes, e.g., /admin/collections/blog
-      label: 'Interviews' # Used in the UI
-      folder: 'src/content/interviews' # The path to the folder where the documents are stored
-      create: true # Allow users to create new documents in this collection
-      slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-      fields: # The fields for each document, usually in front matter
-          - { label: 'Published', name: 'published', widget: 'boolean', default: false }
-          - { label: 'Quote', name: 'quote', widget: 'string' }
-          - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Date', name: 'date', widget: 'datetime' }
-          - { label: 'Description (for search engine)', name: 'description', widget: 'text' }
-          - { label: 'Youtube Embed Link', name: 'link', widget: 'string' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: "interviews" # Used in routes, e.g., /admin/collections/blog
+    label: "Interviews" # Used in the UI
+    folder: "src/content/interviews" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {
+          label: "Published",
+          name: "published",
+          widget: "boolean",
+          default: false,
+        }
+      - { label: "Quote", name: "quote", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - {
+          label: "Description (for search engine)",
+          name: "description",
+          widget: "text",
+        }
+      - { label: "Youtube Embed Link", name: "link", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
-    - name: 'curriculum' # Used in routes, e.g., /admin/collections/blog
-      label: 'Curriculum' # Used in the UI
-      folder: 'src/content/curriculum' # The path to the folder where the documents are stored
-      create: true # Allow users to create new documents in this collection
-      slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-      fields: # The fields for each document, usually in front matter
-          - { label: 'Published', name: 'published', widget: 'boolean', default: false }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Date', name: 'date', widget: 'datetime' }
-          - { label: 'Author', name: 'author', widget: 'string' }
-          - { label: 'Description', name: 'description', widget: 'text' }
-          - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', required: false }
-          - { label: 'Body', name: 'body', widget: 'markdown', required: false}
-          - { label: 'Google Drive Link', name: 'link', widget: 'string' }
-          - label: 'Tags'
-            name: 'tags'
-            widget: 'list'
-            required: false 
-            fields:
-                - { label: 'Tag', name: 'tag', widget: 'string' }
+  - name: "curriculum" # Used in routes, e.g., /admin/collections/blog
+    label: "Curriculum" # Used in the UI
+    folder: "src/content/curriculum" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {
+          label: "Published",
+          name: "published",
+          widget: "boolean",
+          default: false,
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Thumbnail",
+          name: "thumbnail",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: "Google Drive Link", name: "link", widget: "string" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Tag", name: "tag", widget: "string" }
+
+  - name: "leadership"
+    label: "Leadership" # Used in the UI
+    folder: "src/content/leadership" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Role", name: "role", widget: "string", required: false }
+      - {
+          label: "Order (lower number = higher up)",
+          name: "order",
+          widget: "number",
+          value_type: "int",
+          default: 1,
+        }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
