@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Youyi Li
 role: Curriculum Lead
 order: 3

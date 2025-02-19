@@ -9,6 +9,7 @@ export default async function getPosts(modules, limit = 0, tags = []) {
 	)
 
 	const posts = await Promise.all(postPromises)
+
 	let published = posts.filter((post) => post.published)
 	published.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1))
 	published = published.filter((post) => {

@@ -1,4 +1,5 @@
 ---
+published: true
 title: Liam Krol
 role: Founder and President
 order: 1

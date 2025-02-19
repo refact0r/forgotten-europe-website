@@ -75,7 +75,6 @@
 		padding: 0.25rem 0.5rem;
 		background-color: var(--shade-70);
 		border-radius: 0.25rem;
-		margin-right: 0.5rem;
 		font-weight: 600;
 	}
 </style>

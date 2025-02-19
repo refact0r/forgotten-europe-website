@@ -1,7 +1,10 @@
 <script>
 	import PageHead from '$lib/components/PageHead.svelte'
 	import PictureSources from '$lib/components/PictureSources.svelte'
-	import liam from '$lib/images/liam2.jpg?w=800;400'
+	import importImage from '$lib/js/images.js'
+	// import liam from '$lib/images/liam2.jpg?w=800;400'
+
+	export let data
 </script>
 
 <PageHead
@@ -35,7 +38,7 @@
 		</p>
 	</section>
 
-	<section>
+	<!-- <section>
 		<h2>Message from the Founder</h2>
 		<div class="columns">
 			<p>
@@ -68,83 +71,38 @@
 				<div class="role">Founder and President</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section>
 		<h2>Project Leadership</h2>
 		<div class="grid">
-			<div class="volunteer">
-				<div class="placeholder">
-					<div class="head" />
-					<div class="body" />
+			{#each data.posts as post}
+				<div class="volunteer">
+					{#if post.photo}
+						{#await importImage(post.photo) then image}
+							<picture class="pic">
+								<PictureSources src={image} sizes="10vw" />
+								<img
+									class="image"
+									src={image.img.src}
+									width="104"
+									height="104"
+									alt={post.title}
+								/>
+							</picture>
+						{/await}
+					{:else}
+						<div class="placeholder">
+							<div class="head" />
+							<div class="body" />
+						</div>
+					{/if}
+					<div class="name">{post.title}</div>
+					{#if post.role}
+						<div class="role">{post.role}</div>
+					{/if}
 				</div>
-				<div class="name">Rittik Bhattacharya</div>
-				<div class="role">Curriculum Lead</div>
-			</div>
-			<div class="volunteer">
-				<div class="placeholder">
-					<div class="head" />
-					<div class="body" />
-				</div>
-				<div class="name">Youyi Li</div>
-				<div class="role">Curriculum Lead</div>
-			</div>
-			<div class="volunteer">
-				<div class="placeholder">
-					<div class="head" />
-					<div class="body" />
-				</div>
-				<div class="name">Andrew Cun</div>
-				<div class="role">Marketing Lead</div>
-			</div>
-			<div class="volunteer">
-				<div class="placeholder">
-					<div class="head" />
-					<div class="body" />
-				</div>
-				<div class="name">Saachi Surana</div>
-				<div class="role">Marketing Lead</div>
-			</div>
-			<!-- <div class="volunteer">
-			<div class="placeholder">
-				<div class="head" />
-				<div class="body" />
-			</div>
-			<div class="name">Evan Kassman</div>
-			<div class="role">Curriculum</div>
-		</div>
-		<div class="volunteer">
-			<div class="placeholder">
-				<div class="head" />
-				<div class="body" />
-			</div>
-			<div class="name">Michael Zhou</div>
-			<div class="role">Curriculum/Marketing</div>
-		</div>
-		<div class="volunteer">
-			<div class="placeholder">
-				<div class="head" />
-				<div class="body" />
-			</div>
-			<div class="name">Anton Chebotaryov</div>
-			<div class="role">Marketing</div>
-		</div>
-		<div class="volunteer">
-			<div class="placeholder">
-				<div class="head" />
-				<div class="body" />
-			</div>
-			<div class="name">Tuck Ellis</div>
-			<div class="role">Marketing</div>
-		</div> -->
-			<!-- <div class="volunteer">
-			<div class="placeholder">
-				<div class="head" />
-				<div class="body" />
-			</div>
-			<div class="name">Yifan</div>
-			<div class="role">Technology</div>
-		</div> -->
+			{/each}
 		</div>
 	</section>
 
@@ -171,53 +129,36 @@
 		margin-bottom: 4rem;
 	}
 
-	.columns {
-		display: flex;
-		gap: 3rem;
-	}
-
 	.volunteer {
 		display: flex;
 		flex-direction: column;
 	}
 
-	.liam-img,
-	.volunteer-img {
+	.image {
 		width: 100%;
 		height: auto;
-		aspect-ratio: 3/4;
+		aspect-ratio: 1/1;
 		object-fit: cover;
 		border-radius: 0.5rem;
 	}
 
-	.liam-img {
-		width: 20rem;
-	}
-
-	.volunteer-img,
-	.placeholder {
-		margin-bottom: 0.5rem;
-		height: 0; // temporary no placeholders
-	}
-
-	.liam-pic {
-		margin: 0.2rem 0 1rem 0;
-	}
-
 	.name {
 		font-weight: 700;
-		font-size: 1.1rem;
+		font-size: 1.2rem;
+		margin-top: 0.75rem;
+		text-align: center;
 	}
 
 	.role {
 		font-style: italic;
-		margin-top: 0.2rem;
+		margin-top: 0.25rem;
+		text-align: center;
 	}
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+		gap: 1.5rem 1rem;
 	}
 
 	.placeholder {
@@ -255,22 +196,6 @@
 	}
 
 	@media (max-width: 900px) {
-		.liam-pic {
-			text-align: center;
-		}
-		.liam-img {
-			width: 100%;
-			max-width: 25rem;
-		}
-		.columns {
-			flex-direction: column;
-			gap: 1rem;
-
-			.name,
-			.role {
-				text-align: center;
-			}
-		}
 	}
 
 	@media (max-width: 700px) {
