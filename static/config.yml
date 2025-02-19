@@ -108,6 +108,12 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
     fields: # The fields for each document, usually in front matter
+      - {
+          label: "Published",
+          name: "published",
+          widget: "boolean",
+          default: false,
+        }
       - { label: "Name", name: "title", widget: "string" }
       - { label: "Role", name: "role", widget: "string", required: false }
       - {
