@@ -23,10 +23,11 @@
 	.interview {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: 0.5rem;
 		padding: 1rem;
 		text-decoration: none;
 		font-weight: 400;
+		justify-content: space-between;
 	}
 
 	h3 {
